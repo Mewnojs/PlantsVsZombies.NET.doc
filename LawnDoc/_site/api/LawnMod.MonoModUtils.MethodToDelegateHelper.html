@@ -1,0 +1,2033 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MonoModUtils.MethodToDelegateHelper
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MonoModUtils.MethodToDelegateHelper
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper">
+
+
+
+  <h1 id="LawnMod_MonoModUtils_MethodToDelegateHelper" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper" class="text-break">
+    Class MonoModUtils.MethodToDelegateHelper
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="LawnMod.html">LawnMod</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MonoModUtils.MethodToDelegateHelper</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MonoModUtils.MethodToDelegateHelper</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__1_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``1(System.Object)">
+  A&lt;T1&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__10_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``10(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__11_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``11(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__12_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``12(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__13_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``13(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+    <dt><code>T13</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__14_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``14(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+    <dt><code>T13</code></dt>
+    <dd></dd>
+    <dt><code>T14</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__15_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``15(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+    <dt><code>T13</code></dt>
+    <dd></dd>
+    <dt><code>T14</code></dt>
+    <dd></dd>
+    <dt><code>T15</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__16_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``16(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+    <dt><code>T13</code></dt>
+    <dd></dd>
+    <dt><code>T14</code></dt>
+    <dd></dd>
+    <dt><code>T15</code></dt>
+    <dd></dd>
+    <dt><code>T16</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__2_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``2(System.Object)">
+  A&lt;T1, T2&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__3_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``3(System.Object)">
+  A&lt;T1, T2, T3&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__4_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``4(System.Object)">
+  A&lt;T1, T2, T3, T4&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__5_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``5(System.Object)">
+  A&lt;T1, T2, T3, T4, T5&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__6_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``6(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__7_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``7(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__8_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``8(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_A_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_A__9_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.A``9(System.Object)">
+  A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate A&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__1_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``1(System.Object)">
+  F&lt;TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__10_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``10(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__11_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``11(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__12_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``12(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__13_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``13(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__14_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``14(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+    <dt><code>T13</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__15_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``15(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+    <dt><code>T13</code></dt>
+    <dd></dd>
+    <dt><code>T14</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__16_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``16(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+    <dt><code>T13</code></dt>
+    <dd></dd>
+    <dt><code>T14</code></dt>
+    <dd></dd>
+    <dt><code>T15</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__17_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``17(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>T9</code></dt>
+    <dd></dd>
+    <dt><code>T10</code></dt>
+    <dd></dd>
+    <dt><code>T11</code></dt>
+    <dd></dd>
+    <dt><code>T12</code></dt>
+    <dd></dd>
+    <dt><code>T13</code></dt>
+    <dd></dd>
+    <dt><code>T14</code></dt>
+    <dd></dd>
+    <dt><code>T15</code></dt>
+    <dd></dd>
+    <dt><code>T16</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__2_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``2(System.Object)">
+  F&lt;T1, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__3_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``3(System.Object)">
+  F&lt;T1, T2, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__4_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``4(System.Object)">
+  F&lt;T1, T2, T3, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__5_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``5(System.Object)">
+  F&lt;T1, T2, T3, T4, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__6_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``6(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__7_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``7(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__8_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``8(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="LawnMod_MonoModUtils_MethodToDelegateHelper_F_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F*"></a>
+
+  <h3 id="LawnMod_MonoModUtils_MethodToDelegateHelper_F__9_System_Object_" data-uid="LawnMod.MonoModUtils.MethodToDelegateHelper.F``9(System.Object)">
+  F&lt;T1, T2, T3, T4, T5, T6, T7, T8, TResult&gt;(dynamic)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Delegate F&lt;T1, T2, T3, T4, T5, T6, T7, T8, TResult&gt;(dynamic theInputMethod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theInputMethod</code> <span class="xref">dynamic</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.delegate">Delegate</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T1</code></dt>
+    <dd></dd>
+    <dt><code>T2</code></dt>
+    <dd></dd>
+    <dt><code>T3</code></dt>
+    <dd></dd>
+    <dt><code>T4</code></dt>
+    <dd></dd>
+    <dt><code>T5</code></dt>
+    <dd></dd>
+    <dt><code>T6</code></dt>
+    <dd></dd>
+    <dt><code>T7</code></dt>
+    <dd></dd>
+    <dt><code>T8</code></dt>
+    <dd></dd>
+    <dt><code>TResult</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,883 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ReanimatorCache
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ReanimatorCache
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Lawn.ReanimatorCache">
+
+
+
+  <h1 id="Lawn_ReanimatorCache" data-uid="Lawn.ReanimatorCache" class="text-break">
+    Class ReanimatorCache
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lawn.html">Lawn</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ReanimatorCache</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ReanimatorCache</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Lawn_ReanimatorCache__ctor_" data-uid="Lawn.ReanimatorCache.#ctor*"></a>
+
+  <h3 id="Lawn_ReanimatorCache__ctor" data-uid="Lawn.ReanimatorCache.#ctor">
+  ReanimatorCache()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReanimatorCache()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Lawn_ReanimatorCache_mApp" data-uid="Lawn.ReanimatorCache.mApp">
+  mApp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LawnApp mApp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.LawnApp.html">LawnApp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ReanimatorCache_mImageVariationList" data-uid="Lawn.ReanimatorCache.mImageVariationList">
+  mImageVariationList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;ReanimatorCache.CachedPlantVariation, MemoryImage&gt; mImageVariationList</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="Lawn.ReanimatorCache.html">ReanimatorCache</a>.<a class="xref" href="Lawn.ReanimatorCache.CachedPlantVariation.html">CachedPlantVariation</a>, <a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ReanimatorCache_mLawnMowers" data-uid="Lawn.ReanimatorCache.mLawnMowers">
+  mLawnMowers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MemoryImage&gt; mLawnMowers</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ReanimatorCache_mPlantImages" data-uid="Lawn.ReanimatorCache.mPlantImages">
+  mPlantImages
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MemoryImage&gt; mPlantImages</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ReanimatorCache_mZombieImages" data-uid="Lawn.ReanimatorCache.mZombieImages">
+  mZombieImages
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MemoryImage&gt; mZombieImages</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Lawn_ReanimatorCache_DrawCachedMower_" data-uid="Lawn.ReanimatorCache.DrawCachedMower*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_DrawCachedMower_Sexy_Graphics_System_Single_System_Single_Lawn_LawnMowerType_" data-uid="Lawn.ReanimatorCache.DrawCachedMower(Sexy.Graphics,System.Single,System.Single,Lawn.LawnMowerType)">
+  DrawCachedMower(Graphics, float, float, LawnMowerType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawCachedMower(Graphics g, float thePosX, float thePosY, LawnMowerType mowerType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>thePosX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>thePosY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>mowerType</code> <a class="xref" href="Lawn.LawnMowerType.html">LawnMowerType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_DrawCachedPlant_" data-uid="Lawn.ReanimatorCache.DrawCachedPlant*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_DrawCachedPlant_Sexy_Graphics_System_Single_System_Single_Lawn_SeedType_Lawn_DrawVariation_" data-uid="Lawn.ReanimatorCache.DrawCachedPlant(Sexy.Graphics,System.Single,System.Single,Lawn.SeedType,Lawn.DrawVariation)">
+  DrawCachedPlant(Graphics, float, float, SeedType, DrawVariation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawCachedPlant(Graphics g, float thePosX, float thePosY, SeedType theSeedType, DrawVariation theDrawVariation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>thePosX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>thePosY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theDrawVariation</code> <a class="xref" href="Lawn.DrawVariation.html">DrawVariation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_DrawCachedZombie_" data-uid="Lawn.ReanimatorCache.DrawCachedZombie*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_DrawCachedZombie_Sexy_Graphics_System_Single_System_Single_Lawn_ZombieType_" data-uid="Lawn.ReanimatorCache.DrawCachedZombie(Sexy.Graphics,System.Single,System.Single,Lawn.ZombieType)">
+  DrawCachedZombie(Graphics, float, float, ZombieType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawCachedZombie(Graphics g, float thePosX, float thePosY, ZombieType theZombieType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>thePosX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>thePosY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_DrawCachedZombieNew_" data-uid="Lawn.ReanimatorCache.DrawCachedZombieNew*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_DrawCachedZombieNew_Sexy_Graphics_System_Single_System_Single_Lawn_ZombieType_" data-uid="Lawn.ReanimatorCache.DrawCachedZombieNew(Sexy.Graphics,System.Single,System.Single,Lawn.ZombieType)">
+  DrawCachedZombieNew(Graphics, float, float, ZombieType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawCachedZombieNew(Graphics g, float thePosX, float thePosY, ZombieType theZombieType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>thePosX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>thePosY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_DrawReanimatorFrame_" data-uid="Lawn.ReanimatorCache.DrawReanimatorFrame*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_DrawReanimatorFrame_Sexy_Graphics_System_Single_System_Single_Sexy_TodLib_ReanimationType_System_String_Lawn_DrawVariation_" data-uid="Lawn.ReanimatorCache.DrawReanimatorFrame(Sexy.Graphics,System.Single,System.Single,Sexy.TodLib.ReanimationType,System.String,Lawn.DrawVariation)">
+  DrawReanimatorFrame(Graphics, float, float, ReanimationType, string, DrawVariation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawReanimatorFrame(Graphics g, float x, float y, ReanimationType reanimType, string trackName, DrawVariation variation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>reanimType</code> <a class="xref" href="Sexy.TodLib.ReanimationType.html">ReanimationType</a></dt>
+    <dd></dd>
+    <dt><code>trackName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>variation</code> <a class="xref" href="Lawn.DrawVariation.html">DrawVariation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_GetPlantImageSize_" data-uid="Lawn.ReanimatorCache.GetPlantImageSize*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_GetPlantImageSize_Lawn_SeedType_" data-uid="Lawn.ReanimatorCache.GetPlantImageSize(Lawn.SeedType)">
+  GetPlantImageSize(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect GetPlantImageSize(SeedType seedtype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seedtype</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_LoadCachedImages_" data-uid="Lawn.ReanimatorCache.LoadCachedImages*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_LoadCachedImages" data-uid="Lawn.ReanimatorCache.LoadCachedImages">
+  LoadCachedImages()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadCachedImages()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_MakeBlankCanvasImage_" data-uid="Lawn.ReanimatorCache.MakeBlankCanvasImage*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_MakeBlankCanvasImage_System_Int32_System_Int32_" data-uid="Lawn.ReanimatorCache.MakeBlankCanvasImage(System.Int32,System.Int32)">
+  MakeBlankCanvasImage(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryImage MakeBlankCanvasImage(int width, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_MakeCachedMowerFrame_" data-uid="Lawn.ReanimatorCache.MakeCachedMowerFrame*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_MakeCachedMowerFrame_Lawn_LawnMowerType_" data-uid="Lawn.ReanimatorCache.MakeCachedMowerFrame(Lawn.LawnMowerType)">
+  MakeCachedMowerFrame(LawnMowerType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryImage MakeCachedMowerFrame(LawnMowerType mowerType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mowerType</code> <a class="xref" href="Lawn.LawnMowerType.html">LawnMowerType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_MakeCachedPlantFrame_" data-uid="Lawn.ReanimatorCache.MakeCachedPlantFrame*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_MakeCachedPlantFrame_Lawn_SeedType_Lawn_DrawVariation_" data-uid="Lawn.ReanimatorCache.MakeCachedPlantFrame(Lawn.SeedType,Lawn.DrawVariation)">
+  MakeCachedPlantFrame(SeedType, DrawVariation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryImage MakeCachedPlantFrame(SeedType seedType, DrawVariation drawVariation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>seedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>drawVariation</code> <a class="xref" href="Lawn.DrawVariation.html">DrawVariation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_MakeCachedZombieFrame_" data-uid="Lawn.ReanimatorCache.MakeCachedZombieFrame*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_MakeCachedZombieFrame_Lawn_ZombieType_" data-uid="Lawn.ReanimatorCache.MakeCachedZombieFrame(Lawn.ZombieType)">
+  MakeCachedZombieFrame(ZombieType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryImage MakeCachedZombieFrame(ZombieType zombieType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>zombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_ReanimatorCacheDispose_" data-uid="Lawn.ReanimatorCache.ReanimatorCacheDispose*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_ReanimatorCacheDispose" data-uid="Lawn.ReanimatorCache.ReanimatorCacheDispose">
+  ReanimatorCacheDispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReanimatorCacheDispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_ReanimatorCacheInitialize_" data-uid="Lawn.ReanimatorCache.ReanimatorCacheInitialize*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_ReanimatorCacheInitialize" data-uid="Lawn.ReanimatorCache.ReanimatorCacheInitialize">
+  ReanimatorCacheInitialize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReanimatorCacheInitialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_SaveCachedImages_" data-uid="Lawn.ReanimatorCache.SaveCachedImages*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_SaveCachedImages" data-uid="Lawn.ReanimatorCache.SaveCachedImages">
+  SaveCachedImages()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveCachedImages()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ReanimatorCache_UpdateReanimationforVariation_" data-uid="Lawn.ReanimatorCache.UpdateReanimationforVariation*"></a>
+
+  <h3 id="Lawn_ReanimatorCache_UpdateReanimationforVariation_Sexy_TodLib_Reanimation_Lawn_DrawVariation_" data-uid="Lawn.ReanimatorCache.UpdateReanimationforVariation(Sexy.TodLib.Reanimation,Lawn.DrawVariation)">
+  UpdateReanimationforVariation(Reanimation, DrawVariation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateReanimationforVariation(Reanimation reanimation, DrawVariation variation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reanimation</code> <a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+    <dt><code>variation</code> <a class="xref" href="Lawn.DrawVariation.html">DrawVariation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

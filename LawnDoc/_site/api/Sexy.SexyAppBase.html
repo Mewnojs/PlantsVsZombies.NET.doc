@@ -1,0 +1,4895 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SexyAppBase
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SexyAppBase
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Sexy.SexyAppBase">
+
+
+
+  <h1 id="Sexy_SexyAppBase" data-uid="Sexy.SexyAppBase" class="text-break">
+    Class SexyAppBase
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sexy.html">Sexy</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SexyAppBase : SexyAppBaseInterface, ButtonListener, DialogListener, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SexyAppBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Sexy.SexyAppBaseInterface.html">SexyAppBaseInterface</a></div>
+      <div><a class="xref" href="Sexy.ButtonListener.html">ButtonListener</a></div>
+      <div><a class="xref" href="Sexy.DialogListener.html">DialogListener</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Lawn.LawnApp.html">LawnApp</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Sexy_SexyAppBase__ctor_" data-uid="Sexy.SexyAppBase.#ctor*"></a>
+
+  <h3 id="Sexy_SexyAppBase__ctor_Sexy_Main_" data-uid="Sexy.SexyAppBase.#ctor(Sexy.Main)">
+  SexyAppBase(Main)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SexyAppBase(Main m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <a class="xref" href="Sexy.Main.html">Main</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Sexy_SexyAppBase_FirstRun" data-uid="Sexy.SexyAppBase.FirstRun">
+  FirstRun
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FirstRun</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_SplashScreenDrawLock" data-uid="Sexy.SexyAppBase.SplashScreenDrawLock">
+  SplashScreenDrawLock
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object SplashScreenDrawLock</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_XnaGame" data-uid="Sexy.SexyAppBase.XnaGame">
+  XnaGame
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Main XnaGame</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Main.html">Main</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_gSexyAppBase" data-uid="Sexy.SexyAppBase.gSexyAppBase">
+  gSexyAppBase
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SexyAppBase gSexyAppBase</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.SexyAppBase.html">SexyAppBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mAutoStartLoadingThread" data-uid="Sexy.SexyAppBase.mAutoStartLoadingThread">
+  mAutoStartLoadingThread
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mAutoStartLoadingThread</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mBoolProperties" data-uid="Sexy.SexyAppBase.mBoolProperties">
+  mBoolProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, bool&gt; mBoolProperties</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mCompanyName" data-uid="Sexy.SexyAppBase.mCompanyName">
+  mCompanyName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string mCompanyName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mCompletedLoadingThreadTasks" data-uid="Sexy.SexyAppBase.mCompletedLoadingThreadTasks">
+  mCompletedLoadingThreadTasks
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mCompletedLoadingThreadTasks</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mContentManager" data-uid="Sexy.SexyAppBase.mContentManager">
+  mContentManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentManager mContentManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ContentManager</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mDebugKeysEnabled" data-uid="Sexy.SexyAppBase.mDebugKeysEnabled">
+  mDebugKeysEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mDebugKeysEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mDebugScreenEnabled" data-uid="Sexy.SexyAppBase.mDebugScreenEnabled">
+  mDebugScreenEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mDebugScreenEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mDialogList" data-uid="Sexy.SexyAppBase.mDialogList">
+  mDialogList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinkedList&lt;Dialog&gt; mDialogList</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.linkedlist-1">LinkedList</a>&lt;<a class="xref" href="Sexy.Dialog.html">Dialog</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mDialogMap" data-uid="Sexy.SexyAppBase.mDialogMap">
+  mDialogMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;int, Dialog&gt; mDialogMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="Sexy.Dialog.html">Dialog</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mDoubleProperties" data-uid="Sexy.SexyAppBase.mDoubleProperties">
+  mDoubleProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, double&gt; mDoubleProperties</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mFrameCounter" data-uid="Sexy.SexyAppBase.mFrameCounter">
+  mFrameCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected FrameCounter mFrameCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.FrameCounter.html">FrameCounter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mFullCompanyName" data-uid="Sexy.SexyAppBase.mFullCompanyName">
+  mFullCompanyName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string mFullCompanyName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mHeight" data-uid="Sexy.SexyAppBase.mHeight">
+  mHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mHeight</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mInitialized" data-uid="Sexy.SexyAppBase.mInitialized">
+  mInitialized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mInitialized</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mIntProperties" data-uid="Sexy.SexyAppBase.mIntProperties">
+  mIntProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, int&gt; mIntProperties</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mInterfaceOrientation" data-uid="Sexy.SexyAppBase.mInterfaceOrientation">
+  mInterfaceOrientation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UI_ORIENTATION mInterfaceOrientation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.UI_ORIENTATION.html">UI_ORIENTATION</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mIsOrientationLocked" data-uid="Sexy.SexyAppBase.mIsOrientationLocked">
+  mIsOrientationLocked
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mIsOrientationLocked</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mLoaded" data-uid="Sexy.SexyAppBase.mLoaded">
+  mLoaded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mLoaded</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mLoadingFailed" data-uid="Sexy.SexyAppBase.mLoadingFailed">
+  mLoadingFailed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mLoadingFailed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mLoadingThreadCompleted" data-uid="Sexy.SexyAppBase.mLoadingThreadCompleted">
+  mLoadingThreadCompleted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mLoadingThreadCompleted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mLoadingThreadStarted" data-uid="Sexy.SexyAppBase.mLoadingThreadStarted">
+  mLoadingThreadStarted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mLoadingThreadStarted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mMusicEnabled" data-uid="Sexy.SexyAppBase.mMusicEnabled">
+  mMusicEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mMusicEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mMusicInterface" data-uid="Sexy.SexyAppBase.mMusicInterface">
+  mMusicInterface
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MusicInterface mMusicInterface</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.MusicInterface.html">MusicInterface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mMuteCount" data-uid="Sexy.SexyAppBase.mMuteCount">
+  mMuteCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mMuteCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mNumLoadingThreadTasks" data-uid="Sexy.SexyAppBase.mNumLoadingThreadTasks">
+  mNumLoadingThreadTasks
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mNumLoadingThreadTasks</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mPaused" data-uid="Sexy.SexyAppBase.mPaused">
+  mPaused
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mPaused</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mProdName" data-uid="Sexy.SexyAppBase.mProdName">
+  mProdName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string mProdName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mReadFromRegistry" data-uid="Sexy.SexyAppBase.mReadFromRegistry">
+  mReadFromRegistry
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mReadFromRegistry</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mResourceManager" data-uid="Sexy.SexyAppBase.mResourceManager">
+  mResourceManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceManager mResourceManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mScreenScales" data-uid="Sexy.SexyAppBase.mScreenScales">
+  mScreenScales
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScreenScales mScreenScales</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScreenScales.html">ScreenScales</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mSfxVolume" data-uid="Sexy.SexyAppBase.mSfxVolume">
+  mSfxVolume
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double mSfxVolume</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mShutdown" data-uid="Sexy.SexyAppBase.mShutdown">
+  mShutdown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mShutdown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mSoundManager" data-uid="Sexy.SexyAppBase.mSoundManager">
+  mSoundManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundManager mSoundManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.SoundManager.html">SoundManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mStringProperties" data-uid="Sexy.SexyAppBase.mStringProperties">
+  mStringProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; mStringProperties</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mStringVectorProperties" data-uid="Sexy.SexyAppBase.mStringVectorProperties">
+  mStringVectorProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, List&lt;string&gt;&gt; mStringVectorProperties</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mTitle" data-uid="Sexy.SexyAppBase.mTitle">
+  mTitle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string mTitle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mUpdateAppDepth" data-uid="Sexy.SexyAppBase.mUpdateAppDepth">
+  mUpdateAppDepth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mUpdateAppDepth</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mUpdateCount" data-uid="Sexy.SexyAppBase.mUpdateCount">
+  mUpdateCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mUpdateCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mWidgetManager" data-uid="Sexy.SexyAppBase.mWidgetManager">
+  mWidgetManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WidgetManager mWidgetManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.WidgetManager.html">WidgetManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_mWidth" data-uid="Sexy.SexyAppBase.mWidth">
+  mWidth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mWidth</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_nextOrientation" data-uid="Sexy.SexyAppBase.nextOrientation">
+  nextOrientation
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UI_ORIENTATION? nextOrientation</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.UI_ORIENTATION.html">UI_ORIENTATION</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_SexyAppBase_wantToShowUpdateMessage" data-uid="Sexy.SexyAppBase.wantToShowUpdateMessage">
+  wantToShowUpdateMessage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool wantToShowUpdateMessage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Sexy_SexyAppBase_IsInTrialMode_" data-uid="Sexy.SexyAppBase.IsInTrialMode*"></a>
+
+  <h3 id="Sexy_SexyAppBase_IsInTrialMode" data-uid="Sexy.SexyAppBase.IsInTrialMode">
+  IsInTrialMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInTrialMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_UseLiveServers_" data-uid="Sexy.SexyAppBase.UseLiveServers*"></a>
+
+  <h3 id="Sexy_SexyAppBase_UseLiveServers" data-uid="Sexy.SexyAppBase.UseLiveServers">
+  UseLiveServers
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool UseLiveServers { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_WantsToExit_" data-uid="Sexy.SexyAppBase.WantsToExit*"></a>
+
+  <h3 id="Sexy_SexyAppBase_WantsToExit" data-uid="Sexy.SexyAppBase.WantsToExit">
+  WantsToExit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WantsToExit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_mLanguage_" data-uid="Sexy.SexyAppBase.mLanguage*"></a>
+
+  <h3 id="Sexy_SexyAppBase_mLanguage" data-uid="Sexy.SexyAppBase.mLanguage">
+  mLanguage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string mLanguage { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_mMusicVolume_" data-uid="Sexy.SexyAppBase.mMusicVolume*"></a>
+
+  <h3 id="Sexy_SexyAppBase_mMusicVolume" data-uid="Sexy.SexyAppBase.mMusicVolume">
+  mMusicVolume
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double mMusicVolume { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Sexy_SexyAppBase_AccelerometerDidAccelerate_" data-uid="Sexy.SexyAppBase.AccelerometerDidAccelerate*"></a>
+
+  <h3 id="Sexy_SexyAppBase_AccelerometerDidAccelerate_System_Double_System_Double_System_Double_System_Double_" data-uid="Sexy.SexyAppBase.AccelerometerDidAccelerate(System.Double,System.Double,System.Double,System.Double)">
+  AccelerometerDidAccelerate(double, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AccelerometerDidAccelerate(double timestamp, double ax, double ay, double az)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>ax</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>ay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>az</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_AddDialog_" data-uid="Sexy.SexyAppBase.AddDialog*"></a>
+
+  <h3 id="Sexy_SexyAppBase_AddDialog_Sexy_Dialog_" data-uid="Sexy.SexyAppBase.AddDialog(Sexy.Dialog)">
+  AddDialog(Dialog)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDialog(Dialog theDialog)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialog</code> <a class="xref" href="Sexy.Dialog.html">Dialog</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_AddDialog_" data-uid="Sexy.SexyAppBase.AddDialog*"></a>
+
+  <h3 id="Sexy_SexyAppBase_AddDialog_System_Int32_Sexy_Dialog_" data-uid="Sexy.SexyAppBase.AddDialog(System.Int32,Sexy.Dialog)">
+  AddDialog(int, Dialog)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDialog(int theDialogId, Dialog theDialog)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialogId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theDialog</code> <a class="xref" href="Sexy.Dialog.html">Dialog</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_AppEnteredBackground_" data-uid="Sexy.SexyAppBase.AppEnteredBackground*"></a>
+
+  <h3 id="Sexy_SexyAppBase_AppEnteredBackground" data-uid="Sexy.SexyAppBase.AppEnteredBackground">
+  AppEnteredBackground()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AppEnteredBackground()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_AppExit_" data-uid="Sexy.SexyAppBase.AppExit*"></a>
+
+  <h3 id="Sexy_SexyAppBase_AppExit" data-uid="Sexy.SexyAppBase.AppExit">
+  AppExit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AppExit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_BackButtonPress_" data-uid="Sexy.SexyAppBase.BackButtonPress*"></a>
+
+  <h3 id="Sexy_SexyAppBase_BackButtonPress" data-uid="Sexy.SexyAppBase.BackButtonPress">
+  BackButtonPress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool BackButtonPress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ButtonDepress_" data-uid="Sexy.SexyAppBase.ButtonDepress*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ButtonDepress_System_Int32_" data-uid="Sexy.SexyAppBase.ButtonDepress(System.Int32)">
+  ButtonDepress(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ButtonDepress(int theId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ButtonDownTick_" data-uid="Sexy.SexyAppBase.ButtonDownTick*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ButtonDownTick_System_Int32_" data-uid="Sexy.SexyAppBase.ButtonDownTick(System.Int32)">
+  ButtonDownTick(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonDownTick(int theId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ButtonMouseEnter_" data-uid="Sexy.SexyAppBase.ButtonMouseEnter*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ButtonMouseEnter_System_Int32_" data-uid="Sexy.SexyAppBase.ButtonMouseEnter(System.Int32)">
+  ButtonMouseEnter(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonMouseEnter(int theId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ButtonMouseLeave_" data-uid="Sexy.SexyAppBase.ButtonMouseLeave*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ButtonMouseLeave_System_Int32_" data-uid="Sexy.SexyAppBase.ButtonMouseLeave(System.Int32)">
+  ButtonMouseLeave(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonMouseLeave(int theId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ButtonMouseMove_" data-uid="Sexy.SexyAppBase.ButtonMouseMove*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ButtonMouseMove_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.SexyAppBase.ButtonMouseMove(System.Int32,System.Int32,System.Int32)">
+  ButtonMouseMove(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonMouseMove(int theId, int theX, int theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ButtonPress_" data-uid="Sexy.SexyAppBase.ButtonPress*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ButtonPress_System_Int32_" data-uid="Sexy.SexyAppBase.ButtonPress(System.Int32)">
+  ButtonPress(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ButtonPress(int theId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ButtonPress_" data-uid="Sexy.SexyAppBase.ButtonPress*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ButtonPress_System_Int32_System_Int32_" data-uid="Sexy.SexyAppBase.ButtonPress(System.Int32,System.Int32)">
+  ButtonPress(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ButtonPress(int theId, int theClickCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_BuyGame_" data-uid="Sexy.SexyAppBase.BuyGame*"></a>
+
+  <h3 id="Sexy_SexyAppBase_BuyGame" data-uid="Sexy.SexyAppBase.BuyGame">
+  BuyGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void BuyGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_DeviceOrientationChanged_" data-uid="Sexy.SexyAppBase.DeviceOrientationChanged*"></a>
+
+  <h3 id="Sexy_SexyAppBase_DeviceOrientationChanged_Sexy_UI_ORIENTATION_" data-uid="Sexy.SexyAppBase.DeviceOrientationChanged(Sexy.UI_ORIENTATION)">
+  DeviceOrientationChanged(UI_ORIENTATION)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeviceOrientationChanged(UI_ORIENTATION toOrientation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toOrientation</code> <a class="xref" href="Sexy.UI_ORIENTATION.html">UI_ORIENTATION</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_DialogButtonDepress_" data-uid="Sexy.SexyAppBase.DialogButtonDepress*"></a>
+
+  <h3 id="Sexy_SexyAppBase_DialogButtonDepress_System_Int32_System_Int32_" data-uid="Sexy.SexyAppBase.DialogButtonDepress(System.Int32,System.Int32)">
+  DialogButtonDepress(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DialogButtonDepress(int theDialogId, int theButtonId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialogId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theButtonId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_DialogButtonPress_" data-uid="Sexy.SexyAppBase.DialogButtonPress*"></a>
+
+  <h3 id="Sexy_SexyAppBase_DialogButtonPress_System_Int32_System_Int32_" data-uid="Sexy.SexyAppBase.DialogButtonPress(System.Int32,System.Int32)">
+  DialogButtonPress(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DialogButtonPress(int theDialogId, int theButtonId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialogId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theButtonId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_Dispose_" data-uid="Sexy.SexyAppBase.Dispose*"></a>
+
+  <h3 id="Sexy_SexyAppBase_Dispose" data-uid="Sexy.SexyAppBase.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_Dispose_" data-uid="Sexy.SexyAppBase.Dispose*"></a>
+
+  <h3 id="Sexy_SexyAppBase_Dispose_System_Boolean_" data-uid="Sexy.SexyAppBase.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_DoDialog_" data-uid="Sexy.SexyAppBase.DoDialog*"></a>
+
+  <h3 id="Sexy_SexyAppBase_DoDialog_Sexy_Dialog_System_Int32_" data-uid="Sexy.SexyAppBase.DoDialog(Sexy.Dialog,System.Int32)">
+  DoDialog(Dialog, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Dialog DoDialog(Dialog theDialog, int theDialogId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialog</code> <a class="xref" href="Sexy.Dialog.html">Dialog</a></dt>
+    <dd></dd>
+    <dt><code>theDialogId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Dialog.html">Dialog</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_DoUpdateFrames_" data-uid="Sexy.SexyAppBase.DoUpdateFrames*"></a>
+
+  <h3 id="Sexy_SexyAppBase_DoUpdateFrames" data-uid="Sexy.SexyAppBase.DoUpdateFrames">
+  DoUpdateFrames()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool DoUpdateFrames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_DoVibration_" data-uid="Sexy.SexyAppBase.DoVibration*"></a>
+
+  <h3 id="Sexy_SexyAppBase_DoVibration_System_TimeSpan_" data-uid="Sexy.SexyAppBase.DoVibration(System.TimeSpan)">
+  DoVibration(TimeSpan)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoVibration(TimeSpan vibrationTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vibrationTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_DrawGame_" data-uid="Sexy.SexyAppBase.DrawGame*"></a>
+
+  <h3 id="Sexy_SexyAppBase_DrawGame_Microsoft_Xna_Framework_GameTime_" data-uid="Sexy.SexyAppBase.DrawGame(Microsoft.Xna.Framework.GameTime)">
+  DrawGame(GameTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DrawGame(GameTime gameTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>gameTime</code> <span class="xref">GameTime</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_EnableMusic_" data-uid="Sexy.SexyAppBase.EnableMusic*"></a>
+
+  <h3 id="Sexy_SexyAppBase_EnableMusic_System_Boolean_" data-uid="Sexy.SexyAppBase.EnableMusic(System.Boolean)">
+  EnableMusic(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableMusic(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_EraseFile_" data-uid="Sexy.SexyAppBase.EraseFile*"></a>
+
+  <h3 id="Sexy_SexyAppBase_EraseFile_System_String_" data-uid="Sexy.SexyAppBase.EraseFile(System.String)">
+  EraseFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EraseFile(string theFileName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_FileExists_" data-uid="Sexy.SexyAppBase.FileExists*"></a>
+
+  <h3 id="Sexy_SexyAppBase_FileExists_System_String_" data-uid="Sexy.SexyAppBase.FileExists(System.String)">
+  FileExists(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FileExists(string filename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_Finalize_" data-uid="Sexy.SexyAppBase.Finalize*"></a>
+
+  <h3 id="Sexy_SexyAppBase_Finalize" data-uid="Sexy.SexyAppBase.Finalize">
+  ~SexyAppBase()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~SexyAppBase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GetDialog_" data-uid="Sexy.SexyAppBase.GetDialog*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GetDialog_Sexy_Dialogs_" data-uid="Sexy.SexyAppBase.GetDialog(Sexy.Dialogs)">
+  GetDialog(Dialogs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dialog GetDialog(Dialogs theDialogId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialogId</code> <a class="xref" href="Sexy.Dialogs.html">Dialogs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Dialog.html">Dialog</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GetDialog_" data-uid="Sexy.SexyAppBase.GetDialog*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GetDialog_System_Int32_" data-uid="Sexy.SexyAppBase.GetDialog(System.Int32)">
+  GetDialog(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dialog GetDialog(int theDialogId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialogId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Dialog.html">Dialog</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GetDialogCount_" data-uid="Sexy.SexyAppBase.GetDialogCount*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GetDialogCount" data-uid="Sexy.SexyAppBase.GetDialogCount">
+  GetDialogCount()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDialogCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GetInteger_" data-uid="Sexy.SexyAppBase.GetInteger*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GetInteger_System_String_System_Int32_" data-uid="Sexy.SexyAppBase.GetInteger(System.String,System.Int32)">
+  GetInteger(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInteger(string theId, int theDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GetLoadingThreadProgress_" data-uid="Sexy.SexyAppBase.GetLoadingThreadProgress*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GetLoadingThreadProgress" data-uid="Sexy.SexyAppBase.GetLoadingThreadProgress">
+  GetLoadingThreadProgress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetLoadingThreadProgress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GetMusicVolume_" data-uid="Sexy.SexyAppBase.GetMusicVolume*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GetMusicVolume" data-uid="Sexy.SexyAppBase.GetMusicVolume">
+  GetMusicVolume()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetMusicVolume()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GetOrientation_" data-uid="Sexy.SexyAppBase.GetOrientation*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GetOrientation" data-uid="Sexy.SexyAppBase.GetOrientation">
+  GetOrientation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UI_ORIENTATION GetOrientation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.UI_ORIENTATION.html">UI_ORIENTATION</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GetSfxVolume_" data-uid="Sexy.SexyAppBase.GetSfxVolume*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GetSfxVolume" data-uid="Sexy.SexyAppBase.GetSfxVolume">
+  GetSfxVolume()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetSfxVolume()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GetString_" data-uid="Sexy.SexyAppBase.GetString*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GetString_System_String_" data-uid="Sexy.SexyAppBase.GetString(System.String)">
+  GetString(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetString(string theId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GotFocus_" data-uid="Sexy.SexyAppBase.GotFocus*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GotFocus" data-uid="Sexy.SexyAppBase.GotFocus">
+  GotFocus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GotFocus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_GotoInterfaceState_" data-uid="Sexy.SexyAppBase.GotoInterfaceState*"></a>
+
+  <h3 id="Sexy_SexyAppBase_GotoInterfaceState_System_Int32_" data-uid="Sexy.SexyAppBase.GotoInterfaceState(System.Int32)">
+  GotoInterfaceState(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GotoInterfaceState(int state)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_HSLToRGB_" data-uid="Sexy.SexyAppBase.HSLToRGB*"></a>
+
+  <h3 id="Sexy_SexyAppBase_HSLToRGB_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.SexyAppBase.HSLToRGB(System.Int32,System.Int32,System.Int32)">
+  HSLToRGB(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SexyColor HSLToRGB(int h, int s, int l)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>h</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>s</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>l</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.SexyColor.html">SexyColor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_Init_" data-uid="Sexy.SexyAppBase.Init*"></a>
+
+  <h3 id="Sexy_SexyAppBase_Init" data-uid="Sexy.SexyAppBase.Init">
+  Init()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Init()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_InitHook_" data-uid="Sexy.SexyAppBase.InitHook*"></a>
+
+  <h3 id="Sexy_SexyAppBase_InitHook" data-uid="Sexy.SexyAppBase.InitHook">
+  InitHook()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitHook()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_InterfaceOrientationChanged_" data-uid="Sexy.SexyAppBase.InterfaceOrientationChanged*"></a>
+
+  <h3 id="Sexy_SexyAppBase_InterfaceOrientationChanged_Sexy_UI_ORIENTATION_" data-uid="Sexy.SexyAppBase.InterfaceOrientationChanged(Sexy.UI_ORIENTATION)">
+  InterfaceOrientationChanged(UI_ORIENTATION)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InterfaceOrientationChanged(UI_ORIENTATION toOrientation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toOrientation</code> <a class="xref" href="Sexy.UI_ORIENTATION.html">UI_ORIENTATION</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_IsLandscape_" data-uid="Sexy.SexyAppBase.IsLandscape*"></a>
+
+  <h3 id="Sexy_SexyAppBase_IsLandscape" data-uid="Sexy.SexyAppBase.IsLandscape">
+  IsLandscape()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLandscape()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_IsPortrait_" data-uid="Sexy.SexyAppBase.IsPortrait*"></a>
+
+  <h3 id="Sexy_SexyAppBase_IsPortrait" data-uid="Sexy.SexyAppBase.IsPortrait">
+  IsPortrait()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPortrait()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_KillDialog_" data-uid="Sexy.SexyAppBase.KillDialog*"></a>
+
+  <h3 id="Sexy_SexyAppBase_KillDialog_Sexy_Dialog_" data-uid="Sexy.SexyAppBase.KillDialog(Sexy.Dialog)">
+  KillDialog(Dialog)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool KillDialog(Dialog theDialog)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialog</code> <a class="xref" href="Sexy.Dialog.html">Dialog</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_KillDialog_" data-uid="Sexy.SexyAppBase.KillDialog*"></a>
+
+  <h3 id="Sexy_SexyAppBase_KillDialog_Sexy_Dialogs_" data-uid="Sexy.SexyAppBase.KillDialog(Sexy.Dialogs)">
+  KillDialog(Dialogs)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool KillDialog(Dialogs theDialogId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialogId</code> <a class="xref" href="Sexy.Dialogs.html">Dialogs</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_KillDialog_" data-uid="Sexy.SexyAppBase.KillDialog*"></a>
+
+  <h3 id="Sexy_SexyAppBase_KillDialog_System_Int32_" data-uid="Sexy.SexyAppBase.KillDialog(System.Int32)">
+  KillDialog(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool KillDialog(int theDialogId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialogId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_KillDialog_" data-uid="Sexy.SexyAppBase.KillDialog*"></a>
+
+  <h3 id="Sexy_SexyAppBase_KillDialog_System_Int32_System_Boolean_System_Boolean_" data-uid="Sexy.SexyAppBase.KillDialog(System.Int32,System.Boolean,System.Boolean)">
+  KillDialog(int, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KillDialog(int theDialogId, bool removeWidget, bool deleteWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDialogId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>removeWidget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>deleteWidget</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_LeftTrialMode_" data-uid="Sexy.SexyAppBase.LeftTrialMode*"></a>
+
+  <h3 id="Sexy_SexyAppBase_LeftTrialMode" data-uid="Sexy.SexyAppBase.LeftTrialMode">
+  LeftTrialMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LeftTrialMode()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_LoadingThreadAfterWorks_" data-uid="Sexy.SexyAppBase.LoadingThreadAfterWorks*"></a>
+
+  <h3 id="Sexy_SexyAppBase_LoadingThreadAfterWorks" data-uid="Sexy.SexyAppBase.LoadingThreadAfterWorks">
+  LoadingThreadAfterWorks()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;bool&gt; LoadingThreadAfterWorks()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_LoadingThreadCompleted_" data-uid="Sexy.SexyAppBase.LoadingThreadCompleted*"></a>
+
+  <h3 id="Sexy_SexyAppBase_LoadingThreadCompleted" data-uid="Sexy.SexyAppBase.LoadingThreadCompleted">
+  LoadingThreadCompleted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LoadingThreadCompleted()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_LoadingThreadProc_" data-uid="Sexy.SexyAppBase.LoadingThreadProc*"></a>
+
+  <h3 id="Sexy_SexyAppBase_LoadingThreadProc" data-uid="Sexy.SexyAppBase.LoadingThreadProc">
+  LoadingThreadProc()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LoadingThreadProc()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_LoadingThreadProcStub_" data-uid="Sexy.SexyAppBase.LoadingThreadProcStub*"></a>
+
+  <h3 id="Sexy_SexyAppBase_LoadingThreadProcStub" data-uid="Sexy.SexyAppBase.LoadingThreadProcStub">
+  LoadingThreadProcStub()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadingThreadProcStub()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_LockOrientation_" data-uid="Sexy.SexyAppBase.LockOrientation*"></a>
+
+  <h3 id="Sexy_SexyAppBase_LockOrientation_System_Boolean_" data-uid="Sexy.SexyAppBase.LockOrientation(System.Boolean)">
+  LockOrientation(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LockOrientation(bool theFlag)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theFlag</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_LostFocus_" data-uid="Sexy.SexyAppBase.LostFocus*"></a>
+
+  <h3 id="Sexy_SexyAppBase_LostFocus" data-uid="Sexy.SexyAppBase.LostFocus">
+  LostFocus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LostFocus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ModalClose_" data-uid="Sexy.SexyAppBase.ModalClose*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ModalClose" data-uid="Sexy.SexyAppBase.ModalClose">
+  ModalClose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ModalClose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ModalOpen_" data-uid="Sexy.SexyAppBase.ModalOpen*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ModalOpen" data-uid="Sexy.SexyAppBase.ModalOpen">
+  ModalOpen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ModalOpen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_MoviePlayerContentPreloadDidFinish_" data-uid="Sexy.SexyAppBase.MoviePlayerContentPreloadDidFinish*"></a>
+
+  <h3 id="Sexy_SexyAppBase_MoviePlayerContentPreloadDidFinish_System_Boolean_" data-uid="Sexy.SexyAppBase.MoviePlayerContentPreloadDidFinish(System.Boolean)">
+  MoviePlayerContentPreloadDidFinish(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoviePlayerContentPreloadDidFinish(bool succeeded)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>succeeded</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_MoviePlayerPlaybackDidFinish_" data-uid="Sexy.SexyAppBase.MoviePlayerPlaybackDidFinish*"></a>
+
+  <h3 id="Sexy_SexyAppBase_MoviePlayerPlaybackDidFinish" data-uid="Sexy.SexyAppBase.MoviePlayerPlaybackDidFinish">
+  MoviePlayerPlaybackDidFinish()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void MoviePlayerPlaybackDidFinish()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_OrientationIsLandscape_" data-uid="Sexy.SexyAppBase.OrientationIsLandscape*"></a>
+
+  <h3 id="Sexy_SexyAppBase_OrientationIsLandscape_Sexy_UI_ORIENTATION_" data-uid="Sexy.SexyAppBase.OrientationIsLandscape(Sexy.UI_ORIENTATION)">
+  OrientationIsLandscape(UI_ORIENTATION)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OrientationIsLandscape(UI_ORIENTATION orientation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>orientation</code> <a class="xref" href="Sexy.UI_ORIENTATION.html">UI_ORIENTATION</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_PlayMovie_" data-uid="Sexy.SexyAppBase.PlayMovie*"></a>
+
+  <h3 id="Sexy_SexyAppBase_PlayMovie_Sexy_VideoType_Sexy_MovieScalingMode_Sexy_MovieControllMode_Sexy_SexyColor_" data-uid="Sexy.SexyAppBase.PlayMovie(Sexy.VideoType,Sexy.MovieScalingMode,Sexy.MovieControllMode,Sexy.SexyColor)">
+  PlayMovie(VideoType, MovieScalingMode, MovieControllMode, SexyColor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlayMovie(VideoType video, MovieScalingMode theMOVIESCALINGMODE, MovieControllMode theMOVIECONTROLMODE, SexyColor sexyColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>video</code> <a class="xref" href="Sexy.VideoType.html">VideoType</a></dt>
+    <dd></dd>
+    <dt><code>theMOVIESCALINGMODE</code> <a class="xref" href="Sexy.MovieScalingMode.html">MovieScalingMode</a></dt>
+    <dd></dd>
+    <dt><code>theMOVIECONTROLMODE</code> <a class="xref" href="Sexy.MovieControllMode.html">MovieControllMode</a></dt>
+    <dd></dd>
+    <dt><code>sexyColor</code> <a class="xref" href="Sexy.SexyColor.html">SexyColor</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_PlaySample_" data-uid="Sexy.SexyAppBase.PlaySample*"></a>
+
+  <h3 id="Sexy_SexyAppBase_PlaySample_System_Int32_" data-uid="Sexy.SexyAppBase.PlaySample(System.Int32)">
+  PlaySample(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PlaySample(int theSoundNum)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSoundNum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_PlaySample_" data-uid="Sexy.SexyAppBase.PlaySample*"></a>
+
+  <h3 id="Sexy_SexyAppBase_PlaySample_System_Int32_System_Int32_" data-uid="Sexy.SexyAppBase.PlaySample(System.Int32,System.Int32)">
+  PlaySample(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PlaySample(int theSoundNum, int thePan)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSoundNum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>thePan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_PlaySample_" data-uid="Sexy.SexyAppBase.PlaySample*"></a>
+
+  <h3 id="Sexy_SexyAppBase_PlaySample_System_Int32_System_Int32_System_Boolean_" data-uid="Sexy.SexyAppBase.PlaySample(System.Int32,System.Int32,System.Boolean)">
+  PlaySample(int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual SoundInstance PlaySample(int theSoundNum, int thePan, bool looping)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSoundNum</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>thePan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>looping</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.SoundInstance.html">SoundInstance</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ProcessSafeDeleteList_" data-uid="Sexy.SexyAppBase.ProcessSafeDeleteList*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ProcessSafeDeleteList" data-uid="Sexy.SexyAppBase.ProcessSafeDeleteList">
+  ProcessSafeDeleteList()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessSafeDeleteList()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ReadBufferFromFile_" data-uid="Sexy.SexyAppBase.ReadBufferFromFile*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ReadBufferFromFile_System_String_Sexy_Buffer__System_Boolean_" data-uid="Sexy.SexyAppBase.ReadBufferFromFile(System.String,Sexy.Buffer@,System.Boolean)">
+  ReadBufferFromFile(string, ref Buffer, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReadBufferFromFile(string theFileName, ref Buffer theBuffer, bool dontWriteToDemo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theBuffer</code> <a class="xref" href="Sexy.Buffer.html">Buffer</a></dt>
+    <dd></dd>
+    <dt><code>dontWriteToDemo</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_RegistryReadInteger_" data-uid="Sexy.SexyAppBase.RegistryReadInteger*"></a>
+
+  <h3 id="Sexy_SexyAppBase_RegistryReadInteger_System_String_" data-uid="Sexy.SexyAppBase.RegistryReadInteger(System.String)">
+  RegistryReadInteger(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RegistryReadInteger(string theValueName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theValueName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_RegistryWriteInteger_" data-uid="Sexy.SexyAppBase.RegistryWriteInteger*"></a>
+
+  <h3 id="Sexy_SexyAppBase_RegistryWriteInteger_System_String_System_Int32_" data-uid="Sexy.SexyAppBase.RegistryWriteInteger(System.String,System.Int32)">
+  RegistryWriteInteger(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegistryWriteInteger(string theValueName, int theValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theValueName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_RegistryWriteString_" data-uid="Sexy.SexyAppBase.RegistryWriteString*"></a>
+
+  <h3 id="Sexy_SexyAppBase_RegistryWriteString_System_String_System_String_" data-uid="Sexy.SexyAppBase.RegistryWriteString(System.String,System.String)">
+  RegistryWriteString(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegistryWriteString(string theValueName, string theString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theValueName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_SafeDeleteWidget_" data-uid="Sexy.SexyAppBase.SafeDeleteWidget*"></a>
+
+  <h3 id="Sexy_SexyAppBase_SafeDeleteWidget_Sexy_Widget_" data-uid="Sexy.SexyAppBase.SafeDeleteWidget(Sexy.Widget)">
+  SafeDeleteWidget(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SafeDeleteWidget(Widget theWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_SaveGame_" data-uid="Sexy.SexyAppBase.SaveGame*"></a>
+
+  <h3 id="Sexy_SexyAppBase_SaveGame" data-uid="Sexy.SexyAppBase.SaveGame">
+  SaveGame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SaveGame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_SetBoolean_" data-uid="Sexy.SexyAppBase.SetBoolean*"></a>
+
+  <h3 id="Sexy_SexyAppBase_SetBoolean_System_String_System_Boolean_" data-uid="Sexy.SexyAppBase.SetBoolean(System.String,System.Boolean)">
+  SetBoolean(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBoolean(string theId, bool theValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_SetDouble_" data-uid="Sexy.SexyAppBase.SetDouble*"></a>
+
+  <h3 id="Sexy_SexyAppBase_SetDouble_System_String_System_Double_" data-uid="Sexy.SexyAppBase.SetDouble(System.String,System.Double)">
+  SetDouble(string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDouble(string theId, double theValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_SetInteger_" data-uid="Sexy.SexyAppBase.SetInteger*"></a>
+
+  <h3 id="Sexy_SexyAppBase_SetInteger_System_String_System_Int32_" data-uid="Sexy.SexyAppBase.SetInteger(System.String,System.Int32)">
+  SetInteger(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInteger(string theId, int theValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_SetMusicVolume_" data-uid="Sexy.SexyAppBase.SetMusicVolume*"></a>
+
+  <h3 id="Sexy_SexyAppBase_SetMusicVolume_System_Double_" data-uid="Sexy.SexyAppBase.SetMusicVolume(System.Double)">
+  SetMusicVolume(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetMusicVolume(double theVolume)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theVolume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_SetSfxVolume_" data-uid="Sexy.SexyAppBase.SetSfxVolume*"></a>
+
+  <h3 id="Sexy_SexyAppBase_SetSfxVolume_System_Double_" data-uid="Sexy.SexyAppBase.SetSfxVolume(System.Double)">
+  SetSfxVolume(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetSfxVolume(double theVolume)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theVolume</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_SetString_" data-uid="Sexy.SexyAppBase.SetString*"></a>
+
+  <h3 id="Sexy_SexyAppBase_SetString_System_String_System_String_" data-uid="Sexy.SexyAppBase.SetString(System.String,System.String)">
+  SetString(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetString(string theId, string theValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ShakeBegan_" data-uid="Sexy.SexyAppBase.ShakeBegan*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ShakeBegan_System_Double_" data-uid="Sexy.SexyAppBase.ShakeBegan(System.Double)">
+  ShakeBegan(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShakeBegan(double timestamp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ShakeCancelled_" data-uid="Sexy.SexyAppBase.ShakeCancelled*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ShakeCancelled_System_Double_" data-uid="Sexy.SexyAppBase.ShakeCancelled(System.Double)">
+  ShakeCancelled(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShakeCancelled(double timestamp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ShakeEnded_" data-uid="Sexy.SexyAppBase.ShakeEnded*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ShakeEnded_System_Double_" data-uid="Sexy.SexyAppBase.ShakeEnded(System.Double)">
+  ShakeEnded(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShakeEnded(double timestamp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>timestamp</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ShouldAutorotateToInterfaceOrientation_" data-uid="Sexy.SexyAppBase.ShouldAutorotateToInterfaceOrientation*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ShouldAutorotateToInterfaceOrientation_Sexy_UI_ORIENTATION_" data-uid="Sexy.SexyAppBase.ShouldAutorotateToInterfaceOrientation(Sexy.UI_ORIENTATION)">
+  ShouldAutorotateToInterfaceOrientation(UI_ORIENTATION)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ShouldAutorotateToInterfaceOrientation(UI_ORIENTATION theOrientation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theOrientation</code> <a class="xref" href="Sexy.UI_ORIENTATION.html">UI_ORIENTATION</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ShowAchievementMessage_" data-uid="Sexy.SexyAppBase.ShowAchievementMessage*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ShowAchievementMessage_Sexy_TrialAchievementAlert_" data-uid="Sexy.SexyAppBase.ShowAchievementMessage(Sexy.TrialAchievementAlert)">
+  ShowAchievementMessage(TrialAchievementAlert)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ShowAchievementMessage(TrialAchievementAlert alert)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>alert</code> <a class="xref" href="Sexy.TrialAchievementAlert.html">TrialAchievementAlert</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ShowResourceError_" data-uid="Sexy.SexyAppBase.ShowResourceError*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ShowResourceError_System_Boolean_" data-uid="Sexy.SexyAppBase.ShowResourceError(System.Boolean)">
+  ShowResourceError(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ShowResourceError(bool boolean)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>boolean</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ShowRunWhenLockedMessage_" data-uid="Sexy.SexyAppBase.ShowRunWhenLockedMessage*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ShowRunWhenLockedMessage" data-uid="Sexy.SexyAppBase.ShowRunWhenLockedMessage">
+  ShowRunWhenLockedMessage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ShowRunWhenLockedMessage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ShowUpdateMessage_" data-uid="Sexy.SexyAppBase.ShowUpdateMessage*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ShowUpdateMessage" data-uid="Sexy.SexyAppBase.ShowUpdateMessage">
+  ShowUpdateMessage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ShowUpdateMessage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_ShowUpdateRequiredMessage_" data-uid="Sexy.SexyAppBase.ShowUpdateRequiredMessage*"></a>
+
+  <h3 id="Sexy_SexyAppBase_ShowUpdateRequiredMessage" data-uid="Sexy.SexyAppBase.ShowUpdateRequiredMessage">
+  ShowUpdateRequiredMessage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowUpdateRequiredMessage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_Shutdown_" data-uid="Sexy.SexyAppBase.Shutdown*"></a>
+
+  <h3 id="Sexy_SexyAppBase_Shutdown" data-uid="Sexy.SexyAppBase.Shutdown">
+  Shutdown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Shutdown()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_Start_" data-uid="Sexy.SexyAppBase.Start*"></a>
+
+  <h3 id="Sexy_SexyAppBase_Start" data-uid="Sexy.SexyAppBase.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_StartLoadingThread_" data-uid="Sexy.SexyAppBase.StartLoadingThread*"></a>
+
+  <h3 id="Sexy_SexyAppBase_StartLoadingThread" data-uid="Sexy.SexyAppBase.StartLoadingThread">
+  StartLoadingThread()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartLoadingThread()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_Tombstoned_" data-uid="Sexy.SexyAppBase.Tombstoned*"></a>
+
+  <h3 id="Sexy_SexyAppBase_Tombstoned" data-uid="Sexy.SexyAppBase.Tombstoned">
+  Tombstoned()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Tombstoned()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_TouchBegan_" data-uid="Sexy.SexyAppBase.TouchBegan*"></a>
+
+  <h3 id="Sexy_SexyAppBase_TouchBegan_Sexy__Touch_" data-uid="Sexy.SexyAppBase.TouchBegan(Sexy._Touch)">
+  TouchBegan(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TouchBegan(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_TouchEnded_" data-uid="Sexy.SexyAppBase.TouchEnded*"></a>
+
+  <h3 id="Sexy_SexyAppBase_TouchEnded_Sexy__Touch_" data-uid="Sexy.SexyAppBase.TouchEnded(Sexy._Touch)">
+  TouchEnded(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TouchEnded(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_TouchMoved_" data-uid="Sexy.SexyAppBase.TouchMoved*"></a>
+
+  <h3 id="Sexy_SexyAppBase_TouchMoved_Sexy__Touch_" data-uid="Sexy.SexyAppBase.TouchMoved(Sexy._Touch)">
+  TouchMoved(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TouchMoved(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_TouchesCanceled_" data-uid="Sexy.SexyAppBase.TouchesCanceled*"></a>
+
+  <h3 id="Sexy_SexyAppBase_TouchesCanceled" data-uid="Sexy.SexyAppBase.TouchesCanceled">
+  TouchesCanceled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TouchesCanceled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_UpdateApp_" data-uid="Sexy.SexyAppBase.UpdateApp*"></a>
+
+  <h3 id="Sexy_SexyAppBase_UpdateApp" data-uid="Sexy.SexyAppBase.UpdateApp">
+  UpdateApp()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateApp()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_UpdateAudio_" data-uid="Sexy.SexyAppBase.UpdateAudio*"></a>
+
+  <h3 id="Sexy_SexyAppBase_UpdateAudio" data-uid="Sexy.SexyAppBase.UpdateAudio">
+  UpdateAudio()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateAudio()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_UpdateFrames_" data-uid="Sexy.SexyAppBase.UpdateFrames*"></a>
+
+  <h3 id="Sexy_SexyAppBase_UpdateFrames" data-uid="Sexy.SexyAppBase.UpdateFrames">
+  UpdateFrames()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void UpdateFrames()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_UpdateInput_" data-uid="Sexy.SexyAppBase.UpdateInput*"></a>
+
+  <h3 id="Sexy_SexyAppBase_UpdateInput" data-uid="Sexy.SexyAppBase.UpdateInput">
+  UpdateInput()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateInput()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_WriteBufferToFile_" data-uid="Sexy.SexyAppBase.WriteBufferToFile*"></a>
+
+  <h3 id="Sexy_SexyAppBase_WriteBufferToFile_System_String_Sexy_Buffer_" data-uid="Sexy.SexyAppBase.WriteBufferToFile(System.String,Sexy.Buffer)">
+  WriteBufferToFile(string, Buffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WriteBufferToFile(string theFileName, Buffer theBuffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theFileName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theBuffer</code> <a class="xref" href="Sexy.Buffer.html">Buffer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_SexyAppBase_WriteToRegistry_" data-uid="Sexy.SexyAppBase.WriteToRegistry*"></a>
+
+  <h3 id="Sexy_SexyAppBase_WriteToRegistry" data-uid="Sexy.SexyAppBase.WriteToRegistry">
+  WriteToRegistry()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void WriteToRegistry()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

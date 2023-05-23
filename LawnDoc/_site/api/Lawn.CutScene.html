@@ -1,0 +1,2265 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CutScene
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CutScene
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Lawn.CutScene">
+
+
+
+  <h1 id="Lawn_CutScene" data-uid="Lawn.CutScene" class="text-break">
+    Class CutScene
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lawn.html">Lawn</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CutScene</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CutScene</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Lawn_CutScene__ctor_" data-uid="Lawn.CutScene.#ctor*"></a>
+
+  <h3 id="Lawn_CutScene__ctor" data-uid="Lawn.CutScene.#ctor">
+  CutScene()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CutScene()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Lawn_CutScene_mApp" data-uid="Lawn.CutScene.mApp">
+  mApp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LawnApp mApp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.LawnApp.html">LawnApp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mBoard" data-uid="Lawn.CutScene.mBoard">
+  mBoard
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Board mBoard</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Board.html">Board</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mBossTime" data-uid="Lawn.CutScene.mBossTime">
+  mBossTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mBossTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mCrazyDaveCountDown" data-uid="Lawn.CutScene.mCrazyDaveCountDown">
+  mCrazyDaveCountDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mCrazyDaveCountDown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mCrazyDaveDialogStart" data-uid="Lawn.CutScene.mCrazyDaveDialogStart">
+  mCrazyDaveDialogStart
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mCrazyDaveDialogStart</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mCrazyDaveLastTalkIndex" data-uid="Lawn.CutScene.mCrazyDaveLastTalkIndex">
+  mCrazyDaveLastTalkIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mCrazyDaveLastTalkIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mCrazyDaveTime" data-uid="Lawn.CutScene.mCrazyDaveTime">
+  mCrazyDaveTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mCrazyDaveTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mCutsceneTime" data-uid="Lawn.CutScene.mCutsceneTime">
+  mCutsceneTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mCutsceneTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mFogTime" data-uid="Lawn.CutScene.mFogTime">
+  mFogTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mFogTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mGraveStoneTime" data-uid="Lawn.CutScene.mGraveStoneTime">
+  mGraveStoneTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mGraveStoneTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mLawnMowerTime" data-uid="Lawn.CutScene.mLawnMowerTime">
+  mLawnMowerTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLawnMowerTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mPlacedLawnItems" data-uid="Lawn.CutScene.mPlacedLawnItems">
+  mPlacedLawnItems
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mPlacedLawnItems</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mPlacedZombies" data-uid="Lawn.CutScene.mPlacedZombies">
+  mPlacedZombies
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mPlacedZombies</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mPreUpdatingBoard" data-uid="Lawn.CutScene.mPreUpdatingBoard">
+  mPreUpdatingBoard
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mPreUpdatingBoard</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mPreloaded" data-uid="Lawn.CutScene.mPreloaded">
+  mPreloaded
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mPreloaded</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mReadySetPlantTime" data-uid="Lawn.CutScene.mReadySetPlantTime">
+  mReadySetPlantTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mReadySetPlantTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mSeedChoosing" data-uid="Lawn.CutScene.mSeedChoosing">
+  mSeedChoosing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mSeedChoosing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mSodTime" data-uid="Lawn.CutScene.mSodTime">
+  mSodTime
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mSodTime</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mUpsellHideBoard" data-uid="Lawn.CutScene.mUpsellHideBoard">
+  mUpsellHideBoard
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mUpsellHideBoard</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_CutScene_mZombiesWonReanimID" data-uid="Lawn.CutScene.mZombiesWonReanimID">
+  mZombiesWonReanimID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mZombiesWonReanimID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Lawn_CutScene_AddFlowerPots_" data-uid="Lawn.CutScene.AddFlowerPots*"></a>
+
+  <h3 id="Lawn_CutScene_AddFlowerPots" data-uid="Lawn.CutScene.AddFlowerPots">
+  AddFlowerPots()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFlowerPots()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_AddGraveStoneParticles_" data-uid="Lawn.CutScene.AddGraveStoneParticles*"></a>
+
+  <h3 id="Lawn_CutScene_AddGraveStoneParticles" data-uid="Lawn.CutScene.AddGraveStoneParticles">
+  AddGraveStoneParticles()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddGraveStoneParticles()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_AddUpsellZombie_" data-uid="Lawn.CutScene.AddUpsellZombie*"></a>
+
+  <h3 id="Lawn_CutScene_AddUpsellZombie_Lawn_ZombieType_System_Int32_System_Int32_" data-uid="Lawn.CutScene.AddUpsellZombie(Lawn.ZombieType,System.Int32,System.Int32)">
+  AddUpsellZombie(ZombieType, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUpsellZombie(ZombieType theZombieType, int thePixelX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+    <dt><code>thePixelX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_AdvanceCrazyDaveDialog_" data-uid="Lawn.CutScene.AdvanceCrazyDaveDialog*"></a>
+
+  <h3 id="Lawn_CutScene_AdvanceCrazyDaveDialog_System_Boolean_" data-uid="Lawn.CutScene.AdvanceCrazyDaveDialog(System.Boolean)">
+  AdvanceCrazyDaveDialog(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdvanceCrazyDaveDialog(bool theJustSkipping)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theJustSkipping</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_AnimateBoard_" data-uid="Lawn.CutScene.AnimateBoard*"></a>
+
+  <h3 id="Lawn_CutScene_AnimateBoard" data-uid="Lawn.CutScene.AnimateBoard">
+  AnimateBoard()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnimateBoard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_CalcPosition_" data-uid="Lawn.CutScene.CalcPosition*"></a>
+
+  <h3 id="Lawn_CutScene_CalcPosition_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Lawn.CutScene.CalcPosition(System.Int32,System.Int32,System.Int32,System.Int32)">
+  CalcPosition(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CalcPosition(int theTimeStart, int theTimeEnd, int thePositionStart, int thePositionEnd)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTimeStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theTimeEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>thePositionStart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>thePositionEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_CanGetPacketUpgrade_" data-uid="Lawn.CutScene.CanGetPacketUpgrade*"></a>
+
+  <h3 id="Lawn_CutScene_CanGetPacketUpgrade" data-uid="Lawn.CutScene.CanGetPacketUpgrade">
+  CanGetPacketUpgrade()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanGetPacketUpgrade()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_CanGetSecondPacketUpgrade_" data-uid="Lawn.CutScene.CanGetSecondPacketUpgrade*"></a>
+
+  <h3 id="Lawn_CutScene_CanGetSecondPacketUpgrade" data-uid="Lawn.CutScene.CanGetSecondPacketUpgrade">
+  CanGetSecondPacketUpgrade()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanGetSecondPacketUpgrade()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_CanZombieGoInGridSpot_" data-uid="Lawn.CutScene.CanZombieGoInGridSpot*"></a>
+
+  <h3 id="Lawn_CutScene_CanZombieGoInGridSpot_Lawn_ZombieType_System_Int32_System_Int32_System_Boolean_0__0___" data-uid="Lawn.CutScene.CanZombieGoInGridSpot(Lawn.ZombieType,System.Int32,System.Int32,System.Boolean[0:,0:])">
+  CanZombieGoInGridSpot(ZombieType, int, int, bool[,])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanZombieGoInGridSpot(ZombieType theZombieType, int theGridX, int theGridY, bool[,] theZombieGrid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theZombieGrid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_CancelIntro_" data-uid="Lawn.CutScene.CancelIntro*"></a>
+
+  <h3 id="Lawn_CutScene_CancelIntro" data-uid="Lawn.CutScene.CancelIntro">
+  CancelIntro()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelIntro()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_ClearUpsellBoard_" data-uid="Lawn.CutScene.ClearUpsellBoard*"></a>
+
+  <h3 id="Lawn_CutScene_ClearUpsellBoard" data-uid="Lawn.CutScene.ClearUpsellBoard">
+  ClearUpsellBoard()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearUpsellBoard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_Dispose_" data-uid="Lawn.CutScene.Dispose*"></a>
+
+  <h3 id="Lawn_CutScene_Dispose" data-uid="Lawn.CutScene.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_DrawIntro_" data-uid="Lawn.CutScene.DrawIntro*"></a>
+
+  <h3 id="Lawn_CutScene_DrawIntro_Sexy_Graphics_" data-uid="Lawn.CutScene.DrawIntro(Sexy.Graphics)">
+  DrawIntro(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawIntro(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_DrawUpsell_" data-uid="Lawn.CutScene.DrawUpsell*"></a>
+
+  <h3 id="Lawn_CutScene_DrawUpsell_Sexy_Graphics_" data-uid="Lawn.CutScene.DrawUpsell(Sexy.Graphics)">
+  DrawUpsell(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawUpsell(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_EndSeedChooser_" data-uid="Lawn.CutScene.EndSeedChooser*"></a>
+
+  <h3 id="Lawn_CutScene_EndSeedChooser" data-uid="Lawn.CutScene.EndSeedChooser">
+  EndSeedChooser()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndSeedChooser()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_FindAndPlaceZombie_" data-uid="Lawn.CutScene.FindAndPlaceZombie*"></a>
+
+  <h3 id="Lawn_CutScene_FindAndPlaceZombie_Lawn_ZombieType_System_Boolean_0__0___" data-uid="Lawn.CutScene.FindAndPlaceZombie(Lawn.ZombieType,System.Boolean[0:,0:])">
+  FindAndPlaceZombie(ZombieType, bool[,])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindAndPlaceZombie(ZombieType theZombieType, bool[,] theZombieGrid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+    <dt><code>theZombieGrid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_FindPlaceForStreetZombies_" data-uid="Lawn.CutScene.FindPlaceForStreetZombies*"></a>
+
+  <h3 id="Lawn_CutScene_FindPlaceForStreetZombies_Lawn_ZombieType_System_Boolean_0__0___System_Int32__System_Int32__" data-uid="Lawn.CutScene.FindPlaceForStreetZombies(Lawn.ZombieType,System.Boolean[0:,0:],System.Int32@,System.Int32@)">
+  FindPlaceForStreetZombies(ZombieType, bool[,], ref int, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindPlaceForStreetZombies(ZombieType theZombieType, bool[,] theZombieGrid, ref int thePosX, ref int thePosY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+    <dt><code>theZombieGrid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[,]</dt>
+    <dd></dd>
+    <dt><code>thePosX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>thePosY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_Is2x2Zombie_" data-uid="Lawn.CutScene.Is2x2Zombie*"></a>
+
+  <h3 id="Lawn_CutScene_Is2x2Zombie_Lawn_ZombieType_" data-uid="Lawn.CutScene.Is2x2Zombie(Lawn.ZombieType)">
+  Is2x2Zombie(ZombieType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Is2x2Zombie(ZombieType theZombieType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_IsAfterSeedChooser_" data-uid="Lawn.CutScene.IsAfterSeedChooser*"></a>
+
+  <h3 id="Lawn_CutScene_IsAfterSeedChooser" data-uid="Lawn.CutScene.IsAfterSeedChooser">
+  IsAfterSeedChooser()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAfterSeedChooser()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_IsBeforePreloading_" data-uid="Lawn.CutScene.IsBeforePreloading*"></a>
+
+  <h3 id="Lawn_CutScene_IsBeforePreloading" data-uid="Lawn.CutScene.IsBeforePreloading">
+  IsBeforePreloading()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBeforePreloading()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_IsCutSceneOver_" data-uid="Lawn.CutScene.IsCutSceneOver*"></a>
+
+  <h3 id="Lawn_CutScene_IsCutSceneOver" data-uid="Lawn.CutScene.IsCutSceneOver">
+  IsCutSceneOver()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCutSceneOver()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_IsInShovelTutorial_" data-uid="Lawn.CutScene.IsInShovelTutorial*"></a>
+
+  <h3 id="Lawn_CutScene_IsInShovelTutorial" data-uid="Lawn.CutScene.IsInShovelTutorial">
+  IsInShovelTutorial()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInShovelTutorial()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_IsNonScrollingCutscene_" data-uid="Lawn.CutScene.IsNonScrollingCutscene*"></a>
+
+  <h3 id="Lawn_CutScene_IsNonScrollingCutscene" data-uid="Lawn.CutScene.IsNonScrollingCutscene">
+  IsNonScrollingCutscene()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNonScrollingCutscene()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_IsScrolledLeftAtStart_" data-uid="Lawn.CutScene.IsScrolledLeftAtStart*"></a>
+
+  <h3 id="Lawn_CutScene_IsScrolledLeftAtStart" data-uid="Lawn.CutScene.IsScrolledLeftAtStart">
+  IsScrolledLeftAtStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScrolledLeftAtStart()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_IsShowingCrazyDave_" data-uid="Lawn.CutScene.IsShowingCrazyDave*"></a>
+
+  <h3 id="Lawn_CutScene_IsShowingCrazyDave" data-uid="Lawn.CutScene.IsShowingCrazyDave">
+  IsShowingCrazyDave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsShowingCrazyDave()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_IsSurvivalRepick_" data-uid="Lawn.CutScene.IsSurvivalRepick*"></a>
+
+  <h3 id="Lawn_CutScene_IsSurvivalRepick" data-uid="Lawn.CutScene.IsSurvivalRepick">
+  IsSurvivalRepick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSurvivalRepick()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_LoadIntroBoard_" data-uid="Lawn.CutScene.LoadIntroBoard*"></a>
+
+  <h3 id="Lawn_CutScene_LoadIntroBoard" data-uid="Lawn.CutScene.LoadIntroBoard">
+  LoadIntroBoard()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadIntroBoard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_LoadUpsellBoardFog_" data-uid="Lawn.CutScene.LoadUpsellBoardFog*"></a>
+
+  <h3 id="Lawn_CutScene_LoadUpsellBoardFog" data-uid="Lawn.CutScene.LoadUpsellBoardFog">
+  LoadUpsellBoardFog()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadUpsellBoardFog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_LoadUpsellBoardPool_" data-uid="Lawn.CutScene.LoadUpsellBoardPool*"></a>
+
+  <h3 id="Lawn_CutScene_LoadUpsellBoardPool" data-uid="Lawn.CutScene.LoadUpsellBoardPool">
+  LoadUpsellBoardPool()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadUpsellBoardPool()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_LoadUpsellBoardRoof_" data-uid="Lawn.CutScene.LoadUpsellBoardRoof*"></a>
+
+  <h3 id="Lawn_CutScene_LoadUpsellBoardRoof" data-uid="Lawn.CutScene.LoadUpsellBoardRoof">
+  LoadUpsellBoardRoof()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadUpsellBoardRoof()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_LoadUpsellChallengeScreen_" data-uid="Lawn.CutScene.LoadUpsellChallengeScreen*"></a>
+
+  <h3 id="Lawn_CutScene_LoadUpsellChallengeScreen" data-uid="Lawn.CutScene.LoadUpsellChallengeScreen">
+  LoadUpsellChallengeScreen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadUpsellChallengeScreen()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_MouseDown_" data-uid="Lawn.CutScene.MouseDown*"></a>
+
+  <h3 id="Lawn_CutScene_MouseDown_System_Int32_System_Int32_" data-uid="Lawn.CutScene.MouseDown(System.Int32,System.Int32)">
+  MouseDown(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDown(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_ParseDelayTimeFromMessage_" data-uid="Lawn.CutScene.ParseDelayTimeFromMessage*"></a>
+
+  <h3 id="Lawn_CutScene_ParseDelayTimeFromMessage" data-uid="Lawn.CutScene.ParseDelayTimeFromMessage">
+  ParseDelayTimeFromMessage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ParseDelayTimeFromMessage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_ParseTalkTimeFromMessage_" data-uid="Lawn.CutScene.ParseTalkTimeFromMessage*"></a>
+
+  <h3 id="Lawn_CutScene_ParseTalkTimeFromMessage" data-uid="Lawn.CutScene.ParseTalkTimeFromMessage">
+  ParseTalkTimeFromMessage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ParseTalkTimeFromMessage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_PlaceAZombie_" data-uid="Lawn.CutScene.PlaceAZombie*"></a>
+
+  <h3 id="Lawn_CutScene_PlaceAZombie_Lawn_ZombieType_System_Int32_System_Int32_" data-uid="Lawn.CutScene.PlaceAZombie(Lawn.ZombieType,System.Int32,System.Int32)">
+  PlaceAZombie(ZombieType, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaceAZombie(ZombieType theZombieType, int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_PlaceLawnItems_" data-uid="Lawn.CutScene.PlaceLawnItems*"></a>
+
+  <h3 id="Lawn_CutScene_PlaceLawnItems" data-uid="Lawn.CutScene.PlaceLawnItems">
+  PlaceLawnItems()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaceLawnItems()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_PlaceStreetZombies_" data-uid="Lawn.CutScene.PlaceStreetZombies*"></a>
+
+  <h3 id="Lawn_CutScene_PlaceStreetZombies" data-uid="Lawn.CutScene.PlaceStreetZombies">
+  PlaceStreetZombies()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlaceStreetZombies()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_PreloadResources_" data-uid="Lawn.CutScene.PreloadResources*"></a>
+
+  <h3 id="Lawn_CutScene_PreloadResources" data-uid="Lawn.CutScene.PreloadResources">
+  PreloadResources()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PreloadResources()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_ShouldRunUpsellBoard_" data-uid="Lawn.CutScene.ShouldRunUpsellBoard*"></a>
+
+  <h3 id="Lawn_CutScene_ShouldRunUpsellBoard" data-uid="Lawn.CutScene.ShouldRunUpsellBoard">
+  ShouldRunUpsellBoard()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldRunUpsellBoard()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_ShowShovel_" data-uid="Lawn.CutScene.ShowShovel*"></a>
+
+  <h3 id="Lawn_CutScene_ShowShovel" data-uid="Lawn.CutScene.ShowShovel">
+  ShowShovel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowShovel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_ShowZombieWalking_" data-uid="Lawn.CutScene.ShowZombieWalking*"></a>
+
+  <h3 id="Lawn_CutScene_ShowZombieWalking" data-uid="Lawn.CutScene.ShowZombieWalking">
+  ShowZombieWalking()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowZombieWalking()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_StartLevelIntro_" data-uid="Lawn.CutScene.StartLevelIntro*"></a>
+
+  <h3 id="Lawn_CutScene_StartLevelIntro" data-uid="Lawn.CutScene.StartLevelIntro">
+  StartLevelIntro()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartLevelIntro()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_StartSeedChooser_" data-uid="Lawn.CutScene.StartSeedChooser*"></a>
+
+  <h3 id="Lawn_CutScene_StartSeedChooser" data-uid="Lawn.CutScene.StartSeedChooser">
+  StartSeedChooser()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartSeedChooser()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_StartZombiesWon_" data-uid="Lawn.CutScene.StartZombiesWon*"></a>
+
+  <h3 id="Lawn_CutScene_StartZombiesWon" data-uid="Lawn.CutScene.StartZombiesWon">
+  StartZombiesWon()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartZombiesWon()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_Update_" data-uid="Lawn.CutScene.Update*"></a>
+
+  <h3 id="Lawn_CutScene_Update" data-uid="Lawn.CutScene.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_UpdateIntro_" data-uid="Lawn.CutScene.UpdateIntro*"></a>
+
+  <h3 id="Lawn_CutScene_UpdateIntro" data-uid="Lawn.CutScene.UpdateIntro">
+  UpdateIntro()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateIntro()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_UpdateUpsell_" data-uid="Lawn.CutScene.UpdateUpsell*"></a>
+
+  <h3 id="Lawn_CutScene_UpdateUpsell" data-uid="Lawn.CutScene.UpdateUpsell">
+  UpdateUpsell()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateUpsell()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_UpdateZombiesWon_" data-uid="Lawn.CutScene.UpdateZombiesWon*"></a>
+
+  <h3 id="Lawn_CutScene_UpdateZombiesWon" data-uid="Lawn.CutScene.UpdateZombiesWon">
+  UpdateZombiesWon()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateZombiesWon()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_CutScene_ZombieWonClick_" data-uid="Lawn.CutScene.ZombieWonClick*"></a>
+
+  <h3 id="Lawn_CutScene_ZombieWonClick" data-uid="Lawn.CutScene.ZombieWonClick">
+  ZombieWonClick()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZombieWonClick()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

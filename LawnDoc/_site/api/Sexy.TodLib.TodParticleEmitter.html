@@ -1,0 +1,1546 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class TodParticleEmitter
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TodParticleEmitter
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Sexy.TodLib.TodParticleEmitter">
+
+
+
+  <h1 id="Sexy_TodLib_TodParticleEmitter" data-uid="Sexy.TodLib.TodParticleEmitter" class="text-break">
+    Class TodParticleEmitter
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sexy.html">Sexy</a>.<a class="xref" href="Sexy.TodLib.html">TodLib</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TodParticleEmitter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TodParticleEmitter</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mActive" data-uid="Sexy.TodLib.TodParticleEmitter.mActive">
+  mActive
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mActive</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mColorOverride" data-uid="Sexy.TodLib.TodParticleEmitter.mColorOverride">
+  mColorOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SexyColor mColorOverride</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.SexyColor.html">SexyColor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mCrossFadeEmitterID" data-uid="Sexy.TodLib.TodParticleEmitter.mCrossFadeEmitterID">
+  mCrossFadeEmitterID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodParticleEmitter mCrossFadeEmitterID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TodParticleEmitter.html">TodParticleEmitter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mDead" data-uid="Sexy.TodLib.TodParticleEmitter.mDead">
+  mDead
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mDead</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mEmitterCrossFadeCountDown" data-uid="Sexy.TodLib.TodParticleEmitter.mEmitterCrossFadeCountDown">
+  mEmitterCrossFadeCountDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mEmitterCrossFadeCountDown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mEmitterDef" data-uid="Sexy.TodLib.TodParticleEmitter.mEmitterDef">
+  mEmitterDef
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodEmitterDefinition mEmitterDef</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TodEmitterDefinition.html">TodEmitterDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mExtraAdditiveDrawOverride" data-uid="Sexy.TodLib.TodParticleEmitter.mExtraAdditiveDrawOverride">
+  mExtraAdditiveDrawOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mExtraAdditiveDrawOverride</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mFrameOverride" data-uid="Sexy.TodLib.TodParticleEmitter.mFrameOverride">
+  mFrameOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mFrameOverride</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mImageOverride" data-uid="Sexy.TodLib.TodParticleEmitter.mImageOverride">
+  mImageOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image mImageOverride</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mParticleList" data-uid="Sexy.TodLib.TodParticleEmitter.mParticleList">
+  mParticleList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TodParticle&gt; mParticleList</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mParticleSystem" data-uid="Sexy.TodLib.TodParticleEmitter.mParticleSystem">
+  mParticleSystem
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodParticleSystem mParticleSystem</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TodParticleSystem.html">TodParticleSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mParticlesSpawned" data-uid="Sexy.TodLib.TodParticleEmitter.mParticlesSpawned">
+  mParticlesSpawned
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mParticlesSpawned</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mScaleOverride" data-uid="Sexy.TodLib.TodParticleEmitter.mScaleOverride">
+  mScaleOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float mScaleOverride</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mSpawnAccum" data-uid="Sexy.TodLib.TodParticleEmitter.mSpawnAccum">
+  mSpawnAccum
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float mSpawnAccum</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mSystemAge" data-uid="Sexy.TodLib.TodParticleEmitter.mSystemAge">
+  mSystemAge
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mSystemAge</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mSystemCenter" data-uid="Sexy.TodLib.TodParticleEmitter.mSystemCenter">
+  mSystemCenter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SexyVector2 mSystemCenter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.SexyVector2.html">SexyVector2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mSystemDuration" data-uid="Sexy.TodLib.TodParticleEmitter.mSystemDuration">
+  mSystemDuration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mSystemDuration</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mSystemFieldInterp" data-uid="Sexy.TodLib.TodParticleEmitter.mSystemFieldInterp">
+  mSystemFieldInterp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[,] mSystemFieldInterp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mSystemLastTimeValue" data-uid="Sexy.TodLib.TodParticleEmitter.mSystemLastTimeValue">
+  mSystemLastTimeValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float mSystemLastTimeValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mSystemTimeValue" data-uid="Sexy.TodLib.TodParticleEmitter.mSystemTimeValue">
+  mSystemTimeValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float mSystemTimeValue</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_mTrackInterp" data-uid="Sexy.TodLib.TodParticleEmitter.mTrackInterp">
+  mTrackInterp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] mTrackInterp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_CrossFadeEmitter_" data-uid="Sexy.TodLib.TodParticleEmitter.CrossFadeEmitter*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_CrossFadeEmitter_Sexy_TodLib_TodParticleEmitter_" data-uid="Sexy.TodLib.TodParticleEmitter.CrossFadeEmitter(Sexy.TodLib.TodParticleEmitter)">
+  CrossFadeEmitter(TodParticleEmitter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CrossFadeEmitter(TodParticleEmitter theToEmitter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theToEmitter</code> <a class="xref" href="Sexy.TodLib.TodParticleEmitter.html">TodParticleEmitter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_CrossFadeParticle_" data-uid="Sexy.TodLib.TodParticleEmitter.CrossFadeParticle*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_CrossFadeParticle_Sexy_TodLib_TodParticle_Sexy_TodLib_TodParticleEmitter_" data-uid="Sexy.TodLib.TodParticleEmitter.CrossFadeParticle(Sexy.TodLib.TodParticle,Sexy.TodLib.TodParticleEmitter)">
+  CrossFadeParticle(TodParticle, TodParticleEmitter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CrossFadeParticle(TodParticle theParticle, TodParticleEmitter theToEmitter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theParticle</code> <a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a></dt>
+    <dd></dd>
+    <dt><code>theToEmitter</code> <a class="xref" href="Sexy.TodLib.TodParticleEmitter.html">TodParticleEmitter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_CrossFadeParticleToName_" data-uid="Sexy.TodLib.TodParticleEmitter.CrossFadeParticleToName*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_CrossFadeParticleToName_Sexy_TodLib_TodParticle_System_String_" data-uid="Sexy.TodLib.TodParticleEmitter.CrossFadeParticleToName(Sexy.TodLib.TodParticle,System.String)">
+  CrossFadeParticleToName(TodParticle, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CrossFadeParticleToName(TodParticle theParticle, string theEmitterName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theParticle</code> <a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a></dt>
+    <dd></dd>
+    <dt><code>theEmitterName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_DeleteAll_" data-uid="Sexy.TodLib.TodParticleEmitter.DeleteAll*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_DeleteAll" data-uid="Sexy.TodLib.TodParticleEmitter.DeleteAll">
+  DeleteAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_DeleteNonCrossFading_" data-uid="Sexy.TodLib.TodParticleEmitter.DeleteNonCrossFading*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_DeleteNonCrossFading" data-uid="Sexy.TodLib.TodParticleEmitter.DeleteNonCrossFading">
+  DeleteNonCrossFading()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteNonCrossFading()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_DeleteParticle_" data-uid="Sexy.TodLib.TodParticleEmitter.DeleteParticle*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_DeleteParticle_Sexy_TodLib_TodParticle_" data-uid="Sexy.TodLib.TodParticleEmitter.DeleteParticle(Sexy.TodLib.TodParticle)">
+  DeleteParticle(TodParticle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteParticle(TodParticle theParticle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theParticle</code> <a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_Draw_" data-uid="Sexy.TodLib.TodParticleEmitter.Draw*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_Draw_Sexy_Graphics_System_Boolean_" data-uid="Sexy.TodLib.TodParticleEmitter.Draw(Sexy.Graphics,System.Boolean)">
+  Draw(Graphics, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g, bool doScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>doScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_DrawParticle_" data-uid="Sexy.TodLib.TodParticleEmitter.DrawParticle*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_DrawParticle_Sexy_Graphics_Sexy_TodLib_TodParticle_System_Boolean_" data-uid="Sexy.TodLib.TodParticleEmitter.DrawParticle(Sexy.Graphics,Sexy.TodLib.TodParticle,System.Boolean)">
+  DrawParticle(Graphics, TodParticle, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawParticle(Graphics g, TodParticle theParticle, bool doScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>theParticle</code> <a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a></dt>
+    <dd></dd>
+    <dt><code>doScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_GetNewTodParticleEmitter_" data-uid="Sexy.TodLib.TodParticleEmitter.GetNewTodParticleEmitter*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_GetNewTodParticleEmitter" data-uid="Sexy.TodLib.TodParticleEmitter.GetNewTodParticleEmitter">
+  GetNewTodParticleEmitter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TodParticleEmitter GetNewTodParticleEmitter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TodParticleEmitter.html">TodParticleEmitter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_GetRenderParams_" data-uid="Sexy.TodLib.TodParticleEmitter.GetRenderParams*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_GetRenderParams_Sexy_TodLib_TodParticle_Sexy_TodLib_ParticleRenderParams__" data-uid="Sexy.TodLib.TodParticleEmitter.GetRenderParams(Sexy.TodLib.TodParticle,Sexy.TodLib.ParticleRenderParams@)">
+  GetRenderParams(TodParticle, ref ParticleRenderParams)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetRenderParams(TodParticle theParticle, ref ParticleRenderParams theParams)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theParticle</code> <a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a></dt>
+    <dd></dd>
+    <dt><code>theParams</code> <a class="xref" href="Sexy.TodLib.ParticleRenderParams.html">ParticleRenderParams</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_ParticleTrackEvaluate_" data-uid="Sexy.TodLib.TodParticleEmitter.ParticleTrackEvaluate*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_ParticleTrackEvaluate_Sexy_TodLib_FloatParameterTrack__Sexy_TodLib_TodParticle_Sexy_TodLib_ParticleTracks_" data-uid="Sexy.TodLib.TodParticleEmitter.ParticleTrackEvaluate(Sexy.TodLib.FloatParameterTrack@,Sexy.TodLib.TodParticle,Sexy.TodLib.ParticleTracks)">
+  ParticleTrackEvaluate(ref FloatParameterTrack, TodParticle, ParticleTracks)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ParticleTrackEvaluate(ref FloatParameterTrack theTrack, TodParticle theParticle, ParticleTracks theInterp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTrack</code> <a class="xref" href="Sexy.TodLib.FloatParameterTrack.html">FloatParameterTrack</a></dt>
+    <dd></dd>
+    <dt><code>theParticle</code> <a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a></dt>
+    <dd></dd>
+    <dt><code>theInterp</code> <a class="xref" href="Sexy.TodLib.ParticleTracks.html">ParticleTracks</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_PreallocateMemory_" data-uid="Sexy.TodLib.TodParticleEmitter.PreallocateMemory*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_PreallocateMemory" data-uid="Sexy.TodLib.TodParticleEmitter.PreallocateMemory">
+  PreallocateMemory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PreallocateMemory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_PrepareForReuse_" data-uid="Sexy.TodLib.TodParticleEmitter.PrepareForReuse*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_PrepareForReuse" data-uid="Sexy.TodLib.TodParticleEmitter.PrepareForReuse">
+  PrepareForReuse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrepareForReuse()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_SpawnParticle_" data-uid="Sexy.TodLib.TodParticleEmitter.SpawnParticle*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_SpawnParticle_System_Int32_System_Int32_" data-uid="Sexy.TodLib.TodParticleEmitter.SpawnParticle(System.Int32,System.Int32)">
+  SpawnParticle(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodParticle SpawnParticle(int theIndex, int theSpawnCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSpawnCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_SystemMove_" data-uid="Sexy.TodLib.TodParticleEmitter.SystemMove*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_SystemMove_System_Single_System_Single_" data-uid="Sexy.TodLib.TodParticleEmitter.SystemMove(System.Single,System.Single)">
+  SystemMove(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SystemMove(float theX, float theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_SystemTrackEvaluate_" data-uid="Sexy.TodLib.TodParticleEmitter.SystemTrackEvaluate*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_SystemTrackEvaluate_Sexy_TodLib_FloatParameterTrack__Sexy_TodLib_ParticleSystemTracks_" data-uid="Sexy.TodLib.TodParticleEmitter.SystemTrackEvaluate(Sexy.TodLib.FloatParameterTrack@,Sexy.TodLib.ParticleSystemTracks)">
+  SystemTrackEvaluate(ref FloatParameterTrack, ParticleSystemTracks)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SystemTrackEvaluate(ref FloatParameterTrack theTrack, ParticleSystemTracks theInterp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTrack</code> <a class="xref" href="Sexy.TodLib.FloatParameterTrack.html">FloatParameterTrack</a></dt>
+    <dd></dd>
+    <dt><code>theInterp</code> <a class="xref" href="Sexy.TodLib.ParticleSystemTracks.html">ParticleSystemTracks</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_TodEmitterInitialize_" data-uid="Sexy.TodLib.TodParticleEmitter.TodEmitterInitialize*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_TodEmitterInitialize_System_Single_System_Single_Sexy_TodLib_TodParticleSystem_Sexy_TodLib_TodEmitterDefinition_" data-uid="Sexy.TodLib.TodParticleEmitter.TodEmitterInitialize(System.Single,System.Single,Sexy.TodLib.TodParticleSystem,Sexy.TodLib.TodEmitterDefinition)">
+  TodEmitterInitialize(float, float, TodParticleSystem, TodEmitterDefinition)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TodEmitterInitialize(float theX, float theY, TodParticleSystem theSystem, TodEmitterDefinition theEmitterDef)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theSystem</code> <a class="xref" href="Sexy.TodLib.TodParticleSystem.html">TodParticleSystem</a></dt>
+    <dd></dd>
+    <dt><code>theEmitterDef</code> <a class="xref" href="Sexy.TodLib.TodEmitterDefinition.html">TodEmitterDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_Update_" data-uid="Sexy.TodLib.TodParticleEmitter.Update*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_Update" data-uid="Sexy.TodLib.TodParticleEmitter.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_UpdateParticle_" data-uid="Sexy.TodLib.TodParticleEmitter.UpdateParticle*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_UpdateParticle_Sexy_TodLib_TodParticle_" data-uid="Sexy.TodLib.TodParticleEmitter.UpdateParticle(Sexy.TodLib.TodParticle)">
+  UpdateParticle(TodParticle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateParticle(TodParticle theParticle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theParticle</code> <a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_UpdateParticleField_" data-uid="Sexy.TodLib.TodParticleEmitter.UpdateParticleField*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_UpdateParticleField_Sexy_TodLib_TodParticle_Sexy_TodLib_ParticleField_System_Single_System_Int32_" data-uid="Sexy.TodLib.TodParticleEmitter.UpdateParticleField(Sexy.TodLib.TodParticle,Sexy.TodLib.ParticleField,System.Single,System.Int32)">
+  UpdateParticleField(TodParticle, ParticleField, float, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateParticleField(TodParticle theParticle, ParticleField theParticleField, float theParticleTimeValue, int theFieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theParticle</code> <a class="xref" href="Sexy.TodLib.TodParticle.html">TodParticle</a></dt>
+    <dd></dd>
+    <dt><code>theParticleField</code> <a class="xref" href="Sexy.TodLib.ParticleField.html">ParticleField</a></dt>
+    <dd></dd>
+    <dt><code>theParticleTimeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theFieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_UpdateSpawning_" data-uid="Sexy.TodLib.TodParticleEmitter.UpdateSpawning*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_UpdateSpawning" data-uid="Sexy.TodLib.TodParticleEmitter.UpdateSpawning">
+  UpdateSpawning()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSpawning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_TodLib_TodParticleEmitter_UpdateSystemField_" data-uid="Sexy.TodLib.TodParticleEmitter.UpdateSystemField*"></a>
+
+  <h3 id="Sexy_TodLib_TodParticleEmitter_UpdateSystemField_Sexy_TodLib_ParticleField_System_Single_System_Int32_" data-uid="Sexy.TodLib.TodParticleEmitter.UpdateSystemField(Sexy.TodLib.ParticleField,System.Single,System.Int32)">
+  UpdateSystemField(ParticleField, float, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSystemField(ParticleField theParticleField, float theParticleTimeValue, int theFieldIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theParticleField</code> <a class="xref" href="Sexy.TodLib.ParticleField.html">ParticleField</a></dt>
+    <dd></dd>
+    <dt><code>theParticleTimeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theFieldIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

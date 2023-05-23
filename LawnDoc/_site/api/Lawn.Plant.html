@@ -1,0 +1,5058 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Plant
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Plant
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Lawn.Plant">
+
+
+
+  <h1 id="Lawn_Plant" data-uid="Lawn.Plant" class="text-break">
+    Class Plant
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lawn.html">Lawn</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Plant : GameObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Lawn.GameObject.html">GameObject</a></div>
+      <div><span class="xref">Plant</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mApp">GameObject.mApp</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mBoard">GameObject.mBoard</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mX">GameObject.mX</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mY">GameObject.mY</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mWidth">GameObject.mWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mHeight">GameObject.mHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mVisible">GameObject.mVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mRow">GameObject.mRow</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mRenderOrder">GameObject.mRenderOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mPrevTransX">GameObject.mPrevTransX</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mPrevTransY">GameObject.mPrevTransY</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mPosScaled">GameObject.mPosScaled</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_id">GameObject.id</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_SaveId_Lawn_GameObject_Sexy_Buffer_">GameObject.SaveId(GameObject, Buffer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_LoadId_Sexy_Buffer_">GameObject.LoadId(Buffer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_GetObjectById_System_Int32_">GameObject.GetObjectById(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_BeginDraw_Sexy_Graphics_">GameObject.BeginDraw(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_EndDraw_Sexy_Graphics_">GameObject.EndDraw(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_MakeParentGraphicsFrame_Sexy_Graphics_">GameObject.MakeParentGraphicsFrame(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Lawn_Plant_mAnimCounter" data-uid="Lawn.Plant.mAnimCounter">
+  mAnimCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mAnimCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mAnimPing" data-uid="Lawn.Plant.mAnimPing">
+  mAnimPing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mAnimPing</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mBeghouledFlashCountdown" data-uid="Lawn.Plant.mBeghouledFlashCountdown">
+  mBeghouledFlashCountdown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mBeghouledFlashCountdown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mBlinkCountdown" data-uid="Lawn.Plant.mBlinkCountdown">
+  mBlinkCountdown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mBlinkCountdown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mBlinkReanimID" data-uid="Lawn.Plant.mBlinkReanimID">
+  mBlinkReanimID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mBlinkReanimID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mBodyReanimID" data-uid="Lawn.Plant.mBodyReanimID">
+  mBodyReanimID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mBodyReanimID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mDead" data-uid="Lawn.Plant.mDead">
+  mDead
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mDead</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mDisappearCountdown" data-uid="Lawn.Plant.mDisappearCountdown">
+  mDisappearCountdown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mDisappearCountdown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mDoSpecialCountdown" data-uid="Lawn.Plant.mDoSpecialCountdown">
+  mDoSpecialCountdown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mDoSpecialCountdown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mEatenFlashCountdown" data-uid="Lawn.Plant.mEatenFlashCountdown">
+  mEatenFlashCountdown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mEatenFlashCountdown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mFrame" data-uid="Lawn.Plant.mFrame">
+  mFrame
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mFrame</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mFrameLength" data-uid="Lawn.Plant.mFrameLength">
+  mFrameLength
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mFrameLength</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mGloveGrabbed" data-uid="Lawn.Plant.mGloveGrabbed">
+  mGloveGrabbed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mGloveGrabbed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mHeadReanimID" data-uid="Lawn.Plant.mHeadReanimID">
+  mHeadReanimID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mHeadReanimID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mHeadReanimID2" data-uid="Lawn.Plant.mHeadReanimID2">
+  mHeadReanimID2
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mHeadReanimID2</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mHeadReanimID3" data-uid="Lawn.Plant.mHeadReanimID3">
+  mHeadReanimID3
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mHeadReanimID3</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mHighlighted" data-uid="Lawn.Plant.mHighlighted">
+  mHighlighted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mHighlighted</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mImitaterType" data-uid="Lawn.Plant.mImitaterType">
+  mImitaterType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedType mImitaterType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mInFlowerPot" data-uid="Lawn.Plant.mInFlowerPot">
+  mInFlowerPot
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mInFlowerPot</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mIsAsleep" data-uid="Lawn.Plant.mIsAsleep">
+  mIsAsleep
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mIsAsleep</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mIsOnBoard" data-uid="Lawn.Plant.mIsOnBoard">
+  mIsOnBoard
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mIsOnBoard</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mLaunchCounter" data-uid="Lawn.Plant.mLaunchCounter">
+  mLaunchCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLaunchCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mLaunchRate" data-uid="Lawn.Plant.mLaunchRate">
+  mLaunchRate
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLaunchRate</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mLightReanimID" data-uid="Lawn.Plant.mLightReanimID">
+  mLightReanimID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mLightReanimID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mMagnetItems" data-uid="Lawn.Plant.mMagnetItems">
+  mMagnetItems
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MagnetItem[] mMagnetItems</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.MagnetItem.html">MagnetItem</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mNumFrames" data-uid="Lawn.Plant.mNumFrames">
+  mNumFrames
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mNumFrames</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mOnBungeeState" data-uid="Lawn.Plant.mOnBungeeState">
+  mOnBungeeState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlantOnBungeeState mOnBungeeState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.PlantOnBungeeState.html">PlantOnBungeeState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mParticleID" data-uid="Lawn.Plant.mParticleID">
+  mParticleID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodParticleSystem mParticleID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TodParticleSystem.html">TodParticleSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mPlantAttackRect" data-uid="Lawn.Plant.mPlantAttackRect">
+  mPlantAttackRect
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect mPlantAttackRect</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mPlantCol" data-uid="Lawn.Plant.mPlantCol">
+  mPlantCol
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mPlantCol</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mPlantHealth" data-uid="Lawn.Plant.mPlantHealth">
+  mPlantHealth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mPlantHealth</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mPlantMaxHealth" data-uid="Lawn.Plant.mPlantMaxHealth">
+  mPlantMaxHealth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mPlantMaxHealth</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mPlantRect" data-uid="Lawn.Plant.mPlantRect">
+  mPlantRect
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect mPlantRect</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mPottedPlantIndex" data-uid="Lawn.Plant.mPottedPlantIndex">
+  mPottedPlantIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mPottedPlantIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mRecentlyEatenCountdown" data-uid="Lawn.Plant.mRecentlyEatenCountdown">
+  mRecentlyEatenCountdown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mRecentlyEatenCountdown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mSeedType" data-uid="Lawn.Plant.mSeedType">
+  mSeedType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedType mSeedType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mShakeOffsetX" data-uid="Lawn.Plant.mShakeOffsetX">
+  mShakeOffsetX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float mShakeOffsetX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mShakeOffsetY" data-uid="Lawn.Plant.mShakeOffsetY">
+  mShakeOffsetY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float mShakeOffsetY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mShootingCounter" data-uid="Lawn.Plant.mShootingCounter">
+  mShootingCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mShootingCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mSleepingReanimID" data-uid="Lawn.Plant.mSleepingReanimID">
+  mSleepingReanimID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mSleepingReanimID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mSquished" data-uid="Lawn.Plant.mSquished">
+  mSquished
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mSquished</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mStartRow" data-uid="Lawn.Plant.mStartRow">
+  mStartRow
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mStartRow</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mState" data-uid="Lawn.Plant.mState">
+  mState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlantState mState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.PlantState.html">PlantState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mStateCountdown" data-uid="Lawn.Plant.mStateCountdown">
+  mStateCountdown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mStateCountdown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mSubclass" data-uid="Lawn.Plant.mSubclass">
+  mSubclass
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mSubclass</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mTargetX" data-uid="Lawn.Plant.mTargetX">
+  mTargetX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mTargetX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mTargetY" data-uid="Lawn.Plant.mTargetY">
+  mTargetY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mTargetY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mTargetZombieID" data-uid="Lawn.Plant.mTargetZombieID">
+  mTargetZombieID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Zombie mTargetZombieID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Plant_mWakeUpCounter" data-uid="Lawn.Plant.mWakeUpCounter">
+  mWakeUpCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mWakeUpCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Lawn_Plant_AddAttachedParticle_" data-uid="Lawn.Plant.AddAttachedParticle*"></a>
+
+  <h3 id="Lawn_Plant_AddAttachedParticle_System_Int32_System_Int32_System_Int32_Sexy_TodLib_ParticleEffect_" data-uid="Lawn.Plant.AddAttachedParticle(System.Int32,System.Int32,System.Int32,Sexy.TodLib.ParticleEffect)">
+  AddAttachedParticle(int, int, int, ParticleEffect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodParticleSystem AddAttachedParticle(int thePosX, int thePosY, int theRenderPostition, ParticleEffect theEffect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePosX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>thePosY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theRenderPostition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theEffect</code> <a class="xref" href="Sexy.TodLib.ParticleEffect.html">ParticleEffect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TodParticleSystem.html">TodParticleSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_Animate_" data-uid="Lawn.Plant.Animate*"></a>
+
+  <h3 id="Lawn_Plant_Animate" data-uid="Lawn.Plant.Animate">
+  Animate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Animate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_AnimateGarlic_" data-uid="Lawn.Plant.AnimateGarlic*"></a>
+
+  <h3 id="Lawn_Plant_AnimateGarlic" data-uid="Lawn.Plant.AnimateGarlic">
+  AnimateGarlic()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnimateGarlic()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_AnimateNuts_" data-uid="Lawn.Plant.AnimateNuts*"></a>
+
+  <h3 id="Lawn_Plant_AnimateNuts" data-uid="Lawn.Plant.AnimateNuts">
+  AnimateNuts()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnimateNuts()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_AnimatePumpkin_" data-uid="Lawn.Plant.AnimatePumpkin*"></a>
+
+  <h3 id="Lawn_Plant_AnimatePumpkin" data-uid="Lawn.Plant.AnimatePumpkin">
+  AnimatePumpkin()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AnimatePumpkin()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_AttachBlinkAnim_" data-uid="Lawn.Plant.AttachBlinkAnim*"></a>
+
+  <h3 id="Lawn_Plant_AttachBlinkAnim_Sexy_TodLib_Reanimation_" data-uid="Lawn.Plant.AttachBlinkAnim(Sexy.TodLib.Reanimation)">
+  AttachBlinkAnim(Reanimation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation AttachBlinkAnim(Reanimation theReanimBody)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theReanimBody</code> <a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_BlowAwayFliers_" data-uid="Lawn.Plant.BlowAwayFliers*"></a>
+
+  <h3 id="Lawn_Plant_BlowAwayFliers_System_Int32_System_Int32_" data-uid="Lawn.Plant.BlowAwayFliers(System.Int32,System.Int32)">
+  BlowAwayFliers(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BlowAwayFliers(int theX, int theRow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_BurnRow_" data-uid="Lawn.Plant.BurnRow*"></a>
+
+  <h3 id="Lawn_Plant_BurnRow_System_Int32_" data-uid="Lawn.Plant.BurnRow(System.Int32)">
+  BurnRow(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BurnRow(int theRow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_CalcRenderOrder_" data-uid="Lawn.Plant.CalcRenderOrder*"></a>
+
+  <h3 id="Lawn_Plant_CalcRenderOrder" data-uid="Lawn.Plant.CalcRenderOrder">
+  CalcRenderOrder()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CalcRenderOrder()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_CobCannonFire_" data-uid="Lawn.Plant.CobCannonFire*"></a>
+
+  <h3 id="Lawn_Plant_CobCannonFire_System_Int32_System_Int32_" data-uid="Lawn.Plant.CobCannonFire(System.Int32,System.Int32)">
+  CobCannonFire(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CobCannonFire(int theTargetX, int theTargetY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTargetX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theTargetY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_Die_" data-uid="Lawn.Plant.Die*"></a>
+
+  <h3 id="Lawn_Plant_Die" data-uid="Lawn.Plant.Die">
+  Die()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Die()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_DistanceToClosestZombie_" data-uid="Lawn.Plant.DistanceToClosestZombie*"></a>
+
+  <h3 id="Lawn_Plant_DistanceToClosestZombie" data-uid="Lawn.Plant.DistanceToClosestZombie">
+  DistanceToClosestZombie()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DistanceToClosestZombie()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_DoBlink_" data-uid="Lawn.Plant.DoBlink*"></a>
+
+  <h3 id="Lawn_Plant_DoBlink" data-uid="Lawn.Plant.DoBlink">
+  DoBlink()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoBlink()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_DoRowAreaDamage_" data-uid="Lawn.Plant.DoRowAreaDamage*"></a>
+
+  <h3 id="Lawn_Plant_DoRowAreaDamage_System_Int32_System_UInt32_" data-uid="Lawn.Plant.DoRowAreaDamage(System.Int32,System.UInt32)">
+  DoRowAreaDamage(int, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoRowAreaDamage(int theDamage, uint theDamageFlags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDamage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theDamageFlags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_DoSpecial_" data-uid="Lawn.Plant.DoSpecial*"></a>
+
+  <h3 id="Lawn_Plant_DoSpecial" data-uid="Lawn.Plant.DoSpecial">
+  DoSpecial()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoSpecial()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_DoSquashDamage_" data-uid="Lawn.Plant.DoSquashDamage*"></a>
+
+  <h3 id="Lawn_Plant_DoSquashDamage" data-uid="Lawn.Plant.DoSquashDamage">
+  DoSquashDamage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoSquashDamage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_Draw_" data-uid="Lawn.Plant.Draw*"></a>
+
+  <h3 id="Lawn_Plant_Draw_Sexy_Graphics_" data-uid="Lawn.Plant.Draw(Sexy.Graphics)">
+  Draw(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_DrawMagnetItems_" data-uid="Lawn.Plant.DrawMagnetItems*"></a>
+
+  <h3 id="Lawn_Plant_DrawMagnetItems_Sexy_Graphics_" data-uid="Lawn.Plant.DrawMagnetItems(Sexy.Graphics)">
+  DrawMagnetItems(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMagnetItems(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_DrawMagnetItemsOnTop_" data-uid="Lawn.Plant.DrawMagnetItemsOnTop*"></a>
+
+  <h3 id="Lawn_Plant_DrawMagnetItemsOnTop" data-uid="Lawn.Plant.DrawMagnetItemsOnTop">
+  DrawMagnetItemsOnTop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DrawMagnetItemsOnTop()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_DrawSeedType_" data-uid="Lawn.Plant.DrawSeedType*"></a>
+
+  <h3 id="Lawn_Plant_DrawSeedType_Sexy_Graphics_Lawn_SeedType_Lawn_SeedType_Lawn_DrawVariation_System_Single_System_Single_" data-uid="Lawn.Plant.DrawSeedType(Sexy.Graphics,Lawn.SeedType,Lawn.SeedType,Lawn.DrawVariation,System.Single,System.Single)">
+  DrawSeedType(Graphics, SeedType, SeedType, DrawVariation, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawSeedType(Graphics g, SeedType theSeedType, SeedType theImitaterType, DrawVariation theDrawVariation, float thePosX, float thePosY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theImitaterType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theDrawVariation</code> <a class="xref" href="Lawn.DrawVariation.html">DrawVariation</a></dt>
+    <dd></dd>
+    <dt><code>thePosX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>thePosY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_DrawShadow_" data-uid="Lawn.Plant.DrawShadow*"></a>
+
+  <h3 id="Lawn_Plant_DrawShadow_Sexy_Graphics_System_Single_System_Single_" data-uid="Lawn.Plant.DrawShadow(Sexy.Graphics,System.Single,System.Single)">
+  DrawShadow(Graphics, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawShadow(Graphics g, float theOffsetX, float theOffsetY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>theOffsetX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theOffsetY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_EndBlink_" data-uid="Lawn.Plant.EndBlink*"></a>
+
+  <h3 id="Lawn_Plant_EndBlink" data-uid="Lawn.Plant.EndBlink">
+  EndBlink()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndBlink()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_FindGoldMagnetTarget_" data-uid="Lawn.Plant.FindGoldMagnetTarget*"></a>
+
+  <h3 id="Lawn_Plant_FindGoldMagnetTarget" data-uid="Lawn.Plant.FindGoldMagnetTarget">
+  FindGoldMagnetTarget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Coin FindGoldMagnetTarget()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Coin.html">Coin</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_FindSquashTarget_" data-uid="Lawn.Plant.FindSquashTarget*"></a>
+
+  <h3 id="Lawn_Plant_FindSquashTarget" data-uid="Lawn.Plant.FindSquashTarget">
+  FindSquashTarget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Zombie FindSquashTarget()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_FindStarFruitTarget_" data-uid="Lawn.Plant.FindStarFruitTarget*"></a>
+
+  <h3 id="Lawn_Plant_FindStarFruitTarget" data-uid="Lawn.Plant.FindStarFruitTarget">
+  FindStarFruitTarget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FindStarFruitTarget()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_FindTargetAndFire_" data-uid="Lawn.Plant.FindTargetAndFire*"></a>
+
+  <h3 id="Lawn_Plant_FindTargetAndFire_System_Int32_Lawn_PlantWeapon_" data-uid="Lawn.Plant.FindTargetAndFire(System.Int32,Lawn.PlantWeapon)">
+  FindTargetAndFire(int, PlantWeapon)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FindTargetAndFire(int theRow, PlantWeapon thePlantWeapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>thePlantWeapon</code> <a class="xref" href="Lawn.PlantWeapon.html">PlantWeapon</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_FindTargetZombie_" data-uid="Lawn.Plant.FindTargetZombie*"></a>
+
+  <h3 id="Lawn_Plant_FindTargetZombie_System_Int32_Lawn_PlantWeapon_" data-uid="Lawn.Plant.FindTargetZombie(System.Int32,Lawn.PlantWeapon)">
+  FindTargetZombie(int, PlantWeapon)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Zombie FindTargetZombie(int theRow, PlantWeapon thePlantWeapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>thePlantWeapon</code> <a class="xref" href="Lawn.PlantWeapon.html">PlantWeapon</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_Fire_" data-uid="Lawn.Plant.Fire*"></a>
+
+  <h3 id="Lawn_Plant_Fire_Lawn_Zombie_System_Int32_Lawn_PlantWeapon_" data-uid="Lawn.Plant.Fire(Lawn.Zombie,System.Int32,Lawn.PlantWeapon)">
+  Fire(Zombie, int, PlantWeapon)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Fire(Zombie theTargetZombie, int theRow, PlantWeapon thePlantWeapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTargetZombie</code> <a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+    <dt><code>theRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>thePlantWeapon</code> <a class="xref" href="Lawn.PlantWeapon.html">PlantWeapon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetCost_" data-uid="Lawn.Plant.GetCost*"></a>
+
+  <h3 id="Lawn_Plant_GetCost_Lawn_SeedType_Lawn_SeedType_" data-uid="Lawn.Plant.GetCost(Lawn.SeedType,Lawn.SeedType)">
+  GetCost(SeedType, SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCost(SeedType theSeedType, SeedType theImitaterType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theImitaterType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetDamageRangeFlags_" data-uid="Lawn.Plant.GetDamageRangeFlags*"></a>
+
+  <h3 id="Lawn_Plant_GetDamageRangeFlags_Lawn_PlantWeapon_" data-uid="Lawn.Plant.GetDamageRangeFlags(Lawn.PlantWeapon)">
+  GetDamageRangeFlags(PlantWeapon)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDamageRangeFlags(PlantWeapon thePlantWeapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlantWeapon</code> <a class="xref" href="Lawn.PlantWeapon.html">PlantWeapon</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetFreeMagnetItem_" data-uid="Lawn.Plant.GetFreeMagnetItem*"></a>
+
+  <h3 id="Lawn_Plant_GetFreeMagnetItem" data-uid="Lawn.Plant.GetFreeMagnetItem">
+  GetFreeMagnetItem()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MagnetItem GetFreeMagnetItem()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.MagnetItem.html">MagnetItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetImage_" data-uid="Lawn.Plant.GetImage*"></a>
+
+  <h3 id="Lawn_Plant_GetImage_Lawn_SeedType_" data-uid="Lawn.Plant.GetImage(Lawn.SeedType)">
+  GetImage(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Image GetImage(SeedType theSeedtype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedtype</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetNameString_" data-uid="Lawn.Plant.GetNameString*"></a>
+
+  <h3 id="Lawn_Plant_GetNameString_Lawn_SeedType_Lawn_SeedType_" data-uid="Lawn.Plant.GetNameString(Lawn.SeedType,Lawn.SeedType)">
+  GetNameString(SeedType, SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetNameString(SeedType theSeedtype, SeedType theImitaterType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedtype</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theImitaterType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetNewPlant_" data-uid="Lawn.Plant.GetNewPlant*"></a>
+
+  <h3 id="Lawn_Plant_GetNewPlant" data-uid="Lawn.Plant.GetNewPlant">
+  GetNewPlant()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plant GetNewPlant()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetPeaHeadOffset_" data-uid="Lawn.Plant.GetPeaHeadOffset*"></a>
+
+  <h3 id="Lawn_Plant_GetPeaHeadOffset_System_Int32__System_Int32__" data-uid="Lawn.Plant.GetPeaHeadOffset(System.Int32@,System.Int32@)">
+  GetPeaHeadOffset(ref int, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetPeaHeadOffset(ref int theOffsetX, ref int theOffsetY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theOffsetX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theOffsetY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetPlantAttackRect_" data-uid="Lawn.Plant.GetPlantAttackRect*"></a>
+
+  <h3 id="Lawn_Plant_GetPlantAttackRect_Lawn_PlantWeapon_" data-uid="Lawn.Plant.GetPlantAttackRect(Lawn.PlantWeapon)">
+  GetPlantAttackRect(PlantWeapon)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect GetPlantAttackRect(PlantWeapon thePlantWeapon)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlantWeapon</code> <a class="xref" href="Lawn.PlantWeapon.html">PlantWeapon</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetPlantDefinition_" data-uid="Lawn.Plant.GetPlantDefinition*"></a>
+
+  <h3 id="Lawn_Plant_GetPlantDefinition_Lawn_SeedType_" data-uid="Lawn.Plant.GetPlantDefinition(Lawn.SeedType)">
+  GetPlantDefinition(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlantDefinition GetPlantDefinition(SeedType theSeedtype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedtype</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.PlantDefinition.html">PlantDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetPlantRect_" data-uid="Lawn.Plant.GetPlantRect*"></a>
+
+  <h3 id="Lawn_Plant_GetPlantRect" data-uid="Lawn.Plant.GetPlantRect">
+  GetPlantRect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect GetPlantRect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetRefreshTime_" data-uid="Lawn.Plant.GetRefreshTime*"></a>
+
+  <h3 id="Lawn_Plant_GetRefreshTime_Lawn_SeedType_Lawn_SeedType_" data-uid="Lawn.Plant.GetRefreshTime(Lawn.SeedType,Lawn.SeedType)">
+  GetRefreshTime(SeedType, SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetRefreshTime(SeedType theSeedType, SeedType theImitaterType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theImitaterType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GetToolTip_" data-uid="Lawn.Plant.GetToolTip*"></a>
+
+  <h3 id="Lawn_Plant_GetToolTip_Lawn_SeedType_" data-uid="Lawn.Plant.GetToolTip(Lawn.SeedType)">
+  GetToolTip(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetToolTip(SeedType theSeedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_GoldMagnetFindTargets_" data-uid="Lawn.Plant.GoldMagnetFindTargets*"></a>
+
+  <h3 id="Lawn_Plant_GoldMagnetFindTargets" data-uid="Lawn.Plant.GoldMagnetFindTargets">
+  GoldMagnetFindTargets()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GoldMagnetFindTargets()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IceZombies_" data-uid="Lawn.Plant.IceZombies*"></a>
+
+  <h3 id="Lawn_Plant_IceZombies" data-uid="Lawn.Plant.IceZombies">
+  IceZombies()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IceZombies()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_ImitaterMorph_" data-uid="Lawn.Plant.ImitaterMorph*"></a>
+
+  <h3 id="Lawn_Plant_ImitaterMorph" data-uid="Lawn.Plant.ImitaterMorph">
+  ImitaterMorph()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImitaterMorph()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsAGoldMagnetAboutToSuck_" data-uid="Lawn.Plant.IsAGoldMagnetAboutToSuck*"></a>
+
+  <h3 id="Lawn_Plant_IsAGoldMagnetAboutToSuck" data-uid="Lawn.Plant.IsAGoldMagnetAboutToSuck">
+  IsAGoldMagnetAboutToSuck()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAGoldMagnetAboutToSuck()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsAquatic_" data-uid="Lawn.Plant.IsAquatic*"></a>
+
+  <h3 id="Lawn_Plant_IsAquatic_Lawn_SeedType_" data-uid="Lawn.Plant.IsAquatic(Lawn.SeedType)">
+  IsAquatic(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAquatic(SeedType theSeedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsFlying_" data-uid="Lawn.Plant.IsFlying*"></a>
+
+  <h3 id="Lawn_Plant_IsFlying_Lawn_SeedType_" data-uid="Lawn.Plant.IsFlying(Lawn.SeedType)">
+  IsFlying(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFlying(SeedType theSeedtype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedtype</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsInPlay_" data-uid="Lawn.Plant.IsInPlay*"></a>
+
+  <h3 id="Lawn_Plant_IsInPlay" data-uid="Lawn.Plant.IsInPlay">
+  IsInPlay()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInPlay()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsNocturnal_" data-uid="Lawn.Plant.IsNocturnal*"></a>
+
+  <h3 id="Lawn_Plant_IsNocturnal_Lawn_SeedType_" data-uid="Lawn.Plant.IsNocturnal(Lawn.SeedType)">
+  IsNocturnal(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNocturnal(SeedType theSeedtype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedtype</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsOnBoard_" data-uid="Lawn.Plant.IsOnBoard*"></a>
+
+  <h3 id="Lawn_Plant_IsOnBoard" data-uid="Lawn.Plant.IsOnBoard">
+  IsOnBoard()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOnBoard()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsOnHighGround_" data-uid="Lawn.Plant.IsOnHighGround*"></a>
+
+  <h3 id="Lawn_Plant_IsOnHighGround" data-uid="Lawn.Plant.IsOnHighGround">
+  IsOnHighGround()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOnHighGround()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsPartOfUpgradableTo_" data-uid="Lawn.Plant.IsPartOfUpgradableTo*"></a>
+
+  <h3 id="Lawn_Plant_IsPartOfUpgradableTo_Lawn_SeedType_" data-uid="Lawn.Plant.IsPartOfUpgradableTo(Lawn.SeedType)">
+  IsPartOfUpgradableTo(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPartOfUpgradableTo(SeedType aUpdatedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aUpdatedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsSpiky_" data-uid="Lawn.Plant.IsSpiky*"></a>
+
+  <h3 id="Lawn_Plant_IsSpiky" data-uid="Lawn.Plant.IsSpiky">
+  IsSpiky()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSpiky()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsUpgradableTo_" data-uid="Lawn.Plant.IsUpgradableTo*"></a>
+
+  <h3 id="Lawn_Plant_IsUpgradableTo_Lawn_SeedType_" data-uid="Lawn.Plant.IsUpgradableTo(Lawn.SeedType)">
+  IsUpgradableTo(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUpgradableTo(SeedType aUpdatedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aUpdatedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_IsUpgrade_" data-uid="Lawn.Plant.IsUpgrade*"></a>
+
+  <h3 id="Lawn_Plant_IsUpgrade_Lawn_SeedType_" data-uid="Lawn.Plant.IsUpgrade(Lawn.SeedType)">
+  IsUpgrade(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsUpgrade(SeedType theSeedtype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedtype</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_KillAllPlantsNearDoom_" data-uid="Lawn.Plant.KillAllPlantsNearDoom*"></a>
+
+  <h3 id="Lawn_Plant_KillAllPlantsNearDoom" data-uid="Lawn.Plant.KillAllPlantsNearDoom">
+  KillAllPlantsNearDoom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KillAllPlantsNearDoom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_LaunchStarFruit_" data-uid="Lawn.Plant.LaunchStarFruit*"></a>
+
+  <h3 id="Lawn_Plant_LaunchStarFruit" data-uid="Lawn.Plant.LaunchStarFruit">
+  LaunchStarFruit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LaunchStarFruit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_LaunchThreepeater_" data-uid="Lawn.Plant.LaunchThreepeater*"></a>
+
+  <h3 id="Lawn_Plant_LaunchThreepeater" data-uid="Lawn.Plant.LaunchThreepeater">
+  LaunchThreepeater()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LaunchThreepeater()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_LoadFromFile_" data-uid="Lawn.Plant.LoadFromFile*"></a>
+
+  <h3 id="Lawn_Plant_LoadFromFile_Sexy_Buffer_" data-uid="Lawn.Plant.LoadFromFile(Sexy.Buffer)">
+  LoadFromFile(Buffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool LoadFromFile(Buffer b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="Sexy.Buffer.html">Buffer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_LoadingComplete_" data-uid="Lawn.Plant.LoadingComplete*"></a>
+
+  <h3 id="Lawn_Plant_LoadingComplete" data-uid="Lawn.Plant.LoadingComplete">
+  LoadingComplete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadingComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_MagnetShroomAttactItem_" data-uid="Lawn.Plant.MagnetShroomAttactItem*"></a>
+
+  <h3 id="Lawn_Plant_MagnetShroomAttactItem_Lawn_Zombie_" data-uid="Lawn.Plant.MagnetShroomAttactItem(Lawn.Zombie)">
+  MagnetShroomAttactItem(Zombie)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MagnetShroomAttactItem(Zombie theZombie)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombie</code> <a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_MakesSun_" data-uid="Lawn.Plant.MakesSun*"></a>
+
+  <h3 id="Lawn_Plant_MakesSun" data-uid="Lawn.Plant.MakesSun">
+  MakesSun()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MakesSun()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_MouseDown_" data-uid="Lawn.Plant.MouseDown*"></a>
+
+  <h3 id="Lawn_Plant_MouseDown_System_Int32_System_Int32_System_Int32_" data-uid="Lawn.Plant.MouseDown(System.Int32,System.Int32,System.Int32)">
+  MouseDown(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDown(int x, int y, int theClickCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_NotOnGround_" data-uid="Lawn.Plant.NotOnGround*"></a>
+
+  <h3 id="Lawn_Plant_NotOnGround" data-uid="Lawn.Plant.NotOnGround">
+  NotOnGround()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NotOnGround()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_PlantDrawHeightOffset_" data-uid="Lawn.Plant.PlantDrawHeightOffset*"></a>
+
+  <h3 id="Lawn_Plant_PlantDrawHeightOffset_Lawn_Board_Lawn_Plant_Lawn_SeedType_System_Int32_System_Int32_" data-uid="Lawn.Plant.PlantDrawHeightOffset(Lawn.Board,Lawn.Plant,Lawn.SeedType,System.Int32,System.Int32)">
+  PlantDrawHeightOffset(Board, Plant, SeedType, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float PlantDrawHeightOffset(Board theBoard, Plant thePlant, SeedType theSeedType, int theCol, int theRow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBoard</code> <a class="xref" href="Lawn.Board.html">Board</a></dt>
+    <dd></dd>
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theCol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_PlantFlowerPotHeightOffset_" data-uid="Lawn.Plant.PlantFlowerPotHeightOffset*"></a>
+
+  <h3 id="Lawn_Plant_PlantFlowerPotHeightOffset_Lawn_SeedType_System_Single_" data-uid="Lawn.Plant.PlantFlowerPotHeightOffset(Lawn.SeedType,System.Single)">
+  PlantFlowerPotHeightOffset(SeedType, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float PlantFlowerPotHeightOffset(SeedType theSeedType, float theFlowerPotScale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theFlowerPotScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_PlantInitialize_" data-uid="Lawn.Plant.PlantInitialize*"></a>
+
+  <h3 id="Lawn_Plant_PlantInitialize_System_Int32_System_Int32_Lawn_SeedType_Lawn_SeedType_" data-uid="Lawn.Plant.PlantInitialize(System.Int32,System.Int32,Lawn.SeedType,Lawn.SeedType)">
+  PlantInitialize(int, int, SeedType, SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlantInitialize(int theGridX, int theGridY, SeedType theSeedType, SeedType theImitaterType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theImitaterType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_PlayBodyReanim_" data-uid="Lawn.Plant.PlayBodyReanim*"></a>
+
+  <h3 id="Lawn_Plant_PlayBodyReanim_System_String_Sexy_TodLib_ReanimLoopType_System_Byte_System_Single_" data-uid="Lawn.Plant.PlayBodyReanim(System.String,Sexy.TodLib.ReanimLoopType,System.Byte,System.Single)">
+  PlayBodyReanim(string, ReanimLoopType, byte, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayBodyReanim(string theTrackName, ReanimLoopType theLoopType, byte theBlendTime, float theAnimRate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTrackName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLoopType</code> <a class="xref" href="Sexy.TodLib.ReanimLoopType.html">ReanimLoopType</a></dt>
+    <dd></dd>
+    <dt><code>theBlendTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+    <dt><code>theAnimRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_PlayIdleAnim_" data-uid="Lawn.Plant.PlayIdleAnim*"></a>
+
+  <h3 id="Lawn_Plant_PlayIdleAnim_System_Single_" data-uid="Lawn.Plant.PlayIdleAnim(System.Single)">
+  PlayIdleAnim(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayIdleAnim(float theRate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_PreallocateMemory_" data-uid="Lawn.Plant.PreallocateMemory*"></a>
+
+  <h3 id="Lawn_Plant_PreallocateMemory" data-uid="Lawn.Plant.PreallocateMemory">
+  PreallocateMemory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PreallocateMemory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_PreloadPlantResources_" data-uid="Lawn.Plant.PreloadPlantResources*"></a>
+
+  <h3 id="Lawn_Plant_PreloadPlantResources_Lawn_SeedType_" data-uid="Lawn.Plant.PreloadPlantResources(Lawn.SeedType)">
+  PreloadPlantResources(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PreloadPlantResources(SeedType theSeedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_PrepareForReuse_" data-uid="Lawn.Plant.PrepareForReuse*"></a>
+
+  <h3 id="Lawn_Plant_PrepareForReuse" data-uid="Lawn.Plant.PrepareForReuse">
+  PrepareForReuse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PrepareForReuse()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_RemoveEffects_" data-uid="Lawn.Plant.RemoveEffects*"></a>
+
+  <h3 id="Lawn_Plant_RemoveEffects" data-uid="Lawn.Plant.RemoveEffects">
+  RemoveEffects()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveEffects()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_Reset_" data-uid="Lawn.Plant.Reset*"></a>
+
+  <h3 id="Lawn_Plant_Reset" data-uid="Lawn.Plant.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_SaveToFile_" data-uid="Lawn.Plant.SaveToFile*"></a>
+
+  <h3 id="Lawn_Plant_SaveToFile_Sexy_Buffer_" data-uid="Lawn.Plant.SaveToFile(Sexy.Buffer)">
+  SaveToFile(Buffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SaveToFile(Buffer b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="Sexy.Buffer.html">Buffer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_SetSleeping_" data-uid="Lawn.Plant.SetSleeping*"></a>
+
+  <h3 id="Lawn_Plant_SetSleeping_System_Boolean_" data-uid="Lawn.Plant.SetSleeping(System.Boolean)">
+  SetSleeping(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSleeping(bool theIsAsleep)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theIsAsleep</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_SpikeRockTakeDamage_" data-uid="Lawn.Plant.SpikeRockTakeDamage*"></a>
+
+  <h3 id="Lawn_Plant_SpikeRockTakeDamage" data-uid="Lawn.Plant.SpikeRockTakeDamage">
+  SpikeRockTakeDamage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SpikeRockTakeDamage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_SpikeweedAttack_" data-uid="Lawn.Plant.SpikeweedAttack*"></a>
+
+  <h3 id="Lawn_Plant_SpikeweedAttack" data-uid="Lawn.Plant.SpikeweedAttack">
+  SpikeweedAttack()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SpikeweedAttack()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_Squish_" data-uid="Lawn.Plant.Squish*"></a>
+
+  <h3 id="Lawn_Plant_Squish" data-uid="Lawn.Plant.Squish">
+  Squish()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Squish()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_StarFruitFire_" data-uid="Lawn.Plant.StarFruitFire*"></a>
+
+  <h3 id="Lawn_Plant_StarFruitFire" data-uid="Lawn.Plant.StarFruitFire">
+  StarFruitFire()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StarFruitFire()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_Update_" data-uid="Lawn.Plant.Update*"></a>
+
+  <h3 id="Lawn_Plant_Update" data-uid="Lawn.Plant.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateAbilities_" data-uid="Lawn.Plant.UpdateAbilities*"></a>
+
+  <h3 id="Lawn_Plant_UpdateAbilities" data-uid="Lawn.Plant.UpdateAbilities">
+  UpdateAbilities()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateAbilities()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateBlink_" data-uid="Lawn.Plant.UpdateBlink*"></a>
+
+  <h3 id="Lawn_Plant_UpdateBlink" data-uid="Lawn.Plant.UpdateBlink">
+  UpdateBlink()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBlink()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateBlover_" data-uid="Lawn.Plant.UpdateBlover*"></a>
+
+  <h3 id="Lawn_Plant_UpdateBlover" data-uid="Lawn.Plant.UpdateBlover">
+  UpdateBlover()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBlover()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateBowling_" data-uid="Lawn.Plant.UpdateBowling*"></a>
+
+  <h3 id="Lawn_Plant_UpdateBowling" data-uid="Lawn.Plant.UpdateBowling">
+  UpdateBowling()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBowling()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateCactus_" data-uid="Lawn.Plant.UpdateCactus*"></a>
+
+  <h3 id="Lawn_Plant_UpdateCactus" data-uid="Lawn.Plant.UpdateCactus">
+  UpdateCactus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCactus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateChomper_" data-uid="Lawn.Plant.UpdateChomper*"></a>
+
+  <h3 id="Lawn_Plant_UpdateChomper" data-uid="Lawn.Plant.UpdateChomper">
+  UpdateChomper()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateChomper()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateCobCannon_" data-uid="Lawn.Plant.UpdateCobCannon*"></a>
+
+  <h3 id="Lawn_Plant_UpdateCobCannon" data-uid="Lawn.Plant.UpdateCobCannon">
+  UpdateCobCannon()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCobCannon()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateCoffeeBean_" data-uid="Lawn.Plant.UpdateCoffeeBean*"></a>
+
+  <h3 id="Lawn_Plant_UpdateCoffeeBean" data-uid="Lawn.Plant.UpdateCoffeeBean">
+  UpdateCoffeeBean()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCoffeeBean()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateDoomShroom_" data-uid="Lawn.Plant.UpdateDoomShroom*"></a>
+
+  <h3 id="Lawn_Plant_UpdateDoomShroom" data-uid="Lawn.Plant.UpdateDoomShroom">
+  UpdateDoomShroom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateDoomShroom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateFlowerPot_" data-uid="Lawn.Plant.UpdateFlowerPot*"></a>
+
+  <h3 id="Lawn_Plant_UpdateFlowerPot" data-uid="Lawn.Plant.UpdateFlowerPot">
+  UpdateFlowerPot()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateFlowerPot()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateGoldMagnetShroom_" data-uid="Lawn.Plant.UpdateGoldMagnetShroom*"></a>
+
+  <h3 id="Lawn_Plant_UpdateGoldMagnetShroom" data-uid="Lawn.Plant.UpdateGoldMagnetShroom">
+  UpdateGoldMagnetShroom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateGoldMagnetShroom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateGraveBuster_" data-uid="Lawn.Plant.UpdateGraveBuster*"></a>
+
+  <h3 id="Lawn_Plant_UpdateGraveBuster" data-uid="Lawn.Plant.UpdateGraveBuster">
+  UpdateGraveBuster()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateGraveBuster()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateIceShroom_" data-uid="Lawn.Plant.UpdateIceShroom*"></a>
+
+  <h3 id="Lawn_Plant_UpdateIceShroom" data-uid="Lawn.Plant.UpdateIceShroom">
+  UpdateIceShroom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateIceShroom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateImitater_" data-uid="Lawn.Plant.UpdateImitater*"></a>
+
+  <h3 id="Lawn_Plant_UpdateImitater" data-uid="Lawn.Plant.UpdateImitater">
+  UpdateImitater()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateImitater()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateLilypad_" data-uid="Lawn.Plant.UpdateLilypad*"></a>
+
+  <h3 id="Lawn_Plant_UpdateLilypad" data-uid="Lawn.Plant.UpdateLilypad">
+  UpdateLilypad()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateLilypad()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateMagnetShroom_" data-uid="Lawn.Plant.UpdateMagnetShroom*"></a>
+
+  <h3 id="Lawn_Plant_UpdateMagnetShroom" data-uid="Lawn.Plant.UpdateMagnetShroom">
+  UpdateMagnetShroom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateMagnetShroom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateNeedsFood_" data-uid="Lawn.Plant.UpdateNeedsFood*"></a>
+
+  <h3 id="Lawn_Plant_UpdateNeedsFood" data-uid="Lawn.Plant.UpdateNeedsFood">
+  UpdateNeedsFood()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateNeedsFood()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdatePotato_" data-uid="Lawn.Plant.UpdatePotato*"></a>
+
+  <h3 id="Lawn_Plant_UpdatePotato" data-uid="Lawn.Plant.UpdatePotato">
+  UpdatePotato()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePotato()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateProductionPlant_" data-uid="Lawn.Plant.UpdateProductionPlant*"></a>
+
+  <h3 id="Lawn_Plant_UpdateProductionPlant" data-uid="Lawn.Plant.UpdateProductionPlant">
+  UpdateProductionPlant()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateProductionPlant()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateReanim_" data-uid="Lawn.Plant.UpdateReanim*"></a>
+
+  <h3 id="Lawn_Plant_UpdateReanim" data-uid="Lawn.Plant.UpdateReanim">
+  UpdateReanim()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateReanim()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateReanimColor_" data-uid="Lawn.Plant.UpdateReanimColor*"></a>
+
+  <h3 id="Lawn_Plant_UpdateReanimColor" data-uid="Lawn.Plant.UpdateReanimColor">
+  UpdateReanimColor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateReanimColor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateScaredyShroom_" data-uid="Lawn.Plant.UpdateScaredyShroom*"></a>
+
+  <h3 id="Lawn_Plant_UpdateScaredyShroom" data-uid="Lawn.Plant.UpdateScaredyShroom">
+  UpdateScaredyShroom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateScaredyShroom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateShooter_" data-uid="Lawn.Plant.UpdateShooter*"></a>
+
+  <h3 id="Lawn_Plant_UpdateShooter" data-uid="Lawn.Plant.UpdateShooter">
+  UpdateShooter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateShooter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateShooting_" data-uid="Lawn.Plant.UpdateShooting*"></a>
+
+  <h3 id="Lawn_Plant_UpdateShooting" data-uid="Lawn.Plant.UpdateShooting">
+  UpdateShooting()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateShooting()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateSpikeweed_" data-uid="Lawn.Plant.UpdateSpikeweed*"></a>
+
+  <h3 id="Lawn_Plant_UpdateSpikeweed" data-uid="Lawn.Plant.UpdateSpikeweed">
+  UpdateSpikeweed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSpikeweed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateSquash_" data-uid="Lawn.Plant.UpdateSquash*"></a>
+
+  <h3 id="Lawn_Plant_UpdateSquash" data-uid="Lawn.Plant.UpdateSquash">
+  UpdateSquash()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSquash()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateSunShroom_" data-uid="Lawn.Plant.UpdateSunShroom*"></a>
+
+  <h3 id="Lawn_Plant_UpdateSunShroom" data-uid="Lawn.Plant.UpdateSunShroom">
+  UpdateSunShroom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSunShroom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateTanglekelp_" data-uid="Lawn.Plant.UpdateTanglekelp*"></a>
+
+  <h3 id="Lawn_Plant_UpdateTanglekelp" data-uid="Lawn.Plant.UpdateTanglekelp">
+  UpdateTanglekelp()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTanglekelp()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateTorchwood_" data-uid="Lawn.Plant.UpdateTorchwood*"></a>
+
+  <h3 id="Lawn_Plant_UpdateTorchwood" data-uid="Lawn.Plant.UpdateTorchwood">
+  UpdateTorchwood()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTorchwood()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_UpdateUmbrella_" data-uid="Lawn.Plant.UpdateUmbrella*"></a>
+
+  <h3 id="Lawn_Plant_UpdateUmbrella" data-uid="Lawn.Plant.UpdateUmbrella">
+  UpdateUmbrella()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateUmbrella()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Plant_checkForPlantAchievements_" data-uid="Lawn.Plant.checkForPlantAchievements*"></a>
+
+  <h3 id="Lawn_Plant_checkForPlantAchievements" data-uid="Lawn.Plant.checkForPlantAchievements">
+  checkForPlantAchievements()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void checkForPlantAchievements()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

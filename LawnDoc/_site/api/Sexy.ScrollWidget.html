@@ -1,0 +1,3272 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScrollWidget
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScrollWidget
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Sexy.ScrollWidget">
+
+
+
+  <h1 id="Sexy_ScrollWidget" data-uid="Sexy.ScrollWidget" class="text-break">
+    Class ScrollWidget
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sexy.html">Sexy</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ScrollWidget : Widget, ProxyWidgetListener</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Sexy.WidgetContainer.html">WidgetContainer</a></div>
+      <div><a class="xref" href="Sexy.Widget.html">Widget</a></div>
+      <div><span class="xref">ScrollWidget</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Sexy.ProxyWidgetListener.html">ProxyWidgetListener</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mVisible">Widget.mVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mMouseVisible">Widget.mMouseVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mDisabled">Widget.mDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mHasFocus">Widget.mHasFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mIsDown">Widget.mIsDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mIsOver">Widget.mIsOver</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mHasTransparencies">Widget.mHasTransparencies</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mColors">Widget.mColors</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mMouseInsets">Widget.mMouseInsets</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mDoFinger">Widget.mDoFinger</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mWantsFocus">Widget.mWantsFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mTabPrev">Widget.mTabPrev</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mTabNext">Widget.mTabNext</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mWriteColoredString">Widget.mWriteColoredString</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WidgetRemovedHelper">Widget.WidgetRemovedHelper()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DoScroll_Sexy__Touch_">Widget.DoScroll(_Touch)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DoScroll_System_Int32_System_Int32_">Widget.DoScroll(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Reset">Widget.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_OrderInManagerChanged">Widget.OrderInManagerChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetVisible_System_Boolean_">Widget.SetVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColors_System_Int32_0__0___System_Int32_">Widget.SetColors(int[,], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColor_System_Int32_Sexy_SexyColor_">Widget.SetColor(int, SexyColor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColor_Sexy_ButtonWidget_ColorType_Microsoft_Xna_Framework_Color_">Widget.SetColor(ButtonWidget.ColorType, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColor_System_Int32_Microsoft_Xna_Framework_Color_">Widget.SetColor(int, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_Sexy_Dialog_DialogColour_">Widget.GetColor(Dialog.DialogColour)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_System_Int32_">Widget.GetColor(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_Sexy_Dialog_DialogColour_Microsoft_Xna_Framework_Color_">Widget.GetColor(Dialog.DialogColour, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_System_Int32_Microsoft_Xna_Framework_Color_">Widget.GetColor(int, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetDisabled_System_Boolean_">Widget.SetDisabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_ShowFinger_System_Boolean_">Widget.ShowFinger(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Move_System_Int32_System_Int32_">Widget.Move(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WantsFocus">Widget.WantsFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DrawOverlay_Sexy_Graphics_">Widget.DrawOverlay(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DrawOverlay_Sexy_Graphics_System_Int32_">Widget.DrawOverlay(Graphics, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_UpdateF_System_Single_">Widget.UpdateF(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GotFocus">Widget.GotFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_LostFocus">Widget.LostFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_KeyChar_Sexy_SexyChar_">Widget.KeyChar(SexyChar)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_KeyDown_Sexy_KeyCode_">Widget.KeyDown(KeyCode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_KeyUp_Sexy_KeyCode_">Widget.KeyUp(KeyCode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseEnter">Widget.MouseEnter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseLeave">Widget.MouseLeave()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseMove_System_Int32_System_Int32_">Widget.MouseMove(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseDown_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.MouseDown(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseUp_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.MouseUp(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_IsPointVisible_System_Int32_System_Int32_">Widget.IsPointVisible(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteCenteredLine_Sexy_Graphics_System_Int32_System_String_">Widget.WriteCenteredLine(Graphics, int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteCenteredLine_Sexy_Graphics_System_Int32_System_String_Microsoft_Xna_Framework_Color_Microsoft_Xna_Framework_Color_">Widget.WriteCenteredLine(Graphics, int, string, Color, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteCenteredLine_Sexy_Graphics_System_Int32_System_String_Microsoft_Xna_Framework_Color_Microsoft_Xna_Framework_Color_Sexy_TPoint_">Widget.WriteCenteredLine(Graphics, int, string, Color, Color, TPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_">Widget.WriteString(Graphics, string, int, int, int, int, bool, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_">Widget.WriteString(Graphics, string, int, int, int, int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int, int, int, bool, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteWordWrapped_Sexy_Graphics_Sexy_TRect_System_String_System_Int32_System_Int32_">Widget.WriteWordWrapped(Graphics, TRect, string, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetWordWrappedHeight_Sexy_Graphics_System_Int32_System_String_System_Int32_">Widget.GetWordWrappedHeight(Graphics, int, string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetNumDigits_System_Int32_">Widget.GetNumDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteNumberFromStrip_Sexy_Graphics_System_Int32_System_Int32_System_Int32_Sexy_Image_System_Int32_">Widget.WriteNumberFromStrip(Graphics, int, int, int, Image, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Contains_System_Int32_System_Int32_">Widget.Contains(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetInsetRect">Widget.GetInsetRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DeferOverlay">Widget.DeferOverlay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DeferOverlay_System_Int32_">Widget.DeferOverlay(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Left">Widget.Left()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Top">Widget.Top()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Right">Widget.Right()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Bottom">Widget.Bottom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Width">Widget.Width()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Height">Widget.Height()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_System_Int32_System_Int32_">Widget.Layout(int, Widget, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_System_Int32_">Widget.Layout(int, Widget, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_">Widget.Layout(int, Widget, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_">Widget.Layout(int, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.Layout(int, Widget, int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgets">WidgetContainer.mWidgets</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgetManager">WidgetContainer.mWidgetManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mParent">WidgetContainer.mParent</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateIteratorModified">WidgetContainer.mUpdateIteratorModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateIterator">WidgetContainer.mUpdateIterator</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mLastWMUpdateCount">WidgetContainer.mLastWMUpdateCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateCnt">WidgetContainer.mUpdateCnt</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mX">WidgetContainer.mX</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mY">WidgetContainer.mY</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidth">WidgetContainer.mWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mHeight">WidgetContainer.mHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mHasAlpha">WidgetContainer.mHasAlpha</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mClip">WidgetContainer.mClip</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgetFlagsMod">WidgetContainer.mWidgetFlagsMod</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mPriority">WidgetContainer.mPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mZOrder">WidgetContainer.mZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_FullRect">WidgetContainer.FullRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetWidgetAtHelper_System_Int32_System_Int32_System_Int32_System_Boolean__System_Int32__System_Int32__">WidgetContainer.GetWidgetAtHelper(int, int, int, out bool, out int, out int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_IsBelowHelper_Sexy_Widget_Sexy_Widget_System_Boolean__">WidgetContainer.IsBelowHelper(Widget, Widget, ref bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InsertWidgetHelper_System_Collections_Generic_LinkedList_Sexy_Widget__Enumerator_Sexy_Widget_">WidgetContainer.InsertWidgetHelper(LinkedList&lt;Widget&gt;.Enumerator, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InsertWidgetHelper_System_Collections_Generic_LinkedListNode_Sexy_Widget__Sexy_Widget_">WidgetContainer.InsertWidgetHelper(LinkedListNode&lt;Widget&gt;, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetRect">WidgetContainer.GetRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_Intersects_Sexy_WidgetContainer_">WidgetContainer.Intersects(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_HasWidget_Sexy_Widget_">WidgetContainer.HasWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_DisableWidget_Sexy_Widget_">WidgetContainer.DisableWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets_System_Boolean_">WidgetContainer.RemoveAllWidgets(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets">WidgetContainer.RemoveAllWidgets()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets_System_Boolean_System_Boolean_">WidgetContainer.RemoveAllWidgets(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SetFocus_Sexy_Widget_">WidgetContainer.SetFocus(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_IsBelow_Sexy_Widget_Sexy_Widget_">WidgetContainer.IsBelow(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkAllDirty">WidgetContainer.MarkAllDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_BringToFront_Sexy_Widget_">WidgetContainer.BringToFront(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_BringToBack_Sexy_Widget_">WidgetContainer.BringToBack(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_PutBehind_Sexy_Widget_Sexy_Widget_">WidgetContainer.PutBehind(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_PutInfront_Sexy_Widget_Sexy_Widget_">WidgetContainer.PutInfront(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetAbsPos">WidgetContainer.GetAbsPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirty">WidgetContainer.MarkDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirtyFull">WidgetContainer.MarkDirtyFull()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirtyFull_Sexy_WidgetContainer_">WidgetContainer.MarkDirtyFull(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirty_Sexy_WidgetContainer_">WidgetContainer.MarkDirty(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_AddedToManager_Sexy_WidgetManager_">WidgetContainer.AddedToManager(WidgetManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemovedFromManager_Sexy_WidgetManager_">WidgetContainer.RemovedFromManager(WidgetManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_BackButtonPress">WidgetContainer.BackButtonPress()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_UpdateAll_Sexy_ModalFlags_">WidgetContainer.UpdateAll(ModalFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_UpdateFAll_Sexy_ModalFlags_System_Single_">WidgetContainer.UpdateFAll(ModalFlags, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_DrawAll_Sexy_ModalFlags_Sexy_Graphics_">WidgetContainer.DrawAll(ModalFlags, Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SysColorChanged">WidgetContainer.SysColorChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SysColorChangedAll">WidgetContainer.SysColorChangedAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InterfaceOrientationChanged_Sexy_UI_ORIENTATION_">WidgetContainer.InterfaceOrientationChanged(UI_ORIENTATION)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardWillShow_Sexy_TRect__">WidgetContainer.KeyboardWillShow(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardDidShow_Sexy_TRect__">WidgetContainer.KeyboardDidShow(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardWillHide_Sexy_TRect__">WidgetContainer.KeyboardWillHide(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardDidHide_Sexy_TRect__">WidgetContainer.KeyboardDidHide(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_S_System_Int32_">WidgetContainer.S(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M_System_Int32_">WidgetContainer.M(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M1_System_Int32_">WidgetContainer.M1(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M2_System_Int32_">WidgetContainer.M2(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M3_System_Int32_">WidgetContainer.M3(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Sexy_ScrollWidget__ctor_" data-uid="Sexy.ScrollWidget.#ctor*"></a>
+
+  <h3 id="Sexy_ScrollWidget__ctor" data-uid="Sexy.ScrollWidget.#ctor">
+  ScrollWidget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollWidget()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget__ctor_" data-uid="Sexy.ScrollWidget.#ctor*"></a>
+
+  <h3 id="Sexy_ScrollWidget__ctor_Sexy_ScrollWidgetListener_" data-uid="Sexy.ScrollWidget.#ctor(Sexy.ScrollWidgetListener)">
+  ScrollWidget(ScrollWidgetListener)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollWidget(ScrollWidgetListener listener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <a class="xref" href="Sexy.ScrollWidgetListener.html">ScrollWidgetListener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Sexy_ScrollWidget_mBackgroundImage" data-uid="Sexy.ScrollWidget.mBackgroundImage">
+  mBackgroundImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Image mBackgroundImage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mBounceEnabled" data-uid="Sexy.ScrollWidget.mBounceEnabled">
+  mBounceEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mBounceEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mClient" data-uid="Sexy.ScrollWidget.mClient">
+  mClient
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Widget mClient</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mClientLastDown" data-uid="Sexy.ScrollWidget.mClientLastDown">
+  mClientLastDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Widget mClientLastDown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mCurrentPageHorizontal" data-uid="Sexy.ScrollWidget.mCurrentPageHorizontal">
+  mCurrentPageHorizontal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int mCurrentPageHorizontal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mCurrentPageVertical" data-uid="Sexy.ScrollWidget.mCurrentPageVertical">
+  mCurrentPageVertical
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int mCurrentPageVertical</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mDrawOverlays" data-uid="Sexy.ScrollWidget.mDrawOverlays">
+  mDrawOverlays
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mDrawOverlays</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mFillBackground" data-uid="Sexy.ScrollWidget.mFillBackground">
+  mFillBackground
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mFillBackground</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mIndicatorsEnabled" data-uid="Sexy.ScrollWidget.mIndicatorsEnabled">
+  mIndicatorsEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mIndicatorsEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mIndicatorsFlashTimer" data-uid="Sexy.ScrollWidget.mIndicatorsFlashTimer">
+  mIndicatorsFlashTimer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int mIndicatorsFlashTimer</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mIndicatorsImage" data-uid="Sexy.ScrollWidget.mIndicatorsImage">
+  mIndicatorsImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Image mIndicatorsImage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mIndicatorsInsets" data-uid="Sexy.ScrollWidget.mIndicatorsInsets">
+  mIndicatorsInsets
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Insets mIndicatorsInsets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Insets.html">Insets</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mIndicatorsOpacity" data-uid="Sexy.ScrollWidget.mIndicatorsOpacity">
+  mIndicatorsOpacity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float mIndicatorsOpacity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mIndicatorsProxy" data-uid="Sexy.ScrollWidget.mIndicatorsProxy">
+  mIndicatorsProxy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ProxyWidget mIndicatorsProxy</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ProxyWidget.html">ProxyWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mListener" data-uid="Sexy.ScrollWidget.mListener">
+  mListener
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScrollWidgetListener mListener</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidgetListener.html">ScrollWidgetListener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mOverlays" data-uid="Sexy.ScrollWidget.mOverlays">
+  mOverlays
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ScrollWidget.Overlay&gt; mOverlays</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a>.<a class="xref" href="Sexy.ScrollWidget.Overlay.html">Overlay</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mPageControl" data-uid="Sexy.ScrollWidget.mPageControl">
+  mPageControl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PageControl mPageControl</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.PageControl.html">PageControl</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mPageCountHorizontal" data-uid="Sexy.ScrollWidget.mPageCountHorizontal">
+  mPageCountHorizontal
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int mPageCountHorizontal</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mPageCountVertical" data-uid="Sexy.ScrollWidget.mPageCountVertical">
+  mPageCountVertical
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int mPageCountVertical</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mPageSize" data-uid="Sexy.ScrollWidget.mPageSize">
+  mPageSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CGPoint mPageSize</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mPagingEnabled" data-uid="Sexy.ScrollWidget.mPagingEnabled">
+  mPagingEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mPagingEnabled</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollInsets" data-uid="Sexy.ScrollWidget.mScrollInsets">
+  mScrollInsets
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Insets mScrollInsets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Insets.html">Insets</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollLastTimestamp" data-uid="Sexy.ScrollWidget.mScrollLastTimestamp">
+  mScrollLastTimestamp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected double mScrollLastTimestamp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollMax" data-uid="Sexy.ScrollWidget.mScrollMax">
+  mScrollMax
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CGPoint mScrollMax</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollMin" data-uid="Sexy.ScrollWidget.mScrollMin">
+  mScrollMin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CGPoint mScrollMin</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollMode" data-uid="Sexy.ScrollWidget.mScrollMode">
+  mScrollMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScrollWidget.ScrollMode mScrollMode</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a>.<a class="xref" href="Sexy.ScrollWidget.ScrollMode.html">ScrollMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollOffset" data-uid="Sexy.ScrollWidget.mScrollOffset">
+  mScrollOffset
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CGPoint mScrollOffset</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollOffsetReference" data-uid="Sexy.ScrollWidget.mScrollOffsetReference">
+  mScrollOffsetReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CGPoint mScrollOffsetReference</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollPractical" data-uid="Sexy.ScrollWidget.mScrollPractical">
+  mScrollPractical
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScrollWidget.ScrollMode mScrollPractical</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a>.<a class="xref" href="Sexy.ScrollWidget.ScrollMode.html">ScrollMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollTarget" data-uid="Sexy.ScrollWidget.mScrollTarget">
+  mScrollTarget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CGPoint mScrollTarget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollTouchReference" data-uid="Sexy.ScrollWidget.mScrollTouchReference">
+  mScrollTouchReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CGPoint mScrollTouchReference</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollTracking" data-uid="Sexy.ScrollWidget.mScrollTracking">
+  mScrollTracking
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mScrollTracking</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mScrollVelocity" data-uid="Sexy.ScrollWidget.mScrollVelocity">
+  mScrollVelocity
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CGPoint mScrollVelocity</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mSeekScrollTarget" data-uid="Sexy.ScrollWidget.mSeekScrollTarget">
+  mSeekScrollTarget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mSeekScrollTarget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ScrollWidget_mSpringOverride" data-uid="Sexy.ScrollWidget.mSpringOverride">
+  mSpringOverride
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float mSpringOverride</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Sexy_ScrollWidget_AddOverlayImage_" data-uid="Sexy.ScrollWidget.AddOverlayImage*"></a>
+
+  <h3 id="Sexy_ScrollWidget_AddOverlayImage_Sexy_Image_Sexy_CGPoint_" data-uid="Sexy.ScrollWidget.AddOverlayImage(Sexy.Image,Sexy.CGPoint)">
+  AddOverlayImage(Image, CGPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOverlayImage(Image image, CGPoint offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>image</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_AddWidget_" data-uid="Sexy.ScrollWidget.AddWidget*"></a>
+
+  <h3 id="Sexy_ScrollWidget_AddWidget_Sexy_Widget_" data-uid="Sexy.ScrollWidget.AddWidget(Sexy.Widget)">
+  AddWidget(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddWidget(Widget theWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_CacheDerivedValues_" data-uid="Sexy.ScrollWidget.CacheDerivedValues*"></a>
+
+  <h3 id="Sexy_ScrollWidget_CacheDerivedValues" data-uid="Sexy.ScrollWidget.CacheDerivedValues">
+  CacheDerivedValues()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CacheDerivedValues()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_ClientSizeChanged_" data-uid="Sexy.ScrollWidget.ClientSizeChanged*"></a>
+
+  <h3 id="Sexy_ScrollWidget_ClientSizeChanged" data-uid="Sexy.ScrollWidget.ClientSizeChanged">
+  ClientSizeChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClientSizeChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_Dispose_" data-uid="Sexy.ScrollWidget.Dispose*"></a>
+
+  <h3 id="Sexy_ScrollWidget_Dispose" data-uid="Sexy.ScrollWidget.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_DoScrollUpdate_" data-uid="Sexy.ScrollWidget.DoScrollUpdate*"></a>
+
+  <h3 id="Sexy_ScrollWidget_DoScrollUpdate" data-uid="Sexy.ScrollWidget.DoScrollUpdate">
+  DoScrollUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoScrollUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_Draw_" data-uid="Sexy.ScrollWidget.Draw*"></a>
+
+  <h3 id="Sexy_ScrollWidget_Draw_Sexy_Graphics_" data-uid="Sexy.ScrollWidget.Draw(Sexy.Graphics)">
+  Draw(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_DrawHorizontalStretchableImage_" data-uid="Sexy.ScrollWidget.DrawHorizontalStretchableImage*"></a>
+
+  <h3 id="Sexy_ScrollWidget_DrawHorizontalStretchableImage_Sexy_Graphics_Sexy_Image_Sexy_TRect_" data-uid="Sexy.ScrollWidget.DrawHorizontalStretchableImage(Sexy.Graphics,Sexy.Image,Sexy.TRect)">
+  DrawHorizontalStretchableImage(Graphics, Image, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawHorizontalStretchableImage(Graphics g, Image image, TRect destRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>image</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>destRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_DrawProxyWidget_" data-uid="Sexy.ScrollWidget.DrawProxyWidget*"></a>
+
+  <h3 id="Sexy_ScrollWidget_DrawProxyWidget_Sexy_Graphics_Sexy_ProxyWidget_" data-uid="Sexy.ScrollWidget.DrawProxyWidget(Sexy.Graphics,Sexy.ProxyWidget)">
+  DrawProxyWidget(Graphics, ProxyWidget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawProxyWidget(Graphics g, ProxyWidget proxyWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>proxyWidget</code> <a class="xref" href="Sexy.ProxyWidget.html">ProxyWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_DrawVerticalStretchableImage_" data-uid="Sexy.ScrollWidget.DrawVerticalStretchableImage*"></a>
+
+  <h3 id="Sexy_ScrollWidget_DrawVerticalStretchableImage_Sexy_Graphics_Sexy_Image_Sexy_TRect_" data-uid="Sexy.ScrollWidget.DrawVerticalStretchableImage(Sexy.Graphics,Sexy.Image,Sexy.TRect)">
+  DrawVerticalStretchableImage(Graphics, Image, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawVerticalStretchableImage(Graphics g, Image image, TRect destRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>image</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>destRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_EnableBackgroundFill_" data-uid="Sexy.ScrollWidget.EnableBackgroundFill*"></a>
+
+  <h3 id="Sexy_ScrollWidget_EnableBackgroundFill_System_Boolean_" data-uid="Sexy.ScrollWidget.EnableBackgroundFill(System.Boolean)">
+  EnableBackgroundFill(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableBackgroundFill(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_EnableBounce_" data-uid="Sexy.ScrollWidget.EnableBounce*"></a>
+
+  <h3 id="Sexy_ScrollWidget_EnableBounce_System_Boolean_" data-uid="Sexy.ScrollWidget.EnableBounce(System.Boolean)">
+  EnableBounce(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableBounce(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_EnableIndicators_" data-uid="Sexy.ScrollWidget.EnableIndicators*"></a>
+
+  <h3 id="Sexy_ScrollWidget_EnableIndicators_Sexy_Image_" data-uid="Sexy.ScrollWidget.EnableIndicators(Sexy.Image)">
+  EnableIndicators(Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableIndicators(Image indicatorsImage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>indicatorsImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_EnableOverlays_" data-uid="Sexy.ScrollWidget.EnableOverlays*"></a>
+
+  <h3 id="Sexy_ScrollWidget_EnableOverlays_System_Boolean_" data-uid="Sexy.ScrollWidget.EnableOverlays(System.Boolean)">
+  EnableOverlays(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableOverlays(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_EnablePaging_" data-uid="Sexy.ScrollWidget.EnablePaging*"></a>
+
+  <h3 id="Sexy_ScrollWidget_EnablePaging_System_Boolean_" data-uid="Sexy.ScrollWidget.EnablePaging(System.Boolean)">
+  EnablePaging(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnablePaging(bool enable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>enable</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_FlashIndicators_" data-uid="Sexy.ScrollWidget.FlashIndicators*"></a>
+
+  <h3 id="Sexy_ScrollWidget_FlashIndicators" data-uid="Sexy.ScrollWidget.FlashIndicators">
+  FlashIndicators()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlashIndicators()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_GetClientWidgetAt_" data-uid="Sexy.ScrollWidget.GetClientWidgetAt*"></a>
+
+  <h3 id="Sexy_ScrollWidget_GetClientWidgetAt_Sexy__Touch_" data-uid="Sexy.ScrollWidget.GetClientWidgetAt(Sexy._Touch)">
+  GetClientWidgetAt(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Widget GetClientWidgetAt(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_GetClientWidgetAt_" data-uid="Sexy.ScrollWidget.GetClientWidgetAt*"></a>
+
+  <h3 id="Sexy_ScrollWidget_GetClientWidgetAt_System_Int32_System_Int32_" data-uid="Sexy.ScrollWidget.GetClientWidgetAt(System.Int32,System.Int32)">
+  GetClientWidgetAt(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Widget GetClientWidgetAt(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_GetPageHorizontal_" data-uid="Sexy.ScrollWidget.GetPageHorizontal*"></a>
+
+  <h3 id="Sexy_ScrollWidget_GetPageHorizontal" data-uid="Sexy.ScrollWidget.GetPageHorizontal">
+  GetPageHorizontal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPageHorizontal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_GetPageVertical_" data-uid="Sexy.ScrollWidget.GetPageVertical*"></a>
+
+  <h3 id="Sexy_ScrollWidget_GetPageVertical" data-uid="Sexy.ScrollWidget.GetPageVertical">
+  GetPageVertical()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPageVertical()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_GetScrollOffset_" data-uid="Sexy.ScrollWidget.GetScrollOffset*"></a>
+
+  <h3 id="Sexy_ScrollWidget_GetScrollOffset" data-uid="Sexy.ScrollWidget.GetScrollOffset">
+  GetScrollOffset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CGPoint GetScrollOffset()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_Init_" data-uid="Sexy.ScrollWidget.Init*"></a>
+
+  <h3 id="Sexy_ScrollWidget_Init_Sexy_ScrollWidgetListener_" data-uid="Sexy.ScrollWidget.Init(Sexy.ScrollWidgetListener)">
+  Init(ScrollWidgetListener)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Init(ScrollWidgetListener listener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listener</code> <a class="xref" href="Sexy.ScrollWidgetListener.html">ScrollWidgetListener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_MouseDown_" data-uid="Sexy.ScrollWidget.MouseDown*"></a>
+
+  <h3 id="Sexy_ScrollWidget_MouseDown_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.ScrollWidget.MouseDown(System.Int32,System.Int32,System.Int32)">
+  MouseDown(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MouseDown(int x, int y, int theMagicCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMagicCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_MouseDrag_" data-uid="Sexy.ScrollWidget.MouseDrag*"></a>
+
+  <h3 id="Sexy_ScrollWidget_MouseDrag_System_Int32_System_Int32_" data-uid="Sexy.ScrollWidget.MouseDrag(System.Int32,System.Int32)">
+  MouseDrag(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MouseDrag(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_MouseUp_" data-uid="Sexy.ScrollWidget.MouseUp*"></a>
+
+  <h3 id="Sexy_ScrollWidget_MouseUp_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.ScrollWidget.MouseUp(System.Int32,System.Int32,System.Int32)">
+  MouseUp(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MouseUp(int x, int y, int theMagicCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMagicCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_MouseWheel_" data-uid="Sexy.ScrollWidget.MouseWheel*"></a>
+
+  <h3 id="Sexy_ScrollWidget_MouseWheel_System_Int32_" data-uid="Sexy.ScrollWidget.MouseWheel(System.Int32)">
+  MouseWheel(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MouseWheel(int theDelta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDelta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_RemoveWidget_" data-uid="Sexy.ScrollWidget.RemoveWidget*"></a>
+
+  <h3 id="Sexy_ScrollWidget_RemoveWidget_Sexy_Widget_" data-uid="Sexy.ScrollWidget.RemoveWidget(Sexy.Widget)">
+  RemoveWidget(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemoveWidget(Widget theWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_Resize_" data-uid="Sexy.ScrollWidget.Resize*"></a>
+
+  <h3 id="Sexy_ScrollWidget_Resize_Sexy_TRect_" data-uid="Sexy.ScrollWidget.Resize(Sexy.TRect)">
+  Resize(TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Resize(TRect frame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>frame</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_Resize_" data-uid="Sexy.ScrollWidget.Resize*"></a>
+
+  <h3 id="Sexy_ScrollWidget_Resize_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.ScrollWidget.Resize(System.Int32,System.Int32,System.Int32,System.Int32)">
+  Resize(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Resize(int x, int y, int width, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_ScrollRectIntoView_" data-uid="Sexy.ScrollWidget.ScrollRectIntoView*"></a>
+
+  <h3 id="Sexy_ScrollWidget_ScrollRectIntoView_Sexy_TRect_System_Boolean_" data-uid="Sexy.ScrollWidget.ScrollRectIntoView(Sexy.TRect,System.Boolean)">
+  ScrollRectIntoView(TRect, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollRectIntoView(TRect rect, bool animated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>animated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_ScrollToBottom_" data-uid="Sexy.ScrollWidget.ScrollToBottom*"></a>
+
+  <h3 id="Sexy_ScrollWidget_ScrollToBottom_System_Boolean_" data-uid="Sexy.ScrollWidget.ScrollToBottom(System.Boolean)">
+  ScrollToBottom(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToBottom(bool animated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>animated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_ScrollToMin_" data-uid="Sexy.ScrollWidget.ScrollToMin*"></a>
+
+  <h3 id="Sexy_ScrollWidget_ScrollToMin_System_Boolean_" data-uid="Sexy.ScrollWidget.ScrollToMin(System.Boolean)">
+  ScrollToMin(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToMin(bool animated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>animated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_ScrollToPoint_" data-uid="Sexy.ScrollWidget.ScrollToPoint*"></a>
+
+  <h3 id="Sexy_ScrollWidget_ScrollToPoint_Sexy_CGPoint_System_Boolean_" data-uid="Sexy.ScrollWidget.ScrollToPoint(Sexy.CGPoint,System.Boolean)">
+  ScrollToPoint(CGPoint, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToPoint(CGPoint point, bool animated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>point</code> <a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+    <dt><code>animated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetBackgroundImage_" data-uid="Sexy.ScrollWidget.SetBackgroundImage*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetBackgroundImage_Sexy_Image_" data-uid="Sexy.ScrollWidget.SetBackgroundImage(Sexy.Image)">
+  SetBackgroundImage(Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBackgroundImage(Image image)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>image</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetIndicatorsInsets_" data-uid="Sexy.ScrollWidget.SetIndicatorsInsets*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetIndicatorsInsets_Sexy_Insets_" data-uid="Sexy.ScrollWidget.SetIndicatorsInsets(Sexy.Insets)">
+  SetIndicatorsInsets(Insets)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIndicatorsInsets(Insets insets)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>insets</code> <a class="xref" href="Sexy.Insets.html">Insets</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetPage_" data-uid="Sexy.ScrollWidget.SetPage*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetPage_System_Int32_System_Int32_System_Boolean_" data-uid="Sexy.ScrollWidget.SetPage(System.Int32,System.Int32,System.Boolean)">
+  SetPage(int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPage(int hpage, int vpage, bool animated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hpage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>vpage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>animated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetPageControl_" data-uid="Sexy.ScrollWidget.SetPageControl*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetPageControl_Sexy_PageControl_" data-uid="Sexy.ScrollWidget.SetPageControl(Sexy.PageControl)">
+  SetPageControl(PageControl)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPageControl(PageControl pageControl)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageControl</code> <a class="xref" href="Sexy.PageControl.html">PageControl</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetPageHorizontal_" data-uid="Sexy.ScrollWidget.SetPageHorizontal*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetPageHorizontal_System_Int32_System_Boolean_" data-uid="Sexy.ScrollWidget.SetPageHorizontal(System.Int32,System.Boolean)">
+  SetPageHorizontal(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPageHorizontal(int page, bool animated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>animated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetPageVertical_" data-uid="Sexy.ScrollWidget.SetPageVertical*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetPageVertical_System_Int32_System_Boolean_" data-uid="Sexy.ScrollWidget.SetPageVertical(System.Int32,System.Boolean)">
+  SetPageVertical(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPageVertical(int page, bool animated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>animated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetScrollInsets_" data-uid="Sexy.ScrollWidget.SetScrollInsets*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetScrollInsets_Sexy_Insets_" data-uid="Sexy.ScrollWidget.SetScrollInsets(Sexy.Insets)">
+  SetScrollInsets(Insets)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScrollInsets(Insets insets)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>insets</code> <a class="xref" href="Sexy.Insets.html">Insets</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetScrollMode_" data-uid="Sexy.ScrollWidget.SetScrollMode*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetScrollMode_Sexy_ScrollWidget_ScrollMode_" data-uid="Sexy.ScrollWidget.SetScrollMode(Sexy.ScrollWidget.ScrollMode)">
+  SetScrollMode(ScrollMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScrollMode(ScrollWidget.ScrollMode mode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a>.<a class="xref" href="Sexy.ScrollWidget.ScrollMode.html">ScrollMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetScrollOffset_" data-uid="Sexy.ScrollWidget.SetScrollOffset*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetScrollOffset_Sexy_CGPoint_System_Boolean_" data-uid="Sexy.ScrollWidget.SetScrollOffset(Sexy.CGPoint,System.Boolean)">
+  SetScrollOffset(CGPoint, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScrollOffset(CGPoint offset, bool animated)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>offset</code> <a class="xref" href="Sexy.CGPoint.html">CGPoint</a></dt>
+    <dd></dd>
+    <dt><code>animated</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SetScrollOffset_" data-uid="Sexy.ScrollWidget.SetScrollOffset*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SetScrollOffset_System_Single_System_Single_" data-uid="Sexy.ScrollWidget.SetScrollOffset(System.Single,System.Single)">
+  SetScrollOffset(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScrollOffset(float x, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_SnapToPage_" data-uid="Sexy.ScrollWidget.SnapToPage*"></a>
+
+  <h3 id="Sexy_ScrollWidget_SnapToPage" data-uid="Sexy.ScrollWidget.SnapToPage">
+  SnapToPage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SnapToPage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_TouchBegan_" data-uid="Sexy.ScrollWidget.TouchBegan*"></a>
+
+  <h3 id="Sexy_ScrollWidget_TouchBegan_Sexy__Touch_" data-uid="Sexy.ScrollWidget.TouchBegan(Sexy._Touch)">
+  TouchBegan(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TouchBegan(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_TouchEnded_" data-uid="Sexy.ScrollWidget.TouchEnded*"></a>
+
+  <h3 id="Sexy_ScrollWidget_TouchEnded_Sexy__Touch_" data-uid="Sexy.ScrollWidget.TouchEnded(Sexy._Touch)">
+  TouchEnded(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TouchEnded(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_TouchMotion_" data-uid="Sexy.ScrollWidget.TouchMotion*"></a>
+
+  <h3 id="Sexy_ScrollWidget_TouchMotion_Sexy__Touch_" data-uid="Sexy.ScrollWidget.TouchMotion(Sexy._Touch)">
+  TouchMotion(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void TouchMotion(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_TouchMoved_" data-uid="Sexy.ScrollWidget.TouchMoved*"></a>
+
+  <h3 id="Sexy_ScrollWidget_TouchMoved_Sexy__Touch_" data-uid="Sexy.ScrollWidget.TouchMoved(Sexy._Touch)">
+  TouchMoved(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TouchMoved(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_TouchesCanceled_" data-uid="Sexy.ScrollWidget.TouchesCanceled*"></a>
+
+  <h3 id="Sexy_ScrollWidget_TouchesCanceled" data-uid="Sexy.ScrollWidget.TouchesCanceled">
+  TouchesCanceled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TouchesCanceled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ScrollWidget_Update_" data-uid="Sexy.ScrollWidget.Update*"></a>
+
+  <h3 id="Sexy_ScrollWidget_Update" data-uid="Sexy.ScrollWidget.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

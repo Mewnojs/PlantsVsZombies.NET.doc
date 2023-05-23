@@ -1,0 +1,2967 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class WidgetManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WidgetManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Sexy.WidgetManager">
+
+
+
+  <h1 id="Sexy_WidgetManager" data-uid="Sexy.WidgetManager" class="text-break">
+    Class WidgetManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sexy.html">Sexy</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WidgetManager : WidgetContainer</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Sexy.WidgetContainer.html">WidgetContainer</a></div>
+      <div><span class="xref">WidgetManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgets">WidgetContainer.mWidgets</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgetManager">WidgetContainer.mWidgetManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mParent">WidgetContainer.mParent</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateIteratorModified">WidgetContainer.mUpdateIteratorModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateIterator">WidgetContainer.mUpdateIterator</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mLastWMUpdateCount">WidgetContainer.mLastWMUpdateCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateCnt">WidgetContainer.mUpdateCnt</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mX">WidgetContainer.mX</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mY">WidgetContainer.mY</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidth">WidgetContainer.mWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mHeight">WidgetContainer.mHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mHasAlpha">WidgetContainer.mHasAlpha</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mClip">WidgetContainer.mClip</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgetFlagsMod">WidgetContainer.mWidgetFlagsMod</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mPriority">WidgetContainer.mPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mZOrder">WidgetContainer.mZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_FullRect">WidgetContainer.FullRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetWidgetAtHelper_System_Int32_System_Int32_System_Int32_System_Boolean__System_Int32__System_Int32__">WidgetContainer.GetWidgetAtHelper(int, int, int, out bool, out int, out int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_IsBelowHelper_Sexy_Widget_Sexy_Widget_System_Boolean__">WidgetContainer.IsBelowHelper(Widget, Widget, ref bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InsertWidgetHelper_System_Collections_Generic_LinkedList_Sexy_Widget__Enumerator_Sexy_Widget_">WidgetContainer.InsertWidgetHelper(LinkedList&lt;Widget&gt;.Enumerator, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InsertWidgetHelper_System_Collections_Generic_LinkedListNode_Sexy_Widget__Sexy_Widget_">WidgetContainer.InsertWidgetHelper(LinkedListNode&lt;Widget&gt;, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetRect">WidgetContainer.GetRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_Intersects_Sexy_WidgetContainer_">WidgetContainer.Intersects(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_AddWidget_Sexy_Widget_">WidgetContainer.AddWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveWidget_Sexy_Widget_">WidgetContainer.RemoveWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_HasWidget_Sexy_Widget_">WidgetContainer.HasWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets_System_Boolean_">WidgetContainer.RemoveAllWidgets(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets">WidgetContainer.RemoveAllWidgets()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets_System_Boolean_System_Boolean_">WidgetContainer.RemoveAllWidgets(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_IsBelow_Sexy_Widget_Sexy_Widget_">WidgetContainer.IsBelow(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkAllDirty">WidgetContainer.MarkAllDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_BringToFront_Sexy_Widget_">WidgetContainer.BringToFront(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_BringToBack_Sexy_Widget_">WidgetContainer.BringToBack(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_PutBehind_Sexy_Widget_Sexy_Widget_">WidgetContainer.PutBehind(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_PutInfront_Sexy_Widget_Sexy_Widget_">WidgetContainer.PutInfront(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetAbsPos">WidgetContainer.GetAbsPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirty">WidgetContainer.MarkDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirtyFull">WidgetContainer.MarkDirtyFull()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirtyFull_Sexy_WidgetContainer_">WidgetContainer.MarkDirtyFull(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirty_Sexy_WidgetContainer_">WidgetContainer.MarkDirty(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_AddedToManager_Sexy_WidgetManager_">WidgetContainer.AddedToManager(WidgetManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemovedFromManager_Sexy_WidgetManager_">WidgetContainer.RemovedFromManager(WidgetManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_Update">WidgetContainer.Update()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_UpdateAll_Sexy_ModalFlags_">WidgetContainer.UpdateAll(ModalFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_UpdateF_System_Single_">WidgetContainer.UpdateF(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_UpdateFAll_Sexy_ModalFlags_System_Single_">WidgetContainer.UpdateFAll(ModalFlags, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_Draw_Sexy_Graphics_">WidgetContainer.Draw(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_DrawAll_Sexy_ModalFlags_Sexy_Graphics_">WidgetContainer.DrawAll(ModalFlags, Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SysColorChanged">WidgetContainer.SysColorChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SysColorChangedAll">WidgetContainer.SysColorChangedAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InterfaceOrientationChanged_Sexy_UI_ORIENTATION_">WidgetContainer.InterfaceOrientationChanged(UI_ORIENTATION)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardWillShow_Sexy_TRect__">WidgetContainer.KeyboardWillShow(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardDidShow_Sexy_TRect__">WidgetContainer.KeyboardDidShow(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardWillHide_Sexy_TRect__">WidgetContainer.KeyboardWillHide(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardDidHide_Sexy_TRect__">WidgetContainer.KeyboardDidHide(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_S_System_Int32_">WidgetContainer.S(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M_System_Int32_">WidgetContainer.M(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M1_System_Int32_">WidgetContainer.M1(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M2_System_Int32_">WidgetContainer.M2(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M3_System_Int32_">WidgetContainer.M3(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Sexy_WidgetManager__ctor_" data-uid="Sexy.WidgetManager.#ctor*"></a>
+
+  <h3 id="Sexy_WidgetManager__ctor_Sexy_SexyAppBase_" data-uid="Sexy.WidgetManager.#ctor(Sexy.SexyAppBase)">
+  WidgetManager(SexyAppBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WidgetManager(SexyAppBase theApp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theApp</code> <a class="xref" href="Sexy.SexyAppBase.html">SexyAppBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Sexy_WidgetManager_NO_TOUCH_MOUSE_POS" data-uid="Sexy.WidgetManager.NO_TOUCH_MOUSE_POS">
+  NO_TOUCH_MOUSE_POS
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TPoint NO_TOUCH_MOUSE_POS</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TPoint.html">TPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mActualDownButtons" data-uid="Sexy.WidgetManager.mActualDownButtons">
+  mActualDownButtons
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mActualDownButtons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mApp" data-uid="Sexy.WidgetManager.mApp">
+  mApp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SexyAppBase mApp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.SexyAppBase.html">SexyAppBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mBaseModalWidget" data-uid="Sexy.WidgetManager.mBaseModalWidget">
+  mBaseModalWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget mBaseModalWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mBelowModalFlagsMod" data-uid="Sexy.WidgetManager.mBelowModalFlagsMod">
+  mBelowModalFlagsMod
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlagsMod mBelowModalFlagsMod</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.FlagsMod.html">FlagsMod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mCurG" data-uid="Sexy.WidgetManager.mCurG">
+  mCurG
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphics mCurG</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mDefaultBelowModalFlagsMod" data-uid="Sexy.WidgetManager.mDefaultBelowModalFlagsMod">
+  mDefaultBelowModalFlagsMod
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlagsMod mDefaultBelowModalFlagsMod</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.FlagsMod.html">FlagsMod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mDefaultTab" data-uid="Sexy.WidgetManager.mDefaultTab">
+  mDefaultTab
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget mDefaultTab</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mDeferredOverlayWidgets" data-uid="Sexy.WidgetManager.mDeferredOverlayWidgets">
+  mDeferredOverlayWidgets
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;WidgetOverlayPair&gt; mDeferredOverlayWidgets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.WidgetOverlayPair.html">WidgetOverlayPair</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mDownButtons" data-uid="Sexy.WidgetManager.mDownButtons">
+  mDownButtons
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mDownButtons</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mFocusWidget" data-uid="Sexy.WidgetManager.mFocusWidget">
+  mFocusWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget mFocusWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mFrameCnt" data-uid="Sexy.WidgetManager.mFrameCnt">
+  mFrameCnt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected uint mFrameCnt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mHasFocus" data-uid="Sexy.WidgetManager.mHasFocus">
+  mHasFocus
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mHasFocus</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mIMEHandler" data-uid="Sexy.WidgetManager.mIMEHandler">
+  mIMEHandler
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMEHandler mIMEHandler</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IMEHandler</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mIMEHotWidget" data-uid="Sexy.WidgetManager.mIMEHotWidget">
+  mIMEHotWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMECompatibleWidget mIMEHotWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.IMECompatibleWidget.html">IMECompatibleWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mImage" data-uid="Sexy.WidgetManager.mImage">
+  mImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryImage mImage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mKeyDown" data-uid="Sexy.WidgetManager.mKeyDown">
+  mKeyDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool[] mKeyDown</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mLastDownButtonId" data-uid="Sexy.WidgetManager.mLastDownButtonId">
+  mLastDownButtonId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLastDownButtonId</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mLastDownWidget" data-uid="Sexy.WidgetManager.mLastDownWidget">
+  mLastDownWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget mLastDownWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mLastHadTransients" data-uid="Sexy.WidgetManager.mLastHadTransients">
+  mLastHadTransients
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mLastHadTransients</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mLastInputUpdateCnt" data-uid="Sexy.WidgetManager.mLastInputUpdateCnt">
+  mLastInputUpdateCnt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLastInputUpdateCnt</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mLastMouseX" data-uid="Sexy.WidgetManager.mLastMouseX">
+  mLastMouseX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLastMouseX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mLastMouseY" data-uid="Sexy.WidgetManager.mLastMouseY">
+  mLastMouseY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLastMouseY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mLostFocusFlagsMod" data-uid="Sexy.WidgetManager.mLostFocusFlagsMod">
+  mLostFocusFlagsMod
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FlagsMod mLostFocusFlagsMod</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.FlagsMod.html">FlagsMod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mMinDeferredOverlayPriority" data-uid="Sexy.WidgetManager.mMinDeferredOverlayPriority">
+  mMinDeferredOverlayPriority
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mMinDeferredOverlayPriority</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mMouseIn" data-uid="Sexy.WidgetManager.mMouseIn">
+  mMouseIn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mMouseIn</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mOverWidget" data-uid="Sexy.WidgetManager.mOverWidget">
+  mOverWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget mOverWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mPopupCommandWidget" data-uid="Sexy.WidgetManager.mPopupCommandWidget">
+  mPopupCommandWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget mPopupCommandWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mPreModalInfoList" data-uid="Sexy.WidgetManager.mPreModalInfoList">
+  mPreModalInfoList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PreModalInfo&gt; mPreModalInfoList</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.PreModalInfo.html">PreModalInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mTransientImage" data-uid="Sexy.WidgetManager.mTransientImage">
+  mTransientImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MemoryImage mTransientImage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_WidgetManager_mWidgetFlags" data-uid="Sexy.WidgetManager.mWidgetFlags">
+  mWidgetFlags
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mWidgetFlags</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Sexy_WidgetManager_AddBaseModal_" data-uid="Sexy.WidgetManager.AddBaseModal*"></a>
+
+  <h3 id="Sexy_WidgetManager_AddBaseModal_Sexy_Widget_" data-uid="Sexy.WidgetManager.AddBaseModal(Sexy.Widget)">
+  AddBaseModal(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBaseModal(Widget theWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_AddBaseModal_" data-uid="Sexy.WidgetManager.AddBaseModal*"></a>
+
+  <h3 id="Sexy_WidgetManager_AddBaseModal_Sexy_Widget_Sexy_FlagsMod_" data-uid="Sexy.WidgetManager.AddBaseModal(Sexy.Widget,Sexy.FlagsMod)">
+  AddBaseModal(Widget, FlagsMod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddBaseModal(Widget theWidget, FlagsMod theBelowFlagsMod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+    <dt><code>theBelowFlagsMod</code> <a class="xref" href="Sexy.FlagsMod.html">FlagsMod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_BackButtonPress_" data-uid="Sexy.WidgetManager.BackButtonPress*"></a>
+
+  <h3 id="Sexy_WidgetManager_BackButtonPress" data-uid="Sexy.WidgetManager.BackButtonPress">
+  BackButtonPress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool BackButtonPress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_DeferOverlay_" data-uid="Sexy.WidgetManager.DeferOverlay*"></a>
+
+  <h3 id="Sexy_WidgetManager_DeferOverlay_Sexy_Widget_System_Int32_" data-uid="Sexy.WidgetManager.DeferOverlay(Sexy.Widget,System.Int32)">
+  DeferOverlay(Widget, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeferOverlay(Widget theWidget, int thePriority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+    <dt><code>thePriority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_DisableWidget_" data-uid="Sexy.WidgetManager.DisableWidget*"></a>
+
+  <h3 id="Sexy_WidgetManager_DisableWidget_Sexy_Widget_" data-uid="Sexy.WidgetManager.DisableWidget(Sexy.Widget)">
+  DisableWidget(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DisableWidget(Widget theWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_Dispose_" data-uid="Sexy.WidgetManager.Dispose*"></a>
+
+  <h3 id="Sexy_WidgetManager_Dispose" data-uid="Sexy.WidgetManager.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_DoMouseUps_" data-uid="Sexy.WidgetManager.DoMouseUps*"></a>
+
+  <h3 id="Sexy_WidgetManager_DoMouseUps" data-uid="Sexy.WidgetManager.DoMouseUps">
+  DoMouseUps()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoMouseUps()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_DoMouseUps_" data-uid="Sexy.WidgetManager.DoMouseUps*"></a>
+
+  <h3 id="Sexy_WidgetManager_DoMouseUps_Sexy_Widget_System_Int32_" data-uid="Sexy.WidgetManager.DoMouseUps(Sexy.Widget,System.Int32)">
+  DoMouseUps(Widget, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoMouseUps(Widget theWidget, int theDownCode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+    <dt><code>theDownCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_DrawScreen_" data-uid="Sexy.WidgetManager.DrawScreen*"></a>
+
+  <h3 id="Sexy_WidgetManager_DrawScreen" data-uid="Sexy.WidgetManager.DrawScreen">
+  DrawScreen()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DrawScreen()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_DrawWidgetsTo_" data-uid="Sexy.WidgetManager.DrawWidgetsTo*"></a>
+
+  <h3 id="Sexy_WidgetManager_DrawWidgetsTo_Sexy_Graphics_" data-uid="Sexy.WidgetManager.DrawWidgetsTo(Sexy.Graphics)">
+  DrawWidgetsTo(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawWidgetsTo(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_FlushDeferredOverlayWidgets_" data-uid="Sexy.WidgetManager.FlushDeferredOverlayWidgets*"></a>
+
+  <h3 id="Sexy_WidgetManager_FlushDeferredOverlayWidgets_System_Int32_" data-uid="Sexy.WidgetManager.FlushDeferredOverlayWidgets(System.Int32)">
+  FlushDeferredOverlayWidgets(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FlushDeferredOverlayWidgets(int theMaxPriority)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theMaxPriority</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_FreeResources_" data-uid="Sexy.WidgetManager.FreeResources*"></a>
+
+  <h3 id="Sexy_WidgetManager_FreeResources" data-uid="Sexy.WidgetManager.FreeResources">
+  FreeResources()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreeResources()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_GetAnyWidgetAt_" data-uid="Sexy.WidgetManager.GetAnyWidgetAt*"></a>
+
+  <h3 id="Sexy_WidgetManager_GetAnyWidgetAt_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="Sexy.WidgetManager.GetAnyWidgetAt(System.Int32,System.Int32,System.Int32@,System.Int32@)">
+  GetAnyWidgetAt(int, int, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget GetAnyWidgetAt(int x, int y, out int theWidgetX, out int theWidgetY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidgetX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidgetY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_GetWidgetAt_" data-uid="Sexy.WidgetManager.GetWidgetAt*"></a>
+
+  <h3 id="Sexy_WidgetManager_GetWidgetAt_System_Int32_System_Int32_" data-uid="Sexy.WidgetManager.GetWidgetAt(System.Int32,System.Int32)">
+  GetWidgetAt(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget GetWidgetAt(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_GetWidgetAt_" data-uid="Sexy.WidgetManager.GetWidgetAt*"></a>
+
+  <h3 id="Sexy_WidgetManager_GetWidgetAt_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="Sexy.WidgetManager.GetWidgetAt(System.Int32,System.Int32,System.Int32@,System.Int32@)">
+  GetWidgetAt(int, int, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget GetWidgetAt(int x, int y, out int theWidgetX, out int theWidgetY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidgetX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidgetY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_GetWidgetAt_" data-uid="Sexy.WidgetManager.GetWidgetAt*"></a>
+
+  <h3 id="Sexy_WidgetManager_GetWidgetAt_System_Single_System_Single_" data-uid="Sexy.WidgetManager.GetWidgetAt(System.Single,System.Single)">
+  GetWidgetAt(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget GetWidgetAt(float x, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_GetWidgetAt_" data-uid="Sexy.WidgetManager.GetWidgetAt*"></a>
+
+  <h3 id="Sexy_WidgetManager_GetWidgetAt_System_Single_System_Single_System_Int32__System_Int32__" data-uid="Sexy.WidgetManager.GetWidgetAt(System.Single,System.Single,System.Int32@,System.Int32@)">
+  GetWidgetAt(float, float, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget GetWidgetAt(float x, float y, out int theWidgetX, out int theWidgetY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theWidgetX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidgetY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_GetWidgetFlags_" data-uid="Sexy.WidgetManager.GetWidgetFlags*"></a>
+
+  <h3 id="Sexy_WidgetManager_GetWidgetFlags" data-uid="Sexy.WidgetManager.GetWidgetFlags">
+  GetWidgetFlags()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetWidgetFlags()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_GotFocus_" data-uid="Sexy.WidgetManager.GotFocus*"></a>
+
+  <h3 id="Sexy_WidgetManager_GotFocus" data-uid="Sexy.WidgetManager.GotFocus">
+  GotFocus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GotFocus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_InitModalFlags_" data-uid="Sexy.WidgetManager.InitModalFlags*"></a>
+
+  <h3 id="Sexy_WidgetManager_InitModalFlags_Sexy_ModalFlags__" data-uid="Sexy.WidgetManager.InitModalFlags(Sexy.ModalFlags@)">
+  InitModalFlags(ref ModalFlags)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitModalFlags(ref ModalFlags theModalFlags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theModalFlags</code> <a class="xref" href="Sexy.ModalFlags.html">ModalFlags</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_IsLeftButtonDown_" data-uid="Sexy.WidgetManager.IsLeftButtonDown*"></a>
+
+  <h3 id="Sexy_WidgetManager_IsLeftButtonDown" data-uid="Sexy.WidgetManager.IsLeftButtonDown">
+  IsLeftButtonDown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLeftButtonDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_IsMiddleButtonDown_" data-uid="Sexy.WidgetManager.IsMiddleButtonDown*"></a>
+
+  <h3 id="Sexy_WidgetManager_IsMiddleButtonDown" data-uid="Sexy.WidgetManager.IsMiddleButtonDown">
+  IsMiddleButtonDown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMiddleButtonDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_IsRightButtonDown_" data-uid="Sexy.WidgetManager.IsRightButtonDown*"></a>
+
+  <h3 id="Sexy_WidgetManager_IsRightButtonDown" data-uid="Sexy.WidgetManager.IsRightButtonDown">
+  IsRightButtonDown()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRightButtonDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_KeyChar_" data-uid="Sexy.WidgetManager.KeyChar*"></a>
+
+  <h3 id="Sexy_WidgetManager_KeyChar_Sexy_SexyChar_" data-uid="Sexy.WidgetManager.KeyChar(Sexy.SexyChar)">
+  KeyChar(SexyChar)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyChar(SexyChar theChar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theChar</code> <a class="xref" href="Sexy.SexyChar.html">SexyChar</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_KeyDown_" data-uid="Sexy.WidgetManager.KeyDown*"></a>
+
+  <h3 id="Sexy_WidgetManager_KeyDown_Sexy_KeyCode_" data-uid="Sexy.WidgetManager.KeyDown(Sexy.KeyCode)">
+  KeyDown(KeyCode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyDown(KeyCode key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="Sexy.KeyCode.html">KeyCode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_KeyUp_" data-uid="Sexy.WidgetManager.KeyUp*"></a>
+
+  <h3 id="Sexy_WidgetManager_KeyUp_Sexy_KeyCode_" data-uid="Sexy.WidgetManager.KeyUp(Sexy.KeyCode)">
+  KeyUp(KeyCode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool KeyUp(KeyCode key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="Sexy.KeyCode.html">KeyCode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_LostFocus_" data-uid="Sexy.WidgetManager.LostFocus*"></a>
+
+  <h3 id="Sexy_WidgetManager_LostFocus" data-uid="Sexy.WidgetManager.LostFocus">
+  LostFocus()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LostFocus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MouseDown_" data-uid="Sexy.WidgetManager.MouseDown*"></a>
+
+  <h3 id="Sexy_WidgetManager_MouseDown_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.WidgetManager.MouseDown(System.Int32,System.Int32,System.Int32)">
+  MouseDown(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseDown(int x, int y, int theClickCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MouseDrag_" data-uid="Sexy.WidgetManager.MouseDrag*"></a>
+
+  <h3 id="Sexy_WidgetManager_MouseDrag_System_Int32_System_Int32_" data-uid="Sexy.WidgetManager.MouseDrag(System.Int32,System.Int32)">
+  MouseDrag(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseDrag(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MouseEnter_" data-uid="Sexy.WidgetManager.MouseEnter*"></a>
+
+  <h3 id="Sexy_WidgetManager_MouseEnter_Sexy_Widget_" data-uid="Sexy.WidgetManager.MouseEnter(Sexy.Widget)">
+  MouseEnter(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void MouseEnter(Widget theWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MouseExit_" data-uid="Sexy.WidgetManager.MouseExit*"></a>
+
+  <h3 id="Sexy_WidgetManager_MouseExit_System_Int32_System_Int32_" data-uid="Sexy.WidgetManager.MouseExit(System.Int32,System.Int32)">
+  MouseExit(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseExit(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MouseLeave_" data-uid="Sexy.WidgetManager.MouseLeave*"></a>
+
+  <h3 id="Sexy_WidgetManager_MouseLeave_Sexy_Widget_" data-uid="Sexy.WidgetManager.MouseLeave(Sexy.Widget)">
+  MouseLeave(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void MouseLeave(Widget theWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MouseMove_" data-uid="Sexy.WidgetManager.MouseMove*"></a>
+
+  <h3 id="Sexy_WidgetManager_MouseMove_System_Int32_System_Int32_" data-uid="Sexy.WidgetManager.MouseMove(System.Int32,System.Int32)">
+  MouseMove(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseMove(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MousePosition_" data-uid="Sexy.WidgetManager.MousePosition*"></a>
+
+  <h3 id="Sexy_WidgetManager_MousePosition_System_Int32_System_Int32_" data-uid="Sexy.WidgetManager.MousePosition(System.Int32,System.Int32)">
+  MousePosition(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MousePosition(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MousePosition_" data-uid="Sexy.WidgetManager.MousePosition*"></a>
+
+  <h3 id="Sexy_WidgetManager_MousePosition_System_Single_System_Single_" data-uid="Sexy.WidgetManager.MousePosition(System.Single,System.Single)">
+  MousePosition(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MousePosition(float x, float y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MouseUp_" data-uid="Sexy.WidgetManager.MouseUp*"></a>
+
+  <h3 id="Sexy_WidgetManager_MouseUp_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.WidgetManager.MouseUp(System.Int32,System.Int32,System.Int32)">
+  MouseUp(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseUp(int x, int y, int theClickCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_MouseWheel_" data-uid="Sexy.WidgetManager.MouseWheel*"></a>
+
+  <h3 id="Sexy_WidgetManager_MouseWheel_System_Int32_" data-uid="Sexy.WidgetManager.MouseWheel(System.Int32)">
+  MouseWheel(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseWheel(int theDelta)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDelta</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_RehupMouse_" data-uid="Sexy.WidgetManager.RehupMouse*"></a>
+
+  <h3 id="Sexy_WidgetManager_RehupMouse" data-uid="Sexy.WidgetManager.RehupMouse">
+  RehupMouse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RehupMouse()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_RemoveBaseModal_" data-uid="Sexy.WidgetManager.RemoveBaseModal*"></a>
+
+  <h3 id="Sexy_WidgetManager_RemoveBaseModal_Sexy_Widget_" data-uid="Sexy.WidgetManager.RemoveBaseModal(Sexy.Widget)">
+  RemoveBaseModal(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveBaseModal(Widget theWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_RemovePopupCommandWidget_" data-uid="Sexy.WidgetManager.RemovePopupCommandWidget*"></a>
+
+  <h3 id="Sexy_WidgetManager_RemovePopupCommandWidget" data-uid="Sexy.WidgetManager.RemovePopupCommandWidget">
+  RemovePopupCommandWidget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePopupCommandWidget()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_Resize_" data-uid="Sexy.WidgetManager.Resize*"></a>
+
+  <h3 id="Sexy_WidgetManager_Resize_System_Int32_System_Int32_" data-uid="Sexy.WidgetManager.Resize(System.Int32,System.Int32)">
+  Resize(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Resize(int theWidth, int theHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_SetBaseModal_" data-uid="Sexy.WidgetManager.SetBaseModal*"></a>
+
+  <h3 id="Sexy_WidgetManager_SetBaseModal_Sexy_Widget_Sexy_FlagsMod_" data-uid="Sexy.WidgetManager.SetBaseModal(Sexy.Widget,Sexy.FlagsMod)">
+  SetBaseModal(Widget, FlagsMod)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetBaseModal(Widget theWidget, FlagsMod theBelowFlagsMod)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+    <dt><code>theBelowFlagsMod</code> <a class="xref" href="Sexy.FlagsMod.html">FlagsMod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_SetFocus_" data-uid="Sexy.WidgetManager.SetFocus*"></a>
+
+  <h3 id="Sexy_WidgetManager_SetFocus_Sexy_Widget_" data-uid="Sexy.WidgetManager.SetFocus(Sexy.Widget)">
+  SetFocus(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetFocus(Widget aWidget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aWidget</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_SetPopupCommandWidget_" data-uid="Sexy.WidgetManager.SetPopupCommandWidget*"></a>
+
+  <h3 id="Sexy_WidgetManager_SetPopupCommandWidget_Sexy_Widget_" data-uid="Sexy.WidgetManager.SetPopupCommandWidget(Sexy.Widget)">
+  SetPopupCommandWidget(Widget)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPopupCommandWidget(Widget theList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theList</code> <a class="xref" href="Sexy.Widget.html">Widget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_TouchBegan_" data-uid="Sexy.WidgetManager.TouchBegan*"></a>
+
+  <h3 id="Sexy_WidgetManager_TouchBegan_Sexy__Touch_" data-uid="Sexy.WidgetManager.TouchBegan(Sexy._Touch)">
+  TouchBegan(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TouchBegan(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_TouchEnded_" data-uid="Sexy.WidgetManager.TouchEnded*"></a>
+
+  <h3 id="Sexy_WidgetManager_TouchEnded_Sexy__Touch_" data-uid="Sexy.WidgetManager.TouchEnded(Sexy._Touch)">
+  TouchEnded(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TouchEnded(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_TouchMoved_" data-uid="Sexy.WidgetManager.TouchMoved*"></a>
+
+  <h3 id="Sexy_WidgetManager_TouchMoved_Sexy__Touch_" data-uid="Sexy.WidgetManager.TouchMoved(Sexy._Touch)">
+  TouchMoved(_Touch)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TouchMoved(_Touch touch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>touch</code> <a class="xref" href="Sexy._Touch.html">_Touch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_TouchesCanceled_" data-uid="Sexy.WidgetManager.TouchesCanceled*"></a>
+
+  <h3 id="Sexy_WidgetManager_TouchesCanceled" data-uid="Sexy.WidgetManager.TouchesCanceled">
+  TouchesCanceled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TouchesCanceled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_UpdateFrame_" data-uid="Sexy.WidgetManager.UpdateFrame*"></a>
+
+  <h3 id="Sexy_WidgetManager_UpdateFrame" data-uid="Sexy.WidgetManager.UpdateFrame">
+  UpdateFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateFrame()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_WidgetManager_UpdateFrameF_" data-uid="Sexy.WidgetManager.UpdateFrameF*"></a>
+
+  <h3 id="Sexy_WidgetManager_UpdateFrameF_System_Single_" data-uid="Sexy.WidgetManager.UpdateFrameF(System.Single)">
+  UpdateFrameF(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateFrameF(float theFrac)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theFrac</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,3339 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class GameSelector
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class GameSelector
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Lawn.GameSelector">
+
+
+
+  <h1 id="Lawn_GameSelector" data-uid="Lawn.GameSelector" class="text-break">
+    Class GameSelector
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lawn.html">Lawn</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GameSelector : Widget, ButtonListener, StoreListener, AlmanacListener, MiniGamesWidgetListener, QuickPlayWidgetListener</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Sexy.WidgetContainer.html">WidgetContainer</a></div>
+      <div><a class="xref" href="Sexy.Widget.html">Widget</a></div>
+      <div><span class="xref">GameSelector</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Sexy.ButtonListener.html">ButtonListener</a></div>
+      <div><a class="xref" href="Lawn.StoreListener.html">StoreListener</a></div>
+      <div><a class="xref" href="Lawn.AlmanacListener.html">AlmanacListener</a></div>
+      <div><a class="xref" href="Lawn.MiniGamesWidgetListener.html">MiniGamesWidgetListener</a></div>
+      <div><a class="xref" href="Lawn.QuickPlayWidgetListener.html">QuickPlayWidgetListener</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mVisible">Widget.mVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mMouseVisible">Widget.mMouseVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mDisabled">Widget.mDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mHasFocus">Widget.mHasFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mIsDown">Widget.mIsDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mIsOver">Widget.mIsOver</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mHasTransparencies">Widget.mHasTransparencies</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mColors">Widget.mColors</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mMouseInsets">Widget.mMouseInsets</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mDoFinger">Widget.mDoFinger</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mWantsFocus">Widget.mWantsFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mTabPrev">Widget.mTabPrev</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mTabNext">Widget.mTabNext</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mWriteColoredString">Widget.mWriteColoredString</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WidgetRemovedHelper">Widget.WidgetRemovedHelper()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DoScroll_Sexy__Touch_">Widget.DoScroll(_Touch)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DoScroll_System_Int32_System_Int32_">Widget.DoScroll(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Reset">Widget.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_OrderInManagerChanged">Widget.OrderInManagerChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetVisible_System_Boolean_">Widget.SetVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColors_System_Int32_0__0___System_Int32_">Widget.SetColors(int[,], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColor_System_Int32_Sexy_SexyColor_">Widget.SetColor(int, SexyColor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColor_Sexy_ButtonWidget_ColorType_Microsoft_Xna_Framework_Color_">Widget.SetColor(ButtonWidget.ColorType, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColor_System_Int32_Microsoft_Xna_Framework_Color_">Widget.SetColor(int, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_Sexy_Dialog_DialogColour_">Widget.GetColor(Dialog.DialogColour)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_System_Int32_">Widget.GetColor(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_Sexy_Dialog_DialogColour_Microsoft_Xna_Framework_Color_">Widget.GetColor(Dialog.DialogColour, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_System_Int32_Microsoft_Xna_Framework_Color_">Widget.GetColor(int, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetDisabled_System_Boolean_">Widget.SetDisabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_ShowFinger_System_Boolean_">Widget.ShowFinger(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Resize_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.Resize(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Resize_Sexy_TRect_">Widget.Resize(TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Move_System_Int32_System_Int32_">Widget.Move(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WantsFocus">Widget.WantsFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DrawOverlay_Sexy_Graphics_System_Int32_">Widget.DrawOverlay(Graphics, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_UpdateF_System_Single_">Widget.UpdateF(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GotFocus">Widget.GotFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_LostFocus">Widget.LostFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_KeyUp_Sexy_KeyCode_">Widget.KeyUp(KeyCode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseEnter">Widget.MouseEnter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseLeave">Widget.MouseLeave()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseMove_System_Int32_System_Int32_">Widget.MouseMove(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseDown_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.MouseDown(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseUp_System_Int32_System_Int32_System_Int32_">Widget.MouseUp(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseUp_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.MouseUp(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseDrag_System_Int32_System_Int32_">Widget.MouseDrag(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseWheel_System_Int32_">Widget.MouseWheel(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_TouchBegan_Sexy__Touch_">Widget.TouchBegan(_Touch)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_TouchMoved_Sexy__Touch_">Widget.TouchMoved(_Touch)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_TouchEnded_Sexy__Touch_">Widget.TouchEnded(_Touch)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_TouchesCanceled">Widget.TouchesCanceled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_IsPointVisible_System_Int32_System_Int32_">Widget.IsPointVisible(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteCenteredLine_Sexy_Graphics_System_Int32_System_String_">Widget.WriteCenteredLine(Graphics, int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteCenteredLine_Sexy_Graphics_System_Int32_System_String_Microsoft_Xna_Framework_Color_Microsoft_Xna_Framework_Color_">Widget.WriteCenteredLine(Graphics, int, string, Color, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteCenteredLine_Sexy_Graphics_System_Int32_System_String_Microsoft_Xna_Framework_Color_Microsoft_Xna_Framework_Color_Sexy_TPoint_">Widget.WriteCenteredLine(Graphics, int, string, Color, Color, TPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_">Widget.WriteString(Graphics, string, int, int, int, int, bool, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_">Widget.WriteString(Graphics, string, int, int, int, int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int, int, int, bool, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteWordWrapped_Sexy_Graphics_Sexy_TRect_System_String_System_Int32_System_Int32_">Widget.WriteWordWrapped(Graphics, TRect, string, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetWordWrappedHeight_Sexy_Graphics_System_Int32_System_String_System_Int32_">Widget.GetWordWrappedHeight(Graphics, int, string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetNumDigits_System_Int32_">Widget.GetNumDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteNumberFromStrip_Sexy_Graphics_System_Int32_System_Int32_System_Int32_Sexy_Image_System_Int32_">Widget.WriteNumberFromStrip(Graphics, int, int, int, Image, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Contains_System_Int32_System_Int32_">Widget.Contains(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetInsetRect">Widget.GetInsetRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DeferOverlay">Widget.DeferOverlay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DeferOverlay_System_Int32_">Widget.DeferOverlay(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Left">Widget.Left()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Top">Widget.Top()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Right">Widget.Right()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Bottom">Widget.Bottom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Width">Widget.Width()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Height">Widget.Height()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_System_Int32_System_Int32_">Widget.Layout(int, Widget, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_System_Int32_">Widget.Layout(int, Widget, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_">Widget.Layout(int, Widget, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_">Widget.Layout(int, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.Layout(int, Widget, int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgets">WidgetContainer.mWidgets</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgetManager">WidgetContainer.mWidgetManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mParent">WidgetContainer.mParent</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateIteratorModified">WidgetContainer.mUpdateIteratorModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateIterator">WidgetContainer.mUpdateIterator</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mLastWMUpdateCount">WidgetContainer.mLastWMUpdateCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateCnt">WidgetContainer.mUpdateCnt</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mX">WidgetContainer.mX</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mY">WidgetContainer.mY</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidth">WidgetContainer.mWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mHeight">WidgetContainer.mHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mHasAlpha">WidgetContainer.mHasAlpha</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mClip">WidgetContainer.mClip</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgetFlagsMod">WidgetContainer.mWidgetFlagsMod</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mPriority">WidgetContainer.mPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mZOrder">WidgetContainer.mZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_FullRect">WidgetContainer.FullRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetWidgetAtHelper_System_Int32_System_Int32_System_Int32_System_Boolean__System_Int32__System_Int32__">WidgetContainer.GetWidgetAtHelper(int, int, int, out bool, out int, out int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_IsBelowHelper_Sexy_Widget_Sexy_Widget_System_Boolean__">WidgetContainer.IsBelowHelper(Widget, Widget, ref bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InsertWidgetHelper_System_Collections_Generic_LinkedList_Sexy_Widget__Enumerator_Sexy_Widget_">WidgetContainer.InsertWidgetHelper(LinkedList&lt;Widget&gt;.Enumerator, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InsertWidgetHelper_System_Collections_Generic_LinkedListNode_Sexy_Widget__Sexy_Widget_">WidgetContainer.InsertWidgetHelper(LinkedListNode&lt;Widget&gt;, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetRect">WidgetContainer.GetRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_Intersects_Sexy_WidgetContainer_">WidgetContainer.Intersects(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_AddWidget_Sexy_Widget_">WidgetContainer.AddWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveWidget_Sexy_Widget_">WidgetContainer.RemoveWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_HasWidget_Sexy_Widget_">WidgetContainer.HasWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_DisableWidget_Sexy_Widget_">WidgetContainer.DisableWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets_System_Boolean_">WidgetContainer.RemoveAllWidgets(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets">WidgetContainer.RemoveAllWidgets()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets_System_Boolean_System_Boolean_">WidgetContainer.RemoveAllWidgets(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SetFocus_Sexy_Widget_">WidgetContainer.SetFocus(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_IsBelow_Sexy_Widget_Sexy_Widget_">WidgetContainer.IsBelow(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkAllDirty">WidgetContainer.MarkAllDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_BringToFront_Sexy_Widget_">WidgetContainer.BringToFront(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_BringToBack_Sexy_Widget_">WidgetContainer.BringToBack(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_PutBehind_Sexy_Widget_Sexy_Widget_">WidgetContainer.PutBehind(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_PutInfront_Sexy_Widget_Sexy_Widget_">WidgetContainer.PutInfront(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetAbsPos">WidgetContainer.GetAbsPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirty">WidgetContainer.MarkDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirtyFull">WidgetContainer.MarkDirtyFull()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirtyFull_Sexy_WidgetContainer_">WidgetContainer.MarkDirtyFull(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirty_Sexy_WidgetContainer_">WidgetContainer.MarkDirty(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemovedFromManager_Sexy_WidgetManager_">WidgetContainer.RemovedFromManager(WidgetManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_UpdateAll_Sexy_ModalFlags_">WidgetContainer.UpdateAll(ModalFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_UpdateFAll_Sexy_ModalFlags_System_Single_">WidgetContainer.UpdateFAll(ModalFlags, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_DrawAll_Sexy_ModalFlags_Sexy_Graphics_">WidgetContainer.DrawAll(ModalFlags, Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SysColorChanged">WidgetContainer.SysColorChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SysColorChangedAll">WidgetContainer.SysColorChangedAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InterfaceOrientationChanged_Sexy_UI_ORIENTATION_">WidgetContainer.InterfaceOrientationChanged(UI_ORIENTATION)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardWillShow_Sexy_TRect__">WidgetContainer.KeyboardWillShow(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardDidShow_Sexy_TRect__">WidgetContainer.KeyboardDidShow(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardWillHide_Sexy_TRect__">WidgetContainer.KeyboardWillHide(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardDidHide_Sexy_TRect__">WidgetContainer.KeyboardDidHide(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_S_System_Int32_">WidgetContainer.S(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M_System_Int32_">WidgetContainer.M(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M1_System_Int32_">WidgetContainer.M1(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M2_System_Int32_">WidgetContainer.M2(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M3_System_Int32_">WidgetContainer.M3(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Lawn_GameSelector__ctor_" data-uid="Lawn.GameSelector.#ctor*"></a>
+
+  <h3 id="Lawn_GameSelector__ctor_Lawn_LawnApp_" data-uid="Lawn.GameSelector.#ctor(Lawn.LawnApp)">
+  GameSelector(LawnApp)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameSelector(LawnApp theApp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theApp</code> <a class="xref" href="Lawn.LawnApp.html">LawnApp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Lawn_GameSelector_mAchievementsButton" data-uid="Lawn.GameSelector.mAchievementsButton">
+  mAchievementsButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mAchievementsButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mAchievementsScrollWidget" data-uid="Lawn.GameSelector.mAchievementsScrollWidget">
+  mAchievementsScrollWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollWidget mAchievementsScrollWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mAchievementsWidget" data-uid="Lawn.GameSelector.mAchievementsWidget">
+  mAchievementsWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AchievementsWidget mAchievementsWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.AchievementsWidget.html">AchievementsWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mAdventureButton" data-uid="Lawn.GameSelector.mAdventureButton">
+  mAdventureButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NewLawnButton mAdventureButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.NewLawnButton.html">NewLawnButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mAlmanacButton" data-uid="Lawn.GameSelector.mAlmanacButton">
+  mAlmanacButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mAlmanacButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mApp" data-uid="Lawn.GameSelector.mApp">
+  mApp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LawnApp mApp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.LawnApp.html">LawnApp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mChallengePageLimboButton" data-uid="Lawn.GameSelector.mChallengePageLimboButton">
+  mChallengePageLimboButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mChallengePageLimboButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mChallengePageSurvivalButton" data-uid="Lawn.GameSelector.mChallengePageSurvivalButton">
+  mChallengePageSurvivalButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mChallengePageSurvivalButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mCloudCounter" data-uid="Lawn.GameSelector.mCloudCounter">
+  mCloudCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] mCloudCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mCloudReanimID" data-uid="Lawn.GameSelector.mCloudReanimID">
+  mCloudReanimID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation[] mCloudReanimID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mDestX" data-uid="Lawn.GameSelector.mDestX">
+  mDestX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mDestX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mDestY" data-uid="Lawn.GameSelector.mDestY">
+  mDestY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mDestY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mDoNewGameAfterStore" data-uid="Lawn.GameSelector.mDoNewGameAfterStore">
+  mDoNewGameAfterStore
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mDoNewGameAfterStore</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mFadeInCounter" data-uid="Lawn.GameSelector.mFadeInCounter">
+  mFadeInCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mFadeInCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mFlowerReanimID" data-uid="Lawn.GameSelector.mFlowerReanimID">
+  mFlowerReanimID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation[] mFlowerReanimID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mHasTrophy" data-uid="Lawn.GameSelector.mHasTrophy">
+  mHasTrophy
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mHasTrophy</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mIZombieButton" data-uid="Lawn.GameSelector.mIZombieButton">
+  mIZombieButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mIZombieButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mInUserDialog" data-uid="Lawn.GameSelector.mInUserDialog">
+  mInUserDialog
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mInUserDialog</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mLeaderboardButton" data-uid="Lawn.GameSelector.mLeaderboardButton">
+  mLeaderboardButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mLeaderboardButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mLeafCounter" data-uid="Lawn.GameSelector.mLeafCounter">
+  mLeafCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLeafCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mLevel" data-uid="Lawn.GameSelector.mLevel">
+  mLevel
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLevel</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mLexText" data-uid="Lawn.GameSelector.mLexText">
+  mLexText
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string mLexText</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mLoading" data-uid="Lawn.GameSelector.mLoading">
+  mLoading
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mLoading</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mMiniGamesButton" data-uid="Lawn.GameSelector.mMiniGamesButton">
+  mMiniGamesButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mMiniGamesButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mMiniGamesScrollWidget" data-uid="Lawn.GameSelector.mMiniGamesScrollWidget">
+  mMiniGamesScrollWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollWidget mMiniGamesScrollWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mMiniGamesWidget" data-uid="Lawn.GameSelector.mMiniGamesWidget">
+  mMiniGamesWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MiniGamesWidget mMiniGamesWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.MiniGamesWidget.html">MiniGamesWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mMoreGamesBackButton" data-uid="Lawn.GameSelector.mMoreGamesBackButton">
+  mMoreGamesBackButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mMoreGamesBackButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mMoreGamesButton" data-uid="Lawn.GameSelector.mMoreGamesButton">
+  mMoreGamesButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mMoreGamesButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mMoreGamesListWidget" data-uid="Lawn.GameSelector.mMoreGamesListWidget">
+  mMoreGamesListWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MoreGamesListWidget mMoreGamesListWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.MoreGamesListWidget.html">MoreGamesListWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mMoreGamesScrollWidget" data-uid="Lawn.GameSelector.mMoreGamesScrollWidget">
+  mMoreGamesScrollWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollWidget mMoreGamesScrollWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mMoreWaysBackButton" data-uid="Lawn.GameSelector.mMoreWaysBackButton">
+  mMoreWaysBackButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mMoreWaysBackButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mMoreWaysToPlayButton" data-uid="Lawn.GameSelector.mMoreWaysToPlayButton">
+  mMoreWaysToPlayButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NewLawnButton mMoreWaysToPlayButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.NewLawnButton.html">NewLawnButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mNeedToPlayRollIn" data-uid="Lawn.GameSelector.mNeedToPlayRollIn">
+  mNeedToPlayRollIn
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mNeedToPlayRollIn</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mOptionsButton" data-uid="Lawn.GameSelector.mOptionsButton">
+  mOptionsButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NewLawnButton mOptionsButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.NewLawnButton.html">NewLawnButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mQuickplayLocked" data-uid="Lawn.GameSelector.mQuickplayLocked">
+  mQuickplayLocked
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mQuickplayLocked</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mQuickplayScrollWidget" data-uid="Lawn.GameSelector.mQuickplayScrollWidget">
+  mQuickplayScrollWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollWidget mQuickplayScrollWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mQuickplaySlideCounter" data-uid="Lawn.GameSelector.mQuickplaySlideCounter">
+  mQuickplaySlideCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mQuickplaySlideCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mQuickplayWidget" data-uid="Lawn.GameSelector.mQuickplayWidget">
+  mQuickplayWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuickPlayWidget mQuickplayWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.QuickPlayWidget.html">QuickPlayWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mRetractingQuickplay" data-uid="Lawn.GameSelector.mRetractingQuickplay">
+  mRetractingQuickplay
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mRetractingQuickplay</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mSelectedQuickplayButtonId" data-uid="Lawn.GameSelector.mSelectedQuickplayButtonId">
+  mSelectedQuickplayButtonId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mSelectedQuickplayButtonId</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mShowStartButton" data-uid="Lawn.GameSelector.mShowStartButton">
+  mShowStartButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mShowStartButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mSignState" data-uid="Lawn.GameSelector.mSignState">
+  mSignState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectorSignState mSignState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SelectorSignState.html">SelectorSignState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mSlideCounter" data-uid="Lawn.GameSelector.mSlideCounter">
+  mSlideCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mSlideCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mStartX" data-uid="Lawn.GameSelector.mStartX">
+  mStartX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mStartX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mStartY" data-uid="Lawn.GameSelector.mStartY">
+  mStartY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mStartY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mStoreButton" data-uid="Lawn.GameSelector.mStoreButton">
+  mStoreButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mStoreButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mTrophyParticleID" data-uid="Lawn.GameSelector.mTrophyParticleID">
+  mTrophyParticleID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodParticleSystem mTrophyParticleID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TodParticleSystem.html">TodParticleSystem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mUnlockSelectorCheat" data-uid="Lawn.GameSelector.mUnlockSelectorCheat">
+  mUnlockSelectorCheat
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mUnlockSelectorCheat</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mUserDialogButton" data-uid="Lawn.GameSelector.mUserDialogButton">
+  mUserDialogButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mUserDialogButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mVaseBreakerButton" data-uid="Lawn.GameSelector.mVaseBreakerButton">
+  mVaseBreakerButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DialogButton mVaseBreakerButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.DialogButton.html">DialogButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mWoodSignReanimID" data-uid="Lawn.GameSelector.mWoodSignReanimID">
+  mWoodSignReanimID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mWoodSignReanimID</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_GameSelector_mZenGardenButton" data-uid="Lawn.GameSelector.mZenGardenButton">
+  mZenGardenButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NewLawnButton mZenGardenButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.NewLawnButton.html">NewLawnButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Lawn_GameSelector_AddTrophySparkle_" data-uid="Lawn.GameSelector.AddTrophySparkle*"></a>
+
+  <h3 id="Lawn_GameSelector_AddTrophySparkle" data-uid="Lawn.GameSelector.AddTrophySparkle">
+  AddTrophySparkle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTrophySparkle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_AddedToManager_" data-uid="Lawn.GameSelector.AddedToManager*"></a>
+
+  <h3 id="Lawn_GameSelector_AddedToManager_Sexy_WidgetManager_" data-uid="Lawn.GameSelector.AddedToManager(Sexy.WidgetManager)">
+  AddedToManager(WidgetManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddedToManager(WidgetManager theWidgetManager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidgetManager</code> <a class="xref" href="Sexy.WidgetManager.html">WidgetManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_BackButtonPress_" data-uid="Lawn.GameSelector.BackButtonPress*"></a>
+
+  <h3 id="Lawn_GameSelector_BackButtonPress" data-uid="Lawn.GameSelector.BackButtonPress">
+  BackButtonPress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool BackButtonPress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_BackFromAlmanac_" data-uid="Lawn.GameSelector.BackFromAlmanac*"></a>
+
+  <h3 id="Lawn_GameSelector_BackFromAlmanac" data-uid="Lawn.GameSelector.BackFromAlmanac">
+  BackFromAlmanac()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BackFromAlmanac()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_BackFromStore_" data-uid="Lawn.GameSelector.BackFromStore*"></a>
+
+  <h3 id="Lawn_GameSelector_BackFromStore" data-uid="Lawn.GameSelector.BackFromStore">
+  BackFromStore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BackFromStore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ButtonDepress_" data-uid="Lawn.GameSelector.ButtonDepress*"></a>
+
+  <h3 id="Lawn_GameSelector_ButtonDepress_System_Int32_" data-uid="Lawn.GameSelector.ButtonDepress(System.Int32)">
+  ButtonDepress(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ButtonDepress(int theId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ButtonDownTick_" data-uid="Lawn.GameSelector.ButtonDownTick*"></a>
+
+  <h3 id="Lawn_GameSelector_ButtonDownTick_System_Int32_" data-uid="Lawn.GameSelector.ButtonDownTick(System.Int32)">
+  ButtonDownTick(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonDownTick(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ButtonMouseEnter_" data-uid="Lawn.GameSelector.ButtonMouseEnter*"></a>
+
+  <h3 id="Lawn_GameSelector_ButtonMouseEnter_System_Int32_" data-uid="Lawn.GameSelector.ButtonMouseEnter(System.Int32)">
+  ButtonMouseEnter(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ButtonMouseEnter(int theId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ButtonMouseLeave_" data-uid="Lawn.GameSelector.ButtonMouseLeave*"></a>
+
+  <h3 id="Lawn_GameSelector_ButtonMouseLeave_System_Int32_" data-uid="Lawn.GameSelector.ButtonMouseLeave(System.Int32)">
+  ButtonMouseLeave(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonMouseLeave(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ButtonMouseMove_" data-uid="Lawn.GameSelector.ButtonMouseMove*"></a>
+
+  <h3 id="Lawn_GameSelector_ButtonMouseMove_System_Int32_System_Int32_System_Int32_" data-uid="Lawn.GameSelector.ButtonMouseMove(System.Int32,System.Int32,System.Int32)">
+  ButtonMouseMove(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonMouseMove(int id, int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ButtonMouseTick_" data-uid="Lawn.GameSelector.ButtonMouseTick*"></a>
+
+  <h3 id="Lawn_GameSelector_ButtonMouseTick_System_Int32_" data-uid="Lawn.GameSelector.ButtonMouseTick(System.Int32)">
+  ButtonMouseTick(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonMouseTick(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ButtonPress_" data-uid="Lawn.GameSelector.ButtonPress*"></a>
+
+  <h3 id="Lawn_GameSelector_ButtonPress_System_Int32_" data-uid="Lawn.GameSelector.ButtonPress(System.Int32)">
+  ButtonPress(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ButtonPress(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ButtonPress_" data-uid="Lawn.GameSelector.ButtonPress*"></a>
+
+  <h3 id="Lawn_GameSelector_ButtonPress_System_Int32_System_Int32_" data-uid="Lawn.GameSelector.ButtonPress(System.Int32,System.Int32)">
+  ButtonPress(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ButtonPress(int theId, int theClickCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ClickedAdventure_" data-uid="Lawn.GameSelector.ClickedAdventure*"></a>
+
+  <h3 id="Lawn_GameSelector_ClickedAdventure" data-uid="Lawn.GameSelector.ClickedAdventure">
+  ClickedAdventure()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClickedAdventure()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_Dispose_" data-uid="Lawn.GameSelector.Dispose*"></a>
+
+  <h3 id="Lawn_GameSelector_Dispose" data-uid="Lawn.GameSelector.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_Draw_" data-uid="Lawn.GameSelector.Draw*"></a>
+
+  <h3 id="Lawn_GameSelector_Draw_Sexy_Graphics_" data-uid="Lawn.GameSelector.Draw(Sexy.Graphics)">
+  Draw(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_DrawMainMenuArea_" data-uid="Lawn.GameSelector.DrawMainMenuArea*"></a>
+
+  <h3 id="Lawn_GameSelector_DrawMainMenuArea_Sexy_Graphics_" data-uid="Lawn.GameSelector.DrawMainMenuArea(Sexy.Graphics)">
+  DrawMainMenuArea(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMainMenuArea(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_DrawMoreGamesArea_" data-uid="Lawn.GameSelector.DrawMoreGamesArea*"></a>
+
+  <h3 id="Lawn_GameSelector_DrawMoreGamesArea_Sexy_Graphics_" data-uid="Lawn.GameSelector.DrawMoreGamesArea(Sexy.Graphics)">
+  DrawMoreGamesArea(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawMoreGamesArea(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_DrawOverlay_" data-uid="Lawn.GameSelector.DrawOverlay*"></a>
+
+  <h3 id="Lawn_GameSelector_DrawOverlay_Sexy_Graphics_" data-uid="Lawn.GameSelector.DrawOverlay(Sexy.Graphics)">
+  DrawOverlay(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawOverlay(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_DrawQuickplayArea_" data-uid="Lawn.GameSelector.DrawQuickplayArea*"></a>
+
+  <h3 id="Lawn_GameSelector_DrawQuickplayArea_Sexy_Graphics_" data-uid="Lawn.GameSelector.DrawQuickplayArea(Sexy.Graphics)">
+  DrawQuickplayArea(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawQuickplayArea(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_KeyChar_" data-uid="Lawn.GameSelector.KeyChar*"></a>
+
+  <h3 id="Lawn_GameSelector_KeyChar_Sexy_SexyChar_" data-uid="Lawn.GameSelector.KeyChar(Sexy.SexyChar)">
+  KeyChar(SexyChar)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void KeyChar(SexyChar theChar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theChar</code> <a class="xref" href="Sexy.SexyChar.html">SexyChar</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_KeyDown_" data-uid="Lawn.GameSelector.KeyDown*"></a>
+
+  <h3 id="Lawn_GameSelector_KeyDown_Sexy_KeyCode_" data-uid="Lawn.GameSelector.KeyDown(Sexy.KeyCode)">
+  KeyDown(KeyCode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void KeyDown(KeyCode theKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theKey</code> <a class="xref" href="Sexy.KeyCode.html">KeyCode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_LoadGames_" data-uid="Lawn.GameSelector.LoadGames*"></a>
+
+  <h3 id="Lawn_GameSelector_LoadGames" data-uid="Lawn.GameSelector.LoadGames">
+  LoadGames()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadGames()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_LowerSign_" data-uid="Lawn.GameSelector.LowerSign*"></a>
+
+  <h3 id="Lawn_GameSelector_LowerSign" data-uid="Lawn.GameSelector.LowerSign">
+  LowerSign()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LowerSign()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_MiniGamesStageSelected_" data-uid="Lawn.GameSelector.MiniGamesStageSelected*"></a>
+
+  <h3 id="Lawn_GameSelector_MiniGamesStageSelected_System_Int32_" data-uid="Lawn.GameSelector.MiniGamesStageSelected(System.Int32)">
+  MiniGamesStageSelected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MiniGamesStageSelected(int theLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_MouseDown_" data-uid="Lawn.GameSelector.MouseDown*"></a>
+
+  <h3 id="Lawn_GameSelector_MouseDown_System_Int32_System_Int32_System_Int32_" data-uid="Lawn.GameSelector.MouseDown(System.Int32,System.Int32,System.Int32)">
+  MouseDown(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MouseDown(int x, int y, int theClickCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_MoveToQuickplay_" data-uid="Lawn.GameSelector.MoveToQuickplay*"></a>
+
+  <h3 id="Lawn_GameSelector_MoveToQuickplay_System_Boolean_Lawn_GameSelectorButtons_" data-uid="Lawn.GameSelector.MoveToQuickplay(System.Boolean,Lawn.GameSelectorButtons)">
+  MoveToQuickplay(bool, GameSelectorButtons)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToQuickplay(bool theDoFadeIn, GameSelectorButtons theButton)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDoFadeIn</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>theButton</code> <a class="xref" href="Lawn.GameSelectorButtons.html">GameSelectorButtons</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_PopulateQuickPlayWidget_" data-uid="Lawn.GameSelector.PopulateQuickPlayWidget*"></a>
+
+  <h3 id="Lawn_GameSelector_PopulateQuickPlayWidget" data-uid="Lawn.GameSelector.PopulateQuickPlayWidget">
+  PopulateQuickPlayWidget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopulateQuickPlayWidget()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_QuickPlayStageSelected_" data-uid="Lawn.GameSelector.QuickPlayStageSelected*"></a>
+
+  <h3 id="Lawn_GameSelector_QuickPlayStageSelected_System_Int32_" data-uid="Lawn.GameSelector.QuickPlayStageSelected(System.Int32)">
+  QuickPlayStageSelected(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QuickPlayStageSelected(int theLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_RaiseSign_" data-uid="Lawn.GameSelector.RaiseSign*"></a>
+
+  <h3 id="Lawn_GameSelector_RaiseSign" data-uid="Lawn.GameSelector.RaiseSign">
+  RaiseSign()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RaiseSign()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_RetractQuickPlayWidget_" data-uid="Lawn.GameSelector.RetractQuickPlayWidget*"></a>
+
+  <h3 id="Lawn_GameSelector_RetractQuickPlayWidget" data-uid="Lawn.GameSelector.RetractQuickPlayWidget">
+  RetractQuickPlayWidget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RetractQuickPlayWidget()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ShouldDoZenTuturialBeforeAdventure_" data-uid="Lawn.GameSelector.ShouldDoZenTuturialBeforeAdventure*"></a>
+
+  <h3 id="Lawn_GameSelector_ShouldDoZenTuturialBeforeAdventure" data-uid="Lawn.GameSelector.ShouldDoZenTuturialBeforeAdventure">
+  ShouldDoZenTuturialBeforeAdventure()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldDoZenTuturialBeforeAdventure()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_SlideOutQuickPlayWidget_" data-uid="Lawn.GameSelector.SlideOutQuickPlayWidget*"></a>
+
+  <h3 id="Lawn_GameSelector_SlideOutQuickPlayWidget" data-uid="Lawn.GameSelector.SlideOutQuickPlayWidget">
+  SlideOutQuickPlayWidget()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SlideOutQuickPlayWidget()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_SlideTo_" data-uid="Lawn.GameSelector.SlideTo*"></a>
+
+  <h3 id="Lawn_GameSelector_SlideTo_System_Int32_System_Int32_" data-uid="Lawn.GameSelector.SlideTo(System.Int32,System.Int32)">
+  SlideTo(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SlideTo(int theX, int theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_SyncButtons_" data-uid="Lawn.GameSelector.SyncButtons*"></a>
+
+  <h3 id="Lawn_GameSelector_SyncButtons" data-uid="Lawn.GameSelector.SyncButtons">
+  SyncButtons()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SyncButtons()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_SyncProfile_" data-uid="Lawn.GameSelector.SyncProfile*"></a>
+
+  <h3 id="Lawn_GameSelector_SyncProfile_System_Boolean_" data-uid="Lawn.GameSelector.SyncProfile(System.Boolean)">
+  SyncProfile(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SyncProfile(bool theShowLoading)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theShowLoading</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_ToggleGameButton_" data-uid="Lawn.GameSelector.ToggleGameButton*"></a>
+
+  <h3 id="Lawn_GameSelector_ToggleGameButton_System_Int32_" data-uid="Lawn.GameSelector.ToggleGameButton(System.Int32)">
+  ToggleGameButton(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleGameButton(int theId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_GameSelector_Update_" data-uid="Lawn.GameSelector.Update*"></a>
+
+  <h3 id="Lawn_GameSelector_Update" data-uid="Lawn.GameSelector.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

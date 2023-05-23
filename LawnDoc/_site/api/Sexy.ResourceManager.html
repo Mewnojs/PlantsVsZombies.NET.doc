@@ -1,0 +1,2821 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ResourceManager
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ResourceManager
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Sexy.ResourceManager">
+
+
+
+  <h1 id="Sexy_ResourceManager" data-uid="Sexy.ResourceManager" class="text-break">
+    Class ResourceManager
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sexy.html">Sexy</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ResourceManager : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ResourceManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Sexy_ResourceManager__ctor_" data-uid="Sexy.ResourceManager.#ctor*"></a>
+
+  <h3 id="Sexy_ResourceManager__ctor_Sexy_SexyAppBase_" data-uid="Sexy.ResourceManager.#ctor(Sexy.SexyAppBase)">
+  ResourceManager(SexyAppBase)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResourceManager(SexyAppBase theApp)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theApp</code> <a class="xref" href="Sexy.SexyAppBase.html">SexyAppBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Sexy_ResourceManager_DrawLocker" data-uid="Sexy.ResourceManager.DrawLocker">
+  DrawLocker
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DrawLocker</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mAllowAlreadyDefinedResources" data-uid="Sexy.ResourceManager.mAllowAlreadyDefinedResources">
+  mAllowAlreadyDefinedResources
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mAllowAlreadyDefinedResources</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mAllowMissingProgramResources" data-uid="Sexy.ResourceManager.mAllowMissingProgramResources">
+  mAllowMissingProgramResources
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mAllowMissingProgramResources</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mApp" data-uid="Sexy.ResourceManager.mApp">
+  mApp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SexyAppBase mApp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.SexyAppBase.html">SexyAppBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mContentManager" data-uid="Sexy.ResourceManager.mContentManager">
+  mContentManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ContentManager mContentManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ContentManager</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mCurResGroup" data-uid="Sexy.ResourceManager.mCurResGroup">
+  mCurResGroup
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string mCurResGroup</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mCurResGroupList" data-uid="Sexy.ResourceManager.mCurResGroupList">
+  mCurResGroupList
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ResourceManager.BaseRes&gt; mCurResGroupList</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mCurResGroupListItr" data-uid="Sexy.ResourceManager.mCurResGroupListItr">
+  mCurResGroupListItr
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;ResourceManager.BaseRes&gt;.Enumerator mCurResGroupListItr</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list{sexy.resourcemanager.baseres}.enumerator">Enumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mDefaultIdPrefix" data-uid="Sexy.ResourceManager.mDefaultIdPrefix">
+  mDefaultIdPrefix
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string mDefaultIdPrefix</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mDefaultPath" data-uid="Sexy.ResourceManager.mDefaultPath">
+  mDefaultPath
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string mDefaultPath</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mError" data-uid="Sexy.ResourceManager.mError">
+  mError
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string mError</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mFontMap" data-uid="Sexy.ResourceManager.mFontMap">
+  mFontMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, ResourceManager.BaseRes&gt; mFontMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mHadAlreadyDefinedError" data-uid="Sexy.ResourceManager.mHadAlreadyDefinedError">
+  mHadAlreadyDefinedError
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mHadAlreadyDefinedError</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mHasFailed" data-uid="Sexy.ResourceManager.mHasFailed">
+  mHasFailed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool mHasFailed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mImageMap" data-uid="Sexy.ResourceManager.mImageMap">
+  mImageMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, ResourceManager.BaseRes&gt; mImageMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mLevelMap" data-uid="Sexy.ResourceManager.mLevelMap">
+  mLevelMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, ResourceManager.BaseRes&gt; mLevelMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mLoadedCount" data-uid="Sexy.ResourceManager.mLoadedCount">
+  mLoadedCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mLoadedCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mLoadedGroups" data-uid="Sexy.ResourceManager.mLoadedGroups">
+  mLoadedGroups
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;string&gt; mLoadedGroups</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mMusicMap" data-uid="Sexy.ResourceManager.mMusicMap">
+  mMusicMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, ResourceManager.BaseRes&gt; mMusicMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mParticleContentManager" data-uid="Sexy.ResourceManager.mParticleContentManager">
+  mParticleContentManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContentManager mParticleContentManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ContentManager</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mParticleMap" data-uid="Sexy.ResourceManager.mParticleMap">
+  mParticleMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, ResourceManager.BaseRes&gt; mParticleMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mProgress" data-uid="Sexy.ResourceManager.mProgress">
+  mProgress
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double mProgress</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mReanimContentManager" data-uid="Sexy.ResourceManager.mReanimContentManager">
+  mReanimContentManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContentManager mReanimContentManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ContentManager</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mReanimMap" data-uid="Sexy.ResourceManager.mReanimMap">
+  mReanimMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, ResourceManager.BaseRes&gt; mReanimMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mResGroupMap" data-uid="Sexy.ResourceManager.mResGroupMap">
+  mResGroupMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, List&lt;ResourceManager.BaseRes&gt;&gt; mResGroupMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mSoundMap" data-uid="Sexy.ResourceManager.mSoundMap">
+  mSoundMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, ResourceManager.BaseRes&gt; mSoundMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mTotalResources" data-uid="Sexy.ResourceManager.mTotalResources">
+  mTotalResources
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mTotalResources</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mTrailMap" data-uid="Sexy.ResourceManager.mTrailMap">
+  mTrailMap
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dictionary&lt;string, ResourceManager.BaseRes&gt; mTrailMap</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mUnloadContentManager" data-uid="Sexy.ResourceManager.mUnloadContentManager">
+  mUnloadContentManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContentManager[] mUnloadContentManager</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ContentManager</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_ResourceManager_mXMLParser" data-uid="Sexy.ResourceManager.mXMLParser">
+  mXMLParser
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected XMLParser mXMLParser</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.XMLParser.html">XMLParser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Sexy_ResourceManager_DeleteImage_" data-uid="Sexy.ResourceManager.DeleteImage*"></a>
+
+  <h3 id="Sexy_ResourceManager_DeleteImage_System_String_" data-uid="Sexy.ResourceManager.DeleteImage(System.String)">
+  DeleteImage(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteImage(string theName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_DeleteResources_" data-uid="Sexy.ResourceManager.DeleteResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_DeleteResources_System_Collections_Generic_Dictionary_System_String_Sexy_ResourceManager_BaseRes__System_String_" data-uid="Sexy.ResourceManager.DeleteResources(System.Collections.Generic.Dictionary{System.String,Sexy.ResourceManager.BaseRes},System.String)">
+  DeleteResources(Dictionary&lt;string, BaseRes&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteResources(Dictionary&lt;string, ResourceManager.BaseRes&gt; theMap, string theGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theMap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>theGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_DeleteResources_" data-uid="Sexy.ResourceManager.DeleteResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_DeleteResources_System_String_" data-uid="Sexy.ResourceManager.DeleteResources(System.String)">
+  DeleteResources(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteResources(string theGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_Dispose_" data-uid="Sexy.ResourceManager.Dispose*"></a>
+
+  <h3 id="Sexy_ResourceManager_Dispose" data-uid="Sexy.ResourceManager.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_Dispose_" data-uid="Sexy.ResourceManager.Dispose*"></a>
+
+  <h3 id="Sexy_ResourceManager_Dispose_System_Boolean_" data-uid="Sexy.ResourceManager.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ExtractReanimImages_" data-uid="Sexy.ResourceManager.ExtractReanimImages*"></a>
+
+  <h3 id="Sexy_ResourceManager_ExtractReanimImages" data-uid="Sexy.ResourceManager.ExtractReanimImages">
+  ExtractReanimImages()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExtractReanimImages()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_Finalize_" data-uid="Sexy.ResourceManager.Finalize*"></a>
+
+  <h3 id="Sexy_ResourceManager_Finalize" data-uid="Sexy.ResourceManager.Finalize">
+  ~ResourceManager()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~ResourceManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetFontThrow_" data-uid="Sexy.ResourceManager.GetFontThrow*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetFontThrow_System_String_" data-uid="Sexy.ResourceManager.GetFontThrow(System.String)">
+  GetFontThrow(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Font GetFontThrow(string theRes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Font.html">Font</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetImageThrow_" data-uid="Sexy.ResourceManager.GetImageThrow*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetImageThrow_System_String_" data-uid="Sexy.ResourceManager.GetImageThrow(System.String)">
+  GetImageThrow(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image GetImageThrow(string theRes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetMusicThrow_" data-uid="Sexy.ResourceManager.GetMusicThrow*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetMusicThrow_System_String_" data-uid="Sexy.ResourceManager.GetMusicThrow(System.String)">
+  GetMusicThrow(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMusicThrow(string theRes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumFonts_" data-uid="Sexy.ResourceManager.GetNumFonts*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumFonts_System_String_" data-uid="Sexy.ResourceManager.GetNumFonts(System.String)">
+  GetNumFonts(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumFonts(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumImages_" data-uid="Sexy.ResourceManager.GetNumImages*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumImages_System_String_" data-uid="Sexy.ResourceManager.GetNumImages(System.String)">
+  GetNumImages(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumImages(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumParticles_" data-uid="Sexy.ResourceManager.GetNumParticles*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumParticles_System_String_" data-uid="Sexy.ResourceManager.GetNumParticles(System.String)">
+  GetNumParticles(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumParticles(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumReanims_" data-uid="Sexy.ResourceManager.GetNumReanims*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumReanims_System_String_" data-uid="Sexy.ResourceManager.GetNumReanims(System.String)">
+  GetNumReanims(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumReanims(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumResources_" data-uid="Sexy.ResourceManager.GetNumResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumResources_System_String_" data-uid="Sexy.ResourceManager.GetNumResources(System.String)">
+  GetNumResources(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumResources(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumResources_" data-uid="Sexy.ResourceManager.GetNumResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumResources_System_String_System_Collections_Generic_Dictionary_System_String_Sexy_ResourceManager_BaseRes__" data-uid="Sexy.ResourceManager.GetNumResources(System.String,System.Collections.Generic.Dictionary{System.String,Sexy.ResourceManager.BaseRes})">
+  GetNumResources(string, Dictionary&lt;string, BaseRes&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumResources(string theResGroup, Dictionary&lt;string, ResourceManager.BaseRes&gt; theResMap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theResMap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumResourcesGroupNameStartsWith_" data-uid="Sexy.ResourceManager.GetNumResourcesGroupNameStartsWith*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumResourcesGroupNameStartsWith_System_String_" data-uid="Sexy.ResourceManager.GetNumResourcesGroupNameStartsWith(System.String)">
+  GetNumResourcesGroupNameStartsWith(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumResourcesGroupNameStartsWith(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumResourcesGroupNameStartsWith_" data-uid="Sexy.ResourceManager.GetNumResourcesGroupNameStartsWith*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumResourcesGroupNameStartsWith_System_String_System_Collections_Generic_Dictionary_System_String_Sexy_ResourceManager_BaseRes__" data-uid="Sexy.ResourceManager.GetNumResourcesGroupNameStartsWith(System.String,System.Collections.Generic.Dictionary{System.String,Sexy.ResourceManager.BaseRes})">
+  GetNumResourcesGroupNameStartsWith(string, Dictionary&lt;string, BaseRes&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumResourcesGroupNameStartsWith(string theResGroup, Dictionary&lt;string, ResourceManager.BaseRes&gt; theResMap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theResMap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="Sexy.ResourceManager.html">ResourceManager</a>.<a class="xref" href="Sexy.ResourceManager.BaseRes.html">BaseRes</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumSongs_" data-uid="Sexy.ResourceManager.GetNumSongs*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumSongs_System_String_" data-uid="Sexy.ResourceManager.GetNumSongs(System.String)">
+  GetNumSongs(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumSongs(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumSounds_" data-uid="Sexy.ResourceManager.GetNumSounds*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumSounds_System_String_" data-uid="Sexy.ResourceManager.GetNumSounds(System.String)">
+  GetNumSounds(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumSounds(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetNumTrails_" data-uid="Sexy.ResourceManager.GetNumTrails*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetNumTrails_System_String_" data-uid="Sexy.ResourceManager.GetNumTrails(System.String)">
+  GetNumTrails(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumTrails(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetParticleThrow_" data-uid="Sexy.ResourceManager.GetParticleThrow*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetParticleThrow_System_String_" data-uid="Sexy.ResourceManager.GetParticleThrow(System.String)">
+  GetParticleThrow(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TodParticleDefinition GetParticleThrow(string theRes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TodParticleDefinition.html">TodParticleDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetReanimThrow_" data-uid="Sexy.ResourceManager.GetReanimThrow*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetReanimThrow_System_String_" data-uid="Sexy.ResourceManager.GetReanimThrow(System.String)">
+  GetReanimThrow(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReanimatorDefinition GetReanimThrow(string theRes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.ReanimatorDefinition.html">ReanimatorDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetResourceDir_" data-uid="Sexy.ResourceManager.GetResourceDir*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetResourceDir" data-uid="Sexy.ResourceManager.GetResourceDir">
+  GetResourceDir()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetResourceDir()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetSoundThrow_" data-uid="Sexy.ResourceManager.GetSoundThrow*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetSoundThrow_System_String_" data-uid="Sexy.ResourceManager.GetSoundThrow(System.String)">
+  GetSoundThrow(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSoundThrow(string theRes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_GetTrailThrow_" data-uid="Sexy.ResourceManager.GetTrailThrow*"></a>
+
+  <h3 id="Sexy_ResourceManager_GetTrailThrow_System_String_" data-uid="Sexy.ResourceManager.GetTrailThrow(System.String)">
+  GetTrailThrow(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TrailDefinition GetTrailThrow(string theRes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.TrailDefinition.html">TrailDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_HadError_" data-uid="Sexy.ResourceManager.HadError*"></a>
+
+  <h3 id="Sexy_ResourceManager_HadError" data-uid="Sexy.ResourceManager.HadError">
+  HadError()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HadError()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_IsGroupLoaded_" data-uid="Sexy.ResourceManager.IsGroupLoaded*"></a>
+
+  <h3 id="Sexy_ResourceManager_IsGroupLoaded_System_String_" data-uid="Sexy.ResourceManager.IsGroupLoaded(System.String)">
+  IsGroupLoaded(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGroupLoaded(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_LoadAllResources_" data-uid="Sexy.ResourceManager.LoadAllResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_LoadAllResources" data-uid="Sexy.ResourceManager.LoadAllResources">
+  LoadAllResources()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadAllResources()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_LoadLevelBackgrounds_" data-uid="Sexy.ResourceManager.LoadLevelBackgrounds*"></a>
+
+  <h3 id="Sexy_ResourceManager_LoadLevelBackgrounds_System_Int32_Sexy_Image__Sexy_Image__" data-uid="Sexy.ResourceManager.LoadLevelBackgrounds(System.Int32,Sexy.Image@,Sexy.Image@)">
+  LoadLevelBackgrounds(int, out Image, out Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadLevelBackgrounds(int levelNumber, out Image verticalBackground, out Image horizontalBackground)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>levelNumber</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>verticalBackground</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>horizontalBackground</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_LoadNextResource_" data-uid="Sexy.ResourceManager.LoadNextResource*"></a>
+
+  <h3 id="Sexy_ResourceManager_LoadNextResource" data-uid="Sexy.ResourceManager.LoadNextResource">
+  LoadNextResource()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadNextResource()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_LoadParticle_" data-uid="Sexy.ResourceManager.LoadParticle*"></a>
+
+  <h3 id="Sexy_ResourceManager_LoadParticle_System_String_Sexy_TodLib_TodParticleDefinition__" data-uid="Sexy.ResourceManager.LoadParticle(System.String,Sexy.TodLib.TodParticleDefinition@)">
+  LoadParticle(string, ref TodParticleDefinition)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadParticle(string filename, ref TodParticleDefinition def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Sexy.TodLib.TodParticleDefinition.html">TodParticleDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_LoadReanimation_" data-uid="Sexy.ResourceManager.LoadReanimation*"></a>
+
+  <h3 id="Sexy_ResourceManager_LoadReanimation_System_String_Sexy_TodLib_ReanimatorDefinition__" data-uid="Sexy.ResourceManager.LoadReanimation(System.String,Sexy.TodLib.ReanimatorDefinition@)">
+  LoadReanimation(string, ref ReanimatorDefinition)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadReanimation(string filename, ref ReanimatorDefinition def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Sexy.TodLib.ReanimatorDefinition.html">ReanimatorDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_LoadResources_" data-uid="Sexy.ResourceManager.LoadResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_LoadResources_System_String_" data-uid="Sexy.ResourceManager.LoadResources(System.String)">
+  LoadResources(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadResources(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_LoadTrail_" data-uid="Sexy.ResourceManager.LoadTrail*"></a>
+
+  <h3 id="Sexy_ResourceManager_LoadTrail_System_String_Sexy_TodLib_TrailDefinition__" data-uid="Sexy.ResourceManager.LoadTrail(System.String,Sexy.TodLib.TrailDefinition@)">
+  LoadTrail(string, ref TrailDefinition)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadTrail(string filename, ref TrailDefinition def)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>def</code> <a class="xref" href="Sexy.TodLib.TrailDefinition.html">TrailDefinition</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ParseImageResource_" data-uid="Sexy.ResourceManager.ParseImageResource*"></a>
+
+  <h3 id="Sexy_ResourceManager_ParseImageResource_Sexy_XMLElement_" data-uid="Sexy.ResourceManager.ParseImageResource(Sexy.XMLElement)">
+  ParseImageResource(XMLElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParseImageResource(XMLElement theElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theElement</code> <a class="xref" href="Sexy.XMLElement.html">XMLElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ParseLevelResource_" data-uid="Sexy.ResourceManager.ParseLevelResource*"></a>
+
+  <h3 id="Sexy_ResourceManager_ParseLevelResource_Sexy_XMLElement_" data-uid="Sexy.ResourceManager.ParseLevelResource(Sexy.XMLElement)">
+  ParseLevelResource(XMLElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParseLevelResource(XMLElement theElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theElement</code> <a class="xref" href="Sexy.XMLElement.html">XMLElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ParseMusicResource_" data-uid="Sexy.ResourceManager.ParseMusicResource*"></a>
+
+  <h3 id="Sexy_ResourceManager_ParseMusicResource_Sexy_XMLElement_" data-uid="Sexy.ResourceManager.ParseMusicResource(Sexy.XMLElement)">
+  ParseMusicResource(XMLElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParseMusicResource(XMLElement theElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theElement</code> <a class="xref" href="Sexy.XMLElement.html">XMLElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ParseParticleResource_" data-uid="Sexy.ResourceManager.ParseParticleResource*"></a>
+
+  <h3 id="Sexy_ResourceManager_ParseParticleResource_Sexy_XMLElement_" data-uid="Sexy.ResourceManager.ParseParticleResource(Sexy.XMLElement)">
+  ParseParticleResource(XMLElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParseParticleResource(XMLElement theElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theElement</code> <a class="xref" href="Sexy.XMLElement.html">XMLElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ParseReanimResource_" data-uid="Sexy.ResourceManager.ParseReanimResource*"></a>
+
+  <h3 id="Sexy_ResourceManager_ParseReanimResource_Sexy_XMLElement_" data-uid="Sexy.ResourceManager.ParseReanimResource(Sexy.XMLElement)">
+  ParseReanimResource(XMLElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParseReanimResource(XMLElement theElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theElement</code> <a class="xref" href="Sexy.XMLElement.html">XMLElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ParseResourcesFile_" data-uid="Sexy.ResourceManager.ParseResourcesFile*"></a>
+
+  <h3 id="Sexy_ResourceManager_ParseResourcesFile_System_String_" data-uid="Sexy.ResourceManager.ParseResourcesFile(System.String)">
+  ParseResourcesFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParseResourcesFile(string theFilename)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theFilename</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ParseSoundResource_" data-uid="Sexy.ResourceManager.ParseSoundResource*"></a>
+
+  <h3 id="Sexy_ResourceManager_ParseSoundResource_Sexy_XMLElement_" data-uid="Sexy.ResourceManager.ParseSoundResource(Sexy.XMLElement)">
+  ParseSoundResource(XMLElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParseSoundResource(XMLElement theElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theElement</code> <a class="xref" href="Sexy.XMLElement.html">XMLElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ParseTrailResource_" data-uid="Sexy.ResourceManager.ParseTrailResource*"></a>
+
+  <h3 id="Sexy_ResourceManager_ParseTrailResource_Sexy_XMLElement_" data-uid="Sexy.ResourceManager.ParseTrailResource(Sexy.XMLElement)">
+  ParseTrailResource(XMLElement)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ParseTrailResource(XMLElement theElement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theElement</code> <a class="xref" href="Sexy.XMLElement.html">XMLElement</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_ReplaceImage_" data-uid="Sexy.ResourceManager.ReplaceImage*"></a>
+
+  <h3 id="Sexy_ResourceManager_ReplaceImage_System_String_Sexy_Image_" data-uid="Sexy.ResourceManager.ReplaceImage(System.String,Sexy.Image)">
+  ReplaceImage(string, Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ReplaceImage(string theId, Image theImage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_StartLoadResources_" data-uid="Sexy.ResourceManager.StartLoadResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_StartLoadResources_System_String_" data-uid="Sexy.ResourceManager.StartLoadResources(System.String)">
+  StartLoadResources(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartLoadResources(string theResGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theResGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_TodLoadResources_" data-uid="Sexy.ResourceManager.TodLoadResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_TodLoadResources_System_String_" data-uid="Sexy.ResourceManager.TodLoadResources(System.String)">
+  TodLoadResources(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TodLoadResources(string theGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_TodLoadResources_" data-uid="Sexy.ResourceManager.TodLoadResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_TodLoadResources_System_String_System_Boolean_" data-uid="Sexy.ResourceManager.TodLoadResources(System.String,System.Boolean)">
+  TodLoadResources(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TodLoadResources(string theGroup, bool doUnpackAtlasImages)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>doUnpackAtlasImages</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_UnloadBackground_" data-uid="Sexy.ResourceManager.UnloadBackground*"></a>
+
+  <h3 id="Sexy_ResourceManager_UnloadBackground_System_String_" data-uid="Sexy.ResourceManager.UnloadBackground(System.String)">
+  UnloadBackground(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnloadBackground(string theGroup)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGroup</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_ResourceManager_UnloadInitResources_" data-uid="Sexy.ResourceManager.UnloadInitResources*"></a>
+
+  <h3 id="Sexy_ResourceManager_UnloadInitResources" data-uid="Sexy.ResourceManager.UnloadInitResources">
+  UnloadInitResources()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnloadInitResources()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

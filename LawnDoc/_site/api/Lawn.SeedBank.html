@@ -1,0 +1,860 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SeedBank
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SeedBank
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Lawn.SeedBank">
+
+
+
+  <h1 id="Lawn_SeedBank" data-uid="Lawn.SeedBank" class="text-break">
+    Class SeedBank
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lawn.html">Lawn</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SeedBank : GameObject</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Lawn.GameObject.html">GameObject</a></div>
+      <div><span class="xref">SeedBank</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mApp">GameObject.mApp</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mBoard">GameObject.mBoard</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mX">GameObject.mX</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mY">GameObject.mY</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mWidth">GameObject.mWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mHeight">GameObject.mHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mVisible">GameObject.mVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mRow">GameObject.mRow</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mRenderOrder">GameObject.mRenderOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mPrevTransX">GameObject.mPrevTransX</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mPrevTransY">GameObject.mPrevTransY</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_mPosScaled">GameObject.mPosScaled</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_id">GameObject.id</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_PrepareForReuse">GameObject.PrepareForReuse()</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_Reset">GameObject.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_LoadingComplete">GameObject.LoadingComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_SaveId_Lawn_GameObject_Sexy_Buffer_">GameObject.SaveId(GameObject, Buffer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_LoadId_Sexy_Buffer_">GameObject.LoadId(Buffer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_GetObjectById_System_Int32_">GameObject.GetObjectById(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_BeginDraw_Sexy_Graphics_">GameObject.BeginDraw(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_EndDraw_Sexy_Graphics_">GameObject.EndDraw(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.GameObject.html#Lawn_GameObject_MakeParentGraphicsFrame_Sexy_Graphics_">GameObject.MakeParentGraphicsFrame(Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Lawn_SeedBank__ctor_" data-uid="Lawn.SeedBank.#ctor*"></a>
+
+  <h3 id="Lawn_SeedBank__ctor" data-uid="Lawn.SeedBank.#ctor">
+  SeedBank()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedBank()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Lawn_SeedBank_mConveyorBeltCounter" data-uid="Lawn.SeedBank.mConveyorBeltCounter">
+  mConveyorBeltCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mConveyorBeltCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_SeedBank_mCutSceneDarken" data-uid="Lawn.SeedBank.mCutSceneDarken">
+  mCutSceneDarken
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mCutSceneDarken</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_SeedBank_mNumPackets" data-uid="Lawn.SeedBank.mNumPackets">
+  mNumPackets
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mNumPackets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_SeedBank_mSeedPackets" data-uid="Lawn.SeedBank.mSeedPackets">
+  mSeedPackets
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedPacket[] mSeedPackets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedPacket.html">SeedPacket</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Lawn_SeedBank_AddSeed_" data-uid="Lawn.SeedBank.AddSeed*"></a>
+
+  <h3 id="Lawn_SeedBank_AddSeed_Lawn_SeedType_" data-uid="Lawn.SeedBank.AddSeed(Lawn.SeedType)">
+  AddSeed(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSeed(SeedType theSeedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_ContainsPoint_" data-uid="Lawn.SeedBank.ContainsPoint*"></a>
+
+  <h3 id="Lawn_SeedBank_ContainsPoint_System_Int32_System_Int32_" data-uid="Lawn.SeedBank.ContainsPoint(System.Int32,System.Int32)">
+  ContainsPoint(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsPoint(int theX, int theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_CountOfTypeOnConveyorBelt_" data-uid="Lawn.SeedBank.CountOfTypeOnConveyorBelt*"></a>
+
+  <h3 id="Lawn_SeedBank_CountOfTypeOnConveyorBelt_Lawn_SeedType_" data-uid="Lawn.SeedBank.CountOfTypeOnConveyorBelt(Lawn.SeedType)">
+  CountOfTypeOnConveyorBelt(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CountOfTypeOnConveyorBelt(SeedType aSeedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_Draw_" data-uid="Lawn.SeedBank.Draw*"></a>
+
+  <h3 id="Lawn_SeedBank_Draw_Sexy_Graphics_" data-uid="Lawn.SeedBank.Draw(Sexy.Graphics)">
+  Draw(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Draw(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_DrawSun_" data-uid="Lawn.SeedBank.DrawSun*"></a>
+
+  <h3 id="Lawn_SeedBank_DrawSun_Sexy_Graphics_" data-uid="Lawn.SeedBank.DrawSun(Sexy.Graphics)">
+  DrawSun(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawSun(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_GetNumSeedsOnConveyorBelt_" data-uid="Lawn.SeedBank.GetNumSeedsOnConveyorBelt*"></a>
+
+  <h3 id="Lawn_SeedBank_GetNumSeedsOnConveyorBelt" data-uid="Lawn.SeedBank.GetNumSeedsOnConveyorBelt">
+  GetNumSeedsOnConveyorBelt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNumSeedsOnConveyorBelt()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_LoadFromFile_" data-uid="Lawn.SeedBank.LoadFromFile*"></a>
+
+  <h3 id="Lawn_SeedBank_LoadFromFile_Sexy_Buffer_" data-uid="Lawn.SeedBank.LoadFromFile(Sexy.Buffer)">
+  LoadFromFile(Buffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool LoadFromFile(Buffer b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="Sexy.Buffer.html">Buffer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_MouseHitTest_" data-uid="Lawn.SeedBank.MouseHitTest*"></a>
+
+  <h3 id="Lawn_SeedBank_MouseHitTest_System_Int32_System_Int32_Lawn_HitResult__" data-uid="Lawn.SeedBank.MouseHitTest(System.Int32,System.Int32,Lawn.HitResult@)">
+  MouseHitTest(int, int, out HitResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseHitTest(int x, int y, out HitResult theHitResult)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theHitResult</code> <a class="xref" href="Lawn.HitResult.html">HitResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_Move_" data-uid="Lawn.SeedBank.Move*"></a>
+
+  <h3 id="Lawn_SeedBank_Move_System_Int32_System_Int32_" data-uid="Lawn.SeedBank.Move(System.Int32,System.Int32)">
+  Move(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Move(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_RefreshAllPackets_" data-uid="Lawn.SeedBank.RefreshAllPackets*"></a>
+
+  <h3 id="Lawn_SeedBank_RefreshAllPackets" data-uid="Lawn.SeedBank.RefreshAllPackets">
+  RefreshAllPackets()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshAllPackets()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_RemoveSeed_" data-uid="Lawn.SeedBank.RemoveSeed*"></a>
+
+  <h3 id="Lawn_SeedBank_RemoveSeed_System_Int32_" data-uid="Lawn.SeedBank.RemoveSeed(System.Int32)">
+  RemoveSeed(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveSeed(int theIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_SaveToFile_" data-uid="Lawn.SeedBank.SaveToFile*"></a>
+
+  <h3 id="Lawn_SeedBank_SaveToFile_Sexy_Buffer_" data-uid="Lawn.SeedBank.SaveToFile(Sexy.Buffer)">
+  SaveToFile(Buffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool SaveToFile(Buffer b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="Sexy.Buffer.html">Buffer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_UpdateConveyorBelt_" data-uid="Lawn.SeedBank.UpdateConveyorBelt*"></a>
+
+  <h3 id="Lawn_SeedBank_UpdateConveyorBelt" data-uid="Lawn.SeedBank.UpdateConveyorBelt">
+  UpdateConveyorBelt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateConveyorBelt()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_SeedBank_UpdateHeight_" data-uid="Lawn.SeedBank.UpdateHeight*"></a>
+
+  <h3 id="Lawn_SeedBank_UpdateHeight" data-uid="Lawn.SeedBank.UpdateHeight">
+  UpdateHeight()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateHeight()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

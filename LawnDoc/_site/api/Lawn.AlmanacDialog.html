@@ -1,0 +1,2190 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AlmanacDialog
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AlmanacDialog
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Lawn.AlmanacDialog">
+
+
+
+  <h1 id="Lawn_AlmanacDialog" data-uid="Lawn.AlmanacDialog" class="text-break">
+    Class AlmanacDialog
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lawn.html">Lawn</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AlmanacDialog : LawnDialog, ButtonListener</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Sexy.WidgetContainer.html">WidgetContainer</a></div>
+      <div><a class="xref" href="Sexy.Widget.html">Widget</a></div>
+      <div><a class="xref" href="Sexy.Dialog.html">Dialog</a></div>
+      <div><a class="xref" href="Lawn.LawnDialog.html">LawnDialog</a></div>
+      <div><span class="xref">AlmanacDialog</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Sexy.ButtonListener.html">ButtonListener</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_mButtonDelay">LawnDialog.mButtonDelay</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_mReanimation">LawnDialog.mReanimation</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_mDrawStandardBack">LawnDialog.mDrawStandardBack</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_mLawnYesButton">LawnDialog.mLawnYesButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_mLawnNoButton">LawnDialog.mLawnNoButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_mTallBottom">LawnDialog.mTallBottom</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_mVerticalCenterText">LawnDialog.mVerticalCenterText</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_mButtonMinWidth">LawnDialog.mButtonMinWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_mMinWidth">LawnDialog.mMinWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_GetLeft">LawnDialog.GetLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_GetWidth">LawnDialog.GetWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_GetTop">LawnDialog.GetTop()</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_SetButtonDelay_System_Int32_">LawnDialog.SetButtonDelay(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_ButtonPress_System_Int32_">LawnDialog.ButtonPress(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_ButtonDepress_System_Int32_">LawnDialog.ButtonDepress(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_CheckboxChecked_System_Int32_System_Boolean_">LawnDialog.CheckboxChecked(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_KeyDown_Sexy_KeyCode_">LawnDialog.KeyDown(KeyCode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_AddedToManager_Sexy_WidgetManager_">LawnDialog.AddedToManager(WidgetManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_Resize_System_Int32_System_Int32_System_Int32_System_Int32_">LawnDialog.Resize(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_WriteWordWrapped_Sexy_Graphics_Sexy_TRect_System_String_System_Int32_System_Int32_">LawnDialog.WriteWordWrapped(Graphics, TRect, string, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_MouseDrag_System_Int32_System_Int32_">LawnDialog.MouseDrag(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_CalcSize_System_Int32_System_Int32_">LawnDialog.CalcSize(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_CalcSize_System_Int32_System_Int32_System_Int32_">LawnDialog.CalcSize(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Lawn.LawnDialog.html#Lawn_LawnDialog_GetWordWrappedHeight_Sexy_Graphics_System_Int32_System_String_System_Int32_">LawnDialog.GetWordWrappedHeight(Graphics, int, string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mDialogListener">Dialog.mDialogListener</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mComponentImage">Dialog.mComponentImage</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mYesButton">Dialog.mYesButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mNoButton">Dialog.mNoButton</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mNumButtons">Dialog.mNumButtons</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mDialogHeader">Dialog.mDialogHeader</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mDialogFooter">Dialog.mDialogFooter</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mDialogLines">Dialog.mDialogLines</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mButtonMode">Dialog.mButtonMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mHeaderFont">Dialog.mHeaderFont</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mLinesFont">Dialog.mLinesFont</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mTextAlign">Dialog.mTextAlign</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mLineSpacingOffset">Dialog.mLineSpacingOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mButtonHeight">Dialog.mButtonHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mBackgroundInsets">Dialog.mBackgroundInsets</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mContentInsets">Dialog.mContentInsets</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mSpaceAfterHeader">Dialog.mSpaceAfterHeader</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mDragging">Dialog.mDragging</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mDragMouseX">Dialog.mDragMouseX</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mDragMouseY">Dialog.mDragMouseY</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mId">Dialog.mId</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mIsModal">Dialog.mIsModal</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mResult">Dialog.mResult</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mButtonHorzSpacing">Dialog.mButtonHorzSpacing</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_mButtonSidePadding">Dialog.mButtonSidePadding</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_EnsureFonts">Dialog.EnsureFonts()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_SetButtonFont_Sexy_Font_">Dialog.SetButtonFont(Font)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_SetHeaderFont_Sexy_Font_">Dialog.SetHeaderFont(Font)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_SetLinesFont_Sexy_Font_">Dialog.SetLinesFont(Font)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_SetColor_System_Int32_Sexy_SexyColor_">Dialog.SetColor(int, SexyColor)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_GetPreferredHeight_System_Int32_">Dialog.GetPreferredHeight(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_OrderInManagerChanged">Dialog.OrderInManagerChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_Resize_Sexy_TRect_">Dialog.Resize(TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_MouseDown_System_Int32_System_Int32_System_Int32_System_Int32_">Dialog.MouseDown(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_MouseUp_System_Int32_System_Int32_System_Int32_System_Int32_">Dialog.MouseUp(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_IsModal">Dialog.IsModal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_WaitForResult">Dialog.WaitForResult()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_WaitForResult_System_Boolean_">Dialog.WaitForResult(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_ButtonDownTick_System_Int32_">Dialog.ButtonDownTick(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_ButtonPress_System_Int32_System_Int32_">Dialog.ButtonPress(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_ButtonMouseEnter_System_Int32_">Dialog.ButtonMouseEnter(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_ButtonMouseLeave_System_Int32_">Dialog.ButtonMouseLeave(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Dialog.html#Sexy_Dialog_ButtonMouseMove_System_Int32_System_Int32_System_Int32_">Dialog.ButtonMouseMove(int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mVisible">Widget.mVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mMouseVisible">Widget.mMouseVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mDisabled">Widget.mDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mHasFocus">Widget.mHasFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mIsDown">Widget.mIsDown</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mIsOver">Widget.mIsOver</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mHasTransparencies">Widget.mHasTransparencies</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mColors">Widget.mColors</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mMouseInsets">Widget.mMouseInsets</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mDoFinger">Widget.mDoFinger</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mWantsFocus">Widget.mWantsFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mTabPrev">Widget.mTabPrev</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mTabNext">Widget.mTabNext</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_mWriteColoredString">Widget.mWriteColoredString</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WidgetRemovedHelper">Widget.WidgetRemovedHelper()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DoScroll_Sexy__Touch_">Widget.DoScroll(_Touch)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DoScroll_System_Int32_System_Int32_">Widget.DoScroll(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Reset">Widget.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetVisible_System_Boolean_">Widget.SetVisible(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColors_System_Int32_0__0___System_Int32_">Widget.SetColors(int[,], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColor_Sexy_ButtonWidget_ColorType_Microsoft_Xna_Framework_Color_">Widget.SetColor(ButtonWidget.ColorType, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetColor_System_Int32_Microsoft_Xna_Framework_Color_">Widget.SetColor(int, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_Sexy_Dialog_DialogColour_">Widget.GetColor(Dialog.DialogColour)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_System_Int32_">Widget.GetColor(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_Sexy_Dialog_DialogColour_Microsoft_Xna_Framework_Color_">Widget.GetColor(Dialog.DialogColour, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetColor_System_Int32_Microsoft_Xna_Framework_Color_">Widget.GetColor(int, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_SetDisabled_System_Boolean_">Widget.SetDisabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_ShowFinger_System_Boolean_">Widget.ShowFinger(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Move_System_Int32_System_Int32_">Widget.Move(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WantsFocus">Widget.WantsFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DrawOverlay_Sexy_Graphics_System_Int32_">Widget.DrawOverlay(Graphics, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_UpdateF_System_Single_">Widget.UpdateF(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GotFocus">Widget.GotFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_LostFocus">Widget.LostFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_KeyChar_Sexy_SexyChar_">Widget.KeyChar(SexyChar)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_KeyUp_Sexy_KeyCode_">Widget.KeyUp(KeyCode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseEnter">Widget.MouseEnter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseLeave">Widget.MouseLeave()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseMove_System_Int32_System_Int32_">Widget.MouseMove(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_MouseWheel_System_Int32_">Widget.MouseWheel(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_TouchBegan_Sexy__Touch_">Widget.TouchBegan(_Touch)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_TouchMoved_Sexy__Touch_">Widget.TouchMoved(_Touch)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_TouchEnded_Sexy__Touch_">Widget.TouchEnded(_Touch)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_TouchesCanceled">Widget.TouchesCanceled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_IsPointVisible_System_Int32_System_Int32_">Widget.IsPointVisible(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteCenteredLine_Sexy_Graphics_System_Int32_System_String_">Widget.WriteCenteredLine(Graphics, int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteCenteredLine_Sexy_Graphics_System_Int32_System_String_Microsoft_Xna_Framework_Color_Microsoft_Xna_Framework_Color_">Widget.WriteCenteredLine(Graphics, int, string, Color, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteCenteredLine_Sexy_Graphics_System_Int32_System_String_Microsoft_Xna_Framework_Color_Microsoft_Xna_Framework_Color_Sexy_TPoint_">Widget.WriteCenteredLine(Graphics, int, string, Color, Color, TPoint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_">Widget.WriteString(Graphics, string, int, int, int, int, bool, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_">Widget.WriteString(Graphics, string, int, int, int, int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteString_Sexy_Graphics_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_System_Int32_">Widget.WriteString(Graphics, string, int, int, int, int, bool, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetNumDigits_System_Int32_">Widget.GetNumDigits(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_WriteNumberFromStrip_Sexy_Graphics_System_Int32_System_Int32_System_Int32_Sexy_Image_System_Int32_">Widget.WriteNumberFromStrip(Graphics, int, int, int, Image, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Contains_System_Int32_System_Int32_">Widget.Contains(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_GetInsetRect">Widget.GetInsetRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DeferOverlay">Widget.DeferOverlay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_DeferOverlay_System_Int32_">Widget.DeferOverlay(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Left">Widget.Left()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Top">Widget.Top()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Right">Widget.Right()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Bottom">Widget.Bottom()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Width">Widget.Width()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Height">Widget.Height()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_System_Int32_System_Int32_">Widget.Layout(int, Widget, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_System_Int32_">Widget.Layout(int, Widget, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_">Widget.Layout(int, Widget, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_">Widget.Layout(int, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.Widget.html#Sexy_Widget_Layout_System_Int32_Sexy_Widget_System_Int32_System_Int32_System_Int32_System_Int32_">Widget.Layout(int, Widget, int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgets">WidgetContainer.mWidgets</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgetManager">WidgetContainer.mWidgetManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mParent">WidgetContainer.mParent</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateIteratorModified">WidgetContainer.mUpdateIteratorModified</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateIterator">WidgetContainer.mUpdateIterator</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mLastWMUpdateCount">WidgetContainer.mLastWMUpdateCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mUpdateCnt">WidgetContainer.mUpdateCnt</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mX">WidgetContainer.mX</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mY">WidgetContainer.mY</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidth">WidgetContainer.mWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mHeight">WidgetContainer.mHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mHasAlpha">WidgetContainer.mHasAlpha</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mClip">WidgetContainer.mClip</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mWidgetFlagsMod">WidgetContainer.mWidgetFlagsMod</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mPriority">WidgetContainer.mPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_mZOrder">WidgetContainer.mZOrder</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_FullRect">WidgetContainer.FullRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetWidgetAtHelper_System_Int32_System_Int32_System_Int32_System_Boolean__System_Int32__System_Int32__">WidgetContainer.GetWidgetAtHelper(int, int, int, out bool, out int, out int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_IsBelowHelper_Sexy_Widget_Sexy_Widget_System_Boolean__">WidgetContainer.IsBelowHelper(Widget, Widget, ref bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InsertWidgetHelper_System_Collections_Generic_LinkedList_Sexy_Widget__Enumerator_Sexy_Widget_">WidgetContainer.InsertWidgetHelper(LinkedList&lt;Widget&gt;.Enumerator, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InsertWidgetHelper_System_Collections_Generic_LinkedListNode_Sexy_Widget__Sexy_Widget_">WidgetContainer.InsertWidgetHelper(LinkedListNode&lt;Widget&gt;, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetRect">WidgetContainer.GetRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_Intersects_Sexy_WidgetContainer_">WidgetContainer.Intersects(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_AddWidget_Sexy_Widget_">WidgetContainer.AddWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveWidget_Sexy_Widget_">WidgetContainer.RemoveWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_HasWidget_Sexy_Widget_">WidgetContainer.HasWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_DisableWidget_Sexy_Widget_">WidgetContainer.DisableWidget(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets_System_Boolean_">WidgetContainer.RemoveAllWidgets(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets">WidgetContainer.RemoveAllWidgets()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_RemoveAllWidgets_System_Boolean_System_Boolean_">WidgetContainer.RemoveAllWidgets(bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SetFocus_Sexy_Widget_">WidgetContainer.SetFocus(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_IsBelow_Sexy_Widget_Sexy_Widget_">WidgetContainer.IsBelow(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkAllDirty">WidgetContainer.MarkAllDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_BringToFront_Sexy_Widget_">WidgetContainer.BringToFront(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_BringToBack_Sexy_Widget_">WidgetContainer.BringToBack(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_PutBehind_Sexy_Widget_Sexy_Widget_">WidgetContainer.PutBehind(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_PutInfront_Sexy_Widget_Sexy_Widget_">WidgetContainer.PutInfront(Widget, Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_GetAbsPos">WidgetContainer.GetAbsPos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirty">WidgetContainer.MarkDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirtyFull">WidgetContainer.MarkDirtyFull()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirtyFull_Sexy_WidgetContainer_">WidgetContainer.MarkDirtyFull(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_MarkDirty_Sexy_WidgetContainer_">WidgetContainer.MarkDirty(WidgetContainer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_UpdateAll_Sexy_ModalFlags_">WidgetContainer.UpdateAll(ModalFlags)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_UpdateFAll_Sexy_ModalFlags_System_Single_">WidgetContainer.UpdateFAll(ModalFlags, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_DrawAll_Sexy_ModalFlags_Sexy_Graphics_">WidgetContainer.DrawAll(ModalFlags, Graphics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SysColorChanged">WidgetContainer.SysColorChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_SysColorChangedAll">WidgetContainer.SysColorChangedAll()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_InterfaceOrientationChanged_Sexy_UI_ORIENTATION_">WidgetContainer.InterfaceOrientationChanged(UI_ORIENTATION)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardWillShow_Sexy_TRect__">WidgetContainer.KeyboardWillShow(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardDidShow_Sexy_TRect__">WidgetContainer.KeyboardDidShow(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardWillHide_Sexy_TRect__">WidgetContainer.KeyboardWillHide(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_KeyboardDidHide_Sexy_TRect__">WidgetContainer.KeyboardDidHide(ref TRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_S_System_Int32_">WidgetContainer.S(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M_System_Int32_">WidgetContainer.M(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M1_System_Int32_">WidgetContainer.M1(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M2_System_Int32_">WidgetContainer.M2(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.WidgetContainer.html#Sexy_WidgetContainer_M3_System_Int32_">WidgetContainer.M3(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Lawn_AlmanacDialog__ctor_" data-uid="Lawn.AlmanacDialog.#ctor*"></a>
+
+  <h3 id="Lawn_AlmanacDialog__ctor_Lawn_LawnApp_Lawn_AlmanacListener_" data-uid="Lawn.AlmanacDialog.#ctor(Lawn.LawnApp,Lawn.AlmanacListener)">
+  AlmanacDialog(LawnApp, AlmanacListener)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlmanacDialog(LawnApp theApp, AlmanacListener theListener)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theApp</code> <a class="xref" href="Lawn.LawnApp.html">LawnApp</a></dt>
+    <dd></dd>
+    <dt><code>theListener</code> <a class="xref" href="Lawn.AlmanacListener.html">AlmanacListener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Lawn_AlmanacDialog_ZombieOffsets" data-uid="Lawn.AlmanacDialog.ZombieOffsets">
+  ZombieOffsets
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TPoint[] ZombieOffsets</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TPoint.html">TPoint</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_gZombieDefeated" data-uid="Lawn.AlmanacDialog.gZombieDefeated">
+  gZombieDefeated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool[] gZombieDefeated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mApp" data-uid="Lawn.AlmanacDialog.mApp">
+  mApp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LawnApp mApp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.LawnApp.html">LawnApp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mCloseButton" data-uid="Lawn.AlmanacDialog.mCloseButton">
+  mCloseButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameButton mCloseButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.GameButton.html">GameButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mDescriptionScrollWidget" data-uid="Lawn.AlmanacDialog.mDescriptionScrollWidget">
+  mDescriptionScrollWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollWidget mDescriptionScrollWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mDescriptionWidget" data-uid="Lawn.AlmanacDialog.mDescriptionWidget">
+  mDescriptionWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DescriptionWidget mDescriptionWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.DescriptionWidget.html">DescriptionWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mIndexButton" data-uid="Lawn.AlmanacDialog.mIndexButton">
+  mIndexButton
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameButton mIndexButton</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.GameButton.html">GameButton</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mListener" data-uid="Lawn.AlmanacDialog.mListener">
+  mListener
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlmanacListener mListener</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.AlmanacListener.html">AlmanacListener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mOpenPage" data-uid="Lawn.AlmanacDialog.mOpenPage">
+  mOpenPage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlmanacPage mOpenPage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.AlmanacPage.html">AlmanacPage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mPlant" data-uid="Lawn.AlmanacDialog.mPlant">
+  mPlant
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plant mPlant</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mPlantGalleryWidget" data-uid="Lawn.AlmanacDialog.mPlantGalleryWidget">
+  mPlantGalleryWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlantGalleryWidget mPlantGalleryWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.PlantGalleryWidget.html">PlantGalleryWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mPlantsScrollWidget" data-uid="Lawn.AlmanacDialog.mPlantsScrollWidget">
+  mPlantsScrollWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollWidget mPlantsScrollWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mReanim" data-uid="Lawn.AlmanacDialog.mReanim">
+  mReanim
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation[] mReanim</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mSelectedSeed" data-uid="Lawn.AlmanacDialog.mSelectedSeed">
+  mSelectedSeed
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedType mSelectedSeed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mSelectedZombie" data-uid="Lawn.AlmanacDialog.mSelectedZombie">
+  mSelectedZombie
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZombieType mSelectedZombie</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mViewPlantsRect" data-uid="Lawn.AlmanacDialog.mViewPlantsRect">
+  mViewPlantsRect
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect mViewPlantsRect</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mViewZombiesRect" data-uid="Lawn.AlmanacDialog.mViewZombiesRect">
+  mViewZombiesRect
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect mViewZombiesRect</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mZombie" data-uid="Lawn.AlmanacDialog.mZombie">
+  mZombie
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Zombie mZombie</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mZombieGalleryWidget" data-uid="Lawn.AlmanacDialog.mZombieGalleryWidget">
+  mZombieGalleryWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZombieGalleryWidget mZombieGalleryWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.ZombieGalleryWidget.html">ZombieGalleryWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_AlmanacDialog_mZombiesScrollWidget" data-uid="Lawn.AlmanacDialog.mZombiesScrollWidget">
+  mZombiesScrollWidget
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollWidget mZombiesScrollWidget</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.ScrollWidget.html">ScrollWidget</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Lawn_AlmanacDialog_AlmanacInitForPlayer_" data-uid="Lawn.AlmanacDialog.AlmanacInitForPlayer*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_AlmanacInitForPlayer" data-uid="Lawn.AlmanacDialog.AlmanacInitForPlayer">
+  AlmanacInitForPlayer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AlmanacInitForPlayer()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_AlmanacPlayerDefeatedZombie_" data-uid="Lawn.AlmanacDialog.AlmanacPlayerDefeatedZombie*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_AlmanacPlayerDefeatedZombie_Lawn_ZombieType_" data-uid="Lawn.AlmanacDialog.AlmanacPlayerDefeatedZombie(Lawn.ZombieType)">
+  AlmanacPlayerDefeatedZombie(ZombieType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AlmanacPlayerDefeatedZombie(ZombieType theZombieType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_BackButtonPress_" data-uid="Lawn.AlmanacDialog.BackButtonPress*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_BackButtonPress" data-uid="Lawn.AlmanacDialog.BackButtonPress">
+  BackButtonPress()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool BackButtonPress()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_ClearPlantsAndZombies_" data-uid="Lawn.AlmanacDialog.ClearPlantsAndZombies*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_ClearPlantsAndZombies" data-uid="Lawn.AlmanacDialog.ClearPlantsAndZombies">
+  ClearPlantsAndZombies()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearPlantsAndZombies()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_Dispose_" data-uid="Lawn.AlmanacDialog.Dispose*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_Dispose" data-uid="Lawn.AlmanacDialog.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_Draw_" data-uid="Lawn.AlmanacDialog.Draw*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_Draw_Sexy_Graphics_" data-uid="Lawn.AlmanacDialog.Draw(Sexy.Graphics)">
+  Draw(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Draw(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_DrawIndex_" data-uid="Lawn.AlmanacDialog.DrawIndex*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_DrawIndex_Sexy_Graphics_" data-uid="Lawn.AlmanacDialog.DrawIndex(Sexy.Graphics)">
+  DrawIndex(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawIndex(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_DrawOverlay_" data-uid="Lawn.AlmanacDialog.DrawOverlay*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_DrawOverlay_Sexy_Graphics_" data-uid="Lawn.AlmanacDialog.DrawOverlay(Sexy.Graphics)">
+  DrawOverlay(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DrawOverlay(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_DrawPaper_" data-uid="Lawn.AlmanacDialog.DrawPaper*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_DrawPaper_Sexy_Graphics_Sexy_TRect_Sexy_SexyColor_" data-uid="Lawn.AlmanacDialog.DrawPaper(Sexy.Graphics,Sexy.TRect,Sexy.SexyColor)">
+  DrawPaper(Graphics, TRect, SexyColor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPaper(Graphics g, TRect theRect, SexyColor theColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <a class="xref" href="Sexy.SexyColor.html">SexyColor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_DrawPlants_" data-uid="Lawn.AlmanacDialog.DrawPlants*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_DrawPlants_Sexy_Graphics_" data-uid="Lawn.AlmanacDialog.DrawPlants(Sexy.Graphics)">
+  DrawPlants(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPlants(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_DrawZombies_" data-uid="Lawn.AlmanacDialog.DrawZombies*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_DrawZombies_Sexy_Graphics_" data-uid="Lawn.AlmanacDialog.DrawZombies(Sexy.Graphics)">
+  DrawZombies(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawZombies(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_KeyChar_" data-uid="Lawn.AlmanacDialog.KeyChar*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_KeyChar_System_Char_" data-uid="Lawn.AlmanacDialog.KeyChar(System.Char)">
+  KeyChar(char)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void KeyChar(char theChar)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theChar</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_MouseDown_" data-uid="Lawn.AlmanacDialog.MouseDown*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_MouseDown_System_Int32_System_Int32_System_Int32_" data-uid="Lawn.AlmanacDialog.MouseDown(System.Int32,System.Int32,System.Int32)">
+  MouseDown(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MouseDown(int x, int y, int theClickCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_MouseUp_" data-uid="Lawn.AlmanacDialog.MouseUp*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_MouseUp_System_Int32_System_Int32_System_Int32_" data-uid="Lawn.AlmanacDialog.MouseUp(System.Int32,System.Int32,System.Int32)">
+  MouseUp(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void MouseUp(int x, int y, int theClickCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_PlantSelected_" data-uid="Lawn.AlmanacDialog.PlantSelected*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_PlantSelected_Lawn_SeedType_" data-uid="Lawn.AlmanacDialog.PlantSelected(Lawn.SeedType)">
+  PlantSelected(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlantSelected(SeedType theSeedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_RemovedFromManager_" data-uid="Lawn.AlmanacDialog.RemovedFromManager*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_RemovedFromManager_Sexy_WidgetManager_" data-uid="Lawn.AlmanacDialog.RemovedFromManager(Sexy.WidgetManager)">
+  RemovedFromManager(WidgetManager)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RemovedFromManager(WidgetManager theWidgetManager)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidgetManager</code> <a class="xref" href="Sexy.WidgetManager.html">WidgetManager</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_SetPage_" data-uid="Lawn.AlmanacDialog.SetPage*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_SetPage_Lawn_AlmanacPage_" data-uid="Lawn.AlmanacDialog.SetPage(Lawn.AlmanacPage)">
+  SetPage(AlmanacPage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPage(AlmanacPage thePage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePage</code> <a class="xref" href="Lawn.AlmanacPage.html">AlmanacPage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_SetupPlant_" data-uid="Lawn.AlmanacDialog.SetupPlant*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_SetupPlant" data-uid="Lawn.AlmanacDialog.SetupPlant">
+  SetupPlant()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupPlant()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_SetupZombie_" data-uid="Lawn.AlmanacDialog.SetupZombie*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_SetupZombie" data-uid="Lawn.AlmanacDialog.SetupZombie">
+  SetupZombie()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupZombie()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_ShowPlant_" data-uid="Lawn.AlmanacDialog.ShowPlant*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_ShowPlant_Lawn_SeedType_" data-uid="Lawn.AlmanacDialog.ShowPlant(Lawn.SeedType)">
+  ShowPlant(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowPlant(SeedType theSeedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_ShowZombie_" data-uid="Lawn.AlmanacDialog.ShowZombie*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_ShowZombie_Lawn_ZombieType_" data-uid="Lawn.AlmanacDialog.ShowZombie(Lawn.ZombieType)">
+  ShowZombie(ZombieType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowZombie(ZombieType theZombieType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_Update_" data-uid="Lawn.AlmanacDialog.Update*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_Update" data-uid="Lawn.AlmanacDialog.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_ZombieHasDescription_" data-uid="Lawn.AlmanacDialog.ZombieHasDescription*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_ZombieHasDescription_Lawn_ZombieType_" data-uid="Lawn.AlmanacDialog.ZombieHasDescription(Lawn.ZombieType)">
+  ZombieHasDescription(ZombieType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ZombieHasDescription(ZombieType theZombieType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_ZombieHasSilhouette_" data-uid="Lawn.AlmanacDialog.ZombieHasSilhouette*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_ZombieHasSilhouette_Lawn_ZombieType_" data-uid="Lawn.AlmanacDialog.ZombieHasSilhouette(Lawn.ZombieType)">
+  ZombieHasSilhouette(ZombieType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ZombieHasSilhouette(ZombieType theZombieType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_AlmanacDialog_ZombieSelected_" data-uid="Lawn.AlmanacDialog.ZombieSelected*"></a>
+
+  <h3 id="Lawn_AlmanacDialog_ZombieSelected_Lawn_ZombieType_" data-uid="Lawn.AlmanacDialog.ZombieSelected(Lawn.ZombieType)">
+  ZombieSelected(ZombieType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZombieSelected(ZombieType theZombieType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

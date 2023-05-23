@@ -1,0 +1,6082 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Challenge
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Challenge
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Lawn.Challenge">
+
+
+
+  <h1 id="Lawn_Challenge" data-uid="Lawn.Challenge" class="text-break">
+    Class Challenge
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lawn.html">Lawn</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Challenge : StoreListener</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Challenge</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Lawn.StoreListener.html">StoreListener</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Lawn_Challenge__ctor_" data-uid="Lawn.Challenge.#ctor*"></a>
+
+  <h3 id="Lawn_Challenge__ctor" data-uid="Lawn.Challenge.#ctor">
+  Challenge()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Challenge()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Lawn_Challenge_gArtChallengeStarfruit" data-uid="Lawn.Challenge.gArtChallengeStarfruit">
+  gArtChallengeStarfruit
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SeedType[,] gArtChallengeStarfruit</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_gArtChallengeSunFlower" data-uid="Lawn.Challenge.gArtChallengeSunFlower">
+  gArtChallengeSunFlower
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SeedType[,] gArtChallengeSunFlower</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_gArtChallengeWallnut" data-uid="Lawn.Challenge.gArtChallengeWallnut">
+  gArtChallengeWallnut
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SeedType[,] gArtChallengeWallnut</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mApp" data-uid="Lawn.Challenge.mApp">
+  mApp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LawnApp mApp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.LawnApp.html">LawnApp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mBeghouledEated" data-uid="Lawn.Challenge.mBeghouledEated">
+  mBeghouledEated
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool[,] mBeghouledEated</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[,]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mBeghouledMatchesThisMove" data-uid="Lawn.Challenge.mBeghouledMatchesThisMove">
+  mBeghouledMatchesThisMove
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mBeghouledMatchesThisMove</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mBeghouledMouseCapture" data-uid="Lawn.Challenge.mBeghouledMouseCapture">
+  mBeghouledMouseCapture
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mBeghouledMouseCapture</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mBeghouledMouseDownX" data-uid="Lawn.Challenge.mBeghouledMouseDownX">
+  mBeghouledMouseDownX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mBeghouledMouseDownX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mBeghouledMouseDownY" data-uid="Lawn.Challenge.mBeghouledMouseDownY">
+  mBeghouledMouseDownY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mBeghouledMouseDownY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mBeghouledPurcasedUpgrade" data-uid="Lawn.Challenge.mBeghouledPurcasedUpgrade">
+  mBeghouledPurcasedUpgrade
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool[] mBeghouledPurcasedUpgrade</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mBoard" data-uid="Lawn.Challenge.mBoard">
+  mBoard
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Board mBoard</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Board.html">Board</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mChallengeGridX" data-uid="Lawn.Challenge.mChallengeGridX">
+  mChallengeGridX
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mChallengeGridX</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mChallengeGridY" data-uid="Lawn.Challenge.mChallengeGridY">
+  mChallengeGridY
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mChallengeGridY</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mChallengeScore" data-uid="Lawn.Challenge.mChallengeScore">
+  mChallengeScore
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mChallengeScore</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mChallengeState" data-uid="Lawn.Challenge.mChallengeState">
+  mChallengeState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ChallengeState mChallengeState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.ChallengeState.html">ChallengeState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mChallengeStateCounter" data-uid="Lawn.Challenge.mChallengeStateCounter">
+  mChallengeStateCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mChallengeStateCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mCloudCounter" data-uid="Lawn.Challenge.mCloudCounter">
+  mCloudCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] mCloudCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mConveyorBeltCounter" data-uid="Lawn.Challenge.mConveyorBeltCounter">
+  mConveyorBeltCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mConveyorBeltCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mLastConveyorSeedType" data-uid="Lawn.Challenge.mLastConveyorSeedType">
+  mLastConveyorSeedType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedType mLastConveyorSeedType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mName" data-uid="Lawn.Challenge.mName">
+  mName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string mName</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mRainCounter" data-uid="Lawn.Challenge.mRainCounter">
+  mRainCounter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mRainCounter</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mReanimChallenge" data-uid="Lawn.Challenge.mReanimChallenge">
+  mReanimChallenge
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation mReanimChallenge</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mReanimCloud" data-uid="Lawn.Challenge.mReanimCloud">
+  mReanimCloud
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Reanimation[] mReanimCloud</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TodLib.Reanimation.html">Reanimation</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mScaryPotterPots" data-uid="Lawn.Challenge.mScaryPotterPots">
+  mScaryPotterPots
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mScaryPotterPots</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mShowBowlingLine" data-uid="Lawn.Challenge.mShowBowlingLine">
+  mShowBowlingLine
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mShowBowlingLine</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mSlotMachineRollCount" data-uid="Lawn.Challenge.mSlotMachineRollCount">
+  mSlotMachineRollCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mSlotMachineRollCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mSurvivalStage" data-uid="Lawn.Challenge.mSurvivalStage">
+  mSurvivalStage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mSurvivalStage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_Challenge_mTreeOfWisdomTalkIndex" data-uid="Lawn.Challenge.mTreeOfWisdomTalkIndex">
+  mTreeOfWisdomTalkIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int mTreeOfWisdomTalkIndex</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Lawn_Challenge_AdvanceCrazyDaveDialog_" data-uid="Lawn.Challenge.AdvanceCrazyDaveDialog*"></a>
+
+  <h3 id="Lawn_Challenge_AdvanceCrazyDaveDialog" data-uid="Lawn.Challenge.AdvanceCrazyDaveDialog">
+  AdvanceCrazyDaveDialog()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdvanceCrazyDaveDialog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BackFromStore_" data-uid="Lawn.Challenge.BackFromStore*"></a>
+
+  <h3 id="Lawn_Challenge_BackFromStore" data-uid="Lawn.Challenge.BackFromStore">
+  BackFromStore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BackFromStore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledBoardHasMatch_" data-uid="Lawn.Challenge.BeghouledBoardHasMatch*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledBoardHasMatch_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledBoardHasMatch(Lawn.BeghouledBoardState)">
+  BeghouledBoardHasMatch(BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeghouledBoardHasMatch(BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledCanClearCrater_" data-uid="Lawn.Challenge.BeghouledCanClearCrater*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledCanClearCrater" data-uid="Lawn.Challenge.BeghouledCanClearCrater">
+  BeghouledCanClearCrater()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeghouledCanClearCrater()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledCancelMatchFlashing_" data-uid="Lawn.Challenge.BeghouledCancelMatchFlashing*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledCancelMatchFlashing" data-uid="Lawn.Challenge.BeghouledCancelMatchFlashing">
+  BeghouledCancelMatchFlashing()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledCancelMatchFlashing()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledCheckForPossibleMoves_" data-uid="Lawn.Challenge.BeghouledCheckForPossibleMoves*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledCheckForPossibleMoves_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledCheckForPossibleMoves(Lawn.BeghouledBoardState)">
+  BeghouledCheckForPossibleMoves(BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeghouledCheckForPossibleMoves(BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledCheckStuckState_" data-uid="Lawn.Challenge.BeghouledCheckStuckState*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledCheckStuckState" data-uid="Lawn.Challenge.BeghouledCheckStuckState">
+  BeghouledCheckStuckState()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledCheckStuckState()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledClearCrater_" data-uid="Lawn.Challenge.BeghouledClearCrater*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledClearCrater_System_Int32_" data-uid="Lawn.Challenge.BeghouledClearCrater(System.Int32)">
+  BeghouledClearCrater(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledClearCrater(int theCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledCreatePlants_" data-uid="Lawn.Challenge.BeghouledCreatePlants*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledCreatePlants_Lawn_BeghouledBoardState_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledCreatePlants(Lawn.BeghouledBoardState,Lawn.BeghouledBoardState)">
+  BeghouledCreatePlants(BeghouledBoardState, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledCreatePlants(BeghouledBoardState theOldBoardState, BeghouledBoardState theNewBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theOldBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+    <dt><code>theNewBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledDragCancel_" data-uid="Lawn.Challenge.BeghouledDragCancel*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledDragCancel" data-uid="Lawn.Challenge.BeghouledDragCancel">
+  BeghouledDragCancel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledDragCancel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledDragStart_" data-uid="Lawn.Challenge.BeghouledDragStart*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledDragStart_System_Int32_System_Int32_" data-uid="Lawn.Challenge.BeghouledDragStart(System.Int32,System.Int32)">
+  BeghouledDragStart(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledDragStart(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledDragUpdate_" data-uid="Lawn.Challenge.BeghouledDragUpdate*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledDragUpdate_System_Int32_System_Int32_" data-uid="Lawn.Challenge.BeghouledDragUpdate(System.Int32,System.Int32)">
+  BeghouledDragUpdate(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledDragUpdate(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledFallIntoSquare_" data-uid="Lawn.Challenge.BeghouledFallIntoSquare*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledFallIntoSquare_System_Int32_System_Int32_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledFallIntoSquare(System.Int32,System.Int32,Lawn.BeghouledBoardState)">
+  BeghouledFallIntoSquare(int, int, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledFallIntoSquare(int x, int y, BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledFillHoles_" data-uid="Lawn.Challenge.BeghouledFillHoles*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledFillHoles_Lawn_BeghouledBoardState_System_Boolean_" data-uid="Lawn.Challenge.BeghouledFillHoles(Lawn.BeghouledBoardState,System.Boolean)">
+  BeghouledFillHoles(BeghouledBoardState, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledFillHoles(BeghouledBoardState theBoardState, bool theAllowMatches)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+    <dt><code>theAllowMatches</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledFlashAMatch_" data-uid="Lawn.Challenge.BeghouledFlashAMatch*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledFlashAMatch" data-uid="Lawn.Challenge.BeghouledFlashAMatch">
+  BeghouledFlashAMatch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledFlashAMatch()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledFlashFromBoardState_" data-uid="Lawn.Challenge.BeghouledFlashFromBoardState*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledFlashFromBoardState_Lawn_BeghouledBoardState_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Lawn.Challenge.BeghouledFlashFromBoardState(Lawn.BeghouledBoardState,System.Int32,System.Int32,System.Int32,System.Int32)">
+  BeghouledFlashFromBoardState(BeghouledBoardState, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeghouledFlashFromBoardState(BeghouledBoardState theBoardState, int theSwap1X, int theSwap1Y, int theSwap2X, int theSwap2Y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+    <dt><code>theSwap1X</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSwap1Y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSwap2X</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSwap2Y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledFlashPlant_" data-uid="Lawn.Challenge.BeghouledFlashPlant*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledFlashPlant_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Lawn.Challenge.BeghouledFlashPlant(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  BeghouledFlashPlant(int, int, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledFlashPlant(int x, int y, int theSwap1X, int theSwap1Y, int theSwap2X, int theSwap2Y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSwap1X</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSwap1Y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSwap2X</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSwap2Y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledGetPlantAt_" data-uid="Lawn.Challenge.BeghouledGetPlantAt*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledGetPlantAt_System_Int32_System_Int32_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledGetPlantAt(System.Int32,System.Int32,Lawn.BeghouledBoardState)">
+  BeghouledGetPlantAt(int, int, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedType BeghouledGetPlantAt(int x, int y, BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledHorizontalMatchLength_" data-uid="Lawn.Challenge.BeghouledHorizontalMatchLength*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledHorizontalMatchLength_System_Int32_System_Int32_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledHorizontalMatchLength(System.Int32,System.Int32,Lawn.BeghouledBoardState)">
+  BeghouledHorizontalMatchLength(int, int, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BeghouledHorizontalMatchLength(int x, int y, BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledIsValidMove_" data-uid="Lawn.Challenge.BeghouledIsValidMove*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledIsValidMove_System_Int32_System_Int32_System_Int32_System_Int32_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledIsValidMove(System.Int32,System.Int32,System.Int32,System.Int32,Lawn.BeghouledBoardState)">
+  BeghouledIsValidMove(int, int, int, int, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeghouledIsValidMove(int x1, int y1, int x2, int y2, BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledMakePlantsFall_" data-uid="Lawn.Challenge.BeghouledMakePlantsFall*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledMakePlantsFall_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledMakePlantsFall(Lawn.BeghouledBoardState)">
+  BeghouledMakePlantsFall(BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledMakePlantsFall(BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledMakeStartBoard_" data-uid="Lawn.Challenge.BeghouledMakeStartBoard*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledMakeStartBoard" data-uid="Lawn.Challenge.BeghouledMakeStartBoard">
+  BeghouledMakeStartBoard()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledMakeStartBoard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledPacketClicked_" data-uid="Lawn.Challenge.BeghouledPacketClicked*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledPacketClicked_Lawn_SeedPacket_" data-uid="Lawn.Challenge.BeghouledPacketClicked(Lawn.SeedPacket)">
+  BeghouledPacketClicked(SeedPacket)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledPacketClicked(SeedPacket theSeedPacket)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedPacket</code> <a class="xref" href="Lawn.SeedPacket.html">SeedPacket</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledPickSeed_" data-uid="Lawn.Challenge.BeghouledPickSeed*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledPickSeed_System_Int32_System_Int32_Lawn_BeghouledBoardState_System_Boolean_" data-uid="Lawn.Challenge.BeghouledPickSeed(System.Int32,System.Int32,Lawn.BeghouledBoardState,System.Boolean)">
+  BeghouledPickSeed(int, int, BeghouledBoardState, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedType BeghouledPickSeed(int theGridX, int theGridY, BeghouledBoardState theBoardState, bool theAllowMatches)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+    <dt><code>theAllowMatches</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledPopulateBoard_" data-uid="Lawn.Challenge.BeghouledPopulateBoard*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledPopulateBoard" data-uid="Lawn.Challenge.BeghouledPopulateBoard">
+  BeghouledPopulateBoard()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledPopulateBoard()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledRemoveHorizontalMatch_" data-uid="Lawn.Challenge.BeghouledRemoveHorizontalMatch*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledRemoveHorizontalMatch_System_Int32_System_Int32_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledRemoveHorizontalMatch(System.Int32,System.Int32,Lawn.BeghouledBoardState)">
+  BeghouledRemoveHorizontalMatch(int, int, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledRemoveHorizontalMatch(int x, int y, BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledRemoveMatches_" data-uid="Lawn.Challenge.BeghouledRemoveMatches*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledRemoveMatches_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledRemoveMatches(Lawn.BeghouledBoardState)">
+  BeghouledRemoveMatches(BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledRemoveMatches(BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledRemoveVerticalMatch_" data-uid="Lawn.Challenge.BeghouledRemoveVerticalMatch*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledRemoveVerticalMatch_System_Int32_System_Int32_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledRemoveVerticalMatch(System.Int32,System.Int32,Lawn.BeghouledBoardState)">
+  BeghouledRemoveVerticalMatch(int, int, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledRemoveVerticalMatch(int x, int y, BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledScore_" data-uid="Lawn.Challenge.BeghouledScore*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledScore_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Lawn.Challenge.BeghouledScore(System.Int32,System.Int32,System.Int32,System.Boolean)">
+  BeghouledScore(int, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledScore(int x, int y, int theNumPlants, bool theIsHorizontal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theNumPlants</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theIsHorizontal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledShuffle_" data-uid="Lawn.Challenge.BeghouledShuffle*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledShuffle" data-uid="Lawn.Challenge.BeghouledShuffle">
+  BeghouledShuffle()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledShuffle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledStartFalling_" data-uid="Lawn.Challenge.BeghouledStartFalling*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledStartFalling_Lawn_ChallengeState_" data-uid="Lawn.Challenge.BeghouledStartFalling(Lawn.ChallengeState)">
+  BeghouledStartFalling(ChallengeState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledStartFalling(ChallengeState theChallengeState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theChallengeState</code> <a class="xref" href="Lawn.ChallengeState.html">ChallengeState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledTwistFlashMatch_" data-uid="Lawn.Challenge.BeghouledTwistFlashMatch*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledTwistFlashMatch_Lawn_BeghouledBoardState_System_Int32_System_Int32_" data-uid="Lawn.Challenge.BeghouledTwistFlashMatch(Lawn.BeghouledBoardState,System.Int32,System.Int32)">
+  BeghouledTwistFlashMatch(BeghouledBoardState, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeghouledTwistFlashMatch(BeghouledBoardState theBoardState, int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledTwistMouseDown_" data-uid="Lawn.Challenge.BeghouledTwistMouseDown*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledTwistMouseDown_System_Int32_System_Int32_" data-uid="Lawn.Challenge.BeghouledTwistMouseDown(System.Int32,System.Int32)">
+  BeghouledTwistMouseDown(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledTwistMouseDown(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledTwistMoveCausesMatch_" data-uid="Lawn.Challenge.BeghouledTwistMoveCausesMatch*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledTwistMoveCausesMatch_System_Int32_System_Int32_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledTwistMoveCausesMatch(System.Int32,System.Int32,Lawn.BeghouledBoardState)">
+  BeghouledTwistMoveCausesMatch(int, int, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeghouledTwistMoveCausesMatch(int theGridX, int theGridY, BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledTwistSquareFromMouse_" data-uid="Lawn.Challenge.BeghouledTwistSquareFromMouse*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledTwistSquareFromMouse_System_Int32_System_Int32_System_Int32__System_Int32__" data-uid="Lawn.Challenge.BeghouledTwistSquareFromMouse(System.Int32,System.Int32,System.Int32@,System.Int32@)">
+  BeghouledTwistSquareFromMouse(int, int, ref int, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeghouledTwistSquareFromMouse(int theMouseX, int theMouseY, ref int theGridX, ref int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theMouseX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMouseY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledTwistValidMove_" data-uid="Lawn.Challenge.BeghouledTwistValidMove*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledTwistValidMove_System_Int32_System_Int32_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledTwistValidMove(System.Int32,System.Int32,Lawn.BeghouledBoardState)">
+  BeghouledTwistValidMove(int, int, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BeghouledTwistValidMove(int theGridX, int theGridY, BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledUpdateCraters_" data-uid="Lawn.Challenge.BeghouledUpdateCraters*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledUpdateCraters" data-uid="Lawn.Challenge.BeghouledUpdateCraters">
+  BeghouledUpdateCraters()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeghouledUpdateCraters()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_BeghouledVerticalMatchLength_" data-uid="Lawn.Challenge.BeghouledVerticalMatchLength*"></a>
+
+  <h3 id="Lawn_Challenge_BeghouledVerticalMatchLength_System_Int32_System_Int32_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.BeghouledVerticalMatchLength(System.Int32,System.Int32,Lawn.BeghouledBoardState)">
+  BeghouledVerticalMatchLength(int, int, BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BeghouledVerticalMatchLength(int x, int y, BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_CanPlantAt_" data-uid="Lawn.Challenge.CanPlantAt*"></a>
+
+  <h3 id="Lawn_Challenge_CanPlantAt_System_Int32_System_Int32_Lawn_SeedType_" data-uid="Lawn.Challenge.CanPlantAt(System.Int32,System.Int32,Lawn.SeedType)">
+  CanPlantAt(int, int, SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlantingReason CanPlantAt(int theGridX, int theGridY, SeedType theType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.PlantingReason.html">PlantingReason</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_CanTargetZombieWithPortals_" data-uid="Lawn.Challenge.CanTargetZombieWithPortals*"></a>
+
+  <h3 id="Lawn_Challenge_CanTargetZombieWithPortals_Lawn_Plant_Lawn_Zombie_" data-uid="Lawn.Challenge.CanTargetZombieWithPortals(Lawn.Plant,Lawn.Zombie)">
+  CanTargetZombieWithPortals(Plant, Zombie)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanTargetZombieWithPortals(Plant thePlant, Zombie theZombie)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+    <dt><code>theZombie</code> <a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_CheckForCompleteArtChallenge_" data-uid="Lawn.Challenge.CheckForCompleteArtChallenge*"></a>
+
+  <h3 id="Lawn_Challenge_CheckForCompleteArtChallenge_System_Int32_System_Int32_" data-uid="Lawn.Challenge.CheckForCompleteArtChallenge(System.Int32,System.Int32)">
+  CheckForCompleteArtChallenge(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CheckForCompleteArtChallenge(int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ClearCursor_" data-uid="Lawn.Challenge.ClearCursor*"></a>
+
+  <h3 id="Lawn_Challenge_ClearCursor" data-uid="Lawn.Challenge.ClearCursor">
+  ClearCursor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearCursor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_DrawArtChallenge_" data-uid="Lawn.Challenge.DrawArtChallenge*"></a>
+
+  <h3 id="Lawn_Challenge_DrawArtChallenge_Sexy_Graphics_" data-uid="Lawn.Challenge.DrawArtChallenge(Sexy.Graphics)">
+  DrawArtChallenge(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawArtChallenge(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_DrawBackdrop_" data-uid="Lawn.Challenge.DrawBackdrop*"></a>
+
+  <h3 id="Lawn_Challenge_DrawBackdrop_Sexy_Graphics_" data-uid="Lawn.Challenge.DrawBackdrop(Sexy.Graphics)">
+  DrawBackdrop(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawBackdrop(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_DrawBeghouled_" data-uid="Lawn.Challenge.DrawBeghouled*"></a>
+
+  <h3 id="Lawn_Challenge_DrawBeghouled_Sexy_Graphics_" data-uid="Lawn.Challenge.DrawBeghouled(Sexy.Graphics)">
+  DrawBeghouled(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawBeghouled(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_DrawRain_" data-uid="Lawn.Challenge.DrawRain*"></a>
+
+  <h3 id="Lawn_Challenge_DrawRain_Sexy_Graphics_" data-uid="Lawn.Challenge.DrawRain(Sexy.Graphics)">
+  DrawRain(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRain(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_DrawSlotMachine_" data-uid="Lawn.Challenge.DrawSlotMachine*"></a>
+
+  <h3 id="Lawn_Challenge_DrawSlotMachine_Sexy_Graphics_" data-uid="Lawn.Challenge.DrawSlotMachine(Sexy.Graphics)">
+  DrawSlotMachine(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawSlotMachine(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_DrawStormFlash_" data-uid="Lawn.Challenge.DrawStormFlash*"></a>
+
+  <h3 id="Lawn_Challenge_DrawStormFlash_Sexy_Graphics_System_Int32_System_Int32_" data-uid="Lawn.Challenge.DrawStormFlash(Sexy.Graphics,System.Int32,System.Int32)">
+  DrawStormFlash(Graphics, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawStormFlash(Graphics g, int theTime, int theMaxAmount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>theTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxAmount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_DrawStormNight_" data-uid="Lawn.Challenge.DrawStormNight*"></a>
+
+  <h3 id="Lawn_Challenge_DrawStormNight_Sexy_Graphics_" data-uid="Lawn.Challenge.DrawStormNight(Sexy.Graphics)">
+  DrawStormNight(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawStormNight(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_DrawWeather_" data-uid="Lawn.Challenge.DrawWeather*"></a>
+
+  <h3 id="Lawn_Challenge_DrawWeather_Sexy_Graphics_" data-uid="Lawn.Challenge.DrawWeather(Sexy.Graphics)">
+  DrawWeather(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawWeather(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_GetArtChallengeSeed_" data-uid="Lawn.Challenge.GetArtChallengeSeed*"></a>
+
+  <h3 id="Lawn_Challenge_GetArtChallengeSeed_System_Int32_System_Int32_" data-uid="Lawn.Challenge.GetArtChallengeSeed(System.Int32,System.Int32)">
+  GetArtChallengeSeed(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedType GetArtChallengeSeed(int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_GetOtherPortal_" data-uid="Lawn.Challenge.GetOtherPortal*"></a>
+
+  <h3 id="Lawn_Challenge_GetOtherPortal_Lawn_GridItem_" data-uid="Lawn.Challenge.GetOtherPortal(Lawn.GridItem)">
+  GetOtherPortal(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridItem GetOtherPortal(GridItem thePortal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePortal</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_GetPortalAt_" data-uid="Lawn.Challenge.GetPortalAt*"></a>
+
+  <h3 id="Lawn_Challenge_GetPortalAt_System_Int32_System_Int32_" data-uid="Lawn.Challenge.GetPortalAt(System.Int32,System.Int32)">
+  GetPortalAt(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridItem GetPortalAt(int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_GetPortalDistanceToMower_" data-uid="Lawn.Challenge.GetPortalDistanceToMower*"></a>
+
+  <h3 id="Lawn_Challenge_GetPortalDistanceToMower_System_Int32_" data-uid="Lawn.Challenge.GetPortalDistanceToMower(System.Int32)">
+  GetPortalDistanceToMower(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPortalDistanceToMower(int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_GetPortalToLeft_" data-uid="Lawn.Challenge.GetPortalToLeft*"></a>
+
+  <h3 id="Lawn_Challenge_GetPortalToLeft_System_Int32_System_Int32_" data-uid="Lawn.Challenge.GetPortalToLeft(System.Int32,System.Int32)">
+  GetPortalToLeft(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridItem GetPortalToLeft(int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_GetPortalToRight_" data-uid="Lawn.Challenge.GetPortalToRight*"></a>
+
+  <h3 id="Lawn_Challenge_GetPortalToRight_System_Int32_System_Int32_" data-uid="Lawn.Challenge.GetPortalToRight(System.Int32,System.Int32)">
+  GetPortalToRight(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridItem GetPortalToRight(int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_GraveDangerSpawnGraveAt_" data-uid="Lawn.Challenge.GraveDangerSpawnGraveAt*"></a>
+
+  <h3 id="Lawn_Challenge_GraveDangerSpawnGraveAt_System_Int32_System_Int32_" data-uid="Lawn.Challenge.GraveDangerSpawnGraveAt(System.Int32,System.Int32)">
+  GraveDangerSpawnGraveAt(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GraveDangerSpawnGraveAt(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_GraveDangerSpawnRandomGrave_" data-uid="Lawn.Challenge.GraveDangerSpawnRandomGrave*"></a>
+
+  <h3 id="Lawn_Challenge_GraveDangerSpawnRandomGrave" data-uid="Lawn.Challenge.GraveDangerSpawnRandomGrave">
+  GraveDangerSpawnRandomGrave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GraveDangerSpawnRandomGrave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieDrawPlant_" data-uid="Lawn.Challenge.IZombieDrawPlant*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieDrawPlant_Sexy_Graphics_Lawn_Plant_" data-uid="Lawn.Challenge.IZombieDrawPlant(Sexy.Graphics,Lawn.Plant)">
+  IZombieDrawPlant(Graphics, Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombieDrawPlant(Graphics g, Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieEatBrain_" data-uid="Lawn.Challenge.IZombieEatBrain*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieEatBrain_Lawn_Zombie_" data-uid="Lawn.Challenge.IZombieEatBrain(Lawn.Zombie)">
+  IZombieEatBrain(Zombie)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IZombieEatBrain(Zombie theZombie)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombie</code> <a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieGetBrainTarget_" data-uid="Lawn.Challenge.IZombieGetBrainTarget*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieGetBrainTarget_Lawn_Zombie_" data-uid="Lawn.Challenge.IZombieGetBrainTarget(Lawn.Zombie)">
+  IZombieGetBrainTarget(Zombie)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridItem IZombieGetBrainTarget(Zombie theZombie)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombie</code> <a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieInitLevel_" data-uid="Lawn.Challenge.IZombieInitLevel*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieInitLevel" data-uid="Lawn.Challenge.IZombieInitLevel">
+  IZombieInitLevel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombieInitLevel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieMouseDownWithZombie_" data-uid="Lawn.Challenge.IZombieMouseDownWithZombie*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieMouseDownWithZombie_System_Int32_System_Int32_System_Int32_" data-uid="Lawn.Challenge.IZombieMouseDownWithZombie(System.Int32,System.Int32,System.Int32)">
+  IZombieMouseDownWithZombie(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombieMouseDownWithZombie(int x, int y, int theClickCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombiePlacePlantInSquare_" data-uid="Lawn.Challenge.IZombiePlacePlantInSquare*"></a>
+
+  <h3 id="Lawn_Challenge_IZombiePlacePlantInSquare_Lawn_SeedType_System_Int32_System_Int32_" data-uid="Lawn.Challenge.IZombiePlacePlantInSquare(Lawn.SeedType,System.Int32,System.Int32)">
+  IZombiePlacePlantInSquare(SeedType, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombiePlacePlantInSquare(SeedType theSeedType, int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombiePlacePlants_" data-uid="Lawn.Challenge.IZombiePlacePlants*"></a>
+
+  <h3 id="Lawn_Challenge_IZombiePlacePlants_Lawn_SeedType_System_Int32_System_Int32_" data-uid="Lawn.Challenge.IZombiePlacePlants(Lawn.SeedType,System.Int32,System.Int32)">
+  IZombiePlacePlants(SeedType, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombiePlacePlants(SeedType theSeedType, int theCount, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombiePlaceZombie_" data-uid="Lawn.Challenge.IZombiePlaceZombie*"></a>
+
+  <h3 id="Lawn_Challenge_IZombiePlaceZombie_Lawn_ZombieType_System_Int32_System_Int32_" data-uid="Lawn.Challenge.IZombiePlaceZombie(Lawn.ZombieType,System.Int32,System.Int32)">
+  IZombiePlaceZombie(ZombieType, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombiePlaceZombie(ZombieType theZombieType, int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombiePlantDropRemainingSun_" data-uid="Lawn.Challenge.IZombiePlantDropRemainingSun*"></a>
+
+  <h3 id="Lawn_Challenge_IZombiePlantDropRemainingSun_Lawn_Plant_" data-uid="Lawn.Challenge.IZombiePlantDropRemainingSun(Lawn.Plant)">
+  IZombiePlantDropRemainingSun(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombiePlantDropRemainingSun(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieScoreBrain_" data-uid="Lawn.Challenge.IZombieScoreBrain*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieScoreBrain_Lawn_GridItem_" data-uid="Lawn.Challenge.IZombieScoreBrain(Lawn.GridItem)">
+  IZombieScoreBrain(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombieScoreBrain(GridItem theBrain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBrain</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieSeedTypeToZombieType_" data-uid="Lawn.Challenge.IZombieSeedTypeToZombieType*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieSeedTypeToZombieType_Lawn_SeedType_" data-uid="Lawn.Challenge.IZombieSeedTypeToZombieType(Lawn.SeedType)">
+  IZombieSeedTypeToZombieType(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ZombieType IZombieSeedTypeToZombieType(SeedType theSeedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieSetPlantFilterEffect_" data-uid="Lawn.Challenge.IZombieSetPlantFilterEffect*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieSetPlantFilterEffect_Lawn_Plant_Sexy_TodLib_FilterEffectType_" data-uid="Lawn.Challenge.IZombieSetPlantFilterEffect(Lawn.Plant,Sexy.TodLib.FilterEffectType)">
+  IZombieSetPlantFilterEffect(Plant, FilterEffectType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombieSetPlantFilterEffect(Plant thePlant, FilterEffectType theFilterEffect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+    <dt><code>theFilterEffect</code> <a class="xref" href="Sexy.TodLib.FilterEffectType.html">FilterEffectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieSetupPlant_" data-uid="Lawn.Challenge.IZombieSetupPlant*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieSetupPlant_Lawn_Plant_" data-uid="Lawn.Challenge.IZombieSetupPlant(Lawn.Plant)">
+  IZombieSetupPlant(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombieSetupPlant(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieSquishBrain_" data-uid="Lawn.Challenge.IZombieSquishBrain*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieSquishBrain_Lawn_GridItem_" data-uid="Lawn.Challenge.IZombieSquishBrain(Lawn.GridItem)">
+  IZombieSquishBrain(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombieSquishBrain(GridItem theBrain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBrain</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieStart_" data-uid="Lawn.Challenge.IZombieStart*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieStart" data-uid="Lawn.Challenge.IZombieStart">
+  IZombieStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombieStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IZombieUpdate_" data-uid="Lawn.Challenge.IZombieUpdate*"></a>
+
+  <h3 id="Lawn_Challenge_IZombieUpdate" data-uid="Lawn.Challenge.IZombieUpdate">
+  IZombieUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void IZombieUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_InitLevel_" data-uid="Lawn.Challenge.InitLevel*"></a>
+
+  <h3 id="Lawn_Challenge_InitLevel" data-uid="Lawn.Challenge.InitLevel">
+  InitLevel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitLevel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_InitZombieWaves_" data-uid="Lawn.Challenge.InitZombieWaves*"></a>
+
+  <h3 id="Lawn_Challenge_InitZombieWaves" data-uid="Lawn.Challenge.InitZombieWaves">
+  InitZombieWaves()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitZombieWaves()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_InitZombieWavesFromList_" data-uid="Lawn.Challenge.InitZombieWavesFromList*"></a>
+
+  <h3 id="Lawn_Challenge_InitZombieWavesFromList_Lawn_ZombieType___System_Int32_" data-uid="Lawn.Challenge.InitZombieWavesFromList(Lawn.ZombieType[],System.Int32)">
+  InitZombieWavesFromList(ZombieType[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitZombieWavesFromList(ZombieType[] theZombieList, int theListLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombieList</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a>[]</dt>
+    <dd></dd>
+    <dt><code>theListLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_InitZombieWavesSurvival_" data-uid="Lawn.Challenge.InitZombieWavesSurvival*"></a>
+
+  <h3 id="Lawn_Challenge_InitZombieWavesSurvival" data-uid="Lawn.Challenge.InitZombieWavesSurvival">
+  InitZombieWavesSurvival()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitZombieWavesSurvival()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IsStormyNightPitchBlack_" data-uid="Lawn.Challenge.IsStormyNightPitchBlack*"></a>
+
+  <h3 id="Lawn_Challenge_IsStormyNightPitchBlack" data-uid="Lawn.Challenge.IsStormyNightPitchBlack">
+  IsStormyNightPitchBlack()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStormyNightPitchBlack()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_IsZombieSeedType_" data-uid="Lawn.Challenge.IsZombieSeedType*"></a>
+
+  <h3 id="Lawn_Challenge_IsZombieSeedType_Lawn_SeedType_" data-uid="Lawn.Challenge.IsZombieSeedType(Lawn.SeedType)">
+  IsZombieSeedType(SeedType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsZombieSeedType(SeedType theSeedType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_LastStandCompletedStage_" data-uid="Lawn.Challenge.LastStandCompletedStage*"></a>
+
+  <h3 id="Lawn_Challenge_LastStandCompletedStage" data-uid="Lawn.Challenge.LastStandCompletedStage">
+  LastStandCompletedStage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LastStandCompletedStage()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_LastStandUpate_" data-uid="Lawn.Challenge.LastStandUpate*"></a>
+
+  <h3 id="Lawn_Challenge_LastStandUpate" data-uid="Lawn.Challenge.LastStandUpate">
+  LastStandUpate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LastStandUpate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_LoadBeghouledBoardState_" data-uid="Lawn.Challenge.LoadBeghouledBoardState*"></a>
+
+  <h3 id="Lawn_Challenge_LoadBeghouledBoardState_Lawn_BeghouledBoardState_" data-uid="Lawn.Challenge.LoadBeghouledBoardState(Lawn.BeghouledBoardState)">
+  LoadBeghouledBoardState(BeghouledBoardState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadBeghouledBoardState(BeghouledBoardState theBoardState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theBoardState</code> <a class="xref" href="Lawn.BeghouledBoardState.html">BeghouledBoardState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_LoadFromFile_" data-uid="Lawn.Challenge.LoadFromFile*"></a>
+
+  <h3 id="Lawn_Challenge_LoadFromFile_Sexy_Buffer_" data-uid="Lawn.Challenge.LoadFromFile(Sexy.Buffer)">
+  LoadFromFile(Buffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LoadFromFile(Buffer b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="Sexy.Buffer.html">Buffer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_MouseDown_" data-uid="Lawn.Challenge.MouseDown*"></a>
+
+  <h3 id="Lawn_Challenge_MouseDown_System_Int32_System_Int32_System_Int32_Lawn_HitResult_" data-uid="Lawn.Challenge.MouseDown(System.Int32,System.Int32,System.Int32,Lawn.HitResult)">
+  MouseDown(int, int, int, HitResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseDown(int x, int y, int theClickCount, HitResult theHitResult)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theHitResult</code> <a class="xref" href="Lawn.HitResult.html">HitResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_MouseDownWhackAZombie_" data-uid="Lawn.Challenge.MouseDownWhackAZombie*"></a>
+
+  <h3 id="Lawn_Challenge_MouseDownWhackAZombie_System_Int32_System_Int32_" data-uid="Lawn.Challenge.MouseDownWhackAZombie(System.Int32,System.Int32)">
+  MouseDownWhackAZombie(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDownWhackAZombie(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_MouseMove_" data-uid="Lawn.Challenge.MouseMove*"></a>
+
+  <h3 id="Lawn_Challenge_MouseMove_System_Int32_System_Int32_" data-uid="Lawn.Challenge.MouseMove(System.Int32,System.Int32)">
+  MouseMove(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseMove(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_MouseUp_" data-uid="Lawn.Challenge.MouseUp*"></a>
+
+  <h3 id="Lawn_Challenge_MouseUp_System_Int32_System_Int32_" data-uid="Lawn.Challenge.MouseUp(System.Int32,System.Int32)">
+  MouseUp(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseUp(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_MoveAPortal_" data-uid="Lawn.Challenge.MoveAPortal*"></a>
+
+  <h3 id="Lawn_Challenge_MoveAPortal" data-uid="Lawn.Challenge.MoveAPortal">
+  MoveAPortal()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveAPortal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_PlantAdded_" data-uid="Lawn.Challenge.PlantAdded*"></a>
+
+  <h3 id="Lawn_Challenge_PlantAdded_Lawn_Plant_" data-uid="Lawn.Challenge.PlantAdded(Lawn.Plant)">
+  PlantAdded(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlantAdded(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_PlayBossEnter_" data-uid="Lawn.Challenge.PlayBossEnter*"></a>
+
+  <h3 id="Lawn_Challenge_PlayBossEnter" data-uid="Lawn.Challenge.PlayBossEnter">
+  PlayBossEnter()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayBossEnter()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_PortalCombatRowSpawnWeight_" data-uid="Lawn.Challenge.PortalCombatRowSpawnWeight*"></a>
+
+  <h3 id="Lawn_Challenge_PortalCombatRowSpawnWeight_System_Int32_" data-uid="Lawn.Challenge.PortalCombatRowSpawnWeight(System.Int32)">
+  PortalCombatRowSpawnWeight(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PortalCombatRowSpawnWeight(int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_PortalStart_" data-uid="Lawn.Challenge.PortalStart*"></a>
+
+  <h3 id="Lawn_Challenge_PortalStart" data-uid="Lawn.Challenge.PortalStart">
+  PortalStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PortalStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_PuzzleIsAwardStage_" data-uid="Lawn.Challenge.PuzzleIsAwardStage*"></a>
+
+  <h3 id="Lawn_Challenge_PuzzleIsAwardStage" data-uid="Lawn.Challenge.PuzzleIsAwardStage">
+  PuzzleIsAwardStage()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PuzzleIsAwardStage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_PuzzleNextStageClear_" data-uid="Lawn.Challenge.PuzzleNextStageClear*"></a>
+
+  <h3 id="Lawn_Challenge_PuzzleNextStageClear" data-uid="Lawn.Challenge.PuzzleNextStageClear">
+  PuzzleNextStageClear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PuzzleNextStageClear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_PuzzlePhaseComplete_" data-uid="Lawn.Challenge.PuzzlePhaseComplete*"></a>
+
+  <h3 id="Lawn_Challenge_PuzzlePhaseComplete_System_Int32_System_Int32_" data-uid="Lawn.Challenge.PuzzlePhaseComplete(System.Int32,System.Int32)">
+  PuzzlePhaseComplete(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PuzzlePhaseComplete(int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SaveToFile_" data-uid="Lawn.Challenge.SaveToFile*"></a>
+
+  <h3 id="Lawn_Challenge_SaveToFile_Sexy_Buffer_" data-uid="Lawn.Challenge.SaveToFile(Sexy.Buffer)">
+  SaveToFile(Buffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SaveToFile(Buffer b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="Sexy.Buffer.html">Buffer</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterChangePotType_" data-uid="Lawn.Challenge.ScaryPotterChangePotType*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterChangePotType_Lawn_GridItemState_System_Int32_" data-uid="Lawn.Challenge.ScaryPotterChangePotType(Lawn.GridItemState,System.Int32)">
+  ScaryPotterChangePotType(GridItemState, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterChangePotType(GridItemState thePotType, int theCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePotType</code> <a class="xref" href="Lawn.GridItemState.html">GridItemState</a></dt>
+    <dd></dd>
+    <dt><code>theCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterCountPots_" data-uid="Lawn.Challenge.ScaryPotterCountPots*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterCountPots" data-uid="Lawn.Challenge.ScaryPotterCountPots">
+  ScaryPotterCountPots()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ScaryPotterCountPots()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterCountSunInPot_" data-uid="Lawn.Challenge.ScaryPotterCountSunInPot*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterCountSunInPot_Lawn_GridItem_" data-uid="Lawn.Challenge.ScaryPotterCountSunInPot(Lawn.GridItem)">
+  ScaryPotterCountSunInPot(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ScaryPotterCountSunInPot(GridItem theScaryPot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theScaryPot</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterDontPlaceInCol_" data-uid="Lawn.Challenge.ScaryPotterDontPlaceInCol*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterDontPlaceInCol_System_Int32_Sexy_TodLib_TodWeightedGridArray___System_Int32_" data-uid="Lawn.Challenge.ScaryPotterDontPlaceInCol(System.Int32,Sexy.TodLib.TodWeightedGridArray[],System.Int32)">
+  ScaryPotterDontPlaceInCol(int, TodWeightedGridArray[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterDontPlaceInCol(int theCol, TodWeightedGridArray[] theGridArray, int theGridArrayCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theCol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridArray</code> <a class="xref" href="Sexy.TodLib.TodWeightedGridArray.html">TodWeightedGridArray</a>[]</dt>
+    <dd></dd>
+    <dt><code>theGridArrayCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterFillColumnWithPlant_" data-uid="Lawn.Challenge.ScaryPotterFillColumnWithPlant*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterFillColumnWithPlant_System_Int32_Lawn_SeedType_Sexy_TodLib_TodWeightedGridArray___System_Int32_" data-uid="Lawn.Challenge.ScaryPotterFillColumnWithPlant(System.Int32,Lawn.SeedType,Sexy.TodLib.TodWeightedGridArray[],System.Int32)">
+  ScaryPotterFillColumnWithPlant(int, SeedType, TodWeightedGridArray[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterFillColumnWithPlant(int theCol, SeedType theSeedType, TodWeightedGridArray[] theGridArray, int theGridArrayCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theCol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theGridArray</code> <a class="xref" href="Sexy.TodLib.TodWeightedGridArray.html">TodWeightedGridArray</a>[]</dt>
+    <dd></dd>
+    <dt><code>theGridArrayCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterIsCompleted_" data-uid="Lawn.Challenge.ScaryPotterIsCompleted*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterIsCompleted" data-uid="Lawn.Challenge.ScaryPotterIsCompleted">
+  ScaryPotterIsCompleted()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ScaryPotterIsCompleted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterJackExplode_" data-uid="Lawn.Challenge.ScaryPotterJackExplode*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterJackExplode_System_Int32_System_Int32_" data-uid="Lawn.Challenge.ScaryPotterJackExplode(System.Int32,System.Int32)">
+  ScaryPotterJackExplode(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterJackExplode(int aPosX, int aPosY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aPosX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>aPosY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterMalletPot_" data-uid="Lawn.Challenge.ScaryPotterMalletPot*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterMalletPot_Lawn_GridItem_" data-uid="Lawn.Challenge.ScaryPotterMalletPot(Lawn.GridItem)">
+  ScaryPotterMalletPot(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterMalletPot(GridItem theScaryPot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theScaryPot</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterOpenPot_" data-uid="Lawn.Challenge.ScaryPotterOpenPot*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterOpenPot_Lawn_GridItem_" data-uid="Lawn.Challenge.ScaryPotterOpenPot(Lawn.GridItem)">
+  ScaryPotterOpenPot(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterOpenPot(GridItem theScaryPot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theScaryPot</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterPlacePot_" data-uid="Lawn.Challenge.ScaryPotterPlacePot*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterPlacePot_Lawn_ScaryPotType_Lawn_ZombieType_Lawn_SeedType_System_Int32_Sexy_TodLib_TodWeightedGridArray___System_Int32_" data-uid="Lawn.Challenge.ScaryPotterPlacePot(Lawn.ScaryPotType,Lawn.ZombieType,Lawn.SeedType,System.Int32,Sexy.TodLib.TodWeightedGridArray[],System.Int32)">
+  ScaryPotterPlacePot(ScaryPotType, ZombieType, SeedType, int, TodWeightedGridArray[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterPlacePot(ScaryPotType theScaryPotType, ZombieType theZombieType, SeedType theSeedType, int theCount, TodWeightedGridArray[] theGridArray, int theGridArrayCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theScaryPotType</code> <a class="xref" href="Lawn.ScaryPotType.html">ScaryPotType</a></dt>
+    <dd></dd>
+    <dt><code>theZombieType</code> <a class="xref" href="Lawn.ZombieType.html">ZombieType</a></dt>
+    <dd></dd>
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridArray</code> <a class="xref" href="Sexy.TodLib.TodWeightedGridArray.html">TodWeightedGridArray</a>[]</dt>
+    <dd></dd>
+    <dt><code>theGridArrayCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterPopulate_" data-uid="Lawn.Challenge.ScaryPotterPopulate*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterPopulate" data-uid="Lawn.Challenge.ScaryPotterPopulate">
+  ScaryPotterPopulate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterPopulate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterStart_" data-uid="Lawn.Challenge.ScaryPotterStart*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterStart" data-uid="Lawn.Challenge.ScaryPotterStart">
+  ScaryPotterStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ScaryPotterUpdate_" data-uid="Lawn.Challenge.ScaryPotterUpdate*"></a>
+
+  <h3 id="Lawn_Challenge_ScaryPotterUpdate" data-uid="Lawn.Challenge.ScaryPotterUpdate">
+  ScaryPotterUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScaryPotterUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ShovelAddWallnuts_" data-uid="Lawn.Challenge.ShovelAddWallnuts*"></a>
+
+  <h3 id="Lawn_Challenge_ShovelAddWallnuts" data-uid="Lawn.Challenge.ShovelAddWallnuts">
+  ShovelAddWallnuts()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShovelAddWallnuts()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SlotMachineGetHandleRect_" data-uid="Lawn.Challenge.SlotMachineGetHandleRect*"></a>
+
+  <h3 id="Lawn_Challenge_SlotMachineGetHandleRect" data-uid="Lawn.Challenge.SlotMachineGetHandleRect">
+  SlotMachineGetHandleRect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect SlotMachineGetHandleRect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SlotMachineRect_" data-uid="Lawn.Challenge.SlotMachineRect*"></a>
+
+  <h3 id="Lawn_Challenge_SlotMachineRect" data-uid="Lawn.Challenge.SlotMachineRect">
+  SlotMachineRect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect SlotMachineRect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SpawnLevelAward_" data-uid="Lawn.Challenge.SpawnLevelAward*"></a>
+
+  <h3 id="Lawn_Challenge_SpawnLevelAward_System_Int32_System_Int32_" data-uid="Lawn.Challenge.SpawnLevelAward(System.Int32,System.Int32)">
+  SpawnLevelAward(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SpawnLevelAward(int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SpawnZombieWave_" data-uid="Lawn.Challenge.SpawnZombieWave*"></a>
+
+  <h3 id="Lawn_Challenge_SpawnZombieWave" data-uid="Lawn.Challenge.SpawnZombieWave">
+  SpawnZombieWave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SpawnZombieWave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SquirrelChew_" data-uid="Lawn.Challenge.SquirrelChew*"></a>
+
+  <h3 id="Lawn_Challenge_SquirrelChew_Lawn_GridItem_" data-uid="Lawn.Challenge.SquirrelChew(Lawn.GridItem)">
+  SquirrelChew(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SquirrelChew(GridItem theSquirrel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSquirrel</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SquirrelCountUncaught_" data-uid="Lawn.Challenge.SquirrelCountUncaught*"></a>
+
+  <h3 id="Lawn_Challenge_SquirrelCountUncaught" data-uid="Lawn.Challenge.SquirrelCountUncaught">
+  SquirrelCountUncaught()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SquirrelCountUncaught()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SquirrelFound_" data-uid="Lawn.Challenge.SquirrelFound*"></a>
+
+  <h3 id="Lawn_Challenge_SquirrelFound_Lawn_GridItem_" data-uid="Lawn.Challenge.SquirrelFound(Lawn.GridItem)">
+  SquirrelFound(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SquirrelFound(GridItem theSquirrel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSquirrel</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SquirrelPeek_" data-uid="Lawn.Challenge.SquirrelPeek*"></a>
+
+  <h3 id="Lawn_Challenge_SquirrelPeek_Lawn_GridItem_" data-uid="Lawn.Challenge.SquirrelPeek(Lawn.GridItem)">
+  SquirrelPeek(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SquirrelPeek(GridItem theSquirrel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSquirrel</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SquirrelStart_" data-uid="Lawn.Challenge.SquirrelStart*"></a>
+
+  <h3 id="Lawn_Challenge_SquirrelStart" data-uid="Lawn.Challenge.SquirrelStart">
+  SquirrelStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SquirrelStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SquirrelUpdate_" data-uid="Lawn.Challenge.SquirrelUpdate*"></a>
+
+  <h3 id="Lawn_Challenge_SquirrelUpdate" data-uid="Lawn.Challenge.SquirrelUpdate">
+  SquirrelUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SquirrelUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_SquirrelUpdateOne_" data-uid="Lawn.Challenge.SquirrelUpdateOne*"></a>
+
+  <h3 id="Lawn_Challenge_SquirrelUpdateOne_Lawn_GridItem_" data-uid="Lawn.Challenge.SquirrelUpdateOne(Lawn.GridItem)">
+  SquirrelUpdateOne(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SquirrelUpdateOne(GridItem theSquirrel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSquirrel</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_StartLevel_" data-uid="Lawn.Challenge.StartLevel*"></a>
+
+  <h3 id="Lawn_Challenge_StartLevel" data-uid="Lawn.Challenge.StartLevel">
+  StartLevel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartLevel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomBabble_" data-uid="Lawn.Challenge.TreeOfWisdomBabble*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomBabble" data-uid="Lawn.Challenge.TreeOfWisdomBabble">
+  TreeOfWisdomBabble()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomBabble()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomCanFeed_" data-uid="Lawn.Challenge.TreeOfWisdomCanFeed*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomCanFeed" data-uid="Lawn.Challenge.TreeOfWisdomCanFeed">
+  TreeOfWisdomCanFeed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TreeOfWisdomCanFeed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomDraw_" data-uid="Lawn.Challenge.TreeOfWisdomDraw*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomDraw_Sexy_Graphics_" data-uid="Lawn.Challenge.TreeOfWisdomDraw(Sexy.Graphics)">
+  TreeOfWisdomDraw(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomDraw(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomFertilize_" data-uid="Lawn.Challenge.TreeOfWisdomFertilize*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomFertilize" data-uid="Lawn.Challenge.TreeOfWisdomFertilize">
+  TreeOfWisdomFertilize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomFertilize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomGetSize_" data-uid="Lawn.Challenge.TreeOfWisdomGetSize*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomGetSize" data-uid="Lawn.Challenge.TreeOfWisdomGetSize">
+  TreeOfWisdomGetSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TreeOfWisdomGetSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomGiveWisdom_" data-uid="Lawn.Challenge.TreeOfWisdomGiveWisdom*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomGiveWisdom" data-uid="Lawn.Challenge.TreeOfWisdomGiveWisdom">
+  TreeOfWisdomGiveWisdom()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomGiveWisdom()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomGrow_" data-uid="Lawn.Challenge.TreeOfWisdomGrow*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomGrow" data-uid="Lawn.Challenge.TreeOfWisdomGrow">
+  TreeOfWisdomGrow()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomGrow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomHitTest_" data-uid="Lawn.Challenge.TreeOfWisdomHitTest*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomHitTest_System_Int32_System_Int32_Lawn_HitResult_" data-uid="Lawn.Challenge.TreeOfWisdomHitTest(System.Int32,System.Int32,Lawn.HitResult)">
+  TreeOfWisdomHitTest(int, int, HitResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TreeOfWisdomHitTest(int theX, int theY, HitResult theHitResult)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theHitResult</code> <a class="xref" href="Lawn.HitResult.html">HitResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomInit_" data-uid="Lawn.Challenge.TreeOfWisdomInit*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomInit" data-uid="Lawn.Challenge.TreeOfWisdomInit">
+  TreeOfWisdomInit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomInit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomLeave_" data-uid="Lawn.Challenge.TreeOfWisdomLeave*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomLeave" data-uid="Lawn.Challenge.TreeOfWisdomLeave">
+  TreeOfWisdomLeave()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomLeave()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomNextGarden_" data-uid="Lawn.Challenge.TreeOfWisdomNextGarden*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomNextGarden" data-uid="Lawn.Challenge.TreeOfWisdomNextGarden">
+  TreeOfWisdomNextGarden()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomNextGarden()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomOpenStore_" data-uid="Lawn.Challenge.TreeOfWisdomOpenStore*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomOpenStore" data-uid="Lawn.Challenge.TreeOfWisdomOpenStore">
+  TreeOfWisdomOpenStore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomOpenStore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomSayRepeat_" data-uid="Lawn.Challenge.TreeOfWisdomSayRepeat*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomSayRepeat" data-uid="Lawn.Challenge.TreeOfWisdomSayRepeat">
+  TreeOfWisdomSayRepeat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomSayRepeat()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomTool_" data-uid="Lawn.Challenge.TreeOfWisdomTool*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomTool_System_Int32_System_Int32_" data-uid="Lawn.Challenge.TreeOfWisdomTool(System.Int32,System.Int32)">
+  TreeOfWisdomTool(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomTool(int aMouseX, int aMouseY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aMouseX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>aMouseY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomToolUpdate_" data-uid="Lawn.Challenge.TreeOfWisdomToolUpdate*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomToolUpdate_Lawn_GridItem_" data-uid="Lawn.Challenge.TreeOfWisdomToolUpdate(Lawn.GridItem)">
+  TreeOfWisdomToolUpdate(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomToolUpdate(GridItem theZenTool)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZenTool</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_TreeOfWisdomUpdate_" data-uid="Lawn.Challenge.TreeOfWisdomUpdate*"></a>
+
+  <h3 id="Lawn_Challenge_TreeOfWisdomUpdate" data-uid="Lawn.Challenge.TreeOfWisdomUpdate">
+  TreeOfWisdomUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TreeOfWisdomUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_Update_" data-uid="Lawn.Challenge.Update*"></a>
+
+  <h3 id="Lawn_Challenge_Update" data-uid="Lawn.Challenge.Update">
+  Update()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdateBeghouled_" data-uid="Lawn.Challenge.UpdateBeghouled*"></a>
+
+  <h3 id="Lawn_Challenge_UpdateBeghouled" data-uid="Lawn.Challenge.UpdateBeghouled">
+  UpdateBeghouled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBeghouled()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdateBeghouledPlant_" data-uid="Lawn.Challenge.UpdateBeghouledPlant*"></a>
+
+  <h3 id="Lawn_Challenge_UpdateBeghouledPlant_Lawn_Plant_" data-uid="Lawn.Challenge.UpdateBeghouledPlant(Lawn.Plant)">
+  UpdateBeghouledPlant(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateBeghouledPlant(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdateConveyorBelt_" data-uid="Lawn.Challenge.UpdateConveyorBelt*"></a>
+
+  <h3 id="Lawn_Challenge_UpdateConveyorBelt" data-uid="Lawn.Challenge.UpdateConveyorBelt">
+  UpdateConveyorBelt()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateConveyorBelt()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdatePortal_" data-uid="Lawn.Challenge.UpdatePortal*"></a>
+
+  <h3 id="Lawn_Challenge_UpdatePortal_Lawn_GridItem_" data-uid="Lawn.Challenge.UpdatePortal(Lawn.GridItem)">
+  UpdatePortal(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePortal(GridItem thePortal)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePortal</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdatePortalCombat_" data-uid="Lawn.Challenge.UpdatePortalCombat*"></a>
+
+  <h3 id="Lawn_Challenge_UpdatePortalCombat" data-uid="Lawn.Challenge.UpdatePortalCombat">
+  UpdatePortalCombat()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePortalCombat()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdateRain_" data-uid="Lawn.Challenge.UpdateRain*"></a>
+
+  <h3 id="Lawn_Challenge_UpdateRain" data-uid="Lawn.Challenge.UpdateRain">
+  UpdateRain()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateRain()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdateRainingSeeds_" data-uid="Lawn.Challenge.UpdateRainingSeeds*"></a>
+
+  <h3 id="Lawn_Challenge_UpdateRainingSeeds" data-uid="Lawn.Challenge.UpdateRainingSeeds">
+  UpdateRainingSeeds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateRainingSeeds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdateSlotMachine_" data-uid="Lawn.Challenge.UpdateSlotMachine*"></a>
+
+  <h3 id="Lawn_Challenge_UpdateSlotMachine" data-uid="Lawn.Challenge.UpdateSlotMachine">
+  UpdateSlotMachine()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateSlotMachine()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdateStormyNight_" data-uid="Lawn.Challenge.UpdateStormyNight*"></a>
+
+  <h3 id="Lawn_Challenge_UpdateStormyNight" data-uid="Lawn.Challenge.UpdateStormyNight">
+  UpdateStormyNight()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateStormyNight()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_UpdateZombieSpawning_" data-uid="Lawn.Challenge.UpdateZombieSpawning*"></a>
+
+  <h3 id="Lawn_Challenge_UpdateZombieSpawning" data-uid="Lawn.Challenge.UpdateZombieSpawning">
+  UpdateZombieSpawning()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateZombieSpawning()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_WhackAZombiePlaceGraves_" data-uid="Lawn.Challenge.WhackAZombiePlaceGraves*"></a>
+
+  <h3 id="Lawn_Challenge_WhackAZombiePlaceGraves_System_Int32_" data-uid="Lawn.Challenge.WhackAZombiePlaceGraves(System.Int32)">
+  WhackAZombiePlaceGraves(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WhackAZombiePlaceGraves(int theGraveCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGraveCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_WhackAZombieSpawning_" data-uid="Lawn.Challenge.WhackAZombieSpawning*"></a>
+
+  <h3 id="Lawn_Challenge_WhackAZombieSpawning" data-uid="Lawn.Challenge.WhackAZombieSpawning">
+  WhackAZombieSpawning()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WhackAZombieSpawning()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_WhackAZombieUpdate_" data-uid="Lawn.Challenge.WhackAZombieUpdate*"></a>
+
+  <h3 id="Lawn_Challenge_WhackAZombieUpdate" data-uid="Lawn.Challenge.WhackAZombieUpdate">
+  WhackAZombieUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WhackAZombieUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ZombieAtePlant_" data-uid="Lawn.Challenge.ZombieAtePlant*"></a>
+
+  <h3 id="Lawn_Challenge_ZombieAtePlant_Lawn_Zombie_Lawn_Plant_" data-uid="Lawn.Challenge.ZombieAtePlant(Lawn.Zombie,Lawn.Plant)">
+  ZombieAtePlant(Zombie, Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZombieAtePlant(Zombie theZombie, Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZombie</code> <a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ZombiquariumDropBrain_" data-uid="Lawn.Challenge.ZombiquariumDropBrain*"></a>
+
+  <h3 id="Lawn_Challenge_ZombiquariumDropBrain_System_Int32_System_Int32_" data-uid="Lawn.Challenge.ZombiquariumDropBrain(System.Int32,System.Int32)">
+  ZombiquariumDropBrain(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZombiquariumDropBrain(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ZombiquariumMouseDown_" data-uid="Lawn.Challenge.ZombiquariumMouseDown*"></a>
+
+  <h3 id="Lawn_Challenge_ZombiquariumMouseDown_System_Int32_System_Int32_" data-uid="Lawn.Challenge.ZombiquariumMouseDown(System.Int32,System.Int32)">
+  ZombiquariumMouseDown(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZombiquariumMouseDown(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ZombiquariumPacketClicked_" data-uid="Lawn.Challenge.ZombiquariumPacketClicked*"></a>
+
+  <h3 id="Lawn_Challenge_ZombiquariumPacketClicked_Lawn_SeedPacket_" data-uid="Lawn.Challenge.ZombiquariumPacketClicked(Lawn.SeedPacket)">
+  ZombiquariumPacketClicked(SeedPacket)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZombiquariumPacketClicked(SeedPacket theSeedPacket)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedPacket</code> <a class="xref" href="Lawn.SeedPacket.html">SeedPacket</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ZombiquariumSpawnSnorkel_" data-uid="Lawn.Challenge.ZombiquariumSpawnSnorkel*"></a>
+
+  <h3 id="Lawn_Challenge_ZombiquariumSpawnSnorkel" data-uid="Lawn.Challenge.ZombiquariumSpawnSnorkel">
+  ZombiquariumSpawnSnorkel()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Zombie ZombiquariumSpawnSnorkel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Zombie.html">Zombie</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_Challenge_ZombiquariumUpdate_" data-uid="Lawn.Challenge.ZombiquariumUpdate*"></a>
+
+  <h3 id="Lawn_Challenge_ZombiquariumUpdate" data-uid="Lawn.Challenge.ZombiquariumUpdate">
+  ZombiquariumUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZombiquariumUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

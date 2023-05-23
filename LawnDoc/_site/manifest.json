@@ -1,0 +1,4442 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/david/source/repos/PlantsVsZombies.NET.doc/LawnDoc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Achievement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Achievement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.AchievementsWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.AchievementsWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.AdviceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.AdviceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.AlmanacDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.AlmanacDialog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.AlmanacListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.AlmanacListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.AlmanacPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.AlmanacPage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.AwardScreen.AchievementScreenItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.AwardScreen.AchievementScreenItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.AwardScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.AwardScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.AwardScreens.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.AwardScreens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.AwardType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.AwardType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.BackgroundType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.BackgroundType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.BeghouledBoardState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.BeghouledBoardState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.BeghouledUpgrade.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.BeghouledUpgrade.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Board.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Board.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.BoardResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.BoardResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.BossPart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.BossPart.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.BungeeDropGrid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.BungeeDropGrid.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ButtonIds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ButtonIds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Challenge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Challenge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ChallengeDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ChallengeDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ChallengePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ChallengePage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ChallengeScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ChallengeScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ChallengeScreenValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ChallengeScreenValues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ChallengeScreenWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ChallengeScreenWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ChallengeState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ChallengeState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ChosenSeed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ChosenSeed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ChosenSeedState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ChosenSeedState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Coin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Coin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.CoinID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.CoinID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.CoinMotion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.CoinMotion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.CoinType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.CoinType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ContinueDialogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ContinueDialogs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.CrazyDaveState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.CrazyDaveState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.CreditScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.CreditScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.CursorObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.CursorObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.CursorPreview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.CursorPreview.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.CursorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.CursorType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.CutScene.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.CutScene.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.DamageFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.DamageFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.DamageRangeFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.DamageRangeFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.DebugTextMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.DebugTextMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.DescriptionWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.DescriptionWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.DrawVariation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.DrawVariation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.FogLayers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.FogLayers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameButton.ButtonColours.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameButton.ButtonColours.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameButton.ButtonLabelJustify.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameButton.ButtonLabelJustify.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameConstants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameObjectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameObjectType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameScenes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameScenes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameSelector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameSelectorButtons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameSelectorButtons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GameType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GameType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GardenType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GardenType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GlobalContentManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GlobalContentManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GraveStoneLayers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GraveStoneLayers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GridItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GridItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GridItemID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GridItemID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GridItemState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GridItemState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GridItemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GridItemType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GridSquareType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GridSquareType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.GroundLayers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.GroundLayers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.HelmType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.HelmType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.HitResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.HitResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.InGameButtons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.InGameButtons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LawnApp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LawnApp.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LawnDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LawnDialog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LawnDialogResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LawnDialogResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LawnFPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LawnFPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LawnMessageBoxListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LawnMessageBoxListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LawnMower.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LawnMower.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LawnMowerState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LawnMowerState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LawnMowerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LawnMowerType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LawnStoneButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LawnStoneButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LeaderBoardButtonValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LeaderBoardButtonValues.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LeaderBoardType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LeaderBoardType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LeaderboardScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LeaderboardScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.LevelStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.LevelStats.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MagnetItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MagnetItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MagnetItemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MagnetItemType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MessageStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MessageStyle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MessageWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MessageWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MiniGameMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MiniGameMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MiniGamesWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MiniGamesWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MiniGamesWidgetListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MiniGamesWidgetListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MoreGamesListWidget.GameInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MoreGamesListWidget.GameInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MoreGamesListWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MoreGamesListWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MotionTrailFrame.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MotionTrailFrame.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MowerHeight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MowerHeight.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Music.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Music.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MusicFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MusicFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.MusicTune.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.MusicTune.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.NewLawnButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.NewLawnButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.NewOptionsDialogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.NewOptionsDialogs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.NumImages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.NumImages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ParticleSystemID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ParticleSystemID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Plant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Plant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantGalleryWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantGalleryWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantLayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantOnBungeeState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantOnBungeeState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantOrder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantRowType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantRowType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantSubClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantSubClass.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantWeapon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantWeapon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantingReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantingReason.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlantsOnLawn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlantsOnLawn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PlayerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PlayerInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PottedPlant.FacingDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PottedPlant.FacingDirection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PottedPlant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PottedPlant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PottedPlantAge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PottedPlantAge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.PottedPlantNeed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.PottedPlantNeed.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ProfileMgr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ProfileMgr.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Projectile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Projectile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ProjectileDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ProjectileDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ProjectileMotion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ProjectileMotion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ProjectileType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ProjectileType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.QuickPlayWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.QuickPlayWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.QuickPlayWidgetListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.QuickPlayWidgetListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ReanimationID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ReanimationID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ReanimationWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ReanimationWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ReanimatorCache.CachedPlantVariation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ReanimatorCache.CachedPlantVariation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ReanimatorCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ReanimatorCache.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.RenderItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.RenderItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.RenderLayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.RenderLayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.RenderObjectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.RenderObjectType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.RestoreLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.RestoreLocation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ScaryPotType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ScaryPotType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SeedBank.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SeedBank.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SeedChooserScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SeedChooserScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SeedChooserScreens.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SeedChooserScreens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SeedChooserState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SeedChooserState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SeedPacket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SeedPacket.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SeedPacketsWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SeedPacketsWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SeedPacketsWidgetListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SeedPacketsWidgetListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SeedType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SeedType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SelectorSignState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SelectorSignState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ShieldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ShieldType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.SpecialGridPlacement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.SpecialGridPlacement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.StoreItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.StoreItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.StoreListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.StoreListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.StorePage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.StorePage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.StoreScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.StoreScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.StoreScreens.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.StoreScreens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.TitleScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.TitleScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.TitleScreens.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.TitleScreens.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.TitleState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.TitleState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.TopPlant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.TopPlant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.TrialType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.TrialType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.TutorialState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.TutorialState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.TypingCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.TypingCheck.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.UnlockingState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.UnlockingState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.UpdateChoices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.UpdateChoices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.UpsellScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.UpsellScreen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.UserDialogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.UserDialogs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZenGarden.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZenGarden.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Zombie.ZombieParts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Zombie.ZombieParts.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Zombie.ZombieRenderLayerOffset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Zombie.ZombieRenderLayerOffset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.Zombie.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.Zombie.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombieAllowedLevels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombieAllowedLevels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombieAttackType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombieAttackType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombieDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombieDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombieDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombieDescriptor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombieDrawPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombieDrawPosition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombieGalleryWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombieGalleryWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombieHeight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombieHeight.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombieID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombieID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombiePhase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombiePhase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombiePicker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombiePicker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombiePileMarker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombiePileMarker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombiePileObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombiePileObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombiePileObjectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombiePileObjectType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombiePileWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombiePileWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.ZombieType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.ZombieType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lawn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lawn.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LawnMod.DynamicHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LawnMod.DynamicHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LawnMod.MonoModUtils.HookResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LawnMod.MonoModUtils.HookResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LawnMod.MonoModUtils.MethodToDelegateHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LawnMod.MonoModUtils.MethodToDelegateHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LawnMod.MonoModUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LawnMod.MonoModUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LawnMod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LawnMod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.Achievement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.Achievement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.AchievementCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.AchievementCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.FriendCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.FriendCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.FriendGamer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.FriendGamer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GameDefaults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GameDefaults.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GameUpdateRequiredException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GameUpdateRequiredException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.Gamer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.Gamer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerCollection-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPresence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPresence.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPresenceMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPresenceMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPrivilegeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPrivilegeException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPrivilegeSetting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPrivilegeSetting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPrivileges.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerPrivileges.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerProfile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerProfile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerServicesComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerServicesComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerServicesDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerServicesDispatcher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerZone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GamerZone.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.Guide.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.Guide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.GuideAlreadyVisibleException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.GuideAlreadyVisibleException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardIdentity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardIdentity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardKey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.LeaderboardWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.MessageBoxIcon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.MessageBoxIcon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.MonoGameGamerServicesComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.MonoGameGamerServicesComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.PropertyDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.PropertyDictionary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.SignedInEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.SignedInEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.SignedInGamer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.SignedInGamer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.SignedInGamerCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.SignedInGamerCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.SignedOutEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.SignedOutEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.GamerServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.GamerServices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.AvailableNetworkSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.AvailableNetworkSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.AvailableNetworkSessionCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.AvailableNetworkSessionCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.CommandEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.CommandEventType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.GameEndedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.GameEndedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.GameStartedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.GameStartedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.GamerJoinedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.GamerJoinedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.GamerLeftEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.GamerLeftEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.GamerStates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.GamerStates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.HostChangedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.HostChangedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.InviteAcceptedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.InviteAcceptedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.LocalNetworkGamer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.LocalNetworkGamer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.MonoGameNetworkConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.MonoGameNetworkConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkGamer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkGamer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkMachine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkMachine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkNotAvailableException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkNotAvailableException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionAsynchronousCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionAsynchronousCreate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionAsynchronousFind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionAsynchronousFind.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionAsynchronousJoin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionAsynchronousJoin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionAsynchronousJoinInvited.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionAsynchronousJoinInvited.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionEndReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionEndReason.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionEndedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionEndedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionJoinError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionJoinError.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionJoinException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionJoinException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.NetworkSessionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.PacketReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.PacketReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.PacketWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.PacketWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.QualityOfService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.QualityOfService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.SendDataOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.SendDataOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Xna.Framework.Net.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Xna.Framework.Net.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.AchievementId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.AchievementId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.AnimInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.AnimInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.AnimType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.AnimType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.AtlasResources.AtlasImageId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.AtlasResources.AtlasImageId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.AtlasResources.AtlasStringTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.AtlasResources.AtlasStringTable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.AtlasResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.AtlasResources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.AtlasResources_480x800.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.AtlasResources_480x800.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.AutoModalFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.AutoModalFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Buffer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Buffer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ButtonListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ButtonListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ButtonWidget.ButtonPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ButtonWidget.ButtonPosition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ButtonWidget.ColorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ButtonWidget.ColorType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ButtonWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ButtonWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.CGPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.CGPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.CheckboxListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.CheckboxListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Debug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Debug.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.DebugType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.DebugType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Dialog.DialogButtons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Dialog.DialogButtons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Dialog.DialogColour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Dialog.DialogColour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Dialog.DialogResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Dialog.DialogResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Dialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Dialog.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.DialogButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.DialogButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.DialogListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.DialogListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Dialogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Dialogs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.EditListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.EditListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.EncodingParser.GetCharReturnType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.EncodingParser.GetCharReturnType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.EncodingParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.EncodingParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.FlagsMod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.FlagsMod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Font.CachedStringInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Font.CachedStringInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Font.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Font.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.FrameCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.FrameCounter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.GlobalMembersDialogButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.GlobalMembersDialogButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.GlobalMembersSexyMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.GlobalMembersSexyMath.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.GlobalStaticVars.CGPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.GlobalStaticVars.CGPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.GlobalStaticVars.Phase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.GlobalStaticVars.Phase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.GlobalStaticVars.Touch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.GlobalStaticVars.Touch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.GlobalStaticVars.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.GlobalStaticVars.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Graphics.DrawMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Graphics.DrawMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Graphics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Graphics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.GraphicsState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.GraphicsState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.HyperlinkWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.HyperlinkWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.IMECompatibleWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.IMECompatibleWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.IReusable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.IReusable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Image.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Insets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Insets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.InterfaceLayers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.InterfaceLayers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.InterfaceParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.InterfaceParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.InterfaceWidgets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.InterfaceWidgets.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.KeyCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.KeyCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.KeyCodes.KeyNameEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.KeyCodes.KeyNameEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.KeyCodes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.KeyCodes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.LayoutFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.LayoutFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.LeaderboardGameMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.LeaderboardGameMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Main.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Main.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.MemoryImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.MemoryImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ModalFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ModalFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.MovieControllMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.MovieControllMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.MovieScalingMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.MovieScalingMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.MusicInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.MusicInterface.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.PageControl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.PageControl.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.PerfTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.PerfTimer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.PixelFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.PixelFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.PreModalInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.PreModalInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.PrimitiveBatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.PrimitiveBatch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.PrimitiveBatchEffects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.PrimitiveBatchEffects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ProxyWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ProxyWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ProxyWidgetListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ProxyWidgetListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.RandomNumbers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.RandomNumbers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ResourceManager.BaseRes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ResourceManager.BaseRes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ResourceManager.ResType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ResourceManager.ResType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ResourceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ResourceManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Resources.ResourceId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Resources.ResourceId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Resources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Resources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ScreenScales.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ScreenScales.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ScrollListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ScrollListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ScrollWidget.Colors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ScrollWidget.Colors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ScrollWidget.Overlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ScrollWidget.Overlay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ScrollWidget.ScrollMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ScrollWidget.ScrollMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ScrollWidget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ScrollWidget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.ScrollWidgetListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.ScrollWidgetListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.SexyAppBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.SexyAppBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.SexyAppBaseInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.SexyAppBaseInterface.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.SexyChar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.SexyChar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.SexyColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.SexyColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.SexyTransform2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.SexyTransform2D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.SexyVector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.SexyVector2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.SliderListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.SliderListener.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.SoundInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.SoundInstance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.SoundManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.SoundManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.StringFunctions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.StringFunctions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TPointFloat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TPointFloat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TRect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TRect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TRectDouble.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TRectDouble.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.AttachEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.AttachEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.AttacherInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.AttacherInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.Attachment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.Attachment.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.AttachmentHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.AttachmentHolder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.AttachmentID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.AttachmentID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.DataArray-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.DataArray-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.DataArrayFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.DataArrayFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.DefFieldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.DefFieldType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.DrawStringJustification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.DrawStringJustification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.EffectSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.EffectSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.EffectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.EffectType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.EmitterType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.EmitterType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.FilterEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.FilterEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.FilterEffectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.FilterEffectType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.FloatParameterTrack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.FloatParameterTrack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.FloatParameterTrackNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.FloatParameterTrackNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.FoleyFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.FoleyFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.FoleyInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.FoleyInstance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.FoleyParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.FoleyParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.FoleyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.FoleyType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.FoleyTypeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.FoleyTypeData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleEmitterID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleEmitterID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleFieldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleFieldType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleRenderParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleRenderParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleSystemID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleSystemID.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleSystemTracks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleSystemTracks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ParticleTracks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ParticleTracks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimAtlas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimAtlas.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimAtlasImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimAtlasImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimLoopType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimLoopType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.Reanimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.Reanimation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimationHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimationHolder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimationParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimationParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimationType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimatorDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimatorDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimatorFrameTime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimatorFrameTime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimatorTrack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimatorTrack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimatorTrackInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimatorTrackInstance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.ReanimatorTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.ReanimatorTransform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodCommon.gAppCloseRequestDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodCommon.gAppCloseRequestDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodCommon.gAppHasUsedCheatKeysDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodCommon.gAppHasUsedCheatKeysDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodCommon.gExtractResourcesByNameDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodCommon.gExtractResourcesByNameDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodCommon.gGetCurrentLevelNameDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodCommon.gGetCurrentLevelNameDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodCommon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodCurves.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodCurves.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodEmitterDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodEmitterDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodFoley.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodFoley.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodParticle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodParticle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodParticleDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodParticleDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodParticleEmitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodParticleEmitter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodParticleHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodParticleHolder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodParticleSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodParticleSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodSmoothArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodSmoothArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodStringFormatFlag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodStringFormatFlag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodStringListFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodStringListFormat.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodTriangleGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodTriangleGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodWeightedArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodWeightedArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TodWeightedGridArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TodWeightedGridArray.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.Trail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.Trail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TrailDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TrailDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TrailFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TrailFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TrailHolder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TrailHolder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TrailParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TrailParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TrailPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TrailPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TrailTracks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TrailTracks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.TrailType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.TrailType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TodLib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TodLib.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Transform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Transform.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TriVertex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TriVertex.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TrialAchievementAlert.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TrialAchievementAlert.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.TypedKey-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.TypedKey-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.UI_ORIENTATION.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.UI_ORIENTATION.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.UNPACK_INFO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.UNPACK_INFO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.VideoType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.VideoType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.Widget.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.Widget.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.WidgetContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.WidgetContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.WidgetFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.WidgetFlags.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.WidgetManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.WidgetManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.WidgetOverlayPair.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.WidgetOverlayPair.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.XMLElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.XMLElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.XMLElementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.XMLElementType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.XMLParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.XMLParser.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.XNAMusicInterfaceConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.XNAMusicInterfaceConstants.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.XNASoundInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.XNASoundInstance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy._Phase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy._Phase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy._Touch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy._Touch.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sexy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sexy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

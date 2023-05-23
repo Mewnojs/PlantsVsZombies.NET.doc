@@ -1,0 +1,3300 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ZenGarden
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ZenGarden
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Lawn.ZenGarden">
+
+
+
+  <h1 id="Lawn_ZenGarden" data-uid="Lawn.ZenGarden" class="text-break">
+    Class ZenGarden
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Lawn.html">Lawn</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ZenGarden : StoreListener</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ZenGarden</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Lawn.StoreListener.html">StoreListener</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Lawn_ZenGarden__ctor_" data-uid="Lawn.ZenGarden.#ctor*"></a>
+
+  <h3 id="Lawn_ZenGarden__ctor" data-uid="Lawn.ZenGarden.#ctor">
+  ZenGarden()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZenGarden()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Lawn_ZenGarden_STINKY_BASE_TIME" data-uid="Lawn.ZenGarden.STINKY_BASE_TIME">
+  STINKY_BASE_TIME
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly ulong STINKY_BASE_TIME</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ZenGarden_gAquariumGridPlacement" data-uid="Lawn.ZenGarden.gAquariumGridPlacement">
+  gAquariumGridPlacement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SpecialGridPlacement[] gAquariumGridPlacement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SpecialGridPlacement.html">SpecialGridPlacement</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ZenGarden_gGreenhouseGridPlacement" data-uid="Lawn.ZenGarden.gGreenhouseGridPlacement">
+  gGreenhouseGridPlacement
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SpecialGridPlacement[] gGreenhouseGridPlacement</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SpecialGridPlacement.html">SpecialGridPlacement</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ZenGarden_mApp" data-uid="Lawn.ZenGarden.mApp">
+  mApp
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LawnApp mApp</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.LawnApp.html">LawnApp</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ZenGarden_mBoard" data-uid="Lawn.ZenGarden.mBoard">
+  mBoard
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Board mBoard</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Board.html">Board</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ZenGarden_mGardenType" data-uid="Lawn.ZenGarden.mGardenType">
+  mGardenType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GardenType mGardenType</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.GardenType.html">GardenType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ZenGarden_mIsTutorial" data-uid="Lawn.ZenGarden.mIsTutorial">
+  mIsTutorial
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mIsTutorial</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Lawn_ZenGarden_mPlantForSale" data-uid="Lawn.ZenGarden.mPlantForSale">
+  mPlantForSale
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plant mPlantForSale</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Lawn_ZenGarden_AddHappyEffect_" data-uid="Lawn.ZenGarden.AddHappyEffect*"></a>
+
+  <h3 id="Lawn_ZenGarden_AddHappyEffect_Lawn_Plant_" data-uid="Lawn.ZenGarden.AddHappyEffect(Lawn.Plant)">
+  AddHappyEffect(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddHappyEffect(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_AddPottedPlant_" data-uid="Lawn.ZenGarden.AddPottedPlant*"></a>
+
+  <h3 id="Lawn_ZenGarden_AddPottedPlant_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.AddPottedPlant(Lawn.PottedPlant)">
+  AddPottedPlant(PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPottedPlant(PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_AddStinky_" data-uid="Lawn.ZenGarden.AddStinky*"></a>
+
+  <h3 id="Lawn_ZenGarden_AddStinky" data-uid="Lawn.ZenGarden.AddStinky">
+  AddStinky()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddStinky()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_AdvanceCrazyDaveDialog_" data-uid="Lawn.ZenGarden.AdvanceCrazyDaveDialog*"></a>
+
+  <h3 id="Lawn_ZenGarden_AdvanceCrazyDaveDialog" data-uid="Lawn.ZenGarden.AdvanceCrazyDaveDialog">
+  AdvanceCrazyDaveDialog()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AdvanceCrazyDaveDialog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_AllPlantsHaveBeenFertilized_" data-uid="Lawn.ZenGarden.AllPlantsHaveBeenFertilized*"></a>
+
+  <h3 id="Lawn_ZenGarden_AllPlantsHaveBeenFertilized" data-uid="Lawn.ZenGarden.AllPlantsHaveBeenFertilized">
+  AllPlantsHaveBeenFertilized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllPlantsHaveBeenFertilized()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_BackFromStore_" data-uid="Lawn.ZenGarden.BackFromStore*"></a>
+
+  <h3 id="Lawn_ZenGarden_BackFromStore" data-uid="Lawn.ZenGarden.BackFromStore">
+  BackFromStore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BackFromStore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_CanDropChocolate_" data-uid="Lawn.ZenGarden.CanDropChocolate*"></a>
+
+  <h3 id="Lawn_ZenGarden_CanDropChocolate" data-uid="Lawn.ZenGarden.CanDropChocolate">
+  CanDropChocolate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanDropChocolate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_CanDropPottedPlantLoot_" data-uid="Lawn.ZenGarden.CanDropPottedPlantLoot*"></a>
+
+  <h3 id="Lawn_ZenGarden_CanDropPottedPlantLoot" data-uid="Lawn.ZenGarden.CanDropPottedPlantLoot">
+  CanDropPottedPlantLoot()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanDropPottedPlantLoot()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_CountPlantsNeedingFertilizer_" data-uid="Lawn.ZenGarden.CountPlantsNeedingFertilizer*"></a>
+
+  <h3 id="Lawn_ZenGarden_CountPlantsNeedingFertilizer" data-uid="Lawn.ZenGarden.CountPlantsNeedingFertilizer">
+  CountPlantsNeedingFertilizer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CountPlantsNeedingFertilizer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_Dispose_" data-uid="Lawn.ZenGarden.Dispose*"></a>
+
+  <h3 id="Lawn_ZenGarden_Dispose" data-uid="Lawn.ZenGarden.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_DoFeedingTool_" data-uid="Lawn.ZenGarden.DoFeedingTool*"></a>
+
+  <h3 id="Lawn_ZenGarden_DoFeedingTool_System_Int32_System_Int32_Lawn_GridItemState_" data-uid="Lawn.ZenGarden.DoFeedingTool(System.Int32,System.Int32,Lawn.GridItemState)">
+  DoFeedingTool(int, int, GridItemState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoFeedingTool(int x, int y, GridItemState theToolType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theToolType</code> <a class="xref" href="Lawn.GridItemState.html">GridItemState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_DoPlantSale_" data-uid="Lawn.ZenGarden.DoPlantSale*"></a>
+
+  <h3 id="Lawn_ZenGarden_DoPlantSale_System_Boolean_" data-uid="Lawn.ZenGarden.DoPlantSale(System.Boolean)">
+  DoPlantSale(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoPlantSale(bool wasSold)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>wasSold</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_DrawBackdrop_" data-uid="Lawn.ZenGarden.DrawBackdrop*"></a>
+
+  <h3 id="Lawn_ZenGarden_DrawBackdrop_Sexy_Graphics_" data-uid="Lawn.ZenGarden.DrawBackdrop(Sexy.Graphics)">
+  DrawBackdrop(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawBackdrop(Graphics g)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_DrawPlantOverlay_" data-uid="Lawn.ZenGarden.DrawPlantOverlay*"></a>
+
+  <h3 id="Lawn_ZenGarden_DrawPlantOverlay_Sexy_Graphics_Lawn_Plant_" data-uid="Lawn.ZenGarden.DrawPlantOverlay(Sexy.Graphics,Lawn.Plant)">
+  DrawPlantOverlay(Graphics, Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPlantOverlay(Graphics g, Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_DrawPottedPlant_" data-uid="Lawn.ZenGarden.DrawPottedPlant*"></a>
+
+  <h3 id="Lawn_ZenGarden_DrawPottedPlant_Sexy_Graphics_System_Single_System_Single_Lawn_PottedPlant_System_Single_System_Boolean_" data-uid="Lawn.ZenGarden.DrawPottedPlant(Sexy.Graphics,System.Single,System.Single,Lawn.PottedPlant,System.Single,System.Boolean)">
+  DrawPottedPlant(Graphics, float, float, PottedPlant, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPottedPlant(Graphics g, float x, float y, PottedPlant thePottedPlant, float theScale, bool theDrawPot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+    <dt><code>theScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theDrawPot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_DrawPottedPlantIcon_" data-uid="Lawn.ZenGarden.DrawPottedPlantIcon*"></a>
+
+  <h3 id="Lawn_ZenGarden_DrawPottedPlantIcon_Sexy_Graphics_System_Single_System_Single_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.DrawPottedPlantIcon(Sexy.Graphics,System.Single,System.Single,Lawn.PottedPlant)">
+  DrawPottedPlantIcon(Graphics, float, float, PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawPottedPlantIcon(Graphics g, float x, float y, PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>g</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_FeedChocolateToPlant_" data-uid="Lawn.ZenGarden.FeedChocolateToPlant*"></a>
+
+  <h3 id="Lawn_ZenGarden_FeedChocolateToPlant_Lawn_Plant_" data-uid="Lawn.ZenGarden.FeedChocolateToPlant(Lawn.Plant)">
+  FeedChocolateToPlant(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FeedChocolateToPlant(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_FindOpenZenGardenSpot_" data-uid="Lawn.ZenGarden.FindOpenZenGardenSpot*"></a>
+
+  <h3 id="Lawn_ZenGarden_FindOpenZenGardenSpot_System_Int32__System_Int32__" data-uid="Lawn.ZenGarden.FindOpenZenGardenSpot(System.Int32@,System.Int32@)">
+  FindOpenZenGardenSpot(ref int, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FindOpenZenGardenSpot(ref int theSpotX, ref int theSpotY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSpotX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSpotY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GetPlantSellPrice_" data-uid="Lawn.ZenGarden.GetPlantSellPrice*"></a>
+
+  <h3 id="Lawn_ZenGarden_GetPlantSellPrice_Lawn_Plant_" data-uid="Lawn.ZenGarden.GetPlantSellPrice(Lawn.Plant)">
+  GetPlantSellPrice(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPlantSellPrice(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GetPlantsNeed_" data-uid="Lawn.ZenGarden.GetPlantsNeed*"></a>
+
+  <h3 id="Lawn_ZenGarden_GetPlantsNeed_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.GetPlantsNeed(Lawn.PottedPlant)">
+  GetPlantsNeed(PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PottedPlantNeed GetPlantsNeed(PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.PottedPlantNeed.html">PottedPlantNeed</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GetPottedPlantInWheelbarrow_" data-uid="Lawn.ZenGarden.GetPottedPlantInWheelbarrow*"></a>
+
+  <h3 id="Lawn_ZenGarden_GetPottedPlantInWheelbarrow" data-uid="Lawn.ZenGarden.GetPottedPlantInWheelbarrow">
+  GetPottedPlantInWheelbarrow()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PottedPlant GetPottedPlantInWheelbarrow()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GetPottedPlantXOffset_" data-uid="Lawn.ZenGarden.GetPottedPlantXOffset*"></a>
+
+  <h3 id="Lawn_ZenGarden_GetPottedPlantXOffset_Lawn_SeedType_System_Boolean_" data-uid="Lawn.ZenGarden.GetPottedPlantXOffset(Lawn.SeedType,System.Boolean)">
+  GetPottedPlantXOffset(SeedType, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetPottedPlantXOffset(SeedType theType, bool isFlipped)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>isFlipped</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GetPottedPlantYOffset_" data-uid="Lawn.ZenGarden.GetPottedPlantYOffset*"></a>
+
+  <h3 id="Lawn_ZenGarden_GetPottedPlantYOffset_Lawn_SeedType_System_Boolean_" data-uid="Lawn.ZenGarden.GetPottedPlantYOffset(Lawn.SeedType,System.Boolean)">
+  GetPottedPlantYOffset(SeedType, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetPottedPlantYOffset(SeedType theType, bool isFlipped)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>isFlipped</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GetSpecialGridPlacements_" data-uid="Lawn.ZenGarden.GetSpecialGridPlacements*"></a>
+
+  <h3 id="Lawn_ZenGarden_GetSpecialGridPlacements_System_Int32__" data-uid="Lawn.ZenGarden.GetSpecialGridPlacements(System.Int32@)">
+  GetSpecialGridPlacements(ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SpecialGridPlacement[] GetSpecialGridPlacements(ref int theCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SpecialGridPlacement.html">SpecialGridPlacement</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GetStinky_" data-uid="Lawn.ZenGarden.GetStinky*"></a>
+
+  <h3 id="Lawn_ZenGarden_GetStinky" data-uid="Lawn.ZenGarden.GetStinky">
+  GetStinky()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GridItem GetStinky()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GotoNextGarden_" data-uid="Lawn.ZenGarden.GotoNextGarden*"></a>
+
+  <h3 id="Lawn_ZenGarden_GotoNextGarden" data-uid="Lawn.ZenGarden.GotoNextGarden">
+  GotoNextGarden()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GotoNextGarden()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GridToPixelX_" data-uid="Lawn.ZenGarden.GridToPixelX*"></a>
+
+  <h3 id="Lawn_ZenGarden_GridToPixelX_System_Int32_System_Int32_" data-uid="Lawn.ZenGarden.GridToPixelX(System.Int32,System.Int32)">
+  GridToPixelX(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GridToPixelX(int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_GridToPixelY_" data-uid="Lawn.ZenGarden.GridToPixelY*"></a>
+
+  <h3 id="Lawn_ZenGarden_GridToPixelY_System_Int32_System_Int32_" data-uid="Lawn.ZenGarden.GridToPixelY(System.Int32,System.Int32)">
+  GridToPixelY(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GridToPixelY(int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_HasPurchasedStinky_" data-uid="Lawn.ZenGarden.HasPurchasedStinky*"></a>
+
+  <h3 id="Lawn_ZenGarden_HasPurchasedStinky" data-uid="Lawn.ZenGarden.HasPurchasedStinky">
+  HasPurchasedStinky()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPurchasedStinky()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_IsStinkyHighOnChocolate_" data-uid="Lawn.ZenGarden.IsStinkyHighOnChocolate*"></a>
+
+  <h3 id="Lawn_ZenGarden_IsStinkyHighOnChocolate" data-uid="Lawn.ZenGarden.IsStinkyHighOnChocolate">
+  IsStinkyHighOnChocolate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStinkyHighOnChocolate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_IsStinkySleeping_" data-uid="Lawn.ZenGarden.IsStinkySleeping*"></a>
+
+  <h3 id="Lawn_ZenGarden_IsStinkySleeping" data-uid="Lawn.ZenGarden.IsStinkySleeping">
+  IsStinkySleeping()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStinkySleeping()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_IsZenGardenFull_" data-uid="Lawn.ZenGarden.IsZenGardenFull*"></a>
+
+  <h3 id="Lawn_ZenGarden_IsZenGardenFull_System_Boolean_" data-uid="Lawn.ZenGarden.IsZenGardenFull(System.Boolean)">
+  IsZenGardenFull(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsZenGardenFull(bool theIncludeDroppedPresents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theIncludeDroppedPresents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_LeaveGarden_" data-uid="Lawn.ZenGarden.LeaveGarden*"></a>
+
+  <h3 id="Lawn_ZenGarden_LeaveGarden" data-uid="Lawn.ZenGarden.LeaveGarden">
+  LeaveGarden()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LeaveGarden()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_MakeStinkySleeping_" data-uid="Lawn.ZenGarden.MakeStinkySleeping*"></a>
+
+  <h3 id="Lawn_ZenGarden_MakeStinkySleeping" data-uid="Lawn.ZenGarden.MakeStinkySleeping">
+  MakeStinkySleeping()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeStinkySleeping()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_MouseDownWithEmptyWheelBarrow_" data-uid="Lawn.ZenGarden.MouseDownWithEmptyWheelBarrow*"></a>
+
+  <h3 id="Lawn_ZenGarden_MouseDownWithEmptyWheelBarrow_Lawn_Plant_" data-uid="Lawn.ZenGarden.MouseDownWithEmptyWheelBarrow(Lawn.Plant)">
+  MouseDownWithEmptyWheelBarrow(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDownWithEmptyWheelBarrow(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_MouseDownWithFeedingTool_" data-uid="Lawn.ZenGarden.MouseDownWithFeedingTool*"></a>
+
+  <h3 id="Lawn_ZenGarden_MouseDownWithFeedingTool_System_Int32_System_Int32_Lawn_CursorType_" data-uid="Lawn.ZenGarden.MouseDownWithFeedingTool(System.Int32,System.Int32,Lawn.CursorType)">
+  MouseDownWithFeedingTool(int, int, CursorType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDownWithFeedingTool(int x, int y, CursorType theCursorType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theCursorType</code> <a class="xref" href="Lawn.CursorType.html">CursorType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_MouseDownWithFullWheelBarrow_" data-uid="Lawn.ZenGarden.MouseDownWithFullWheelBarrow*"></a>
+
+  <h3 id="Lawn_ZenGarden_MouseDownWithFullWheelBarrow_System_Int32_System_Int32_" data-uid="Lawn.ZenGarden.MouseDownWithFullWheelBarrow(System.Int32,System.Int32)">
+  MouseDownWithFullWheelBarrow(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDownWithFullWheelBarrow(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_MouseDownWithMoneySign_" data-uid="Lawn.ZenGarden.MouseDownWithMoneySign*"></a>
+
+  <h3 id="Lawn_ZenGarden_MouseDownWithMoneySign_Lawn_Plant_" data-uid="Lawn.ZenGarden.MouseDownWithMoneySign(Lawn.Plant)">
+  MouseDownWithMoneySign(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDownWithMoneySign(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_MouseDownWithTool_" data-uid="Lawn.ZenGarden.MouseDownWithTool*"></a>
+
+  <h3 id="Lawn_ZenGarden_MouseDownWithTool_System_Int32_System_Int32_Lawn_CursorType_" data-uid="Lawn.ZenGarden.MouseDownWithTool(System.Int32,System.Int32,Lawn.CursorType)">
+  MouseDownWithTool(int, int, CursorType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MouseDownWithTool(int x, int y, CursorType theCursorType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theCursorType</code> <a class="xref" href="Lawn.CursorType.html">CursorType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_MouseDownZenGarden_" data-uid="Lawn.ZenGarden.MouseDownZenGarden*"></a>
+
+  <h3 id="Lawn_ZenGarden_MouseDownZenGarden_System_Int32_System_Int32_System_Int32_Lawn_HitResult_" data-uid="Lawn.ZenGarden.MouseDownZenGarden(System.Int32,System.Int32,System.Int32,Lawn.HitResult)">
+  MouseDownZenGarden(int, int, int, HitResult)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MouseDownZenGarden(int x, int y, int theClickCount, HitResult theHitResult)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theClickCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theHitResult</code> <a class="xref" href="Lawn.HitResult.html">HitResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_MovePlant_" data-uid="Lawn.ZenGarden.MovePlant*"></a>
+
+  <h3 id="Lawn_ZenGarden_MovePlant_Lawn_Plant_System_Int32_System_Int32_" data-uid="Lawn.ZenGarden.MovePlant(Lawn.Plant,System.Int32,System.Int32)">
+  MovePlant(Plant, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MovePlant(Plant thePlant, int theGridX, int theGridY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+    <dt><code>theGridX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theGridY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_OpenStore_" data-uid="Lawn.ZenGarden.OpenStore*"></a>
+
+  <h3 id="Lawn_ZenGarden_OpenStore" data-uid="Lawn.ZenGarden.OpenStore">
+  OpenStore()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenStore()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PickRandomSeedType_" data-uid="Lawn.ZenGarden.PickRandomSeedType*"></a>
+
+  <h3 id="Lawn_ZenGarden_PickRandomSeedType" data-uid="Lawn.ZenGarden.PickRandomSeedType">
+  PickRandomSeedType()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SeedType PickRandomSeedType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PixelToGridX_" data-uid="Lawn.ZenGarden.PixelToGridX*"></a>
+
+  <h3 id="Lawn_ZenGarden_PixelToGridX_System_Int32_System_Int32_" data-uid="Lawn.ZenGarden.PixelToGridX(System.Int32,System.Int32)">
+  PixelToGridX(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PixelToGridX(int theX, int theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PixelToGridY_" data-uid="Lawn.ZenGarden.PixelToGridY*"></a>
+
+  <h3 id="Lawn_ZenGarden_PixelToGridY_System_Int32_System_Int32_" data-uid="Lawn.ZenGarden.PixelToGridY(System.Int32,System.Int32)">
+  PixelToGridY(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PixelToGridY(int theX, int theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlacePottedPlant_" data-uid="Lawn.ZenGarden.PlacePottedPlant*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlacePottedPlant_System_Int32_" data-uid="Lawn.ZenGarden.PlacePottedPlant(System.Int32)">
+  PlacePottedPlant(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Plant PlacePottedPlant(int thePottedPlantIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlantIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantCanBeWatered_" data-uid="Lawn.ZenGarden.PlantCanBeWatered*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantCanBeWatered_Lawn_Plant_" data-uid="Lawn.ZenGarden.PlantCanBeWatered(Lawn.Plant)">
+  PlantCanBeWatered(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlantCanBeWatered(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantCanHaveChocolate_" data-uid="Lawn.ZenGarden.PlantCanHaveChocolate*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantCanHaveChocolate_Lawn_Plant_" data-uid="Lawn.ZenGarden.PlantCanHaveChocolate(Lawn.Plant)">
+  PlantCanHaveChocolate(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlantCanHaveChocolate(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantFertilized_" data-uid="Lawn.ZenGarden.PlantFertilized*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantFertilized_Lawn_Plant_" data-uid="Lawn.ZenGarden.PlantFertilized(Lawn.Plant)">
+  PlantFertilized(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlantFertilized(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantFulfillNeed_" data-uid="Lawn.ZenGarden.PlantFulfillNeed*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantFulfillNeed_Lawn_Plant_" data-uid="Lawn.ZenGarden.PlantFulfillNeed(Lawn.Plant)">
+  PlantFulfillNeed(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlantFulfillNeed(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantGetMinutesSinceHappy_" data-uid="Lawn.ZenGarden.PlantGetMinutesSinceHappy*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantGetMinutesSinceHappy_Lawn_Plant_" data-uid="Lawn.ZenGarden.PlantGetMinutesSinceHappy(Lawn.Plant)">
+  PlantGetMinutesSinceHappy(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PlantGetMinutesSinceHappy(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantHighOnChocolate_" data-uid="Lawn.ZenGarden.PlantHighOnChocolate*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantHighOnChocolate_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.PlantHighOnChocolate(Lawn.PottedPlant)">
+  PlantHighOnChocolate(PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlantHighOnChocolate(PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantPottedDrawHeightOffset_" data-uid="Lawn.ZenGarden.PlantPottedDrawHeightOffset*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantPottedDrawHeightOffset_Lawn_SeedType_System_Single_System_Boolean_" data-uid="Lawn.ZenGarden.PlantPottedDrawHeightOffset(Lawn.SeedType,System.Single,System.Boolean)">
+  PlantPottedDrawHeightOffset(SeedType, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PlantPottedDrawHeightOffset(SeedType theSeedType, float theScale, bool bInWheelBarrow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>bInWheelBarrow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantPottedDrawHeightOffset_" data-uid="Lawn.ZenGarden.PlantPottedDrawHeightOffset*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantPottedDrawHeightOffset_Lawn_SeedType_System_Single_System_Boolean_Lawn_DrawVariation_" data-uid="Lawn.ZenGarden.PlantPottedDrawHeightOffset(Lawn.SeedType,System.Single,System.Boolean,Lawn.DrawVariation)">
+  PlantPottedDrawHeightOffset(SeedType, float, bool, DrawVariation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PlantPottedDrawHeightOffset(SeedType theSeedType, float theScale, bool bInWheelBarrow, DrawVariation theDrawVariation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSeedType</code> <a class="xref" href="Lawn.SeedType.html">SeedType</a></dt>
+    <dd></dd>
+    <dt><code>theScale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>bInWheelBarrow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>theDrawVariation</code> <a class="xref" href="Lawn.DrawVariation.html">DrawVariation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantSetLaunchCounter_" data-uid="Lawn.ZenGarden.PlantSetLaunchCounter*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantSetLaunchCounter_Lawn_Plant_" data-uid="Lawn.ZenGarden.PlantSetLaunchCounter(Lawn.Plant)">
+  PlantSetLaunchCounter(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlantSetLaunchCounter(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantShouldRefreshNeed_" data-uid="Lawn.ZenGarden.PlantShouldRefreshNeed*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantShouldRefreshNeed_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.PlantShouldRefreshNeed(Lawn.PottedPlant)">
+  PlantShouldRefreshNeed(PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlantShouldRefreshNeed(PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantUpdateProduction_" data-uid="Lawn.ZenGarden.PlantUpdateProduction*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantUpdateProduction_Lawn_Plant_" data-uid="Lawn.ZenGarden.PlantUpdateProduction(Lawn.Plant)">
+  PlantUpdateProduction(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlantUpdateProduction(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantWatered_" data-uid="Lawn.ZenGarden.PlantWatered*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantWatered_Lawn_Plant_" data-uid="Lawn.ZenGarden.PlantWatered(Lawn.Plant)">
+  PlantWatered(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlantWatered(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PlantsNeedWater_" data-uid="Lawn.ZenGarden.PlantsNeedWater*"></a>
+
+  <h3 id="Lawn_ZenGarden_PlantsNeedWater" data-uid="Lawn.ZenGarden.PlantsNeedWater">
+  PlantsNeedWater()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PlantsNeedWater()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PottedPlantFromIndex_" data-uid="Lawn.ZenGarden.PottedPlantFromIndex*"></a>
+
+  <h3 id="Lawn_ZenGarden_PottedPlantFromIndex_System_Int32_" data-uid="Lawn.ZenGarden.PottedPlantFromIndex(System.Int32)">
+  PottedPlantFromIndex(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PottedPlant PottedPlantFromIndex(int thePottedPlantIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlantIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_PottedPlantUpdate_" data-uid="Lawn.ZenGarden.PottedPlantUpdate*"></a>
+
+  <h3 id="Lawn_ZenGarden_PottedPlantUpdate_Lawn_Plant_" data-uid="Lawn.ZenGarden.PottedPlantUpdate(Lawn.Plant)">
+  PottedPlantUpdate(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PottedPlantUpdate(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_RefreshPlantNeeds_" data-uid="Lawn.ZenGarden.RefreshPlantNeeds*"></a>
+
+  <h3 id="Lawn_ZenGarden_RefreshPlantNeeds_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.RefreshPlantNeeds(Lawn.PottedPlant)">
+  RefreshPlantNeeds(PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshPlantNeeds(PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_RemoveHappyEffect_" data-uid="Lawn.ZenGarden.RemoveHappyEffect*"></a>
+
+  <h3 id="Lawn_ZenGarden_RemoveHappyEffect_Lawn_Plant_" data-uid="Lawn.ZenGarden.RemoveHappyEffect(Lawn.Plant)">
+  RemoveHappyEffect(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveHappyEffect(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_RemovePottedPlant_" data-uid="Lawn.ZenGarden.RemovePottedPlant*"></a>
+
+  <h3 id="Lawn_ZenGarden_RemovePottedPlant_Lawn_Plant_" data-uid="Lawn.ZenGarden.RemovePottedPlant(Lawn.Plant)">
+  RemovePottedPlant(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemovePottedPlant(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_ResetPlantTimers_" data-uid="Lawn.ZenGarden.ResetPlantTimers*"></a>
+
+  <h3 id="Lawn_ZenGarden_ResetPlantTimers_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.ResetPlantTimers(Lawn.PottedPlant)">
+  ResetPlantTimers(PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetPlantTimers(PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_ResetStinkyTimers_" data-uid="Lawn.ZenGarden.ResetStinkyTimers*"></a>
+
+  <h3 id="Lawn_ZenGarden_ResetStinkyTimers" data-uid="Lawn.ZenGarden.ResetStinkyTimers">
+  ResetStinkyTimers()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetStinkyTimers()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_SetPlantAnimSpeed_" data-uid="Lawn.ZenGarden.SetPlantAnimSpeed*"></a>
+
+  <h3 id="Lawn_ZenGarden_SetPlantAnimSpeed_Lawn_Plant_" data-uid="Lawn.ZenGarden.SetPlantAnimSpeed(Lawn.Plant)">
+  SetPlantAnimSpeed(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlantAnimSpeed(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_SetupForZenTutorial_" data-uid="Lawn.ZenGarden.SetupForZenTutorial*"></a>
+
+  <h3 id="Lawn_ZenGarden_SetupForZenTutorial" data-uid="Lawn.ZenGarden.SetupForZenTutorial">
+  SetupForZenTutorial()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupForZenTutorial()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_ShouldStinkyBeAwake_" data-uid="Lawn.ZenGarden.ShouldStinkyBeAwake*"></a>
+
+  <h3 id="Lawn_ZenGarden_ShouldStinkyBeAwake" data-uid="Lawn.ZenGarden.ShouldStinkyBeAwake">
+  ShouldStinkyBeAwake()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldStinkyBeAwake()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_ShowTutorialArrowOnWateringCan_" data-uid="Lawn.ZenGarden.ShowTutorialArrowOnWateringCan*"></a>
+
+  <h3 id="Lawn_ZenGarden_ShowTutorialArrowOnWateringCan" data-uid="Lawn.ZenGarden.ShowTutorialArrowOnWateringCan">
+  ShowTutorialArrowOnWateringCan()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowTutorialArrowOnWateringCan()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_StinkyAnimRateUpdate_" data-uid="Lawn.ZenGarden.StinkyAnimRateUpdate*"></a>
+
+  <h3 id="Lawn_ZenGarden_StinkyAnimRateUpdate_Lawn_GridItem_" data-uid="Lawn.ZenGarden.StinkyAnimRateUpdate(Lawn.GridItem)">
+  StinkyAnimRateUpdate(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StinkyAnimRateUpdate(GridItem theStinky)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theStinky</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_StinkyFinishFallingAsleep_" data-uid="Lawn.ZenGarden.StinkyFinishFallingAsleep*"></a>
+
+  <h3 id="Lawn_ZenGarden_StinkyFinishFallingAsleep_Lawn_GridItem_System_Byte_" data-uid="Lawn.ZenGarden.StinkyFinishFallingAsleep(Lawn.GridItem,System.Byte)">
+  StinkyFinishFallingAsleep(GridItem, byte)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StinkyFinishFallingAsleep(GridItem theStinky, byte theBlendTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theStinky</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+    <dt><code>theBlendTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_StinkyPickGoal_" data-uid="Lawn.ZenGarden.StinkyPickGoal*"></a>
+
+  <h3 id="Lawn_ZenGarden_StinkyPickGoal_Lawn_GridItem_" data-uid="Lawn.ZenGarden.StinkyPickGoal(Lawn.GridItem)">
+  StinkyPickGoal(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StinkyPickGoal(GridItem theStinky)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theStinky</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_StinkyStartFallingAsleep_" data-uid="Lawn.ZenGarden.StinkyStartFallingAsleep*"></a>
+
+  <h3 id="Lawn_ZenGarden_StinkyStartFallingAsleep_Lawn_GridItem_" data-uid="Lawn.ZenGarden.StinkyStartFallingAsleep(Lawn.GridItem)">
+  StinkyStartFallingAsleep(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StinkyStartFallingAsleep(GridItem theStinky)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theStinky</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_StinkyUpdate_" data-uid="Lawn.ZenGarden.StinkyUpdate*"></a>
+
+  <h3 id="Lawn_ZenGarden_StinkyUpdate_Lawn_GridItem_" data-uid="Lawn.ZenGarden.StinkyUpdate(Lawn.GridItem)">
+  StinkyUpdate(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StinkyUpdate(GridItem theStinky)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theStinky</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_StinkyWakeUp_" data-uid="Lawn.ZenGarden.StinkyWakeUp*"></a>
+
+  <h3 id="Lawn_ZenGarden_StinkyWakeUp_Lawn_GridItem_" data-uid="Lawn.ZenGarden.StinkyWakeUp(Lawn.GridItem)">
+  StinkyWakeUp(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StinkyWakeUp(GridItem theStinky)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theStinky</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_UnloadBackdrop_" data-uid="Lawn.ZenGarden.UnloadBackdrop*"></a>
+
+  <h3 id="Lawn_ZenGarden_UnloadBackdrop" data-uid="Lawn.ZenGarden.UnloadBackdrop">
+  UnloadBackdrop()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnloadBackdrop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_UpdatePlantEffectState_" data-uid="Lawn.ZenGarden.UpdatePlantEffectState*"></a>
+
+  <h3 id="Lawn_ZenGarden_UpdatePlantEffectState_Lawn_Plant_" data-uid="Lawn.ZenGarden.UpdatePlantEffectState(Lawn.Plant)">
+  UpdatePlantEffectState(Plant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePlantEffectState(Plant thePlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePlant</code> <a class="xref" href="Lawn.Plant.html">Plant</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_UpdatePlantNeeds_" data-uid="Lawn.ZenGarden.UpdatePlantNeeds*"></a>
+
+  <h3 id="Lawn_ZenGarden_UpdatePlantNeeds" data-uid="Lawn.ZenGarden.UpdatePlantNeeds">
+  UpdatePlantNeeds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdatePlantNeeds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_UpdateStinkyMotionTrail_" data-uid="Lawn.ZenGarden.UpdateStinkyMotionTrail*"></a>
+
+  <h3 id="Lawn_ZenGarden_UpdateStinkyMotionTrail_Lawn_GridItem_System_Boolean_" data-uid="Lawn.ZenGarden.UpdateStinkyMotionTrail(Lawn.GridItem,System.Boolean)">
+  UpdateStinkyMotionTrail(GridItem, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateStinkyMotionTrail(GridItem theStinky, bool theStinkyHighOnChocolate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theStinky</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+    <dt><code>theStinkyHighOnChocolate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_WakeStinky_" data-uid="Lawn.ZenGarden.WakeStinky*"></a>
+
+  <h3 id="Lawn_ZenGarden_WakeStinky" data-uid="Lawn.ZenGarden.WakeStinky">
+  WakeStinky()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WakeStinky()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_WasPlantFertilizedInLastHour_" data-uid="Lawn.ZenGarden.WasPlantFertilizedInLastHour*"></a>
+
+  <h3 id="Lawn_ZenGarden_WasPlantFertilizedInLastHour_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.WasPlantFertilizedInLastHour(Lawn.PottedPlant)">
+  WasPlantFertilizedInLastHour(PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WasPlantFertilizedInLastHour(PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_WasPlantNeedFulfilledToday_" data-uid="Lawn.ZenGarden.WasPlantNeedFulfilledToday*"></a>
+
+  <h3 id="Lawn_ZenGarden_WasPlantNeedFulfilledToday_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.WasPlantNeedFulfilledToday(Lawn.PottedPlant)">
+  WasPlantNeedFulfilledToday(PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool WasPlantNeedFulfilledToday(PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_ZenGardenInitLevel_" data-uid="Lawn.ZenGarden.ZenGardenInitLevel*"></a>
+
+  <h3 id="Lawn_ZenGarden_ZenGardenInitLevel_System_Boolean_" data-uid="Lawn.ZenGarden.ZenGardenInitLevel(System.Boolean)">
+  ZenGardenInitLevel(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZenGardenInitLevel(bool theJustSwitchingGardens)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theJustSwitchingGardens</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_ZenGardenStart_" data-uid="Lawn.ZenGarden.ZenGardenStart*"></a>
+
+  <h3 id="Lawn_ZenGarden_ZenGardenStart" data-uid="Lawn.ZenGarden.ZenGardenStart">
+  ZenGardenStart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZenGardenStart()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_ZenGardenUpdate_" data-uid="Lawn.ZenGarden.ZenGardenUpdate*"></a>
+
+  <h3 id="Lawn_ZenGarden_ZenGardenUpdate" data-uid="Lawn.ZenGarden.ZenGardenUpdate">
+  ZenGardenUpdate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZenGardenUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_ZenPlantOffsetX_" data-uid="Lawn.ZenGarden.ZenPlantOffsetX*"></a>
+
+  <h3 id="Lawn_ZenGarden_ZenPlantOffsetX_Lawn_PottedPlant_" data-uid="Lawn.ZenGarden.ZenPlantOffsetX(Lawn.PottedPlant)">
+  ZenPlantOffsetX(PottedPlant)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ZenPlantOffsetX(PottedPlant thePottedPlant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>thePottedPlant</code> <a class="xref" href="Lawn.PottedPlant.html">PottedPlant</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Lawn_ZenGarden_ZenToolUpdate_" data-uid="Lawn.ZenGarden.ZenToolUpdate*"></a>
+
+  <h3 id="Lawn_ZenGarden_ZenToolUpdate_Lawn_GridItem_" data-uid="Lawn.ZenGarden.ZenToolUpdate(Lawn.GridItem)">
+  ZenToolUpdate(GridItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ZenToolUpdate(GridItem theZenTool)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theZenTool</code> <a class="xref" href="Lawn.GridItem.html">GridItem</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

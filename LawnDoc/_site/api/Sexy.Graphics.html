@@ -1,0 +1,5616 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Graphics
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Graphics
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Sexy.Graphics">
+
+
+
+  <h1 id="Sexy_Graphics" data-uid="Sexy.Graphics" class="text-break">
+    Class Graphics
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Sexy.html">Sexy</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>LAWN.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Graphics : GraphicsState, IReusable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Sexy.GraphicsState.html">GraphicsState</a></div>
+      <div><span class="xref">Graphics</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Sexy.IReusable.html">IReusable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mTransX">GraphicsState.mTransX</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mTransY">GraphicsState.mTransY</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mScaleX">GraphicsState.mScaleX</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mScaleY">GraphicsState.mScaleY</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mScaleOrigX">GraphicsState.mScaleOrigX</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mScaleOrigY">GraphicsState.mScaleOrigY</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mFastStretch">GraphicsState.mFastStretch</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mWriteColoredString">GraphicsState.mWriteColoredString</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mLinearBlend">GraphicsState.mLinearBlend</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mClipRect">GraphicsState.mClipRect</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mFont">GraphicsState.mFont</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mDrawMode">GraphicsState.mDrawMode</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mColorizeImages">GraphicsState.mColorizeImages</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_dummy">GraphicsState.dummy</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_WorldRotation">GraphicsState.WorldRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_NeedToSetWorldRotation">GraphicsState.NeedToSetWorldRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mGraphicsDeviceManager">GraphicsState.mGraphicsDeviceManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mIsOffscreen">GraphicsState.mIsOffscreen</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_CopyStateFrom_Sexy_GraphicsState_">GraphicsState.CopyStateFrom(GraphicsState)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_SetWorldRotation_System_Single_">GraphicsState.SetWorldRotation(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_ApplyWorldRotation">GraphicsState.ApplyWorldRotation()</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_GetClosestPowerOf2Above_System_Int32_">GraphicsState.GetClosestPowerOf2Above(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mColor">GraphicsState.mColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mScreenWidth">GraphicsState.mScreenWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="Sexy.GraphicsState.html#Sexy_GraphicsState_mScreenHeight">GraphicsState.mScreenHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_CallPrivateMethod__1_System_Object_System_String_System_Object___">DynamicHelper.CallPrivateMethod&lt;T&gt;(object, string, params object[])</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateField__1_System_Object_System_String_">DynamicHelper.GetPrivateField&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_GetPrivateProperty__1_System_Object_System_String_">DynamicHelper.GetPrivateProperty&lt;T&gt;(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateField_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateField(object, string, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="LawnMod.DynamicHelper.html#LawnMod_DynamicHelper_SetPrivateProperty_System_Object_System_String_System_Object_">DynamicHelper.SetPrivateProperty(object, string, object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Sexy_Graphics_WrapSamplerState" data-uid="Sexy.Graphics.WrapSamplerState">
+  WrapSamplerState
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly SamplerState WrapSamplerState</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SamplerState</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_Graphics_gPrimitiveBatch" data-uid="Sexy.Graphics.gPrimitiveBatch">
+  gPrimitiveBatch
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PrimitiveBatch gPrimitiveBatch</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.PrimitiveBatch.html">PrimitiveBatch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_Graphics_gSpriteBatch" data-uid="Sexy.Graphics.gSpriteBatch">
+  gSpriteBatch
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SpriteBatch gSpriteBatch</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">SpriteBatch</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_Graphics_gTransformStack" data-uid="Sexy.Graphics.gTransformStack">
+  gTransformStack
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Stack&lt;SexyTransform2D&gt; gTransformStack</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1">Stack</a>&lt;<a class="xref" href="Sexy.SexyTransform2D.html">SexyTransform2D</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_Graphics_mDestImage" data-uid="Sexy.Graphics.mDestImage">
+  mDestImage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTarget2D mDestImage</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RenderTarget2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_Graphics_mGame" data-uid="Sexy.Graphics.mGame">
+  mGame
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Game mGame</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Game</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_Graphics_mStateStack" data-uid="Sexy.Graphics.mStateStack">
+  mStateStack
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Stack&lt;Graphics&gt; mStateStack</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.stack-1">Stack</a>&lt;<a class="xref" href="Sexy.Graphics.html">Graphics</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Sexy_Graphics_primitiveBatch" data-uid="Sexy.Graphics.primitiveBatch">
+  primitiveBatch
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static PrimitiveBatch primitiveBatch</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.PrimitiveBatch.html">PrimitiveBatch</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Sexy_Graphics_GraphicsDevice_" data-uid="Sexy.Graphics.GraphicsDevice*"></a>
+
+  <h3 id="Sexy_Graphics_GraphicsDevice" data-uid="Sexy.Graphics.GraphicsDevice">
+  GraphicsDevice
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphicsDevice GraphicsDevice { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GraphicsDevice</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GraphicsDeviceManager_" data-uid="Sexy.Graphics.GraphicsDeviceManager*"></a>
+
+  <h3 id="Sexy_Graphics_GraphicsDeviceManager" data-uid="Sexy.Graphics.GraphicsDeviceManager">
+  GraphicsDeviceManager
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GraphicsDeviceManager GraphicsDeviceManager { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GraphicsDeviceManager</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_IsFullScreen_" data-uid="Sexy.Graphics.IsFullScreen*"></a>
+
+  <h3 id="Sexy_Graphics_IsFullScreen" data-uid="Sexy.Graphics.IsFullScreen">
+  IsFullScreen
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFullScreen { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PreferredBackBufferHeight_" data-uid="Sexy.Graphics.PreferredBackBufferHeight*"></a>
+
+  <h3 id="Sexy_Graphics_PreferredBackBufferHeight" data-uid="Sexy.Graphics.PreferredBackBufferHeight">
+  PreferredBackBufferHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PreferredBackBufferHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PreferredBackBufferWidth_" data-uid="Sexy.Graphics.PreferredBackBufferWidth*"></a>
+
+  <h3 id="Sexy_Graphics_PreferredBackBufferWidth" data-uid="Sexy.Graphics.PreferredBackBufferWidth">
+  PreferredBackBufferWidth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PreferredBackBufferWidth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_currentlyActiveDrawMode_" data-uid="Sexy.Graphics.currentlyActiveDrawMode*"></a>
+
+  <h3 id="Sexy_Graphics_currentlyActiveDrawMode" data-uid="Sexy.Graphics.currentlyActiveDrawMode">
+  currentlyActiveDrawMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Graphics.DrawMode currentlyActiveDrawMode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Sexy_Graphics_BeginDrawTrianglesTexBatch_" data-uid="Sexy.Graphics.BeginDrawTrianglesTexBatch*"></a>
+
+  <h3 id="Sexy_Graphics_BeginDrawTrianglesTexBatch_Microsoft_Xna_Framework_Graphics_SamplerState_Sexy_Graphics_DrawMode_Sexy_Image_" data-uid="Sexy.Graphics.BeginDrawTrianglesTexBatch(Microsoft.Xna.Framework.Graphics.SamplerState,Sexy.Graphics.DrawMode,Sexy.Image)">
+  BeginDrawTrianglesTexBatch(SamplerState, DrawMode, Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginDrawTrianglesTexBatch(SamplerState st, Graphics.DrawMode theDrawMode, Image theTexture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>st</code> <span class="xref">SamplerState</span></dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_BeginFrame_" data-uid="Sexy.Graphics.BeginFrame*"></a>
+
+  <h3 id="Sexy_Graphics_BeginFrame" data-uid="Sexy.Graphics.BeginFrame">
+  BeginFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginFrame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_BeginFrame_" data-uid="Sexy.Graphics.BeginFrame*"></a>
+
+  <h3 id="Sexy_Graphics_BeginFrame_Microsoft_Xna_Framework_Graphics_RasterizerState_" data-uid="Sexy.Graphics.BeginFrame(Microsoft.Xna.Framework.Graphics.RasterizerState)">
+  BeginFrame(RasterizerState)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginFrame(RasterizerState rasterState)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rasterState</code> <span class="xref">RasterizerState</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_BeginFrame_" data-uid="Sexy.Graphics.BeginFrame*"></a>
+
+  <h3 id="Sexy_Graphics_BeginFrame_Microsoft_Xna_Framework_Graphics_RasterizerState_Microsoft_Xna_Framework_Graphics_SpriteSortMode_" data-uid="Sexy.Graphics.BeginFrame(Microsoft.Xna.Framework.Graphics.RasterizerState,Microsoft.Xna.Framework.Graphics.SpriteSortMode)">
+  BeginFrame(RasterizerState, SpriteSortMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginFrame(RasterizerState rasterState, SpriteSortMode sortmode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rasterState</code> <span class="xref">RasterizerState</span></dt>
+    <dd></dd>
+    <dt><code>sortmode</code> <span class="xref">SpriteSortMode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_BeginFrame_" data-uid="Sexy.Graphics.BeginFrame*"></a>
+
+  <h3 id="Sexy_Graphics_BeginFrame_Microsoft_Xna_Framework_Graphics_SpriteSortMode_" data-uid="Sexy.Graphics.BeginFrame(Microsoft.Xna.Framework.Graphics.SpriteSortMode)">
+  BeginFrame(SpriteSortMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginFrame(SpriteSortMode sortmode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sortmode</code> <span class="xref">SpriteSortMode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_BeginPolyFill_" data-uid="Sexy.Graphics.BeginPolyFill*"></a>
+
+  <h3 id="Sexy_Graphics_BeginPolyFill" data-uid="Sexy.Graphics.BeginPolyFill">
+  BeginPolyFill()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginPolyFill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_BeginPrimitiveBatch_" data-uid="Sexy.Graphics.BeginPrimitiveBatch*"></a>
+
+  <h3 id="Sexy_Graphics_BeginPrimitiveBatch_Sexy_Image_" data-uid="Sexy.Graphics.BeginPrimitiveBatch(Sexy.Image)">
+  BeginPrimitiveBatch(Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginPrimitiveBatch(Image texture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>texture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_Clear_" data-uid="Sexy.Graphics.Clear*"></a>
+
+  <h3 id="Sexy_Graphics_Clear" data-uid="Sexy.Graphics.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_Clear_" data-uid="Sexy.Graphics.Clear*"></a>
+
+  <h3 id="Sexy_Graphics_Clear_Microsoft_Xna_Framework_Color_" data-uid="Sexy.Graphics.Clear(Microsoft.Xna.Framework.Color)">
+  Clear(Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear(Color color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>color</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_ClearClipRect_" data-uid="Sexy.Graphics.ClearClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_ClearClipRect" data-uid="Sexy.Graphics.ClearClipRect">
+  ClearClipRect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearClipRect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_ClearHardwareClipRect_" data-uid="Sexy.Graphics.ClearHardwareClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_ClearHardwareClipRect" data-uid="Sexy.Graphics.ClearHardwareClipRect">
+  ClearHardwareClipRect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearHardwareClipRect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_ClearTransformStack_" data-uid="Sexy.Graphics.ClearTransformStack*"></a>
+
+  <h3 id="Sexy_Graphics_ClearTransformStack" data-uid="Sexy.Graphics.ClearTransformStack">
+  ClearTransformStack()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearTransformStack()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_ClipRect_" data-uid="Sexy.Graphics.ClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_ClipRect_Sexy_TRect_" data-uid="Sexy.Graphics.ClipRect(Sexy.TRect)">
+  ClipRect(TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClipRect(TRect theRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_ClipRect_" data-uid="Sexy.Graphics.ClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_ClipRect_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.ClipRect(System.Int32,System.Int32,System.Int32,System.Int32)">
+  ClipRect(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClipRect(int theX, int theY, int theWidth, int theHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_Create_" data-uid="Sexy.Graphics.Create*"></a>
+
+  <h3 id="Sexy_Graphics_Create" data-uid="Sexy.Graphics.Create">
+  Create()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphics Create()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_Dispose_" data-uid="Sexy.Graphics.Dispose*"></a>
+
+  <h3 id="Sexy_Graphics_Dispose" data-uid="Sexy.Graphics.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImage_" data-uid="Sexy.Graphics.DrawImage*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImage_Microsoft_Xna_Framework_Graphics_Texture2D_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImage(Microsoft.Xna.Framework.Graphics.Texture2D,System.Int32,System.Int32,System.Int32,System.Int32)">
+  DrawImage(Texture2D, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(Texture2D theImage, int theX, int theY, int theStretchedWidth, int theStretchedHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <span class="xref">Texture2D</span></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theStretchedWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theStretchedHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImage_" data-uid="Sexy.Graphics.DrawImage*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImage_Sexy_Image_Sexy_TRect_Sexy_TRect_" data-uid="Sexy.Graphics.DrawImage(Sexy.Image,Sexy.TRect,Sexy.TRect)">
+  DrawImage(Image, TRect, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(Image theImage, TRect theDestRect, TRect theSrcRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theDestRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImage_" data-uid="Sexy.Graphics.DrawImage*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImage_Sexy_Image_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImage(Sexy.Image,System.Int32,System.Int32)">
+  DrawImage(Image, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(Image theImage, int theX, int theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImage_" data-uid="Sexy.Graphics.DrawImage*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImage_Sexy_Image_System_Int32_System_Int32_Sexy_TRect_" data-uid="Sexy.Graphics.DrawImage(Sexy.Image,System.Int32,System.Int32,Sexy.TRect)">
+  DrawImage(Image, int, int, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(Image theImage, int theX, int theY, TRect theSrcRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImage_" data-uid="Sexy.Graphics.DrawImage*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImage_Sexy_Image_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImage(Sexy.Image,System.Int32,System.Int32,System.Int32,System.Int32)">
+  DrawImage(Image, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(Image theImage, int theX, int theY, int theStretchedWidth, int theStretchedHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theStretchedWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theStretchedHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImage_" data-uid="Sexy.Graphics.DrawImage*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImage_Sexy_Image_System_Single_System_Single_" data-uid="Sexy.Graphics.DrawImage(Sexy.Image,System.Single,System.Single)">
+  DrawImage(Image, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImage(Image theImage, float theX, float theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageAnim_" data-uid="Sexy.Graphics.DrawImageAnim*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageAnim_Sexy_Image_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImageAnim(Sexy.Image,System.Int32,System.Int32,System.Int32)">
+  DrawImageAnim(Image, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageAnim(Image theImageAnim, int theX, int theY, int theTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImageAnim</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageBox_" data-uid="Sexy.Graphics.DrawImageBox*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageBox_Sexy_TRect_Sexy_Image_" data-uid="Sexy.Graphics.DrawImageBox(Sexy.TRect,Sexy.Image)">
+  DrawImageBox(TRect, Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageBox(TRect theDest, Image theComponentImage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDest</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theComponentImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageBox_" data-uid="Sexy.Graphics.DrawImageBox*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageBox_Sexy_TRect_Sexy_TRect_Sexy_Image_" data-uid="Sexy.Graphics.DrawImageBox(Sexy.TRect,Sexy.TRect,Sexy.Image)">
+  DrawImageBox(TRect, TRect, Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageBox(TRect theSrc, TRect theDest, Image theComponentImage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theSrc</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theDest</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theComponentImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageCel_" data-uid="Sexy.Graphics.DrawImageCel*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageCel_Sexy_Image_Sexy_TRect_System_Int32_" data-uid="Sexy.Graphics.DrawImageCel(Sexy.Image,Sexy.TRect,System.Int32)">
+  DrawImageCel(Image, TRect, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageCel(Image theImageStrip, TRect theDestRect, int theCel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImageStrip</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theDestRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theCel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageCel_" data-uid="Sexy.Graphics.DrawImageCel*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageCel_Sexy_Image_Sexy_TRect_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImageCel(Sexy.Image,Sexy.TRect,System.Int32,System.Int32)">
+  DrawImageCel(Image, TRect, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageCel(Image theImageStrip, TRect theDestRect, int theCelCol, int theCelRow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImageStrip</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theDestRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theCelCol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theCelRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageCel_" data-uid="Sexy.Graphics.DrawImageCel*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageCel_Sexy_Image_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImageCel(Sexy.Image,System.Int32,System.Int32,System.Int32)">
+  DrawImageCel(Image, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageCel(Image theImageStrip, int theX, int theY, int theCel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImageStrip</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theCel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageCel_" data-uid="Sexy.Graphics.DrawImageCel*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageCel_Sexy_Image_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImageCel(Sexy.Image,System.Int32,System.Int32,System.Int32,System.Int32)">
+  DrawImageCel(Image, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageCel(Image theImageStrip, int theX, int theY, int theCelCol, int theCelRow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImageStrip</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theCelCol</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theCelRow</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageF_" data-uid="Sexy.Graphics.DrawImageF*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageF_Sexy_Image_System_Single_System_Single_" data-uid="Sexy.Graphics.DrawImageF(Sexy.Image,System.Single,System.Single)">
+  DrawImageF(Image, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageF(Image theImage, float theX, float theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageF_" data-uid="Sexy.Graphics.DrawImageF*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageF_Sexy_Image_System_Single_System_Single_Sexy_TRect_" data-uid="Sexy.Graphics.DrawImageF(Sexy.Image,System.Single,System.Single,Sexy.TRect)">
+  DrawImageF(Image, float, float, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageF(Image theImage, float theX, float theY, TRect theSrcRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageMirror_" data-uid="Sexy.Graphics.DrawImageMirror*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageMirror_Sexy_Image_Sexy_TRect_Sexy_TRect_" data-uid="Sexy.Graphics.DrawImageMirror(Sexy.Image,Sexy.TRect,Sexy.TRect)">
+  DrawImageMirror(Image, TRect, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageMirror(Image theImage, TRect theDestRect, TRect theSrcRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theDestRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageMirror_" data-uid="Sexy.Graphics.DrawImageMirror*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageMirror_Sexy_Image_Sexy_TRect_Sexy_TRect_System_Boolean_" data-uid="Sexy.Graphics.DrawImageMirror(Sexy.Image,Sexy.TRect,Sexy.TRect,System.Boolean)">
+  DrawImageMirror(Image, TRect, TRect, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageMirror(Image theImage, TRect theDestRect, TRect theSrcRect, bool mirror)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theDestRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>mirror</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageMirror_" data-uid="Sexy.Graphics.DrawImageMirror*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageMirror_Sexy_Image_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImageMirror(Sexy.Image,System.Int32,System.Int32)">
+  DrawImageMirror(Image, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageMirror(Image theImage, int theX, int theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageMirror_" data-uid="Sexy.Graphics.DrawImageMirror*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageMirror_Sexy_Image_System_Int32_System_Int32_Sexy_TRect_" data-uid="Sexy.Graphics.DrawImageMirror(Sexy.Image,System.Int32,System.Int32,Sexy.TRect)">
+  DrawImageMirror(Image, int, int, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageMirror(Image theImage, int theX, int theY, TRect theSrcRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageMirror_" data-uid="Sexy.Graphics.DrawImageMirror*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageMirror_Sexy_Image_System_Int32_System_Int32_Sexy_TRect_System_Boolean_" data-uid="Sexy.Graphics.DrawImageMirror(Sexy.Image,System.Int32,System.Int32,Sexy.TRect,System.Boolean)">
+  DrawImageMirror(Image, int, int, TRect, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageMirror(Image theImage, int theX, int theY, TRect theSrcRect, bool mirror)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>mirror</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageMirror_" data-uid="Sexy.Graphics.DrawImageMirror*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageMirror_Sexy_Image_System_Int32_System_Int32_System_Boolean_" data-uid="Sexy.Graphics.DrawImageMirror(Sexy.Image,System.Int32,System.Int32,System.Boolean)">
+  DrawImageMirror(Image, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageMirror(Image theImage, int theX, int theY, bool mirror)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>mirror</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageMirrorVertical_" data-uid="Sexy.Graphics.DrawImageMirrorVertical*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageMirrorVertical_Sexy_Image_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImageMirrorVertical(Sexy.Image,System.Int32,System.Int32,System.Int32,System.Int32)">
+  DrawImageMirrorVertical(Image, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageMirrorVertical(Image theImage, int theX, int theY, int theStretchedWidth, int theStretchedHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theStretchedWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theStretchedHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotated_" data-uid="Sexy.Graphics.DrawImageRotated*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotated_Sexy_Image_System_Int32_System_Int32_System_Double_" data-uid="Sexy.Graphics.DrawImageRotated(Sexy.Image,System.Int32,System.Int32,System.Double)">
+  DrawImageRotated(Image, int, int, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotated(Image theImage, int theX, int theY, double theRot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theRot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotated_" data-uid="Sexy.Graphics.DrawImageRotated*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotated_Sexy_Image_System_Int32_System_Int32_System_Double_Sexy_TRect_" data-uid="Sexy.Graphics.DrawImageRotated(Sexy.Image,System.Int32,System.Int32,System.Double,Sexy.TRect)">
+  DrawImageRotated(Image, int, int, double, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotated(Image theImage, int theX, int theY, double theRot, TRect theSrcRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theRot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotated_" data-uid="Sexy.Graphics.DrawImageRotated*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotated_Sexy_Image_System_Int32_System_Int32_System_Double_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImageRotated(Sexy.Image,System.Int32,System.Int32,System.Double,System.Int32,System.Int32)">
+  DrawImageRotated(Image, int, int, double, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotated(Image theImage, int theX, int theY, double theRot, int theRotCenterX, int theRotCenterY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theRot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotated_" data-uid="Sexy.Graphics.DrawImageRotated*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotated_Sexy_Image_System_Int32_System_Int32_System_Double_System_Int32_System_Int32_Sexy_TRect_" data-uid="Sexy.Graphics.DrawImageRotated(Sexy.Image,System.Int32,System.Int32,System.Double,System.Int32,System.Int32,Sexy.TRect)">
+  DrawImageRotated(Image, int, int, double, int, int, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotated(Image theImage, int theX, int theY, double theRot, int theRotCenterX, int theRotCenterY, TRect theSrcRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theRot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotatedF_" data-uid="Sexy.Graphics.DrawImageRotatedF*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotatedF_Sexy_Image_System_Single_System_Single_System_Double_" data-uid="Sexy.Graphics.DrawImageRotatedF(Sexy.Image,System.Single,System.Single,System.Double)">
+  DrawImageRotatedF(Image, float, float, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotatedF(Image theImage, float theX, float theY, double theRot)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theRot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotatedF_" data-uid="Sexy.Graphics.DrawImageRotatedF*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotatedF_Sexy_Image_System_Single_System_Single_System_Double_Sexy_TRect_" data-uid="Sexy.Graphics.DrawImageRotatedF(Sexy.Image,System.Single,System.Single,System.Double,Sexy.TRect)">
+  DrawImageRotatedF(Image, float, float, double, TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotatedF(Image theImage, float theX, float theY, double theRot, TRect theSrcRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theRot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotatedF_" data-uid="Sexy.Graphics.DrawImageRotatedF*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotatedF_Sexy_Image_System_Single_System_Single_System_Double_System_Single_System_Single_" data-uid="Sexy.Graphics.DrawImageRotatedF(Sexy.Image,System.Single,System.Single,System.Double,System.Single,System.Single)">
+  DrawImageRotatedF(Image, float, float, double, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotatedF(Image theImage, float theX, float theY, double theRot, float theRotCenterX, float theRotCenterY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theRot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotatedF_" data-uid="Sexy.Graphics.DrawImageRotatedF*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotatedF_Sexy_Image_System_Single_System_Single_System_Double_System_Single_System_Single_System_Nullable_Sexy_TRect__" data-uid="Sexy.Graphics.DrawImageRotatedF(Sexy.Image,System.Single,System.Single,System.Double,System.Single,System.Single,System.Nullable{Sexy.TRect})">
+  DrawImageRotatedF(Image, float, float, double, float, float, TRect?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotatedF(Image theImage, float theX, float theY, double theRot, float theRotCenterX, float theRotCenterY, TRect? theSrcRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theRot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotatedScaled_" data-uid="Sexy.Graphics.DrawImageRotatedScaled*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotatedScaled_Sexy_Image_Sexy_TRect_Sexy_TRect_Microsoft_Xna_Framework_Color_System_Single_Microsoft_Xna_Framework_Vector2_Microsoft_Xna_Framework_Vector2_" data-uid="Sexy.Graphics.DrawImageRotatedScaled(Sexy.Image,Sexy.TRect,Sexy.TRect,Microsoft.Xna.Framework.Color,System.Single,Microsoft.Xna.Framework.Vector2,Microsoft.Xna.Framework.Vector2)">
+  DrawImageRotatedScaled(Image, TRect, TRect, Color, float, Vector2, Vector2)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotatedScaled(Image theImage, TRect dest, TRect src, Color col, float rotation, Vector2 scale, Vector2 origin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>dest</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>col</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>rotation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>scale</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+    <dt><code>origin</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageRotatedScaled_" data-uid="Sexy.Graphics.DrawImageRotatedScaled*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageRotatedScaled_Sexy_Image_System_Single_System_Single_System_Double_System_Single_System_Single_System_Nullable_Sexy_TRect__System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawImageRotatedScaled(Sexy.Image,System.Single,System.Single,System.Double,System.Single,System.Single,System.Nullable{Sexy.TRect},System.Int32,System.Int32)">
+  DrawImageRotatedScaled(Image, float, float, double, float, float, TRect?, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageRotatedScaled(Image theImage, float theX, float theY, double theRot, float theRotCenterX, float theRotCenterY, TRect? theSrcRect, int stretchedHeight, int stretchedWidth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theRot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theRotCenterY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a>?</dt>
+    <dd></dd>
+    <dt><code>stretchedHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>stretchedWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageTransformed_" data-uid="Sexy.Graphics.DrawImageTransformed*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageTransformed_Sexy_Image_Microsoft_Xna_Framework_Matrix__System_Boolean_Microsoft_Xna_Framework_Color_Sexy_TRect_System_Boolean_" data-uid="Sexy.Graphics.DrawImageTransformed(Sexy.Image,Microsoft.Xna.Framework.Matrix@,System.Boolean,Microsoft.Xna.Framework.Color,Sexy.TRect,System.Boolean)">
+  DrawImageTransformed(Image, ref Matrix, bool, Color, TRect, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageTransformed(Image theImage, ref Matrix theTransform, bool center, Color theColor, TRect theSrcRect, bool clip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theTransform</code> <span class="xref">Matrix</span></dt>
+    <dd></dd>
+    <dt><code>center</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>theSrcRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>clip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawImageWithBasicEffect_" data-uid="Sexy.Graphics.DrawImageWithBasicEffect*"></a>
+
+  <h3 id="Sexy_Graphics_DrawImageWithBasicEffect_Sexy_Image_Microsoft_Xna_Framework_Graphics_VertexPositionTexture___System_Int16___Microsoft_Xna_Framework_Matrix_Microsoft_Xna_Framework_Matrix_Microsoft_Xna_Framework_Matrix_" data-uid="Sexy.Graphics.DrawImageWithBasicEffect(Sexy.Image,Microsoft.Xna.Framework.Graphics.VertexPositionTexture[],System.Int16[],Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix,Microsoft.Xna.Framework.Matrix)">
+  DrawImageWithBasicEffect(Image, VertexPositionTexture[], short[], Matrix, Matrix, Matrix)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawImageWithBasicEffect(Image theImage, VertexPositionTexture[] verts, short[] indices, Matrix world, Matrix view, Matrix projection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theImage</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>verts</code> <span class="xref">VertexPositionTexture</span>[]</dt>
+    <dd></dd>
+    <dt><code>indices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>[]</dt>
+    <dd></dd>
+    <dt><code>world</code> <span class="xref">Matrix</span></dt>
+    <dd></dd>
+    <dt><code>view</code> <span class="xref">Matrix</span></dt>
+    <dd></dd>
+    <dt><code>projection</code> <span class="xref">Matrix</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawLine_" data-uid="Sexy.Graphics.DrawLine*"></a>
+
+  <h3 id="Sexy_Graphics_DrawLine_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawLine(System.Int32,System.Int32,System.Int32,System.Int32)">
+  DrawLine(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawLine(int theStartX, int theStartY, int theEndX, int theEndY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theStartX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theStartY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theEndX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theEndY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawRect_" data-uid="Sexy.Graphics.DrawRect*"></a>
+
+  <h3 id="Sexy_Graphics_DrawRect_Sexy_TRect_" data-uid="Sexy.Graphics.DrawRect(Sexy.TRect)">
+  DrawRect(TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRect(TRect theRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawRect_" data-uid="Sexy.Graphics.DrawRect*"></a>
+
+  <h3 id="Sexy_Graphics_DrawRect_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawRect(System.Int32,System.Int32,System.Int32,System.Int32)">
+  DrawRect(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRect(int theX, int theY, int theWidth, int theHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawString_" data-uid="Sexy.Graphics.DrawString*"></a>
+
+  <h3 id="Sexy_Graphics_DrawString_System_String_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawString(System.String,System.Int32,System.Int32)">
+  DrawString(string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawString(string theString, int theX, int theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawString_" data-uid="Sexy.Graphics.DrawString*"></a>
+
+  <h3 id="Sexy_Graphics_DrawString_System_Text_StringBuilder_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawString(System.Text.StringBuilder,System.Int32,System.Int32)">
+  DrawString(StringBuilder, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawString(StringBuilder theString, int theX, int theY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawStringColor_" data-uid="Sexy.Graphics.DrawStringColor*"></a>
+
+  <h3 id="Sexy_Graphics_DrawStringColor_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawStringColor(System.String,System.Int32,System.Int32,System.Int32)">
+  DrawStringColor(string, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawStringColor(string theLine, int theX, int theY, int theOldColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theOldColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawStringLayer_" data-uid="Sexy.Graphics.DrawStringLayer*"></a>
+
+  <h3 id="Sexy_Graphics_DrawStringLayer_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawStringLayer(System.String,System.Int32,System.Int32,System.Int32)">
+  DrawStringLayer(string, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawStringLayer(string theString, int theX, int theY, int theLayer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawStringLayer_" data-uid="Sexy.Graphics.DrawStringLayer*"></a>
+
+  <h3 id="Sexy_Graphics_DrawStringLayer_System_String_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.DrawStringLayer(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+  DrawStringLayer(string, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawStringLayer(string theString, int theX, int theY, int theLayer, int maxWidth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLayer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>maxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTriangle_" data-uid="Sexy.Graphics.DrawTriangle*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTriangle_Sexy_TriVertex_Microsoft_Xna_Framework_Color_Sexy_TriVertex_Microsoft_Xna_Framework_Color_Sexy_TriVertex_Microsoft_Xna_Framework_Color_Sexy_Graphics_DrawMode_" data-uid="Sexy.Graphics.DrawTriangle(Sexy.TriVertex,Microsoft.Xna.Framework.Color,Sexy.TriVertex,Microsoft.Xna.Framework.Color,Sexy.TriVertex,Microsoft.Xna.Framework.Color,Sexy.Graphics.DrawMode)">
+  DrawTriangle(TriVertex, Color, TriVertex, Color, TriVertex, Color, DrawMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTriangle(TriVertex p1, Color c1, TriVertex p2, Color c2, TriVertex p3, Color c3, Graphics.DrawMode theDrawMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p1</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>c1</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>p2</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>c2</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>p3</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>c3</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTriangle_" data-uid="Sexy.Graphics.DrawTriangle*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTriangle_Sexy_TriVertex_Sexy_TriVertex_Sexy_TriVertex_Microsoft_Xna_Framework_Color_Sexy_Graphics_DrawMode_" data-uid="Sexy.Graphics.DrawTriangle(Sexy.TriVertex,Sexy.TriVertex,Sexy.TriVertex,Microsoft.Xna.Framework.Color,Sexy.Graphics.DrawMode)">
+  DrawTriangle(TriVertex, TriVertex, TriVertex, Color, DrawMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTriangle(TriVertex p1, TriVertex p2, TriVertex p3, Color theColor, Graphics.DrawMode theDrawMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p1</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>p2</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>p3</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTriangleTex_" data-uid="Sexy.Graphics.DrawTriangleTex*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTriangleTex_Sexy_Image_Sexy_TriVertex_Sexy_TriVertex_Sexy_TriVertex_" data-uid="Sexy.Graphics.DrawTriangleTex(Sexy.Image,Sexy.TriVertex,Sexy.TriVertex,Sexy.TriVertex)">
+  DrawTriangleTex(Image, TriVertex, TriVertex, TriVertex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTriangleTex(Image theTexture, TriVertex v1, TriVertex v2, TriVertex v3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>v1</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>v2</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>v3</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTriangleTex_" data-uid="Sexy.Graphics.DrawTriangleTex*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTriangleTex_Sexy_TriVertex_Sexy_TriVertex_Sexy_TriVertex_Microsoft_Xna_Framework_Color_Sexy_Graphics_DrawMode_Sexy_Image_" data-uid="Sexy.Graphics.DrawTriangleTex(Sexy.TriVertex,Sexy.TriVertex,Sexy.TriVertex,Microsoft.Xna.Framework.Color,Sexy.Graphics.DrawMode,Sexy.Image)">
+  DrawTriangleTex(TriVertex, TriVertex, TriVertex, Color, DrawMode, Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTriangleTex(TriVertex p1, TriVertex p2, TriVertex p3, Color theColor, Graphics.DrawMode theDrawMode, Image theTexture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p1</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>p2</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>p3</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTriangleTex_" data-uid="Sexy.Graphics.DrawTriangleTex*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTriangleTex_Sexy_TriVertex_Sexy_TriVertex_Sexy_TriVertex_Microsoft_Xna_Framework_Color_Sexy_Graphics_DrawMode_Sexy_Image_System_Boolean_" data-uid="Sexy.Graphics.DrawTriangleTex(Sexy.TriVertex,Sexy.TriVertex,Sexy.TriVertex,Microsoft.Xna.Framework.Color,Sexy.Graphics.DrawMode,Sexy.Image,System.Boolean)">
+  DrawTriangleTex(TriVertex, TriVertex, TriVertex, Color, DrawMode, Image, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTriangleTex(TriVertex p1, TriVertex p2, TriVertex p3, Color theColor, Graphics.DrawMode theDrawMode, Image theTexture, bool blend)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>p1</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>p2</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>p3</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>blend</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTrianglesTex_" data-uid="Sexy.Graphics.DrawTrianglesTex*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTrianglesTex_Microsoft_Xna_Framework_Graphics_SamplerState_Sexy_Image_Sexy_TriVertex_0__0___System_Int32_System_Nullable_Microsoft_Xna_Framework_Color__Sexy_Graphics_DrawMode_" data-uid="Sexy.Graphics.DrawTrianglesTex(Microsoft.Xna.Framework.Graphics.SamplerState,Sexy.Image,Sexy.TriVertex[0:,0:],System.Int32,System.Nullable{Microsoft.Xna.Framework.Color},Sexy.Graphics.DrawMode)">
+  DrawTrianglesTex(SamplerState, Image, TriVertex[,], int, Color?, DrawMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTrianglesTex(SamplerState st, Image theTexture, TriVertex[,] theVertices, int theNumTriangles, Color? theColor, Graphics.DrawMode theDrawMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>st</code> <span class="xref">SamplerState</span></dt>
+    <dd></dd>
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theVertices</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a>[,]</dt>
+    <dd></dd>
+    <dt><code>theNumTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span>?</dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTrianglesTex_" data-uid="Sexy.Graphics.DrawTrianglesTex*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTrianglesTex_Microsoft_Xna_Framework_Graphics_SamplerState_Sexy_TriVertex_0__0___System_Int32_System_Nullable_Microsoft_Xna_Framework_Color__Sexy_Graphics_DrawMode_Sexy_Image_System_Single_System_Single_System_Boolean_" data-uid="Sexy.Graphics.DrawTrianglesTex(Microsoft.Xna.Framework.Graphics.SamplerState,Sexy.TriVertex[0:,0:],System.Int32,System.Nullable{Microsoft.Xna.Framework.Color},Sexy.Graphics.DrawMode,Sexy.Image,System.Single,System.Single,System.Boolean)">
+  DrawTrianglesTex(SamplerState, TriVertex[,], int, Color?, DrawMode, Image, float, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTrianglesTex(SamplerState st, TriVertex[,] theVertices, int theNumTriangles, Color? theColor, Graphics.DrawMode theDrawMode, Image theTexture, float tx, float ty, bool blend)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>st</code> <span class="xref">SamplerState</span></dt>
+    <dd></dd>
+    <dt><code>theVertices</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a>[,]</dt>
+    <dd></dd>
+    <dt><code>theNumTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span>?</dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>tx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>ty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>blend</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTrianglesTex_" data-uid="Sexy.Graphics.DrawTrianglesTex*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTrianglesTex_Sexy_Image_Sexy_TriVertex_0__0___System_Int32_" data-uid="Sexy.Graphics.DrawTrianglesTex(Sexy.Image,Sexy.TriVertex[0:,0:],System.Int32)">
+  DrawTrianglesTex(Image, TriVertex[,], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTrianglesTex(Image theTexture, TriVertex[,] theVertices, int theNumTriangles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theVertices</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a>[,]</dt>
+    <dd></dd>
+    <dt><code>theNumTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTrianglesTex_" data-uid="Sexy.Graphics.DrawTrianglesTex*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTrianglesTex_Sexy_Image_Sexy_TriVertex_0__0___System_Int32_System_Nullable_Microsoft_Xna_Framework_Color__Sexy_Graphics_DrawMode_" data-uid="Sexy.Graphics.DrawTrianglesTex(Sexy.Image,Sexy.TriVertex[0:,0:],System.Int32,System.Nullable{Microsoft.Xna.Framework.Color},Sexy.Graphics.DrawMode)">
+  DrawTrianglesTex(Image, TriVertex[,], int, Color?, DrawMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTrianglesTex(Image theTexture, TriVertex[,] theVertices, int theNumTriangles, Color? theColor, Graphics.DrawMode theDrawMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>theVertices</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a>[,]</dt>
+    <dd></dd>
+    <dt><code>theNumTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span>?</dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTrianglesTex_" data-uid="Sexy.Graphics.DrawTrianglesTex*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTrianglesTex_Sexy_TriVertex_0__0___System_Int32_Microsoft_Xna_Framework_Color_Sexy_Graphics_DrawMode_Sexy_Image_" data-uid="Sexy.Graphics.DrawTrianglesTex(Sexy.TriVertex[0:,0:],System.Int32,Microsoft.Xna.Framework.Color,Sexy.Graphics.DrawMode,Sexy.Image)">
+  DrawTrianglesTex(TriVertex[,], int, Color, DrawMode, Image)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTrianglesTex(TriVertex[,] theVertices, int theNumTriangles, Color theColor, Graphics.DrawMode theDrawMode, Image theTexture)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theVertices</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a>[,]</dt>
+    <dd></dd>
+    <dt><code>theNumTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTrianglesTex_" data-uid="Sexy.Graphics.DrawTrianglesTex*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTrianglesTex_Sexy_TriVertex_0__0___System_Int32_System_Nullable_Microsoft_Xna_Framework_Color__Sexy_Graphics_DrawMode_Sexy_Image_System_Single_System_Single_System_Boolean_" data-uid="Sexy.Graphics.DrawTrianglesTex(Sexy.TriVertex[0:,0:],System.Int32,System.Nullable{Microsoft.Xna.Framework.Color},Sexy.Graphics.DrawMode,Sexy.Image,System.Single,System.Single,System.Boolean)">
+  DrawTrianglesTex(TriVertex[,], int, Color?, DrawMode, Image, float, float, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTrianglesTex(TriVertex[,] theVertices, int theNumTriangles, Color? theColor, Graphics.DrawMode theDrawMode, Image theTexture, float tx, float ty, bool blend)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theVertices</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a>[,]</dt>
+    <dd></dd>
+    <dt><code>theNumTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span>?</dt>
+    <dd></dd>
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+    <dt><code>theTexture</code> <a class="xref" href="Sexy.Image.html">Image</a></dt>
+    <dd></dd>
+    <dt><code>tx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>ty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>blend</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_DrawTrianglesTexBatch_" data-uid="Sexy.Graphics.DrawTrianglesTexBatch*"></a>
+
+  <h3 id="Sexy_Graphics_DrawTrianglesTexBatch_Sexy_TriVertex_0__0___System_Int32_System_Nullable_Microsoft_Xna_Framework_Color__" data-uid="Sexy.Graphics.DrawTrianglesTexBatch(Sexy.TriVertex[0:,0:],System.Int32,System.Nullable{Microsoft.Xna.Framework.Color})">
+  DrawTrianglesTexBatch(TriVertex[,], int, Color?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTrianglesTexBatch(TriVertex[,] theVertices, int theNumTriangles, Color? theColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theVertices</code> <a class="xref" href="Sexy.TriVertex.html">TriVertex</a>[,]</dt>
+    <dd></dd>
+    <dt><code>theNumTriangles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theColor</code> <span class="xref">Color</span>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_EndDrawImageTransformed_" data-uid="Sexy.Graphics.EndDrawImageTransformed*"></a>
+
+  <h3 id="Sexy_Graphics_EndDrawImageTransformed" data-uid="Sexy.Graphics.EndDrawImageTransformed">
+  EndDrawImageTransformed()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndDrawImageTransformed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_EndDrawImageTransformed_" data-uid="Sexy.Graphics.EndDrawImageTransformed*"></a>
+
+  <h3 id="Sexy_Graphics_EndDrawImageTransformed_System_Boolean_" data-uid="Sexy.Graphics.EndDrawImageTransformed(System.Boolean)">
+  EndDrawImageTransformed(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndDrawImageTransformed(bool startSpritebatch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startSpritebatch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_EndDrawTrianglesTexBatch_" data-uid="Sexy.Graphics.EndDrawTrianglesTexBatch*"></a>
+
+  <h3 id="Sexy_Graphics_EndDrawTrianglesTexBatch" data-uid="Sexy.Graphics.EndDrawTrianglesTexBatch">
+  EndDrawTrianglesTexBatch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndDrawTrianglesTexBatch()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_EndFrame_" data-uid="Sexy.Graphics.EndFrame*"></a>
+
+  <h3 id="Sexy_Graphics_EndFrame" data-uid="Sexy.Graphics.EndFrame">
+  EndFrame()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndFrame()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_EndHardwareClip_" data-uid="Sexy.Graphics.EndHardwareClip*"></a>
+
+  <h3 id="Sexy_Graphics_EndHardwareClip" data-uid="Sexy.Graphics.EndHardwareClip">
+  EndHardwareClip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndHardwareClip()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_EndPolyFill_" data-uid="Sexy.Graphics.EndPolyFill*"></a>
+
+  <h3 id="Sexy_Graphics_EndPolyFill" data-uid="Sexy.Graphics.EndPolyFill">
+  EndPolyFill()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndPolyFill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_FillRect_" data-uid="Sexy.Graphics.FillRect*"></a>
+
+  <h3 id="Sexy_Graphics_FillRect_Sexy_TRect_" data-uid="Sexy.Graphics.FillRect(Sexy.TRect)">
+  FillRect(TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillRect(TRect theRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_FillRect_" data-uid="Sexy.Graphics.FillRect*"></a>
+
+  <h3 id="Sexy_Graphics_FillRect_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.FillRect(System.Int32,System.Int32,System.Int32,System.Int32)">
+  FillRect(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillRect(int theX, int theY, int theWidth, int theHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetClipRect_" data-uid="Sexy.Graphics.GetClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_GetClipRect" data-uid="Sexy.Graphics.GetClipRect">
+  GetClipRect()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRect GetClipRect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetColor_" data-uid="Sexy.Graphics.GetColor*"></a>
+
+  <h3 id="Sexy_Graphics_GetColor" data-uid="Sexy.Graphics.GetColor">
+  GetColor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color GetColor()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetColorizeImages_" data-uid="Sexy.Graphics.GetColorizeImages*"></a>
+
+  <h3 id="Sexy_Graphics_GetColorizeImages" data-uid="Sexy.Graphics.GetColorizeImages">
+  GetColorizeImages()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetColorizeImages()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetDrawMode_" data-uid="Sexy.Graphics.GetDrawMode*"></a>
+
+  <h3 id="Sexy_Graphics_GetDrawMode" data-uid="Sexy.Graphics.GetDrawMode">
+  GetDrawMode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphics.DrawMode GetDrawMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetFastStretch_" data-uid="Sexy.Graphics.GetFastStretch*"></a>
+
+  <h3 id="Sexy_Graphics_GetFastStretch" data-uid="Sexy.Graphics.GetFastStretch">
+  GetFastStretch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetFastStretch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetFont_" data-uid="Sexy.Graphics.GetFont*"></a>
+
+  <h3 id="Sexy_Graphics_GetFont" data-uid="Sexy.Graphics.GetFont">
+  GetFont()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Font GetFont()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Font.html">Font</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetLinearBlend_" data-uid="Sexy.Graphics.GetLinearBlend*"></a>
+
+  <h3 id="Sexy_Graphics_GetLinearBlend" data-uid="Sexy.Graphics.GetLinearBlend">
+  GetLinearBlend()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetLinearBlend()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetNew_" data-uid="Sexy.Graphics.GetNew*"></a>
+
+  <h3 id="Sexy_Graphics_GetNew" data-uid="Sexy.Graphics.GetNew">
+  GetNew()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Graphics GetNew()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetNew_" data-uid="Sexy.Graphics.GetNew*"></a>
+
+  <h3 id="Sexy_Graphics_GetNew_Microsoft_Xna_Framework_Game_" data-uid="Sexy.Graphics.GetNew(Microsoft.Xna.Framework.Game)">
+  GetNew(Game)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Graphics GetNew(Game theGame)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGame</code> <span class="xref">Game</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetNew_" data-uid="Sexy.Graphics.GetNew*"></a>
+
+  <h3 id="Sexy_Graphics_GetNew_Sexy_Graphics_" data-uid="Sexy.Graphics.GetNew(Sexy.Graphics)">
+  GetNew(Graphics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Graphics GetNew(Graphics theGraphics)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theGraphics</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetNew_" data-uid="Sexy.Graphics.GetNew*"></a>
+
+  <h3 id="Sexy_Graphics_GetNew_Sexy_MemoryImage_" data-uid="Sexy.Graphics.GetNew(Sexy.MemoryImage)">
+  GetNew(MemoryImage)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Graphics GetNew(MemoryImage theDestImage)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDestImage</code> <a class="xref" href="Sexy.MemoryImage.html">MemoryImage</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Sexy.Graphics.html">Graphics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_GetWordWrappedHeight_" data-uid="Sexy.Graphics.GetWordWrappedHeight*"></a>
+
+  <h3 id="Sexy_Graphics_GetWordWrappedHeight_System_Int32_System_String_System_Int32_System_Int32__System_Int32_" data-uid="Sexy.Graphics.GetWordWrappedHeight(System.Int32,System.String,System.Int32,System.Int32@,System.Int32)">
+  GetWordWrappedHeight(int, string, int, ref int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetWordWrappedHeight(int theWidth, string theLine, int theLineSpacing, ref int theMaxWidth, int theMaxChars)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLineSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxChars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_HardwareClip_" data-uid="Sexy.Graphics.HardwareClip*"></a>
+
+  <h3 id="Sexy_Graphics_HardwareClip" data-uid="Sexy.Graphics.HardwareClip">
+  HardwareClip()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HardwareClip()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_HardwareClip_" data-uid="Sexy.Graphics.HardwareClip*"></a>
+
+  <h3 id="Sexy_Graphics_HardwareClip_Microsoft_Xna_Framework_Graphics_SpriteSortMode_" data-uid="Sexy.Graphics.HardwareClip(Microsoft.Xna.Framework.Graphics.SpriteSortMode)">
+  HardwareClip(SpriteSortMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HardwareClip(SpriteSortMode spriteSortMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spriteSortMode</code> <span class="xref">SpriteSortMode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_HardwareClipRect_" data-uid="Sexy.Graphics.HardwareClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_HardwareClipRect_Sexy_TRect_" data-uid="Sexy.Graphics.HardwareClipRect(Sexy.TRect)">
+  HardwareClipRect(TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HardwareClipRect(TRect theClip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theClip</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_HardwareClipRect_" data-uid="Sexy.Graphics.HardwareClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_HardwareClipRect_Sexy_TRect_Microsoft_Xna_Framework_Graphics_SpriteSortMode_" data-uid="Sexy.Graphics.HardwareClipRect(Sexy.TRect,Microsoft.Xna.Framework.Graphics.SpriteSortMode)">
+  HardwareClipRect(TRect, SpriteSortMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HardwareClipRect(TRect theClip, SpriteSortMode sortMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theClip</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>sortMode</code> <span class="xref">SpriteSortMode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_Init_" data-uid="Sexy.Graphics.Init*"></a>
+
+  <h3 id="Sexy_Graphics_Init" data-uid="Sexy.Graphics.Init">
+  Init()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_Is3D_" data-uid="Sexy.Graphics.Is3D*"></a>
+
+  <h3 id="Sexy_Graphics_Is3D" data-uid="Sexy.Graphics.Is3D">
+  Is3D()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Is3D()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_IsHardWareClipping_" data-uid="Sexy.Graphics.IsHardWareClipping*"></a>
+
+  <h3 id="Sexy_Graphics_IsHardWareClipping" data-uid="Sexy.Graphics.IsHardWareClipping">
+  IsHardWareClipping()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHardWareClipping()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_MatchesHardWareClipRect_" data-uid="Sexy.Graphics.MatchesHardWareClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_MatchesHardWareClipRect_Sexy_TRect_" data-uid="Sexy.Graphics.MatchesHardWareClipRect(Sexy.TRect)">
+  MatchesHardWareClipRect(TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MatchesHardWareClipRect(TRect clip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>clip</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_OrientationChanged_" data-uid="Sexy.Graphics.OrientationChanged*"></a>
+
+  <h3 id="Sexy_Graphics_OrientationChanged" data-uid="Sexy.Graphics.OrientationChanged">
+  OrientationChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OrientationChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PolyFill_" data-uid="Sexy.Graphics.PolyFill*"></a>
+
+  <h3 id="Sexy_Graphics_PolyFill_Sexy_TPoint___System_Int32_" data-uid="Sexy.Graphics.PolyFill(Sexy.TPoint[],System.Int32)">
+  PolyFill(TPoint[], int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PolyFill(TPoint[] theVertexList, int theNumVertices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theVertexList</code> <a class="xref" href="Sexy.TPoint.html">TPoint</a>[]</dt>
+    <dd></dd>
+    <dt><code>theNumVertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PopTransform_" data-uid="Sexy.Graphics.PopTransform*"></a>
+
+  <h3 id="Sexy_Graphics_PopTransform" data-uid="Sexy.Graphics.PopTransform">
+  PopTransform()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PopTransform()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PreAllocateMemory_" data-uid="Sexy.Graphics.PreAllocateMemory*"></a>
+
+  <h3 id="Sexy_Graphics_PreAllocateMemory" data-uid="Sexy.Graphics.PreAllocateMemory">
+  PreAllocateMemory()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PreAllocateMemory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PremultiplyColour_" data-uid="Sexy.Graphics.PremultiplyColour*"></a>
+
+  <h3 id="Sexy_Graphics_PremultiplyColour_Microsoft_Xna_Framework_Color__" data-uid="Sexy.Graphics.PremultiplyColour(Microsoft.Xna.Framework.Color@)">
+  PremultiplyColour(ref Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PremultiplyColour(ref Color c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PremultiplyColour_" data-uid="Sexy.Graphics.PremultiplyColour*"></a>
+
+  <h3 id="Sexy_Graphics_PremultiplyColour_Sexy_SexyColor__" data-uid="Sexy.Graphics.PremultiplyColour(Sexy.SexyColor@)">
+  PremultiplyColour(ref SexyColor)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PremultiplyColour(ref SexyColor c)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>c</code> <a class="xref" href="Sexy.SexyColor.html">SexyColor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PrepareForReuse_" data-uid="Sexy.Graphics.PrepareForReuse*"></a>
+
+  <h3 id="Sexy_Graphics_PrepareForReuse" data-uid="Sexy.Graphics.PrepareForReuse">
+  PrepareForReuse()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrepareForReuse()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PushTransform_" data-uid="Sexy.Graphics.PushTransform*"></a>
+
+  <h3 id="Sexy_Graphics_PushTransform_Sexy_SexyTransform2D__" data-uid="Sexy.Graphics.PushTransform(Sexy.SexyTransform2D@)">
+  PushTransform(ref SexyTransform2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PushTransform(ref SexyTransform2D theTransform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTransform</code> <a class="xref" href="Sexy.SexyTransform2D.html">SexyTransform2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_PushTransform_" data-uid="Sexy.Graphics.PushTransform*"></a>
+
+  <h3 id="Sexy_Graphics_PushTransform_Sexy_SexyTransform2D__System_Boolean_" data-uid="Sexy.Graphics.PushTransform(Sexy.SexyTransform2D@,System.Boolean)">
+  PushTransform(ref SexyTransform2D, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PushTransform(ref SexyTransform2D theTransform, bool concatenate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTransform</code> <a class="xref" href="Sexy.SexyTransform2D.html">SexyTransform2D</a></dt>
+    <dd></dd>
+    <dt><code>concatenate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_Reset_" data-uid="Sexy.Graphics.Reset*"></a>
+
+  <h3 id="Sexy_Graphics_Reset" data-uid="Sexy.Graphics.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_Resized_" data-uid="Sexy.Graphics.Resized*"></a>
+
+  <h3 id="Sexy_Graphics_Resized" data-uid="Sexy.Graphics.Resized">
+  Resized()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Resized()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetClipRect_" data-uid="Sexy.Graphics.SetClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_SetClipRect_Sexy_TRect_" data-uid="Sexy.Graphics.SetClipRect(Sexy.TRect)">
+  SetClipRect(TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClipRect(TRect theRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetClipRect_" data-uid="Sexy.Graphics.SetClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_SetClipRect_Sexy_TRect__" data-uid="Sexy.Graphics.SetClipRect(Sexy.TRect@)">
+  SetClipRect(ref TRect)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClipRect(ref TRect theRect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetClipRect_" data-uid="Sexy.Graphics.SetClipRect*"></a>
+
+  <h3 id="Sexy_Graphics_SetClipRect_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.SetClipRect(System.Int32,System.Int32,System.Int32,System.Int32)">
+  SetClipRect(int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClipRect(int theX, int theY, int theWidth, int theHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetColor_" data-uid="Sexy.Graphics.SetColor*"></a>
+
+  <h3 id="Sexy_Graphics_SetColor_Microsoft_Xna_Framework_Color_" data-uid="Sexy.Graphics.SetColor(Microsoft.Xna.Framework.Color)">
+  SetColor(Color)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(Color theColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetColor_" data-uid="Sexy.Graphics.SetColor*"></a>
+
+  <h3 id="Sexy_Graphics_SetColor_Microsoft_Xna_Framework_Color_System_Boolean_" data-uid="Sexy.Graphics.SetColor(Microsoft.Xna.Framework.Color,System.Boolean)">
+  SetColor(Color, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(Color theColor, bool premultiply)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theColor</code> <span class="xref">Color</span></dt>
+    <dd></dd>
+    <dt><code>premultiply</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetColorizeImages_" data-uid="Sexy.Graphics.SetColorizeImages*"></a>
+
+  <h3 id="Sexy_Graphics_SetColorizeImages_System_Boolean_" data-uid="Sexy.Graphics.SetColorizeImages(System.Boolean)">
+  SetColorizeImages(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColorizeImages(bool colorizeImages)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>colorizeImages</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetDrawMode_" data-uid="Sexy.Graphics.SetDrawMode*"></a>
+
+  <h3 id="Sexy_Graphics_SetDrawMode_Sexy_Graphics_DrawMode_" data-uid="Sexy.Graphics.SetDrawMode(Sexy.Graphics.DrawMode)">
+  SetDrawMode(DrawMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDrawMode(Graphics.DrawMode theDrawMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDrawMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetDrawMode_" data-uid="Sexy.Graphics.SetDrawMode*"></a>
+
+  <h3 id="Sexy_Graphics_SetDrawMode_System_Int32_" data-uid="Sexy.Graphics.SetDrawMode(System.Int32)">
+  SetDrawMode(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDrawMode(int theDrawMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDrawMode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetFastStretch_" data-uid="Sexy.Graphics.SetFastStretch*"></a>
+
+  <h3 id="Sexy_Graphics_SetFastStretch_System_Boolean_" data-uid="Sexy.Graphics.SetFastStretch(System.Boolean)">
+  SetFastStretch(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFastStretch(bool fastStretch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fastStretch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetFont_" data-uid="Sexy.Graphics.SetFont*"></a>
+
+  <h3 id="Sexy_Graphics_SetFont_Sexy_Font_" data-uid="Sexy.Graphics.SetFont(Sexy.Font)">
+  SetFont(Font)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFont(Font theFont)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theFont</code> <a class="xref" href="Sexy.Font.html">Font</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetLinearBlend_" data-uid="Sexy.Graphics.SetLinearBlend*"></a>
+
+  <h3 id="Sexy_Graphics_SetLinearBlend_System_Boolean_" data-uid="Sexy.Graphics.SetLinearBlend(System.Boolean)">
+  SetLinearBlend(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLinearBlend(bool linear)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>linear</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetRenderTarget_" data-uid="Sexy.Graphics.SetRenderTarget*"></a>
+
+  <h3 id="Sexy_Graphics_SetRenderTarget_Microsoft_Xna_Framework_Graphics_RenderTarget2D_" data-uid="Sexy.Graphics.SetRenderTarget(Microsoft.Xna.Framework.Graphics.RenderTarget2D)">
+  SetRenderTarget(RenderTarget2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTarget(RenderTarget2D renderTarget)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>renderTarget</code> <span class="xref">RenderTarget2D</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetScale_" data-uid="Sexy.Graphics.SetScale*"></a>
+
+  <h3 id="Sexy_Graphics_SetScale_System_Single_" data-uid="Sexy.Graphics.SetScale(System.Single)">
+  SetScale(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScale(float scale)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scale</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetScale_" data-uid="Sexy.Graphics.SetScale*"></a>
+
+  <h3 id="Sexy_Graphics_SetScale_System_Single_System_Single_" data-uid="Sexy.Graphics.SetScale(System.Single,System.Single)">
+  SetScale(float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScale(float scaleX, float scaleY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scaleX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>scaleY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetScale_" data-uid="Sexy.Graphics.SetScale*"></a>
+
+  <h3 id="Sexy_Graphics_SetScale_System_Single_System_Single_System_Single_System_Single_" data-uid="Sexy.Graphics.SetScale(System.Single,System.Single,System.Single,System.Single)">
+  SetScale(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScale(float theScaleX, float theScaleY, float theOrigX, float theOrigY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theScaleX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theScaleY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theOrigX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>theOrigY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetScaleX_" data-uid="Sexy.Graphics.SetScaleX*"></a>
+
+  <h3 id="Sexy_Graphics_SetScaleX_System_Single_" data-uid="Sexy.Graphics.SetScaleX(System.Single)">
+  SetScaleX(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScaleX(float scaleX)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scaleX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetScaleY_" data-uid="Sexy.Graphics.SetScaleY*"></a>
+
+  <h3 id="Sexy_Graphics_SetScaleY_System_Single_" data-uid="Sexy.Graphics.SetScaleY(System.Single)">
+  SetScaleY(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScaleY(float scaleY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>scaleY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_SetupDrawMode_" data-uid="Sexy.Graphics.SetupDrawMode*"></a>
+
+  <h3 id="Sexy_Graphics_SetupDrawMode_Sexy_Graphics_DrawMode_" data-uid="Sexy.Graphics.SetupDrawMode(Sexy.Graphics.DrawMode)">
+  SetupDrawMode(DrawMode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetupDrawMode(Graphics.DrawMode theDrawingMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theDrawingMode</code> <a class="xref" href="Sexy.Graphics.html">Graphics</a>.<a class="xref" href="Sexy.Graphics.DrawMode.html">DrawMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_StringWidth_" data-uid="Sexy.Graphics.StringWidth*"></a>
+
+  <h3 id="Sexy_Graphics_StringWidth_System_String_" data-uid="Sexy.Graphics.StringWidth(System.String)">
+  StringWidth(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StringWidth(string theString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteString_" data-uid="Sexy.Graphics.WriteString*"></a>
+
+  <h3 id="Sexy_Graphics_WriteString_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_System_Int32_" data-uid="Sexy.Graphics.WriteString(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Int32,System.Int32)">
+  WriteString(string, int, int, int, int, bool, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteString(string theString, int theX, int theY, int theWidth, int theJustification, bool drawString, int theOffset, int theLength)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>drawString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>theOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteString_" data-uid="Sexy.Graphics.WriteString*"></a>
+
+  <h3 id="Sexy_Graphics_WriteString_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.WriteString(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Int32,System.Int32,System.Int32)">
+  WriteString(string, int, int, int, int, bool, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteString(string theString, int theX, int theY, int theWidth, int theJustification, bool drawString, int theOffset, int theLength, int theOldColor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>drawString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>theOffset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theOldColor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteWordWrapped_" data-uid="Sexy.Graphics.WriteWordWrapped*"></a>
+
+  <h3 id="Sexy_Graphics_WriteWordWrapped_Sexy_TRect_System_String_System_Int32_System_Int32_" data-uid="Sexy.Graphics.WriteWordWrapped(Sexy.TRect,System.String,System.Int32,System.Int32)">
+  WriteWordWrapped(TRect, string, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteWordWrapped(TRect theRect, string theLine, int theLineSpacing, int theJustification)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLineSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteWordWrapped_" data-uid="Sexy.Graphics.WriteWordWrapped*"></a>
+
+  <h3 id="Sexy_Graphics_WriteWordWrapped_Sexy_TRect_System_String_System_Int32_System_Int32_System_Boolean_" data-uid="Sexy.Graphics.WriteWordWrapped(Sexy.TRect,System.String,System.Int32,System.Int32,System.Boolean)">
+  WriteWordWrapped(TRect, string, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteWordWrapped(TRect theRect, string theLine, int theLineSpacing, int theJustification, bool centerVertically)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLineSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>centerVertically</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteWordWrapped_" data-uid="Sexy.Graphics.WriteWordWrapped*"></a>
+
+  <h3 id="Sexy_Graphics_WriteWordWrapped_Sexy_TRect_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.WriteWordWrapped(Sexy.TRect,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  WriteWordWrapped(TRect, string, int, int, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteWordWrapped(TRect theRect, string theLine, int theLineSpacing, int theJustification, int theMaxWidth, int theMaxChars, int theLastWidth, int theLineCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLineSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxChars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLastWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLineCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteWordWrapped_" data-uid="Sexy.Graphics.WriteWordWrapped*"></a>
+
+  <h3 id="Sexy_Graphics_WriteWordWrapped_Sexy_TRect_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Sexy.Graphics.WriteWordWrapped(Sexy.TRect,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+  WriteWordWrapped(TRect, string, int, int, int, int, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteWordWrapped(TRect theRect, string theLine, int theLineSpacing, int theJustification, int theMaxWidth, int theMaxChars, int theLastWidth, int theLineCount, bool centerVertically)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLineSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxChars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLastWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLineCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>centerVertically</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteWordWrapped_" data-uid="Sexy.Graphics.WriteWordWrapped*"></a>
+
+  <h3 id="Sexy_Graphics_WriteWordWrapped_Sexy_TRect_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_" data-uid="Sexy.Graphics.WriteWordWrapped(Sexy.TRect,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">
+  WriteWordWrapped(TRect, string, int, int, int, int, int, int, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteWordWrapped(TRect theRect, string theLine, int theLineSpacing, int theJustification, int theMaxWidth, int theMaxChars, int theLastWidth, int theLineCount, bool centerVertically, bool doDraw)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLineSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxChars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLastWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLineCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>centerVertically</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>doDraw</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteWordWrappedLayer_" data-uid="Sexy.Graphics.WriteWordWrappedLayer*"></a>
+
+  <h3 id="Sexy_Graphics_WriteWordWrappedLayer_Sexy_TRect_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Sexy.Graphics.WriteWordWrappedLayer(Sexy.TRect,System.String,System.Int32,System.Int32,System.Int32)">
+  WriteWordWrappedLayer(TRect, string, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteWordWrappedLayer(TRect theRect, string theLine, int theLineSpacing, int theJustification, int layer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLineSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteWordWrappedLayer_" data-uid="Sexy.Graphics.WriteWordWrappedLayer*"></a>
+
+  <h3 id="Sexy_Graphics_WriteWordWrappedLayer_Sexy_TRect_System_String_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Sexy.Graphics.WriteWordWrappedLayer(Sexy.TRect,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+  WriteWordWrappedLayer(TRect, string, int, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteWordWrappedLayer(TRect theRect, string theLine, int theLineSpacing, int theJustification, int layer, bool centerVertically)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLineSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>centerVertically</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_WriteWordWrappedLayer_" data-uid="Sexy.Graphics.WriteWordWrappedLayer*"></a>
+
+  <h3 id="Sexy_Graphics_WriteWordWrappedLayer_Sexy_TRect_System_String_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_" data-uid="Sexy.Graphics.WriteWordWrappedLayer(Sexy.TRect,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+  WriteWordWrappedLayer(TRect, string, int, int, int, int, int, int, int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WriteWordWrappedLayer(TRect theRect, string theLine, int theLineSpacing, int theJustification, int theMaxWidth, int theMaxChars, int theLastWidth, int theLineCount, int layer, bool centerVertically)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theRect</code> <a class="xref" href="Sexy.TRect.html">TRect</a></dt>
+    <dd></dd>
+    <dt><code>theLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>theLineSpacing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theJustification</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theMaxChars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLastWidth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>theLineCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>layer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>centerVertically</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_clearTransformStack_" data-uid="Sexy.Graphics.clearTransformStack*"></a>
+
+  <h3 id="Sexy_Graphics_clearTransformStack" data-uid="Sexy.Graphics.clearTransformStack">
+  clearTransformStack()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void clearTransformStack()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_popTransform_" data-uid="Sexy.Graphics.popTransform*"></a>
+
+  <h3 id="Sexy_Graphics_popTransform" data-uid="Sexy.Graphics.popTransform">
+  popTransform()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void popTransform()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Sexy_Graphics_pushTransform_" data-uid="Sexy.Graphics.pushTransform*"></a>
+
+  <h3 id="Sexy_Graphics_pushTransform_Sexy_SexyTransform2D__System_Boolean_" data-uid="Sexy.Graphics.pushTransform(Sexy.SexyTransform2D@,System.Boolean)">
+  pushTransform(ref SexyTransform2D, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void pushTransform(ref SexyTransform2D theTransform, bool concatenate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>theTransform</code> <a class="xref" href="Sexy.SexyTransform2D.html">SexyTransform2D</a></dt>
+    <dd></dd>
+    <dt><code>concatenate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
